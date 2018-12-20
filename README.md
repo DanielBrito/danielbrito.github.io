@@ -1,2 +1,2 @@
 # danielbrito.github.io
-Site pessoal
+Site pessoal. Em desenvolvimento.
