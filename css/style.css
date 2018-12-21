@@ -1,0 +1,141 @@
+body{
+  margin: 0; 
+  padding: 0;
+  background: #262626;
+}
+
+.logo{
+  height: 100px;
+  display: block;
+  margin: auto;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.header{
+  text-align: center;
+}
+
+.header-block{
+  background-color: black;
+  padding: 0px 0px 5px 0px;
+  box-shadow: 1px 1px 10px black;
+  margin-bottom: 10px;
+}
+
+.topnav {
+  background-color: black;
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif; font-weight: 300; line-height: 10px;
+  display: inline-block;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 14px;
+  text-decoration: none;
+  font-size: 13px;
+  display: block;
+}
+
+.topnav a:hover {
+  background-color: #a63a3a;
+  color: white;
+}
+
+.topnav a.active {
+  background-color: #8B0000;
+  color: white;
+}
+
+.conteudo{
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 1px 1px 10px black;
+  margin-right: 150px;
+  margin-left: 150px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 15px 50px 15px 50px;
+}
+
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  box-shadow: 1px 1px 10px black;
+  align-content: center;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+.facebook_logo{
+  width: 21px;
+  margin-right: 2px;
+  margin-left: 2px;
+}
+
+.youtube_logo{
+  width: 21px;
+  margin-right: 2px;
+  margin-left: 2px;
+}
+
+.blogger_logo{
+  width: 21px;
+  margin-right: 2px;
+  margin-left: 2px;
+}
+
+.googleplus_logo{
+  width: 21px;
+  margin-right: 2px;
+  margin-left: 2px;
+}
+
+.linkedin_logo{
+  width: 21px;
+  margin-right: 2px;
+  margin-left: 2px;
+}
+
+.instagram_logo{
+  width: 21px;
+  margin-right: 2px;
+  margin-left: 2px;
+}
+
+.github_logo{
+  width: 21px;
+  margin-right: 2px;
+  margin-left: 2px;
+}
+
+.soundcloud_logo{
+  width: 21px;
+  margin-right: 2px;
+  margin-left: 2px;
+}
+
+/* Page content */
+.conteudo {
+  padding: 16px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .conteudo {
+  padding-top: 60px;
+}
