@@ -4,14 +4,18 @@ body{
   background: #262626;
 }
 
+@media only screen and (max-width:620px) {
+ .logo {
+    width:100%;
+  }
+}
+
 .logo{
-  height: ;
+  height: 200px;
   display: block;
   margin: auto;
   padding-bottom: 10px;
   padding-top: 10px;
-  max-width:50%;
-  height:auto;
 }
 
 .header{
@@ -75,67 +79,10 @@ body{
   padding-top: 15px;
 }
 
-.facebook_logo{
+.facebook_logo, .youtube_logo, .blogger_logo, .googleplus_logo, .linkedin_logo, .instagram_logo, .github_logo, .soundcloud_logo{
   width: 21px;
   margin-right: 2px;
   margin-left: 2px;
-}
-
-.youtube_logo{
-  width: 21px;
-  margin-right: 2px;
-  margin-left: 2px;
-}
-
-.blogger_logo{
-  width: 21px;
-  margin-right: 2px;
-  margin-left: 2px;
-}
-
-.googleplus_logo{
-  width: 21px;
-  margin-right: 2px;
-  margin-left: 2px;
-}
-
-.linkedin_logo{
-  width: 21px;
-  margin-right: 2px;
-  margin-left: 2px;
-}
-
-.instagram_logo{
-  width: 21px;
-  margin-right: 2px;
-  margin-left: 2px;
-}
-
-.github_logo{
-  width: 21px;
-  margin-right: 2px;
-  margin-left: 2px;
-}
-
-.soundcloud_logo{
-  width: 21px;
-  margin-right: 2px;
-  margin-left: 2px;
-}
-
-/* Page content */
-.conteudo {
-  padding: 16px;
-}
-
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .conteudo {
-  padding-top: 60px;
+  margin-bottom: 2px;
+  margin-top: 2px;
 }
