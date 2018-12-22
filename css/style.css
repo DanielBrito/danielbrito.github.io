@@ -6,7 +6,8 @@ body{
 
 @media only screen and (max-width:620px) {
  .logo {
-    height: 100%;
+    width: 100%;
+    height: auto;
   }
 }
 
