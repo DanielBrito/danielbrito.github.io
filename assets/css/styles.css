@@ -48,17 +48,21 @@ h1 {
 }
 
 a:link {
+    color: white !important;
     text-decoration: none;
 }
 
 a:visited {
+    color: white !important;
     text-decoration: none;
 }
 
 a:hover {
+    color: white !important;
     text-decoration: underline;
 }
 
 a:active {
-    text-decoration: underline;
+    color: white !important;
+    text-decoration: none;
 }
