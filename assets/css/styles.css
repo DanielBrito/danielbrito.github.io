@@ -99,7 +99,7 @@ body{
    font-size:16px;
 }
 
-.fa.fa-home, .fa.fa-user, .fa.fa-book, .fa.fa-star, .fa.fa-photo, .fa.fa-video-camera, .fa-fa-pencil-square-o, .fa.fa-newspaper-o, .fa.fa-envelope{
+.fa.fa-home, .fa.fa-user, .fa.fa-book, .fa.fa-star, .fa.fa-photo, .fa.fa-video-camera, .fa.fa-pencil-square-o, .fa.fa-newspaper-o, .fa.fa-envelope{
   margin-right:5px;
   margin-left:0px;
   margin-top:5px;
@@ -164,7 +164,7 @@ footer{
   background-color:#000000;
   min-height:50px;
   width:100%;
-    border-style: solid;
+  border-style: solid;
   border-width: 1px 0px 0px 0px;
   border-color: #9e0b0f;
 }
