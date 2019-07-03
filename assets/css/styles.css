@@ -17,6 +17,7 @@ img {
   border-style: solid;
   border-width: 0px 0px 1px 0px;
   border-color: #9e0b0f;
+  font-family:'Fira Mono', monospace;
 }
 
 .nav-item a {
