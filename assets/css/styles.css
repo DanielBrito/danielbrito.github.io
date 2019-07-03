@@ -1,10 +1,3 @@
-#navcol-1 {
-  text-align:center;
-}
-
-img {
-  horizontal-align:middle;
-}
 
 .navbar.navbar-light.navbar-expand-xl.sticky-top {
   box-shadow:0px 0px 20px black;
@@ -18,7 +11,7 @@ img {
 
   border-style: solid;
   border-width: 0px 0px 1px 0px;
-  border-color: #9e0b0f;
+  border-color: rgb(66,0,10);
 }
 
 .nav-item a {
@@ -35,7 +28,7 @@ img {
   color: white !important;
   background-color: #9e0b0f !important;
   border-radius: 10px;
-  box-shadow: 0px 0px 15px #9e0b0f;
+  box-shadow: 0px 0px 10px #9e0b0f;
 }
 
 h1 {
@@ -60,6 +53,10 @@ a:hover {
 a:active {
     color: white !important;
     text-decoration: none;
+}
+
+img {
+  horizontal-align:middle;
 }
 
 body{
@@ -98,6 +95,7 @@ body{
 
 #navcol-1{
    font-size:16px;
+   text-align:center;
 }
 
 .fa.fa-home, .fa.fa-user, .fa.fa-book, .fa.fa-star, .fa.fa-photo, .fa.fa-video-camera, .fa.fa-pencil-square-o, .fa.fa-newspaper-o, .fa.fa-envelope{
@@ -112,11 +110,6 @@ body{
    margin-bottom:20px;
    max-width:987px;
    border-radius: 5px;
-   /*
-    border-style: solid;
-  border-width: 1px;
-  border-color: #9e0b0f;
-  */
 }
 
 #linkInterno{
@@ -167,7 +160,7 @@ footer{
   width:100%;
   border-style: solid;
   border-width: 1px 0px 0px 0px;
-  border-color: #9e0b0f;
+  border-color: rgb(66,0,10);
 }
 
 #footerRow{
