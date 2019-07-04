@@ -130,7 +130,10 @@ body{
 }
 
 #apresentacaoImg{
-  border-radius: 5px;
+    border-radius: 5px;
+  border-style: solid;
+  border-color: white;
+  border-width: 1px;
 }
 
 #apresentacaoColunaTexto{
@@ -209,7 +212,10 @@ footer{
 }
 
 #sobreImg{
-  border-radius: 5px;
+    border-radius: 5px;
+  border-style: solid;
+  border-color: white;
+  border-width: 1px;
 }
 
 #sobreColunaTexto{
@@ -250,7 +256,10 @@ footer{
 }
 
 #livroImg{
-  border-radius: 5px;
+    border-radius: 5px;
+  border-style: solid;
+  border-color: white;
+  border-width: 1px;
 }
 
 #livroImgALV{
@@ -312,7 +321,10 @@ footer{
 }
 
 #projetoImg{
-  border-radius: 5px;
+    border-radius: 5px;
+  border-style: solid;
+  border-color: white;
+  border-width: 1px;
 }
 
 #projetoColunaTexto{
@@ -418,7 +430,10 @@ footer{
 }
 
 #blogImg{
-  border-radius: 5px;
+    border-radius: 5px;
+  border-style: solid;
+  border-color: white;
+  border-width: 1px;
 }
 
 #blogColunaTexto{
@@ -472,7 +487,10 @@ footer{
 }
 
 #contatoImg{
-  border-radius: 5px;
+    border-radius: 5px;
+  border-style: solid;
+  border-color: white;
+  border-width: 1px;
 }
 
 #contatoColunaTexto{
