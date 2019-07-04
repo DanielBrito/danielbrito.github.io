@@ -10,123 +10,160 @@
     <title>Daniel Brito - BLOG</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
-    <link rel="stylesheet" href="assets/css/Lightbox-Gallery.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png"/>
 </head>
 
-<body style="background-image:url(&quot;assets/img/background.png&quot;);background-position:top;background-size:auto;">
-    <nav class="navbar navbar-light navbar-expand-xl sticky-top" style="background-color:#000000;padding-left:21px;padding-top:7px;padding-bottom:7px;">
-        <div class="container-fluid"><a class="navbar-brand" href="https://danielbrito.github.io/"><img class="float-left" src="assets/img/daniel-brito-monograma.png" style="width:auto;height:55px;"></a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only" style="margin:0px;height:1px;width:1px;">Toggle navigation</span><span class="navbar-toggler-icon text-monospace" style="background-color:#9e0b0f;width:50px;height:50px;margin:-7px;"></span></button>
-            <div
-                class="collapse navbar-collapse" id="navcol-1" style="font-size:16px;">
-                <ul class="nav navbar-nav ml-auto" style="padding:0px;">
-                    <li class="nav-item" role="presentation" style="padding:12px;"><a class="nav-link" href="https://danielbrito.github.io"><i class="fa fa-home" style="margin-right:5px;margin-left:0px;margin-top:5px;"></i>INÍCIO</a></li>
-                    <li class="nav-item" role="presentation" style="padding:12px;"><a class="nav-link" href="sobre.html"><i class="fa fa-user" style="margin-right:5px;margin-left:0px;margin-top:5px;"></i>SOBRE</a></li>
-                    <li class="nav-item" role="presentation" style="padding:12px;"><a class="nav-link" href="livros.html"><i class="fa fa-book" style="margin-right:5px;margin-left:0px;margin-top:5px;"></i>LIVROS</a></li>
-                    <li class="nav-item" role="presentation" style="padding:12px;"><a class="nav-link" href="projetos.html"><i class="fa fa-star" style="margin-right:5px;margin-left:0px;margin-top:5px;"></i>PROJETOS</a></li>
-                    <li class="nav-item" role="presentation" style="padding:12px;"><a class="nav-link" href="fotos.html"><i class="fa fa-photo" style="margin-right:5px;margin-left:0px;margin-top:5px;"></i>FOTOS</a></li>
-                    <li class="nav-item" role="presentation" style="padding:12px;"><a class="nav-link" href="videos.html"><i class="fa fa-video-camera" style="margin-right:5px;margin-left:0px;margin-top:5px;"></i>VÍDEOS</a></li>
-                    <li class="nav-item" role="presentation" style="padding:12px;"><a class="nav-link active" href="blog.html"><i class="fa fa-pencil-square-o" style="margin-right:5px;margin-left:0px;margin-top:5px;"></i>BLOG</a></li>
-                    <li class="nav-item" role="presentation" style="padding:12px;"><a class="nav-link" href="midia.html"><i class="fa fa-newspaper-o" style="margin-right:5px;margin-left:0px;margin-top:5px;"></i>MÍDIA</a></li>
-                    <li class="nav-item" role="presentation" style="padding:12px;"><a class="nav-link" href="contato.html"><i class="fa fa-envelope" style="margin-right:5px;margin-left:0px;margin-top:5px;"></i>CONTATO</a></li>
+<body>
+    <nav class="navbar navbar-light navbar-expand-xl sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="https://danielbrito.github.io">
+                <img class="float-left" src="assets/img/daniel-brito-monograma.png" id="danielBritoLogo">
+            </a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1">
+                <span class="sr-only" id="toggleNav">Toggle navigation</span>
+                <span class="navbar-toggler-icon text-monospace" id="toggleNavIcon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="https://danielbrito.github.io"><i class="fa fa-home"></i>INÍCIO</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="sobre.html"><i class="fa fa-user"></i>SOBRE</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="livros.html"><i class="fa fa-book"></i>LIVROS</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="projetos.html"><i class="fa fa-star"></i>PROJETOS</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="fotos.html"><i class="fa fa-photo"></i>FOTOS</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="videos.html"><i class="fa fa-video-camera"></i>VÍDEOS</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="blog.html"><i class="fa fa-pencil-square-o"></i>BLOG</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="midia.html"><i class="fa fa-newspaper-o"></i>MÍDIA</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="contato.html"><i class="fa fa-envelope"></i>CONTATO</a></li>
                 </ul>
-        </div>
+            </div>
         </div>
     </nav>
-    <div class="container" style="background-color:#ffffff;margin-top:20px;margin-bottom:20px;max-width:987px;">
-        <div class="row justify-content-center align-items-center" style="background-color:#000000;">
-            <div class="col-md-6 col-xl-5" style="background-color:#000000;padding-top:15px;padding-bottom:15px;width:466px;min-width:112px;"><img class="img-thumbnail" src="assets/img/polymatus_logo.jpg"></div>
-            <div class="col-md-6 col-xl-7" style="background-color:#000000;margin-top:0px;padding-top:30px;padding-bottom:30px;padding-right:30px;padding-left:30px;">
-                <h1 class="text-center" style="font-family:'Fira Mono', monospace;color:rgb(255,255,255);font-size:35px;"><strong>POLYMATUS</strong></h1>
-                <p class="text-center" style="color:rgb(255,255,255);font-family:'Fira Mono', monospace;font-size:14px;">Onde falo sobre tudo e afins...</p><a class="btn btn-dark btn-block btn-lg" role="button" href="http://daniel-brito.blogspot.com.br/" target="_blank" style="background-color:rgb(158,11,15);padding-bottom:16px;margin-bottom:0px;">ACESSAR</a></div>
-        </div>
-    </div>
-    <div class="container" style="background-color:#ffffff;margin-top:20px;margin-bottom:20px;max-width:987px;">
-        <div class="row justify-content-center align-items-center" style="background-color:#000000;">
-            <div class="col-md-6 col-xl-5" style="background-color:#000000;padding-top:15px;padding-bottom:15px;width:466px;min-width:112px;"><img class="img-thumbnail" src="assets/img/poemas-autorais.jpg"></div>
-            <div class="col-md-6 col-xl-7" style="background-color:#000000;margin-top:0px;padding-top:30px;padding-bottom:30px;padding-right:30px;padding-left:30px;">
-                <h1 class="text-center" style="font-family:'Fira Mono', monospace;color:rgb(255,255,255);font-size:35px;"><strong>POEMAS AUTORAIS</strong></h1><a class="btn btn-dark btn-block btn-lg" role="button" href="http://daniel-brito.blogspot.com/p/poemas-autorais_11.html" target="_blank" style="background-color:rgb(158,11,15);padding-bottom:16px;margin-bottom:0px;">ACESSAR</a></div>
-        </div>
-    </div>
-    <div class="container" style="background-color:#ffffff;margin-top:20px;margin-bottom:20px;max-width:987px;">
-        <div class="row justify-content-center align-items-center" style="background-color:#000000;">
-            <div class="col-md-6 col-xl-5" style="background-color:#000000;padding-top:15px;padding-bottom:15px;width:466px;min-width:112px;"><img class="img-thumbnail" src="assets/img/artigos-noticias.jpg"></div>
-            <div class="col-md-6 col-xl-7" style="background-color:#000000;margin-top:0px;padding-top:30px;padding-bottom:30px;padding-right:30px;padding-left:30px;">
-                <h1 class="text-center" style="font-family:'Fira Mono', monospace;color:rgb(255,255,255);font-size:35px;"><strong>ARTIGOS E NOTÍCIAS</strong></h1><a class="btn btn-dark btn-block btn-lg" role="button" href="http://daniel-brito.blogspot.com/p/noticias_11.html" target="_blank" style="background-color:rgb(158,11,15);padding-bottom:16px;margin-bottom:0px;">ACESSAR</a></div>
-        </div>
-    </div>
-    <div class="container" style="background-color:#ffffff;margin-top:20px;margin-bottom:20px;max-width:987px;">
-        <div class="row justify-content-center align-items-center" style="background-color:#000000;">
-            <div class="col-md-6 col-xl-5" style="background-color:#000000;padding-top:15px;padding-bottom:15px;width:466px;min-width:112px;"><img class="img-thumbnail" src="assets/img/biblioteca.jpg"></div>
-            <div class="col-md-6 col-xl-7" style="background-color:#000000;margin-top:0px;padding-top:30px;padding-bottom:30px;padding-right:30px;padding-left:30px;">
-                <h1 class="text-center" style="font-family:'Fira Mono', monospace;color:rgb(255,255,255);font-size:35px;"><strong>LEITURAS</strong></h1><a class="btn btn-dark btn-block btn-lg" role="button" href="http://daniel-brito.blogspot.com/p/biblioteca-marginal_11.html" target="_blank" style="background-color:rgb(158,11,15);padding-bottom:16px;margin-bottom:0px;">ACESSAR</a></div>
-        </div>
-    </div>
-    <div class="container" style="background-color:#ffffff;margin-top:20px;margin-bottom:20px;max-width:987px;">
-        <div class="row justify-content-center align-items-center" style="background-color:#000000;">
-            <div class="col-md-6 col-xl-5" style="background-color:#000000;padding-top:15px;padding-bottom:15px;width:466px;min-width:112px;"><img class="img-thumbnail" src="assets/img/reflexoes.jpg"></div>
-            <div class="col-md-6 col-xl-7" style="background-color:#000000;margin-top:0px;padding-top:30px;padding-bottom:30px;padding-right:30px;padding-left:30px;">
-                <h1 class="text-center" style="font-family:'Fira Mono', monospace;color:rgb(255,255,255);font-size:35px;"><strong>REFLEXÕES</strong></h1><a class="btn btn-dark btn-block btn-lg" role="button" href="http://daniel-brito.blogspot.com/p/reflexoes_11.html" target="_blank" style="background-color:rgb(158,11,15);padding-bottom:16px;margin-bottom:0px;">ACESSAR</a></div>
-        </div>
-    </div>
-    <div class="container" style="background-color:#ffffff;margin-top:20px;margin-bottom:20px;max-width:987px;">
-        <div class="row justify-content-center align-items-center" style="background-color:#000000;">
-            <div class="col-md-6 col-xl-5" style="background-color:#000000;padding-top:15px;padding-bottom:15px;width:466px;min-width:112px;"><img class="img-thumbnail" src="assets/img/tracos.jpg"></div>
-            <div class="col-md-6 col-xl-7" style="background-color:#000000;margin-top:0px;padding-top:30px;padding-bottom:30px;padding-right:30px;padding-left:30px;">
-                <h1 class="text-center" style="font-family:'Fira Mono', monospace;color:rgb(255,255,255);font-size:35px;"><strong>TRAÇOS</strong></h1><a class="btn btn-dark btn-block btn-lg" role="button" href="http://daniel-brito.blogspot.com/p/tracos.html" target="_blank" style="background-color:rgb(158,11,15);padding-bottom:16px;margin-bottom:0px;">ACESSAR</a></div>
-        </div>
-    </div>
-    <div class="container" style="background-color:#ffffff;margin-top:20px;margin-bottom:20px;max-width:987px;">
-        <div class="row justify-content-center align-items-center" style="background-color:#000000;">
-            <div class="col-md-6 col-xl-5" style="background-color:#000000;padding-top:15px;padding-bottom:15px;width:466px;min-width:112px;"><img class="img-thumbnail" src="assets/img/desafios.jpg"></div>
-            <div class="col-md-6 col-xl-7" style="background-color:#000000;margin-top:0px;padding-top:30px;padding-bottom:30px;padding-right:30px;padding-left:30px;">
-                <h1 class="text-center" style="font-family:'Fira Mono', monospace;color:rgb(255,255,255);font-size:35px;"><strong>D354F105</strong></h1><a class="btn btn-dark btn-block btn-lg" role="button" href="http://daniel-brito.blogspot.com/p/desafios_11.html" target="_blank" style="background-color:rgb(158,11,15);padding-bottom:16px;margin-bottom:0px;">ACESSAR</a></div>
-        </div>
-    </div>
-    <div class="container" style="background-color:#ffffff;margin-top:20px;margin-bottom:20px;max-width:987px;">
-        <div class="row justify-content-center align-items-center" style="background-color:#000000;">
-            <div class="col-md-6 col-xl-5" style="background-color:#000000;padding-top:15px;padding-bottom:15px;width:466px;min-width:112px;"><img class="img-thumbnail" src="assets/img/audio-visual.jpg"></div>
-            <div class="col-md-6 col-xl-7" style="background-color:#000000;margin-top:0px;padding-top:30px;padding-bottom:30px;padding-right:30px;padding-left:30px;">
-                <h1 class="text-center" style="font-family:'Fira Mono', monospace;color:rgb(255,255,255);font-size:35px;"><strong>AUDIO&amp;VISUAL</strong></h1><a class="btn btn-dark btn-block btn-lg" role="button" href="http://daniel-brito.blogspot.com/p/audio_11.html" target="_blank" style="background-color:rgb(158,11,15);padding-bottom:16px;margin-bottom:0px;">ACESSAR</a></div>
-        </div>
-    </div>
-    <div class="container" style="background-color:#ffffff;margin-top:20px;margin-bottom:20px;max-width:987px;">
-        <div class="row justify-content-center align-items-center" style="background-color:#000000;">
-            <div class="col-md-6 col-xl-5" style="background-color:#000000;padding-top:15px;padding-bottom:15px;width:466px;min-width:112px;"><img class="img-thumbnail" src="assets/img/agenda.jpg"></div>
-            <div class="col-md-6 col-xl-7" style="background-color:#000000;margin-top:0px;padding-top:30px;padding-bottom:30px;padding-right:30px;padding-left:30px;">
-                <h1 class="text-center" style="font-family:'Fira Mono', monospace;color:rgb(255,255,255);font-size:35px;"><strong>EVENTOS</strong></h1><a class="btn btn-dark btn-block btn-lg" role="button" href="http://daniel-brito.blogspot.com/p/agenda.html" target="_blank" style="background-color:rgb(158,11,15);padding-bottom:16px;margin-bottom:0px;">ACESSAR</a></div>
-        </div>
-    </div>
-    <footer style="height:50px;background-color:#000000;min-height:50px;width:100%;">
-        <div class="row no-gutters justify-content-center" style="height:50px;margin-right:0px;margin-left:0px;padding-bottom:5px;max-width:100%;width:100%;">
-            <div class="col align-self-center" style="width:21px;height:21px;padding-right:0px;padding-left:0px;max-width:21px;margin-right:5px;margin-left:5px;"><img src="assets/img/d_footer.jpg">
-            </div>
 
-            <div class="col align-self-center" style="width:21px;height:21px;padding-right:0px;padding-left:0px;max-width:21px;margin-right:5px;margin-left:5px;"><img src="assets/img/n_footer.jpg">
+    <div class="container" id="blogContainer">
+        <div class="row justify-content-center align-items-center" id="blogRow">
+            <div class="col-md-6 col-xl-5" id="blogColunaImg">
+                <img class="img-fluid" id="blogImg" src="assets/img/polymatus_logo.jpg">
             </div>
-
-            <div class="col align-self-center" style="width:21px;height:21px;padding-right:0px;padding-left:0px;max-width:21px;margin-right:5px;margin-left:5px;"><img src="assets/img/l_footer.jpg">
-            </div>
-
-            <div class="col align-self-center" style="width:21px;height:21px;padding-right:0px;padding-left:0px;max-width:21px;margin-right:5px;margin-left:5px;"><img src="assets/img/symbol_footer.jpg">
-            </div>
-
-            <div class="col align-self-center" style="width:21px;height:21px;padding-right:0px;padding-left:0px;max-width:21px;margin-right:5px;margin-left:5px;"><img src="assets/img/b_footer.jpg">
-            </div>
-
-            <div class="col align-self-center" style="width:21px;height:21px;padding-right:0px;padding-left:0px;max-width:21px;margin-right:5px;margin-left:5px;"><img src="assets/img/r_footer.jpg">
-            </div>
-
-            <div class="col align-self-center" style="width:21px;height:21px;padding-right:0px;padding-left:0px;max-width:21px;margin-right:5px;margin-left:5px;"><img src="assets/img/t_footer.jpg">
+            <div class="col-md-6 col-xl-7" id="blogColunaTexto">
+                <h1 class="text-center" id="blogTitulo"><strong>POLYMATUS</strong></h1>
+                <p class="text-center" id="blogTexto">Onde falo sobre tudo e afins...</p>
+                <a class="btn btn-dark btn-block btn-lg" role="button" href="http://daniel-brito.blogspot.com.br/" target="_blank" id="botaoAcessar">ACESSAR</a>
             </div>
         </div>
-</footer>
+    </div>
+
+    <div class="container" id="blogContainer">
+        <div class="row justify-content-center align-items-center" id="blogRow">
+            <div class="col-md-6 col-xl-5" id="blogColunaTexto">
+                <img class="img-fluid" id="blogImg" src="assets/img/poemas-autorais.jpg">
+            </div>
+            <div class="col-md-6 col-xl-7" id="blogColunaTexto">
+                <h1 class="text-center" id="blogTitulo"><strong>POEMAS AUTORAIS</strong></h1>
+                <a class="btn btn-dark btn-block btn-lg" role="button" href="http://daniel-brito.blogspot.com/p/poemas-autorais_11.html" target="_blank" id="botaoAcessar">ACESSAR</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="blogContainer">
+        <div class="row justify-content-center align-items-center" id="blogRow">
+            <div class="col-md-6 col-xl-5" id="blogColunaImg">
+                <img class="img-fluid" id="blogImg" src="assets/img/artigos-noticias.jpg">
+            </div>
+            <div class="col-md-6 col-xl-7" id="blogColunaTexto">
+                <h1 class="text-center" id="blogTitulo"><strong>ARTIGOS E NOTÍCIAS</strong></h1>
+                <a class="btn btn-dark btn-block btn-lg" role="button" href="http://daniel-brito.blogspot.com/p/noticias_11.html" target="_blank" id="botaoAcessar">ACESSAR</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="blogContainer">
+        <div class="row justify-content-center align-items-center" id="blogRow">
+            <div class="col-md-6 col-xl-5" id="blogColunaImg">
+                <img class="img-fluid" id="blogImg" src="assets/img/biblioteca.jpg">
+            </div>
+            <div class="col-md-6 col-xl-7" id="blogColunaTexto">
+                <h1 class="text-center" id="blogTitulo"><strong>LEITURAS</strong></h1>
+                <a class="btn btn-dark btn-block btn-lg" role="button" href="http://daniel-brito.blogspot.com/p/biblioteca-marginal_11.html" target="_blank" id="botaoAcessar">ACESSAR</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="blogContainer">
+        <div class="row justify-content-center align-items-center" id="blogRow">
+            <div class="col-md-6 col-xl-5" id="blogColunaImg">
+                <img class="img-fluid" id="blogImg" src="assets/img/reflexoes.jpg">
+            </div>
+            <div class="col-md-6 col-xl-7" id="blogColunaTexto">
+                <h1 class="text-center" id="blogTitulo"><strong>REFLEXÕES</strong></h1>
+                <a class="btn btn-dark btn-block btn-lg" role="button" href="http://daniel-brito.blogspot.com/p/reflexoes_11.html" target="_blank" id="botaoAcessar">ACESSAR</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="blogContainer">
+        <div class="row justify-content-center align-items-center" id="blogRow">
+            <div class="col-md-6 col-xl-5" id="blogColunaImg">
+                <img class="img-fluid" id="blogImg" src="assets/img/tracos.jpg">
+            </div>
+            <div class="col-md-6 col-xl-7" id="blogColunaTexto" >
+                <h1 class="text-center" id="blogTitulo" ><strong>TRAÇOS</strong></h1>
+                <a class="btn btn-dark btn-block btn-lg" role="button" href="http://daniel-brito.blogspot.com/p/tracos.html" target="_blank" id="botaoAcessar" >ACESSAR</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="blogContainer">
+        <div class="row justify-content-center align-items-center" id="blogRow">
+            <div class="col-md-6 col-xl-5" id="blogColunaImg">
+                <img class="img-fluid" id="blogImg" src="assets/img/desafios.jpg">
+            </div>
+            <div class="col-md-6 col-xl-7" id="blogColunaTexto" >
+                <h1 class="text-center" id="blogTitulo"><strong>D354F105</strong></h1>
+                <a class="btn btn-dark btn-block btn-lg" role="button" href="http://daniel-brito.blogspot.com/p/desafios_11.html" target="_blank" id="botaoAcessar" >ACESSAR</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="blogContainer">
+        <div class="row justify-content-center align-items-center" id="blogRow">
+            <div class="col-md-6 col-xl-5" id="blogColunaImg">
+                <img class="img-fluid" id="blogImg" src="assets/img/audio-visual.jpg">
+            </div>
+            <div class="col-md-6 col-xl-7" id="blogColunaTexto" >
+                <h1 class="text-center" id="blogTitulo"><strong>AUDIO&amp;VISUAL</strong></h1>
+                <a class="btn btn-dark btn-block btn-lg" role="button" href="http://daniel-brito.blogspot.com/p/audio_11.html" target="_blank" id="botaoAcessar" >ACESSAR</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="blogContainer">
+        <div class="row justify-content-center align-items-center" id="blogRow">
+            <div class="col-md-6 col-xl-5" id="blogColunaImg">
+                <img class="img-fluid" id="blogImg" src="assets/img/agenda.jpg">
+            </div>
+            <div class="col-md-6 col-xl-7" id="blogColunaTexto" >
+                <h1 class="text-center" id="blogTitulo" ><strong>EVENTOS</strong></h1>
+                <a class="btn btn-dark btn-block btn-lg" role="button" href="http://daniel-brito.blogspot.com/p/agenda.html" target="_blank" id="botaoAcessar" >ACESSAR</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="row no-gutters justify-content-center" id="footerRow">
+            <div class="col align-self-center" id="footerLetter"><img src="assets/img/d_footer.jpg"></div>
+            <div class="col align-self-center" id="footerLetter"><img src="assets/img/n_footer.jpg"></div>
+            <div class="col align-self-center" id="footerLetter"><img src="assets/img/l_footer.jpg"></div>
+            <div class="col align-self-center" id="footerLetter"><img src="assets/img/symbol_footer.jpg"></div>
+            <div class="col align-self-center" id="footerLetter"><img src="assets/img/b_footer.jpg"></div>
+            <div class="col align-self-center" id="footerLetter"><img src="assets/img/r_footer.jpg"></div>
+            <div class="col align-self-center" id="footerLetter"><img src="assets/img/t_footer.jpg"></div>
+        </div>
+    </footer>
+
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+
 </body>
 
 </html>

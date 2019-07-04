@@ -369,6 +369,89 @@ footer{
   margin-top: 10px;
 }
 
+#videoContainer{
+  background-color:#000000;
+  margin-top:20px;
+  margin-bottom:20px;
+  max-width:987px;
+  padding-top:20px;
+  padding-right:20px;
+  padding-bottom:20px;
+  padding-left:20px;
+  box-shadow:0px 0px 10px black;
+  border-radius: 5px;
+}
+
+#videoRow{
+  background-color:transparent;
+}
+
+#videoCol{
+  background-color:transparent;
+}
+
+#videoTitulo{
+  color:rgb(255,255,255);
+  font-family:'Fira Mono', monospace;
+  margin-bottom:15px;
+}
+
+#blogContainer{
+  background-color:#000000;
+  margin-top:20px;
+  margin-bottom:20px;
+  max-width:987px;
+  box-shadow:0px 0px 10px black;
+  border-radius: 5px;
+}
+
+#blogRow{
+  background-color:transparent;
+}
+
+#blogColunaImg{
+  background-color:transparent;
+  padding-top:15px;
+  padding-bottom:15px;
+  width:466px;
+  min-width:112px;
+}
+
+#blogImg{
+  border-radius: 5px;
+}
+
+#blogColunaTexto{
+  background-color:transparent;
+  margin-top:0px;
+  padding-top:30px;
+  padding-bottom:30px;
+  padding-right:30px;
+  padding-left:30px;
+}
+
+#blogTitulo{
+   font-family:'Fira Mono', monospace;
+   color:rgb(255,255,255);
+   font-size:35px;
+}
+
+#blogTexto{
+  color:rgb(255,255,255);
+  font-family:'Fira Mono', monospace;
+  font-size:14px;
+}
+
+#botaoAcessar{
+  background-color:rgb(158,11,15);
+  padding-bottom:16px;
+  margin-bottom:0px;
+}
+
+
+
+
+
 /* FONT */
 
 /* cyrillic-ext */
