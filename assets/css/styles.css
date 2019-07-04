@@ -491,8 +491,44 @@ footer{
   font-size:14px;
 }
 
+.modal-header{
+  background-color: #9e0b0f;
+  border-color: white;
+  border-width: 1px;
+  border-style: solid;
+  font-size: 14px;
+}
 
+.modal-body{
+  background-color: black;
+  border-color: white;
+  border-width: 1px;
+  border-style: solid;
+  text-align: center;
+  padding-bottom: 0px;
+}
 
+.modal-title{
+  font-family:'Fira Mono', monospace;
+  color: white;
+}
+
+.modal.fade.bd-example-modal-sm{
+    overflow: show;
+}
+
+#linkProfile{
+  text-decoration: none;
+}
+
+#profilesLista a{
+  display: block;
+  margin-top: 1px;
+}
+
+.modal-content{
+  box-shadow:0px 0px 5px gray;
+}
 
 /* FONT */
 
