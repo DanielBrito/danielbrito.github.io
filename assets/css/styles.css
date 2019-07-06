@@ -14,14 +14,30 @@
   border-color: rgb(66,0,10);
 }
 
+.nav-item{
+  padding:10px;
+}
+
 .nav-item a {
   color: white !important;
 }
 
 .nav-item a:hover {
   color: white !important;
+  /*
   background-color: #993333 !important;
   border-radius: 10px;
+  */
+}
+
+.nav-item a:link {
+    color: #9e0b0f !important;
+    text-decoration: none;
+}
+
+.nav-item a:visited {
+    color: #9e0b0f !important;
+    text-decoration: none;
 }
 
 .nav-item a.active {
@@ -29,6 +45,11 @@
   background-color: #9e0b0f !important;
   border-radius: 10px;
   box-shadow: 0px 0px 10px #9e0b0f; /* bright */
+}
+
+.nav-item a:hover {
+    color: white !important;
+    text-decoration: none;
 }
 
 h1 {
@@ -69,10 +90,6 @@ body{
   background-position:top;
   background-image:url('../img/background.png');
   font-size:14px;
-}
-
-.nav-item{
-  padding:10px;
 }
 
 #danielBritoLogo{
