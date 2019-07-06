@@ -24,10 +24,10 @@
 
 .nav-item a:hover {
   color: white !important;
-  /*
+  
   background-color: #993333 !important;
   border-radius: 10px;
-  */
+  
 }
 
 .nav-item a:link {
