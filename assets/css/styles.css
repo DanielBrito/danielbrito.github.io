@@ -1,33 +1,30 @@
-
 .navbar.navbar-light.navbar-expand-xl.sticky-top {
-  box-shadow:0px 0px 20px black;
-  background-color:#000000;
-  padding-left:21px;
-  padding-top:7px;
-  padding-bottom:7px;
-  width:100%;
-  max-width:100%;
-  font-family:'Fira Mono', monospace;
-
-  border-style: solid;
-  border-width: 0px 0px 1px 0px;
-  border-color: rgb(66,0,10);
+    box-shadow: 0px 0px 20px black;
+    background-color: #000000;
+    padding-left: 21px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    width: 100%;
+    max-width: 100%;
+    font-family: 'Fira Mono', monospace;
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+    border-color: rgb(66, 0, 10);
 }
 
-.nav-item{
-  padding:10px;
+.nav-item {
+    padding: 10px;
 }
 
 .nav-item a {
-  color: white !important;
+    color: white !important;
 }
 
 .nav-item a:hover {
-  color: white !important;
-  
-  background-color: #993333 !important;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px #993333; /* bright */
+    color: white !important;
+    background-color: #993333 !important;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #993333;  /* bright */
 }
 
 .nav-item a:link {
@@ -41,10 +38,10 @@
 }
 
 .nav-item a.active {
-  color: white !important;
-  background-color: #9e0b0f !important;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px #9e0b0f; /* bright */
+    color: white !important;
+    background-color: #9e0b0f !important;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #9e0b0f; /* bright */
 }
 
 .nav-item a:hover {
@@ -52,12 +49,12 @@
     text-decoration: none;
 }
 
-#email, #telegram{
+#email, #telegram {
     text-decoration: none;
 }
 
 h1 {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 a:link {
@@ -80,543 +77,588 @@ a:active {
     text-decoration: none;
 }
 
+/*
 img {
-  horizontal-align:middle;
+    horizontal-align: middle;
+}
+*/
+
+body {
+    background-color: #ffffff;
+    width: auto;
+    height: auto;
+    min-height: 0px;
+    background-size: auto;
+    background-repeat: repeat;
+    background-position: top;
+    background-image: url('../img/background.png');
+    font-size: 14px;
 }
 
-body{
-  background-color:#ffffff;
-  width:auto;
-  height:auto;
-  min-height:0px;
-  background-size:auto;
-  background-repeat:repeat;
-  background-position:top;
-  background-image:url('../img/background.png');
-  font-size:14px;
+#danielBritoLogo {
+    width: auto;
+    height: 55px;
 }
 
-#danielBritoLogo{
-  width:auto;
-  height:55px;
+#toggleNav {
+    margin: 0px;
+    height: 1px;
+    width: 1px;
 }
 
-#toggleNav{
-  margin:0px;
-  height:1px;
-  width:1px;
+#toggleNavIcon {
+    background-color: #9e0b0f;
+    width: 50px;
+    height: 50px;
+    margin: -7px;
 }
 
-#toggleNavIcon{
-  background-color:#9e0b0f;
-  width:50px;
-  height:50px;
-  margin:-7px;
+#navcol-1 {
+    font-size: 16px;
+    text-align: center;
 }
 
-#navcol-1{
-   font-size:16px;
-   text-align:center;
+.fa.fa-home, .fa.fa-user, .fa.fa-book, .fa.fa-star, .fa.fa-photo, .fa.fa-video-camera, .fa.fa-pencil-square-o, .fa.fa-newspaper-o, .fa.fa-envelope {
+    margin-right: 5px;
+    margin-left: 0px;
+    margin-top: 5px;
 }
 
-.fa.fa-home, .fa.fa-user, .fa.fa-book, .fa.fa-star, .fa.fa-photo, .fa.fa-video-camera, .fa.fa-pencil-square-o, .fa.fa-newspaper-o, .fa.fa-envelope{
-  margin-right:5px;
-  margin-left:0px;
-  margin-top:5px;
-}
-
-#apresentacaoContainer{
-   background-color:#000000;
-   margin-top:20px;
-   margin-bottom:20px;
-   max-width:987px;
-   border-radius: 5px;
-   box-shadow:0px 0px 15px black;
-}
-
-#linkInterno{
-  text-decoration: none;
-}
-
-#apresentacaoRow{
-   background-color:transparent;
-}
-
-#apresentacaoColunaImg{
-  background-color:transparent;
-  padding-top:15px;
-  padding-bottom:15px;
-  width:466px;
-  min-width:112px;
-}
-
-#apresentacaoImg{
+#apresentacaoContainer {
+    background-color: #000000;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 987px;
     border-radius: 5px;
-  border-style: solid;
-  border-color: white;
-  border-width: 1px;
+    box-shadow: 0px 0px 15px black;
+
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(66, 0, 10);
 }
 
-#apresentacaoColunaTexto{
-   background-color:transparent;
-   margin-top:0px;
-   padding-top:15px;
-   padding-bottom:15px;
+#linkInterno {
+    text-decoration: none;
 }
 
-#apresentacaoTitulo{
-   font-family:'Fira Mono', monospace;
-   color:rgb(255,255,255);
-   margin-top:15px;
-   font-size:35px;
+#apresentacaoRow {
+    background-color: transparent;
 }
 
-#apresentacaoTexto{
-  font-family:'Fira Mono', monospace;
-  color:rgb(255,255,255);
-  margin-bottom:15px;
-  font-size:14px;
+#apresentacaoColunaImg {
+    background-color: transparent;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 466px;
+    min-width: 112px;
 }
 
-footer{
-  height:50px;
-  background-color:#000000;
-  min-height:50px;
-  width:100%;
-  border-style: solid;
-  border-width: 1px 0px 0px 0px;
-  border-color: rgb(66,0,10);
-  box-shadow:0px 0px 20px black;
-}
-
-#footerRow{
-   height:50px;
-   margin-right:0px;
-   margin-left:0px;
-   padding-bottom:5px;
-   max-width:100%;
-   width:100%;
-   margin-top: -1px;
-}
-
-#footerLetter{
-   width:21px;
-   height:21px;
-   padding-right:0px;
-   padding-left:0px;
-   max-width:21px;
-   margin-right:5px;
-   margin-left:5px;
-}
-
-#sobreContainer{
-   background-color:#000000;
-   margin-top:20px;
-   margin-bottom:20px;
-   max-width:987px;
-   border-radius: 5px;
-   box-shadow:0px 0px 15px black;
-}
-
-#sobreRow{
-  background-color:transparent;
-}
-
-#sobreColunaImg{
-  background-color:transparent;
-  padding-top:15px;
-  padding-bottom:15px;
-  width:466px;
-  min-width:112px;
-  padding-right:15px;
-  padding-left:15px;
-}
-
-#sobreImg{
+#apresentacaoImg {
     border-radius: 5px;
-  border-style: solid;
-  border-color: white;
-  border-width: 1px;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
 }
 
-#sobreColunaTexto{
-   background-color:transparent;
-   margin-top:0px;
-   padding-top:30px;
-   padding-bottom:30px;
-   padding-right:30px;
-   padding-left:30px;
+#apresentacaoColunaTexto {
+    background-color: transparent;
+    margin-top: 0px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
-#sobreTexto{
-  font-family:'Fira Mono', monospace;
-  color:rgb(255,255,255);
-  margin-bottom:0px;
-  font-size:14px;
+#apresentacaoTitulo {
+    font-family: 'Fira Mono', monospace;
+    color: rgb(255, 255, 255);
+    margin-top: 15px;
+    font-size: 35px;
 }
 
-#livroContainer{
-  background-color:#000000;
-  margin-top:20px;
-  margin-bottom:20px;
-  max-width:987px;
-  box-shadow:0px 0px 15px black;
-  border-radius: 5px;
+#apresentacaoTexto {
+    font-family: 'Fira Mono', monospace;
+    color: rgb(255, 255, 255);
+    margin-bottom: 15px;
+    font-size: 14px;
 }
 
-#livroRow{
-  background-color:transparent;
+footer {
+    height: 50px;
+    background-color: #000000;
+    min-height: 50px;
+    width: 100%;
+    border-style: solid;
+    border-width: 1px 0px 0px 0px;
+    border-color: rgb(66, 0, 10);
+    box-shadow: 0px 0px 20px black;
 }
 
-#livroColunaImg{
-   background-color:transparent;
-   padding-top:15px;
-   padding-bottom:15px;
-   width:466px;
-   min-width:112px;
+#footerRow {
+    height: 50px;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding-bottom: 5px;
+    max-width: 100%;
+    width: 100%;
+    margin-top: -1px;
 }
 
-#livroImg{
+#footerLetter {
+    width: 21px;
+    height: 21px;
+    padding-right: 0px;
+    padding-left: 0px;
+    max-width: 21px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+#sobreContainer {
+    background-color: #000000;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 987px;
     border-radius: 5px;
-  border-style: solid;
-  border-color: white;
-  border-width: 1px;
+    box-shadow: 0px 0px 15px black;
+
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(66, 0, 10);
 }
 
-#livroImgALV{
-  border-radius: 5px;
-  border-style: solid;
-  border-color: white;
-  border-width: 1px;
+#sobreRow {
+    background-color: transparent;
 }
 
-#livroColunaTexto{
-   background-color:transparent;
-   margin-top:0px;
-   padding-top:30px;
-   padding-bottom:30px;
-   padding-right:30px;
-   padding-left:30px;
+#sobreColunaImg {
+    background-color: transparent;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 466px;
+    min-width: 112px;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 
-#livroTitulo{
-   font-family:'Fira Mono', monospace;
-   color:rgb(255,255,255);
-   font-size:35px;
-}
-
-#livroTexto{
-  font-family:'Fira Mono', monospace;
-  color:rgb(255,255,255);
-  margin-bottom:30px;
-  font-size:14px;
-}
-
-#livroBotao{
-  background-color:rgb(158,11,15);
-  padding-bottom:16px;
-  margin-bottom:0px;
-}
-
-#projetoContainer{
-  background-color:#000000;
-  margin-top:20px;
-  margin-bottom:20px;
-  max-width:987px;
-  border-radius: 5px;
-  box-shadow:0px 0px 15px black;
-}
-
-#projetoRow{
-  background-color:transparent;
-}
-
-#projetoColunaImg{
-  background-color:transparent;
-  padding-top:15px;
-  padding-bottom:15px;
-  width:466px;
-  min-width:112px;
-  padding-right:15px;
-  padding-left:15px;
-}
-
-#projetoImg{
+#sobreImg {
     border-radius: 5px;
-  border-style: solid;
-  border-color: white;
-  border-width: 1px;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
 }
 
-#projetoColunaTexto{
-   background-color:transparent;
-   margin-top:0px;
-   padding-top:30px;
-   padding-bottom:30px;
-   padding-right:30px;
-   padding-left:30px;
+#sobreColunaTexto {
+    background-color: transparent;
+    margin-top: 0px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
 }
 
-#projetoTitulo{
-   font-family:'Fira Mono', monospace;
-   color:rgb(255,255,255);
-   font-size:35px;
+#sobreTexto {
+    font-family: 'Fira Mono', monospace;
+    color: rgb(255, 255, 255);
+    margin-bottom: 0px;
+    font-size: 14px;
 }
 
-#projetoTexto{
-  font-family:'Fira Mono', monospace;
-  color:rgb(255,255,255);
-  margin-bottom:0px;
-  font-size:14px;
-}
-
-#fotosContainer{
-  background-color:#000000;
-  margin-top:20px;
-  margin-bottom:20px;
-  max-width:987px;
-  padding-top:20px;
-  padding-right:20px;
-  padding-bottom:20px;
-  padding-left:20px;
-  border-radius: 5px;
-  box-shadow:0px 0px 15px black;
-}
-
-#fotosRowExterno{
-  background-color:transparent;
-}
-
-#fotosCol{
-  background-color:transparent;
-}
-
-#fotosRowInterno{
-  background-color:transparent;
-  padding-bottom:0px;
-}
-
-#foto{
-  border-radius: 5px !important;
-  margin-bottom: 10px;
-  margin-top: 10px;
-}
-
-#videoContainer{
-  background-color:#000000;
-  margin-top:20px;
-  margin-bottom:20px;
-  max-width:987px;
-  padding-top:20px;
-  padding-right:20px;
-  padding-bottom:20px;
-  padding-left:20px;
-  box-shadow:0px 0px 15px black;
-  border-radius: 5px;
-}
-
-#videoRow{
-  background-color:transparent;
-}
-
-#videoCol{
-  background-color:transparent;
-}
-
-#videoTitulo{
-  color:rgb(255,255,255);
-  font-family:'Fira Mono', monospace;
-  margin-bottom:15px;
-}
-
-#blogContainer{
-  background-color:#000000;
-  margin-top:20px;
-  margin-bottom:20px;
-  max-width:987px;
-  box-shadow:0px 0px 15px black;
-  border-radius: 5px;
-}
-
-#blogRow{
-  background-color:transparent;
-}
-
-#blogColunaImg{
-  background-color:transparent;
-  padding-top:15px;
-  padding-bottom:15px;
-  width:466px;
-  min-width:112px;
-}
-
-#blogImg{
+#livroContainer {
+    background-color: #000000;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 987px;
+    box-shadow: 0px 0px 15px black;
     border-radius: 5px;
-  border-style: solid;
-  border-color: white;
-  border-width: 1px;
+
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(66, 0, 10);
 }
 
-#blogColunaTexto{
-  background-color:transparent;
-  margin-top:0px;
-  padding-top:30px;
-  padding-bottom:30px;
-  padding-right:30px;
-  padding-left:30px;
+#livroRow {
+    background-color: transparent;
 }
 
-#blogTitulo{
-   font-family:'Fira Mono', monospace;
-   color:rgb(255,255,255);
-   font-size:35px;
+#livroColunaImg {
+    background-color: transparent;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 466px;
+    min-width: 112px;
 }
 
-#blogTexto{
-  color:rgb(255,255,255);
-  font-family:'Fira Mono', monospace;
-  font-size:14px;
-}
-
-#botaoAcessar{
-  background-color:rgb(158,11,15);
-  padding-bottom:16px;
-  margin-bottom:0px;
-}
-
-#contatoContainer{
-  background-color:#000000;
-  margin-top:20px;
-  margin-bottom:20px;
-  max-width:987px;
-  box-shadow:0px 0px 15px black;
-  border-radius: 5px;
-}
-
-#contatoRow{
-   background-color:transparent;
-}
-
-#contatoColunaImg{
-  background-color:transparent;
-  padding-top:15px;
-  padding-bottom:15px;
-  width:466px;
-  min-width:112px;
-  padding-right:15px;
-  padding-left:15px;
-}
-
-#contatoImg{
+#livroImg {
     border-radius: 5px;
-  border-style: solid;
-  border-color: white;
-  border-width: 1px;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
 }
 
-#contatoColunaTexto{
-   background-color:transparent;
-   margin-top:0px;
-   padding-top:30px;
-   padding-bottom:30px;
-   padding-right:30px;
-   padding-left:30px;
+#livroImgALV {
+    border-radius: 5px;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
 }
 
-#contatoTexto{
-  font-family:'Fira Mono', monospace;
-  color:rgb(255,255,255);
-  margin-bottom:0px;
-  font-size:14px;
+#livroColunaTexto {
+    background-color: transparent;
+    margin-top: 0px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
 }
 
-.modal-header{
-  background-color: #9e0b0f;
-  border-color: white;
-  border-width: 1px;
-  border-style: solid;
-  font-size: 14px;
+#livroTitulo {
+    font-family: 'Fira Mono', monospace;
+    color: rgb(255, 255, 255);
+    font-size: 35px;
 }
 
-.modal-body{
-  background-color: black;
-  border-color: white;
-  border-width: 1px;
-  border-style: solid;
-  text-align: center;
-  padding-bottom: 0px;
+#livroTexto {
+    font-family: 'Fira Mono', monospace;
+    color: rgb(255, 255, 255);
+    margin-bottom: 30px;
+    font-size: 14px;
 }
 
-.modal-title{
-  font-family:'Fira Mono', monospace;
-  color: white;
+#livroBotao {
+    background-color: rgb(158, 11, 15);
+    padding-bottom: 16px;
+    margin-bottom: 0px;
 }
 
-.modal.fade.bd-example-modal-sm{
+#projetoContainer {
+    background-color: #000000;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 987px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px black;
+
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(66, 0, 10);
+}
+
+#projetoRow {
+    background-color: transparent;
+}
+
+#projetoColunaImg {
+    background-color: transparent;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 466px;
+    min-width: 112px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+#projetoImg {
+    border-radius: 5px;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+}
+
+#projetoColunaTexto {
+    background-color: transparent;
+    margin-top: 0px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+#projetoTitulo {
+    font-family: 'Fira Mono', monospace;
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+}
+
+#projetoTexto {
+    font-family: 'Fira Mono', monospace;
+    color: rgb(255, 255, 255);
+    margin-bottom: 0px;
+    font-size: 14px;
+}
+
+#fotosContainer {
+    background-color: #000000;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 987px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px black;
+
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(66, 0, 10);
+}
+
+#fotosRowExterno {
+    background-color: transparent;
+}
+
+#fotosCol {
+    background-color: transparent;
+}
+
+#fotosRowInterno {
+    background-color: transparent;
+    padding-bottom: 0px;
+}
+
+#foto {
+    border-radius: 5px !important;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#videoContainer {
+    background-color: #000000;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 987px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    box-shadow: 0px 0px 15px black;
+    border-radius: 5px;
+
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(66, 0, 10);
+}
+
+#videoRow {
+    background-color: transparent;
+}
+
+#videoCol {
+    background-color: transparent;
+}
+
+#videoTitulo {
+    color: rgb(255, 255, 255);
+    font-family: 'Fira Mono', monospace;
+    margin-bottom: 15px;
+}
+
+#blogContainer {
+    background-color: #000000;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 987px;
+    box-shadow: 0px 0px 15px black;
+    border-radius: 5px;
+
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(66, 0, 10);
+}
+
+#blogRow {
+    background-color: transparent;
+}
+
+#blogColunaImg {
+    background-color: transparent;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 466px;
+    min-width: 112px;
+}
+
+#blogImg {
+    border-radius: 5px;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+}
+
+#blogColunaTexto {
+    background-color: transparent;
+    margin-top: 0px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+#blogTitulo {
+    font-family: 'Fira Mono', monospace;
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+}
+
+#blogTexto {
+    color: rgb(255, 255, 255);
+    font-family: 'Fira Mono', monospace;
+    font-size: 14px;
+}
+
+#botaoAcessar {
+    background-color: rgb(158, 11, 15);
+    padding-bottom: 16px;
+    margin-bottom: 0px;
+}
+
+#contatoContainer {
+    background-color: #000000;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 987px;
+    box-shadow: 0px 0px 15px black;
+    border-radius: 5px;
+
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(66, 0, 10);
+}
+
+#contatoRow {
+    background-color: transparent;
+}
+
+#contatoColunaImg {
+    background-color: transparent;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 466px;
+    min-width: 112px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+#contatoImg {
+    border-radius: 5px;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+}
+
+#contatoColunaTexto {
+    background-color: transparent;
+    margin-top: 0px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+#contatoTexto {
+    font-family: 'Fira Mono', monospace;
+    color: rgb(255, 255, 255);
+    margin-bottom: 0px;
+    font-size: 14px;
+}
+
+.modal-header {
+    background-color: #9e0b0f;
+    border-color: white;
+    border-width: 1px;
+    border-style: solid;
+    font-size: 14px;
+}
+
+.modal-body {
+    background-color: black;
+    border-color: white;
+    border-width: 1px;
+    border-style: solid;
+    text-align: center;
+    padding-bottom: 0px;
+}
+
+.modal-title {
+    font-family: 'Fira Mono', monospace;
+    color: white;
+}
+
+.modal.fade.bd-example-modal-sm {
     overflow: show;
 }
 
-#linkProfile{
-  text-decoration: none;
+#linkProfile {
+    text-decoration: none;
 }
 
-#profilesLista a{
-  display: block;
-  margin-top: 1px;
-  font-family:'Fira Mono', monospace;
+#profilesLista a {
+    display: block;
+    margin-top: 1px;
+    font-family: 'Fira Mono', monospace;
 }
 
-.modal-content{
-  box-shadow:0px 0px 5px gray;
+.modal-content {
+    box-shadow: 0px 0px 5px gray;
 }
 
 /* FONT */
 
 /* cyrillic-ext */
+
 @font-face {
-  font-family: 'Fira Mono';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Fira Mono Regular'), local('FiraMono-Regular'), url(https://fonts.gstatic.com/s/firamono/v7/N0bX2SlFPv1weGeLZDtgK_7SodY.woff2) format('woff2');
-  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+    font-family: 'Fira Mono';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Fira Mono Regular'), local('FiraMono-Regular'), url(https://fonts.gstatic.com/s/firamono/v7/N0bX2SlFPv1weGeLZDtgK_7SodY.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
+
 /* cyrillic */
+
 @font-face {
-  font-family: 'Fira Mono';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Fira Mono Regular'), local('FiraMono-Regular'), url(https://fonts.gstatic.com/s/firamono/v7/N0bX2SlFPv1weGeLZDtgIv7SodY.woff2) format('woff2');
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+    font-family: 'Fira Mono';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Fira Mono Regular'), local('FiraMono-Regular'), url(https://fonts.gstatic.com/s/firamono/v7/N0bX2SlFPv1weGeLZDtgIv7SodY.woff2) format('woff2');
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
+
 /* greek-ext */
+
 @font-face {
-  font-family: 'Fira Mono';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Fira Mono Regular'), local('FiraMono-Regular'), url(https://fonts.gstatic.com/s/firamono/v7/N0bX2SlFPv1weGeLZDtgKv7SodY.woff2) format('woff2');
-  unicode-range: U+1F00-1FFF;
+    font-family: 'Fira Mono';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Fira Mono Regular'), local('FiraMono-Regular'), url(https://fonts.gstatic.com/s/firamono/v7/N0bX2SlFPv1weGeLZDtgKv7SodY.woff2) format('woff2');
+    unicode-range: U+1F00-1FFF;
 }
+
 /* greek */
+
 @font-face {
-  font-family: 'Fira Mono';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Fira Mono Regular'), local('FiraMono-Regular'), url(https://fonts.gstatic.com/s/firamono/v7/N0bX2SlFPv1weGeLZDtgJf7SodY.woff2) format('woff2');
-  unicode-range: U+0370-03FF;
+    font-family: 'Fira Mono';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Fira Mono Regular'), local('FiraMono-Regular'), url(https://fonts.gstatic.com/s/firamono/v7/N0bX2SlFPv1weGeLZDtgJf7SodY.woff2) format('woff2');
+    unicode-range: U+0370-03FF;
 }
+
 /* latin-ext */
+
 @font-face {
-  font-family: 'Fira Mono';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Fira Mono Regular'), local('FiraMono-Regular'), url(https://fonts.gstatic.com/s/firamono/v7/N0bX2SlFPv1weGeLZDtgKP7SodY.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    font-family: 'Fira Mono';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Fira Mono Regular'), local('FiraMono-Regular'), url(https://fonts.gstatic.com/s/firamono/v7/N0bX2SlFPv1weGeLZDtgKP7SodY.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
+
 /* latin */
+
 @font-face {
-  font-family: 'Fira Mono';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Fira Mono Regular'), local('FiraMono-Regular'), url(https://fonts.gstatic.com/s/firamono/v7/N0bX2SlFPv1weGeLZDtgJv7S.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    font-family: 'Fira Mono';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Fira Mono Regular'), local('FiraMono-Regular'), url(https://fonts.gstatic.com/s/firamono/v7/N0bX2SlFPv1weGeLZDtgJv7S.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
