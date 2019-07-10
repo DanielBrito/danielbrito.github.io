@@ -563,6 +563,7 @@ footer{
 #profilesLista a{
   display: block;
   margin-top: 1px;
+  font-family:'Fira Mono', monospace;
 }
 
 .modal-content{
