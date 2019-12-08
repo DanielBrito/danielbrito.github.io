@@ -14,6 +14,7 @@
 
 .nav-item {
     padding: 10px;
+    font-weight: bold;
 }
 
 .nav-item a {
@@ -25,12 +26,12 @@
     background-color: #993333 !important;
     border-radius: 10px;
     box-shadow: 0px 0px 10px #993333;  /* bright */
+    font-weight: normal;
 }
 
 .nav-item a:link {
     color: #9e0b0f !important;
     text-decoration: none;
-    font-weight: bold;
 }
 
 .nav-item a:visited {
@@ -43,6 +44,7 @@
     background-color: #9e0b0f !important;
     border-radius: 10px;
     box-shadow: 0px 0px 10px #9e0b0f; /* bright */
+    font-weight: normal;
 }
 
 .nav-item a:hover {
