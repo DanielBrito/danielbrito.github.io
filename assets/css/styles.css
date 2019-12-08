@@ -30,6 +30,7 @@
 .nav-item a:link {
     color: #9e0b0f !important;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .nav-item a:visited {
