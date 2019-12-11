@@ -14,11 +14,11 @@
 
 .nav-item {
     padding: 10px;
-    font-weight: bold;
 }
 
 .nav-item a {
     color: white !important;
+    font-weight: bold;
 }
 
 .nav-item a:hover {
