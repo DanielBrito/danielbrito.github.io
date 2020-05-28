@@ -54,6 +54,7 @@
 
 #email, #telegram {
     text-decoration: none;
+    border-bottom: 1px dotted #9e0b0f;
 }
 
 h1 {
@@ -143,8 +144,15 @@ body {
     border-color: rgb(66, 0, 10);
 }
 
+#linkInternoNormal {
+    text-decoration: none;
+}
+
+
 #linkInterno {
     text-decoration: none;
+    border-bottom: 1px dotted #9e0b0f;
+    font-weight: bold;
 }
 
 #apresentacaoRow {
