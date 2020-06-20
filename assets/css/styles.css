@@ -193,6 +193,7 @@ body {
     color: rgb(255, 255, 255);
     margin-bottom: 15px;
     font-size: 14px;
+    line-height: 19px;
 }
 
 footer {
@@ -274,6 +275,7 @@ footer {
     color: rgb(255, 255, 255);
     margin-bottom: 0px;
     font-size: 14px;
+    line-height: 19px;
 }
 
 #livroContainer {
@@ -335,6 +337,7 @@ footer {
     color: rgb(255, 255, 255);
     margin-bottom: 30px;
     font-size: 14px;
+    line-height: 19px;
 }
 
 #livroBotao {
@@ -397,6 +400,7 @@ footer {
     color: rgb(255, 255, 255);
     margin-bottom: 0px;
     font-size: 14px;
+    line-height: 19px;
 }
 
 #fotosContainer {
@@ -579,6 +583,7 @@ footer {
     color: rgb(255, 255, 255);
     margin-bottom: 0px;
     font-size: 14px;
+    line-height: 19px;
 }
 
 #contatoContainer {
@@ -629,6 +634,7 @@ footer {
     color: rgb(255, 255, 255);
     margin-bottom: 0px;
     font-size: 14px;
+    line-height: 19px;
 }
 
 .modal-header {
