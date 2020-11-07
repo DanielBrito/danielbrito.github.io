@@ -135,7 +135,7 @@ body {
     background-color: #000000;
     margin-top: 20px;
     margin-bottom: 20px;
-    max-width: 987px;
+    max-width: 1050px;
     border-radius: 5px;
     box-shadow: 0px 0px 15px black;
 
@@ -165,6 +165,8 @@ body {
     padding-bottom: 15px;
     width: 466px;
     min-width: 112px;
+    justify-content: center;
+    display: flex;
 }
 
 #apresentacaoImg {
@@ -177,8 +179,10 @@ body {
 #apresentacaoColunaTexto {
     background-color: transparent;
     margin-top: 0px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: flex;
+    justify-content: center;
 }
 
 #apresentacaoTitulo {
@@ -191,7 +195,6 @@ body {
 #apresentacaoTexto {
     font-family: 'Fira Mono', monospace;
     color: rgb(255, 255, 255);
-    margin-bottom: 15px;
     font-size: 14px;
     line-height: 19px;
 }
@@ -231,7 +234,7 @@ footer {
     background-color: #000000;
     margin-top: 20px;
     margin-bottom: 20px;
-    max-width: 987px;
+    max-width: 1050px;
     border-radius: 5px;
     box-shadow: 0px 0px 15px black;
 
@@ -282,7 +285,7 @@ footer {
     background-color: #000000;
     margin-top: 20px;
     margin-bottom: 20px;
-    max-width: 987px;
+    max-width: 1050px;
     box-shadow: 0px 0px 15px black;
     border-radius: 5px;
 
@@ -350,7 +353,7 @@ footer {
     background-color: #000000;
     margin-top: 20px;
     margin-bottom: 20px;
-    max-width: 987px;
+    max-width: 1050px;
     border-radius: 5px;
     box-shadow: 0px 0px 15px black;
 
@@ -407,7 +410,7 @@ footer {
     background-color: #000000;
     margin-top: 20px;
     margin-bottom: 20px;
-    max-width: 987px;
+    max-width: 1050px;
     padding-top: 20px;
     padding-right: 20px;
     padding-bottom: 20px;
@@ -443,7 +446,7 @@ footer {
     background-color: #000000;
     margin-top: 20px;
     margin-bottom: 20px;
-    max-width: 987px;
+    max-width: 1050px;
     padding-top: 20px;
     padding-right: 20px;
     padding-bottom: 20px;
@@ -474,7 +477,7 @@ footer {
     background-color: #000000;
     margin-top: 20px;
     margin-bottom: 20px;
-    max-width: 987px;
+    max-width: 1050px;
     box-shadow: 0px 0px 15px black;
     border-radius: 5px;
 
@@ -533,7 +536,7 @@ footer {
     background-color: #000000;
     margin-top: 20px;
     margin-bottom: 20px;
-    max-width: 987px;
+    max-width: 1050px;
     border-radius: 5px;
     box-shadow: 0px 0px 15px black;
 
@@ -590,7 +593,7 @@ footer {
     background-color: #000000;
     margin-top: 20px;
     margin-bottom: 20px;
-    max-width: 987px;
+    max-width: 1050px;
     box-shadow: 0px 0px 15px black;
     border-radius: 5px;
 
