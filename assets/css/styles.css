@@ -188,7 +188,7 @@ body {
 #apresentacaoTitulo {
     font-family: 'Fira Mono', monospace;
     color: rgb(255, 255, 255);
-    margin-top: 15px;
+    margin-top: 5px;
     font-size: 35px;
 }
 
@@ -271,6 +271,12 @@ footer {
     padding-bottom: 30px;
     padding-right: 30px;
     padding-left: 30px;
+}
+
+#sobreTitulo {
+    font-family: 'Fira Mono', monospace;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
 }
 
 #sobreTexto {
@@ -442,23 +448,6 @@ footer {
     margin-top: 10px;
 }
 
-#videoContainer {
-    background-color: #000000;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    max-width: 1050px;
-    padding-top: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-    padding-left: 20px;
-    box-shadow: 0px 0px 15px black;
-    border-radius: 5px;
-
-    border-style: solid;
-    border-width: 1px;
-    border-color: rgb(66, 0, 10);
-}
-
 #videoRow {
     background-color: transparent;
 }
@@ -532,7 +521,7 @@ footer {
     margin-bottom: 0px;
 }
 
-#noticiaContainer {
+#noticiaContainer, #videoContainer {
     background-color: #000000;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -549,7 +538,7 @@ footer {
     background-color: transparent;
 }
 
-#noticiaColunaImg {
+#noticiaColunaImg, #noticiaColunaLegendaVideo, #videoColunaLegenda {
     background-color: transparent;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -566,7 +555,7 @@ footer {
     border-width: 1px;
 }
 
-#noticiaColunaTexto {
+#noticiaColunaTexto, #noticiaColunaVideo, #colunaVideo {
     background-color: transparent;
     margin-top: 0px;
     padding-top: 30px;
@@ -584,6 +573,15 @@ footer {
 #noticiaTexto {
     font-family: 'Fira Mono', monospace;
     color: rgb(255, 255, 255);
+    margin-bottom: 0px;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+#noticiaVideoTexto, #videoTexto {
+    font-family: 'Fira Mono', monospace;
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
     margin-bottom: 0px;
     font-size: 14px;
     line-height: 19px;
