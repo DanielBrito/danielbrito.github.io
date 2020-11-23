@@ -630,6 +630,13 @@ footer {
     padding-left: 30px;
 }
 
+#contatoTitulo {
+    font-family: 'Fira Mono', monospace;
+    color: rgb(255, 255, 255);
+    margin-top: 0px;
+    font-size: 30px;
+}
+
 #contatoTexto {
     font-family: 'Fira Mono', monospace;
     color: rgb(255, 255, 255);
