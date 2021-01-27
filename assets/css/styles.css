@@ -168,7 +168,7 @@ main {
 }
 
 body {
-  background-color: var(--white);
+  background-color: var(--black);
   background-size: auto;
   background-repeat: repeat;
   background-position: top;
