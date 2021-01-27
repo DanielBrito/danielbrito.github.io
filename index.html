@@ -8,159 +8,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daniel Brito</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png"/>
+    <link rel="shortcut icon" type="image/png" href="assets/img/geral/favicon.png"/>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 </head>
 
 <body>
     <div id="container">
-        <nav class="navbar navbar-light navbar-expand-xl sticky-top">
+        <nav class="navbar navbar-light navbar-expand-xl sticky-top" id="nav-bar">
             <div class="container-fluid">
                 <a class="navbar-brand" href="https://danielbrito.github.io">
-                    <img class="float-left" src="assets/img/daniel-brito-monograma.png" id="danielBritoLogo" alt="Daniel Brito logo">
+                    <img class="float-left" src="assets/img/geral/daniel-brito-monograma.png" id="daniel-brito-logo" alt="Daniel Brito logo">
                 </a>
                 <button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1">
-                    <span class="sr-only" id="toggleNav">Toggle navigation</span>
-                    <span class="navbar-toggler-icon text-monospace" id="toggleNavIcon"></span>
+                    <span class="sr-only" id="toggle-nav">Toggle navigation</span>
+                    <span class="navbar-toggler-icon text-monospace" id="toggle-nav-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navcol-1">
                     <ul class="nav navbar-nav ml-auto">
-                        <li class="nav-item" role="presentation"><a class="nav-link active" href="https://danielbrito.github.io"><i class="fa fa-home"></i>INÍCIO</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="sobre.html"><i class="fa fa-user"></i>SOBRE</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="livros.html"><i class="fa fa-book"></i>LIVROS</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="projetos.html"><i class="fa fa-star"></i>PROJETOS</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="fotos.html"><i class="fa fa-photo"></i>FOTOS</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="videos.html"><i class="fa fa-video-camera"></i>VÍDEOS</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="blog.html"><i class="fa fa-pencil-square-o"></i>BLOG</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="midia.html"><i class="fa fa-newspaper-o"></i>MÍDIA</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="contato.html"><i class="fa fa-envelope"></i>CONTATO</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link active" href="https://danielbrito.github.io"><i class="fas fa-home" id="icone-navbar"></i>INÍCIO</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="/sobre"><i class="fas fa-user" id="icone-navbar"></i>SOBRE</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="/livros"><i class="fas fa-book" id="icone-navbar"></i>LIVROS</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="/projetos"><i class="fas fa-lightbulb" id="icone-navbar"></i>PROJETOS</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="/fotos"><i class="fas fa-images" id="icone-navbar"></i>FOTOS</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="/videos"><i class="fas fa-video" id="icone-navbar""></i>VÍDEOS</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="/blog"><i class="fab fa-blogger" id="icone-navbar"></i>BLOG</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="/midia"><i class="fas fa-newspaper" id="icone-navbar"></i>MÍDIA</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="/contato"><i class="fas fa-envelope" id="icone-navbar"></i>CONTATO</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
 
-        <div class="container" id="apresentacaoContainer">
-            <div class="row justify-content-center align-items-center" id="apresentacaoRow">
-                <div class="col-xl-5" id="apresentacaoColunaImg">
-                    <img class="img-fluid" id="apresentacaoImg" src="assets/img/daniel-brito-pinacograma.gif" alt="Daniel Brito pinacograma">
-                </div>
-                <div class="col-xl-7" id="apresentacaoColunaTexto">
-                    <div>
-                        <h1 class="text-center" id="apresentacaoTitulo">
-                            <strong><a id="linkInternoNormal" href="livros.html" title="Saiba mais">A LER VAZIØS</a></strong>
-                        </h1>
-                        <span id="apresentacaoTexto">
-                            <strong>D</strong> <em>iferente de tudo que se esperaria</em><br>
-                            <strong>A</strong> <em>poética em "A Ler Vazios" faz sentir o coração das máquinas</em><br>
-                            <strong>N</strong> <em>ão só o humano, convida ir além</em><br>
-                            <strong>I</strong> <em>mprescindível vislumbrar arte na matemática</em><br>
-                            <strong>E</strong> <em>xperimentações simples e complexas a decifrar</em><br>
-                            <strong>L</strong> <em>iberdade para os sentidos</em><br><br>
-                            <strong>B</strong> <em>rilhantes investigações artísticas de um jovem gênio das ruas</em><br>
-                            <strong>R</strong> <em>efaz cenas, revoluciona, afirma seu lugar no mundo</em><br>
-                            <strong>I</strong> <em>mpetuoso e concreto, Daniel Brito jorra poesia</em><br>
-                            <strong>T</strong> <em>odo diálogo se dará agora na dele em contato com a tua</em><br>
-                            <strong>O</strong> <em>uça e fale, sinta e revele, há poesia em todos os mundos</em><br><br>
-                            - Janaína Moitinho
-                        </span>
-                        </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container" id="apresentacaoContainer">
-            <div class="row justify-content-center align-items-center" id="apresentacaoRow">
-                <div class="col-md-6 col-xl-5" id="apresentacaoColunaImg">
-                    <img class="img-fluid" id="apresentacaoImg" src="assets/img/cooperifa.jpg" alt="Daniel Brito Cooperifa">
-                </div>
-                <div class="col-md-6 col-xl-7" id="apresentacaoColunaTexto">
-                    <div >
-                        <p class="text-center" id="apresentacaoTexto">
-                            <em>"Para a maioria dos existencialistas, dois eram os modos privilegiados dos humanos aceitarem e enfrentarem sua finitude: através das artes e da ação político-revolucionária. Nestas formas excepcionais da atividade, eles seriam capazes de dar sentido à brevidade de suas vidas."</em><br><br><strong><a id="linkInternoNormal" href="livros.html" title="Saiba mais">- Sophia (PROTESTIZANDO - BIÊNIO POÉTICO)</a></strong>
-                        </p>
+        <main>
+            <div class="container" id="conteudo-container">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-xl-5" id="inicio-coluna-img">
+                        <img class="img-fluid" id="inicio-pinacograma" src="assets/img/inicio/daniel-brito-pinacograma.gif" alt="Daniel Brito pinacograma">
+                    </div>
+                    <div class="col-xl-7" id="inicio-coluna-descricao">
+                        <a href="/projetos" id="link-inicio" title="Saiba mais"><p id="descricao-desenvolvedor"><i id="icone-desenvolvedor" class="fas fa-code"></i> Desenvolvedor</p></a>
+                        <a href="/projetos" id="link-inicio" title="Saiba mais"><p id="descricao-artista"><i id="icone-artista" class="fas fa-palette"></i> Artista Visual</p></a>
+                        <a href="/livros" id="link-inicio" title="Saiba mais"><p id="descricao-escritor"><i id="icone-escritor" class="fas fa-pen-nib"></i> Escritor</p></a>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <div class="container" id="apresentacaoContainer">
-            <div class="row justify-content-center align-items-center" id="apresentacaoRow">
-                <div class="col-md-6 col-xl-5" id="apresentacaoColunaImg">
-                    <img class="img-fluid" id="apresentacaoImg" src="assets/img/teorema-poesia-visual-alessa-melo.jpg" alt="Daniel Brito Sobrenome Liberdade">
-                </div>
-                <div class="col-md-6 col-xl-7" id="apresentacaoColunaTexto">
-                    <div>
-                        <p class="text-center" id="apresentacaoTexto">
-                            <em>"Com vinte e poucos anos, Daniel Brito, um diamante que se lapida ao dizer sim à poesia! Com o livro se compromete, pela segunda vez na vida, a contento com o que ouso dizer: poesia pós-neoconcreta. Hercúleo objetivo que nunca foi uma loucura. Sem prazos de leituras ou cobranças infindáveis."</em><br><br><strong><a id="linkInternoNormal" href="livros.html" title="Saiba mais">- Antonio Miotto (A LER VAZIOS)</a></strong>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container" id="apresentacaoContainer">
-            <div class="row justify-content-center align-items-center" id="apresentacaoRow">
-                <div class="col-md-6 col-xl-5" id="apresentacaoColunaImg">
-                    <img class="img-fluid" id="apresentacaoImg" src="assets/img/sarau-do-grajau-daniel-alexandrino.jpg" alt="Daniel Brito Sarau do Grajaú">
-                </div>
-                <div class="col-md-6 col-xl-7" id="apresentacaoColunaTexto">
-                    <div>
-                        <p class="text-center" id="apresentacaoTexto">
-                            <em>"Daniel Brito é um nome que surge na cena poética periférica, mas que já é cidadão do mundo, tamanho o alcance da sua capacidade literária. E o mais incrível é que ele está bem aqui, contemporâneo nosso, e veio para ficar."</em><br><br><strong><a id="linkInternoNormal" href="livros.html" title="Saiba mais">- Edilene Santos (A LER VAZIOS)</a></strong><br>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container" id="apresentacaoContainer">
-            <div class="row justify-content-center align-items-center" id="apresentacaoRow">
-                <div class="col-md-6 col-xl-5" id="apresentacaoColunaImg">
-                    <img class="img-fluid" id="apresentacaoImg" src="assets/img/sobrenome-liberdade-alessa-melo.jpg" alt="Daniel Brito Sobrenome Liberdade">
-                </div>
-                <div class="col-md-6 col-xl-7" id="apresentacaoColunaTexto">
-                    <div >
-                    <p class="text-center" id="apresentacaoTexto">
-                        <em>"Cada texto traz o modo de ser lido. Descobrir esse código será o principal desafio do leitor que, mantendo sua liberdade, vai precisar de um bom repertório para essa decodificação... O mérito fica para o autor que domina todas essas linguagens e conseguiu que a próxima página reservasse sempre uma surpresa."</em><br><br><strong><a id="linkInternoNormal" href="livros.html" title="Saiba mais">- Léssio Lima Cardoso (A LER VAZIOS)</a></strong>
-                    </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container" id="apresentacaoContainer">
-            <div class="row justify-content-center align-items-center" id="apresentacaoRow">
-                <div class="col-md-6 col-xl-5" id="apresentacaoColunaImg">
-                    <img class="img-fluid" id="apresentacaoImg" src="assets/img/sarau-do-grajau-johnny-nogueira.jpg" alt="Daniel Brito Sarau do Grajaú">
-                </div>
-                <div class="col-md-6 col-xl-7" id="apresentacaoColunaTexto">
-                    <div>
-                        <p class="text-center" id="apresentacaoTexto">
-                            <em>"O poeta em questão se torna um arquiteto de pontes para que os leitores tenham acesso à toda sua criatividade. E posso garantir aos futuros aventureiros e aventureiras: cada folha é um cartão postal para os olhos de pessoas famintas por estética visual e conteúdo linguístico."</em><br><br><strong><a id="linkInternoNormal" href="livros.html" title="Saiba mais">- Casulo (A LER VAZIOS)</a></strong>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <footer>
-            <div class="row no-gutters justify-content-center" id="footerRow">
-                <div class="col align-self-center" id="footerLetter"><img src="assets/img/d_footer.jpg"></div>
-                <div class="col align-self-center" id="footerLetter"><img src="assets/img/n_footer.jpg"></div>
-                <div class="col align-self-center" id="footerLetter"><img src="assets/img/l_footer.jpg"></div>
-                <div class="col align-self-center" id="footerLetter"><img src="assets/img/symbol_footer.jpg"></div>
-                <div class="col align-self-center" id="footerLetter"><img src="assets/img/b_footer.jpg"></div>
-                <div class="col align-self-center" id="footerLetter"><img src="assets/img/r_footer.jpg"></div>
-                <div class="col align-self-center" id="footerLetter"><img src="assets/img/t_footer.jpg"></div>
-            </div>
-        </footer>
+        </main>
     </div>
+
+    <footer>
+        <div class="row no-gutters justify-content-center" id="footer-linha">
+            <span class="footer-letra">D</span>
+            <span class="footer-letra">N</span>
+            <span class="footer-letra">L</span>
+            <span class="footer-simbolo"><a id="creative-commons" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener noreferrer" title="Licença Creative Commons">ɔ</a></span>
+            <span class="footer-letra">B</span>
+            <span class="footer-letra">R</span>
+            <span class="footer-letra">T</span>
+        </div>
+    </footer>
     
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/script.js"></script>
 
 </body>
-
 </html>
