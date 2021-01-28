@@ -160,6 +160,8 @@ main {
 html,
 body {
   margin: 0;
+  scroll-behavior: smooth;
+  cursor: alias;
 }
 
 main {
@@ -702,6 +704,75 @@ a:active {
 }
 
 /* Design da interface (PROJETOS): */
+
+#categorias-wrapper {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#categorias {
+  width: 500px;
+  max-width: 500px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.categoria {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  background-color: var(--black);
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--red-wine-primary);
+  border-radius: 50%;
+  box-shadow: 0px 0px 15px var(--black);
+  transition: all 0.2s ease-in-out;
+}
+
+.categoria:hover {
+  transform: scale(1.05);
+}
+
+.link-categoria {
+  text-decoration: none !important;
+}
+
+#icone-tecnologia,
+#icone-educacao,
+#icone-arte {
+  transform: scale(2);
+  transition: all 0.2s ease-in-out;
+  color: var(--red-wine-primary);
+}
+
+#icone-tecnologia:hover,
+#icone-educacao:hover,
+#icone-arte:hover {
+  transform: scale(2.3);
+}
+
+.categoria:hover {
+  box-shadow: 0px 0px 3px var(--red-wine-primary);
+  cursor: pointer;
+}
+
+#divisor-categoria {
+  margin-top: 20px;
+  margin-bottom: -5px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 #projeto-coluna-img {
   background-color: transparent;
