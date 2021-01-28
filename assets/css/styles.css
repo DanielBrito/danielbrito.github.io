@@ -646,7 +646,7 @@ a:active {
   color: var(--white);
   margin-bottom: 30px;
   font-size: 14px;
-  line-height: 19px;
+  line-height: 20px;
 }
 
 #divisor {
@@ -689,7 +689,7 @@ a:active {
   font-family: "Fira Mono", monospace;
   color: var(--white);
   font-size: 14px;
-  line-height: 19px;
+  line-height: 20px;
   text-align: center;
 }
 
@@ -748,7 +748,7 @@ a:active {
   color: var(--white);
   margin-bottom: 0px;
   font-size: 14px;
-  line-height: 19px;
+  line-height: 20px;
 }
 
 /* Design da interface (FOTOS): */
@@ -779,7 +779,7 @@ a:active {
   margin-top: 20px;
   margin-bottom: 10px;
   font-size: 14px;
-  line-height: 19px;
+  line-height: 20px;
 }
 
 #coluna-video {
@@ -870,7 +870,7 @@ a:active {
   color: var(--white);
   margin-bottom: 0px;
   font-size: 14px;
-  line-height: 19px;
+  line-height: 20px;
 }
 
 #noticia-coluna-video {
@@ -889,7 +889,7 @@ a:active {
   margin-top: 20px;
   margin-bottom: 10px;
   font-size: 14px;
-  line-height: 19px;
+  line-height: 20px;
 }
 
 /* Design da interface (CONTATO): */
@@ -937,7 +937,7 @@ a:active {
   color: rgb(255, 255, 255);
   margin-bottom: 0px;
   font-size: 14px;
-  line-height: 19px;
+  line-height: 20px;
 }
 
 #email,
