@@ -4,7 +4,7 @@ const container = document.getElementById("container");
 
 let bar = document.createElement("div");
 
-bar.style.height = "2px";
+bar.style.height = "1px";
 bar.style.width = "0";
 bar.style.backgroundColor = "#9e0b0f";
 bar.style.position = "fixed";
