@@ -4,11 +4,11 @@ const container = document.getElementById("container");
 
 let bar = document.createElement("div");
 
-bar.style.height = "3px";
+bar.style.height = "2px";
 bar.style.width = "0";
 bar.style.backgroundColor = "#9e0b0f";
 bar.style.position = "fixed";
-bar.style.top = "78px";
+bar.style.top = "0px";
 bar.style.left = "0";
 bar.style.zIndex = "9999";
 bar.style.transition = "0.1s";
