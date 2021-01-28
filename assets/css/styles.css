@@ -458,7 +458,7 @@ a:active {
   font-size: 2rem;
   color: var(--white);
   text-shadow: 0 0 10px var(--black);
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   transition: all 0.2s ease-in-out;
   z-index: 10;
 
