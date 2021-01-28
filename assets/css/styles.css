@@ -416,11 +416,10 @@ a:active {
 
 #inicio-coluna-descricao {
   padding-top: 25px;
-  padding-bottom: 25px;
+  padding-bottom: 35px;
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: space-evenly;
 }
 
 #descricao-desenvolvedor:hover,
@@ -438,8 +437,10 @@ a:active {
   font-family: "Source Code Pro", monospace;
   font-size: 2rem;
   color: var(--white);
-  margin-bottom: 30px;
+  text-shadow: 0 0 10px var(--black);
   transition: all 0.2s ease-in-out;
+  z-index: 10;
+  margin-bottom: 50px;
 
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */
@@ -456,8 +457,10 @@ a:active {
   font-family: "Allerta Stencil", sans-serif;
   font-size: 2rem;
   color: var(--white);
-  margin-bottom: 30px;
+  text-shadow: 0 0 10px var(--black);
+  margin-bottom: 50px;
   transition: all 0.2s ease-in-out;
+  z-index: 10;
 
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */
@@ -474,8 +477,10 @@ a:active {
   font-family: "Cedarville Cursive", cursive;
   font-size: 2.3rem;
   color: var(--white);
+  text-shadow: 0 0 10px var(--black);
   margin-bottom: 0;
   transition: all 0.2s ease-in-out;
+  z-index: 10;
 
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */
@@ -485,8 +490,71 @@ a:active {
   user-select: none; /* Non-prefixed version, currently */
 }
 
-#link-inicio {
+#icone-desenvolvedor {
+  color: var(--red-wine-primary);
+  position: absolute;
+  z-index: 0;
+  animation: pulse 1.5s infinite;
+  margin-top: -40px;
+}
+
+#icone-artista {
+  color: var(--red-wine-primary);
+  position: absolute;
+  z-index: 0;
+  animation: pulse 1.5s infinite;
+  margin-top: -40px;
+}
+
+#icone-escritor {
+  color: var(--red-wine-primary);
+  position: absolute;
+  z-index: 0;
+  animation: pulse 1.5s infinite;
+  margin-top: 5px;
+}
+
+#perfil-desenvolvedor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
   text-decoration: none;
+}
+
+#perfil-artista {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  text-decoration: none;
+}
+
+#perfil-escritor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(4);
+    text-shadow: 0 0 1px var(--red-text-bright);
+  }
+
+  70% {
+    transform: scale(5);
+    text-shadow: 0 0 1px var(--red-text-bright);
+  }
+
+  100% {
+    transform: scale(4);
+    text-shadow: 0 0 1px var(--red-text-bright);
+  }
 }
 
 /* Design da interface (SOBRE): */
