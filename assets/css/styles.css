@@ -768,6 +768,7 @@ a:active {
   font-family: "Fira Mono", monospace;
   color: var(--white);
   font-size: 25px;
+  text-shadow: 0 0 5px var(--black);
 }
 
 #sobre-texto {
@@ -776,6 +777,7 @@ a:active {
   margin-bottom: 0px;
   font-size: 14px;
   line-height: 20px;
+  text-shadow: 0 0 5px var(--black);
 }
 
 /* Design da interface (LIVROS): */
@@ -846,6 +848,7 @@ a:active {
   font-family: "Fira Mono", monospace;
   color: var(--white);
   font-size: 25px;
+  text-shadow: 0 0 5px var(--black);
 }
 
 #livro-descricao {
@@ -854,6 +857,7 @@ a:active {
   margin-bottom: 30px;
   font-size: 14px;
   line-height: 20px;
+  text-shadow: 0 0 5px var(--black);
 }
 
 #divisor {
@@ -899,6 +903,7 @@ a:active {
   font-size: 14px;
   line-height: 20px;
   text-align: center;
+  text-shadow: 0 0 5px var(--black);
 }
 
 #nome-revisor {
@@ -907,6 +912,7 @@ a:active {
   justify-content: center;
   font-weight: bold;
   color: var(--white);
+  text-shadow: 0 0 5px var(--black);
 }
 
 .aspas-esquerda-wrapper {
@@ -1079,6 +1085,7 @@ a:active {
   font-family: "Fira Mono", monospace;
   color: var(--white);
   font-size: 25px;
+  text-shadow: 0 0 5px var(--black);
 }
 
 #projeto-descricao {
@@ -1087,6 +1094,7 @@ a:active {
   margin-bottom: 0px;
   font-size: 14px;
   line-height: 20px;
+  text-shadow: 0 0 5px var(--black);
 }
 
 /* Design da interface (FOTOS): */
@@ -1144,6 +1152,7 @@ a:active {
   margin-bottom: 10px;
   font-size: 14px;
   line-height: 20px;
+  text-shadow: 0 0 5px var(--black);
 }
 
 @media only screen and (max-width: 767px) {
@@ -1234,12 +1243,14 @@ a:active {
   font-family: "Fira Mono", monospace;
   color: var(--white);
   font-size: 35px;
+  text-shadow: 0 0 5px var(--black);
 }
 
 #blog-descricao {
   color: var(--white);
   font-family: "Fira Mono", monospace;
   font-size: 14px;
+  text-shadow: 0 0 5px var(--black);
 }
 
 /* Design da interface (MÍDIA): */
@@ -1301,6 +1312,7 @@ a:active {
   margin-bottom: 0px;
   font-size: 14px;
   line-height: 20px;
+  text-shadow: 0 0 5px var(--black);
 }
 
 #noticia-coluna-video {
@@ -1331,6 +1343,7 @@ a:active {
   margin-bottom: 10px;
   font-size: 14px;
   line-height: 20px;
+  text-shadow: 0 0 5px var(--black);
 }
 
 @media only screen and (max-width: 767px) {
@@ -1418,6 +1431,7 @@ a:active {
   color: rgb(255, 255, 255);
   margin-top: 0px;
   font-size: 30px;
+  text-shadow: 0 0 5px var(--black);
 }
 
 #contato-texto {
@@ -1426,6 +1440,7 @@ a:active {
   margin-bottom: 0px;
   font-size: 14px;
   line-height: 20px;
+  text-shadow: 0 0 5px var(--black);
 }
 
 #email,
