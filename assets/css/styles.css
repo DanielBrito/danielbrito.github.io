@@ -787,7 +787,7 @@ a:active {
   box-shadow: 0px 0px 5px var(--black);
   border-radius: 50%;
   border-style: solid;
-  border-color: var(--red-text-bright);
+  border-color: var(--black);
   border-width: 1px;
 }
 
