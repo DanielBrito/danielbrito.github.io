@@ -79,7 +79,7 @@
   --container-background: rgba(0, 0, 0, 0.9);
   --container-background-alpha: rgba(0, 0, 0, 0.8);
   --black: #000;
-  --scrollbar-background: rgba(0, 0, 0, 0.9);
+  --scrollbar-background: rgba(20, 20, 20, 0.7);
   --scrollbar-bar: #444;
   --white: #fff;
   --footer-letter-shadow: rgba(0, 0, 0, 0.6);
@@ -204,6 +204,17 @@ a:active {
   width: 100%;
 }
 
+#nav-wrapper {
+  width: 100%;
+  box-shadow: 0px 0px 20px var(--black), 0px 0px 20px var(--black);
+  background-color: var(--black);
+  display: flex;
+  justify-content: center;
+  border-style: solid;
+  border-width: 0px 0px 1px 0px;
+  border-color: var(--red-wine-primary);
+}
+
 #icone-navbar {
   margin-right: 5px;
   margin-left: 0px;
@@ -213,10 +224,10 @@ a:active {
 .navbar.navbar-light.navbar-expand-xl.sticky-top {
   box-shadow: 0px 0px 20px var(--black), 0px 0px 20px var(--black);
   background-color: var(--black);
-  padding-left: 21px;
+  padding-left: 20px;
   padding-top: 7px;
   padding-bottom: 7px;
-  width: 100%;
+  max-width: 1350px;
   font-family: "Fira Mono", monospace;
   border-style: solid;
   border-width: 0px 0px 1px 0px;
@@ -224,7 +235,8 @@ a:active {
 }
 
 .nav-item {
-  padding: 10px;
+  padding: 10px 6px 10px 6px;
+  font-size: 15px;
 }
 
 .nav-item a {
@@ -394,10 +406,44 @@ a:active {
 
 /* Design da interface (INICIO): */
 
+#inicio-conteudo-container {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  max-width: 1050px;
+  border-radius: 5px 5px 50% 50%;
+  box-shadow: 0px 0px 15px var(--black);
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--red-wine-primary);
+  background-color: var(--container-background);
+}
+
+@media only screen and (max-width: 1200px) {
+  #inicio-conteudo-container {
+    border-radius: 5px 5px 45% 45%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  #inicio-conteudo-container {
+    border-radius: 5px 5px 45% 45%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #inicio-conteudo-container {
+    border-radius: 5px 5px 40% 40%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #inicio-conteudo-container {
+    border-radius: 5px 5px 30px 30px;
+  }
+}
+
 #inicio-coluna-img {
   background-color: transparent;
-  padding-top: 15px;
-  padding-bottom: 15px;
   width: 466px;
   min-width: 112px;
   justify-content: center;
@@ -405,20 +451,56 @@ a:active {
 }
 
 #inicio-pinacograma {
-  border-radius: 5px;
-  border-style: solid;
-  border-color: var(--white);
-  border-width: 1px;
   transition: all 0.2s ease-in-out;
+  transform: scale(0.9);
 }
 
-#inicio-pinacograma:hover {
-  transform: scale(1.01);
+#inicio-row-pinacograma {
+  margin-top: 10px;
 }
 
-#inicio-coluna-descricao {
-  padding-top: 25px;
-  padding-bottom: 35px;
+#inicio-row-nome {
+  margin-top: -30px;
+  margin-bottom: -10px;
+}
+
+#row-profiles {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-top: 50px;
+  background-color: var(--container-background-alpha);
+  border-radius: 20px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--red-wine-primary);
+  box-shadow: 0px 0px 4px var(--red-wine-primary);
+}
+
+@media only screen and (max-width: 1199px) {
+  #row-profiles {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    background-color: transparent;
+    border-color: transparent;
+    border-style: none;
+    border-width: 0px;
+    box-shadow: none;
+  }
+}
+
+#coluna-profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#inicio-coluna-pinacograma {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -442,7 +524,8 @@ a:active {
   text-shadow: 0 0 10px var(--black);
   transition: all 0.2s ease-in-out;
   z-index: 10;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  margin-top: 30px;
 
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */
@@ -460,9 +543,10 @@ a:active {
   font-size: 2rem;
   color: var(--white);
   text-shadow: 0 0 10px var(--black);
-  margin-bottom: 40px;
   transition: all 0.2s ease-in-out;
   z-index: 10;
+  margin-bottom: 30px;
+  margin-top: 30px;
 
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */
@@ -477,12 +561,14 @@ a:active {
   flex-direction: column;
   text-align: center;
   font-family: "Cedarville Cursive", cursive;
-  font-size: 2.3rem;
+  font-size: 2.35rem;
   color: var(--white);
   text-shadow: 0 0 10px var(--black);
   margin-bottom: 0;
   transition: all 0.2s ease-in-out;
   z-index: 10;
+  margin-bottom: 30px;
+  margin-top: 30px;
 
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */
@@ -492,23 +578,43 @@ a:active {
   user-select: none; /* Non-prefixed version, currently */
 }
 
+@media only screen and (max-width: 1199px) {
+  #descricao-escritor,
+  #descricao-desenvolvedor,
+  #descricao-artista {
+    margin-bottom: 40px;
+    margin-top: 40px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  #descricao-escritor,
+  #descricao-desenvolvedor,
+  #descricao-artista {
+    margin-bottom: 40px;
+    margin-top: 40px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #descricao-escritor,
+  #descricao-desenvolvedor,
+  #descricao-artista {
+    margin-bottom: 40px;
+    margin-top: 40px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #descricao-escritor,
+  #descricao-desenvolvedor,
+  #descricao-artista {
+    margin-bottom: 40px;
+    margin-top: 40px;
+  }
+}
+
 #icone-desenvolvedor {
-  color: var(--red-wine-primary);
-  position: absolute;
-  z-index: 0;
-  animation: pulse 1.5s infinite;
-  margin-top: -40px;
-}
-
-#icone-artista {
-  color: var(--red-wine-primary);
-  position: absolute;
-  z-index: 0;
-  animation: pulse 1.5s infinite;
-  margin-top: -40px;
-}
-
-#icone-escritor {
   color: var(--red-wine-primary);
   position: absolute;
   z-index: 0;
@@ -516,12 +622,27 @@ a:active {
   margin-top: 5px;
 }
 
+#icone-artista {
+  color: var(--red-wine-primary);
+  position: absolute;
+  z-index: 0;
+  animation: pulse 1.5s infinite;
+  margin-top: 3px;
+}
+
+#icone-escritor {
+  color: var(--red-wine-primary);
+  position: absolute;
+  z-index: 0;
+  animation: pulse 1.5s infinite;
+  margin-bottom: 0px;
+}
+
 #perfil-desenvolvedor {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
   text-decoration: none;
 }
 
@@ -530,7 +651,6 @@ a:active {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
   text-decoration: none;
 }
 
@@ -685,6 +805,7 @@ a:active {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
 }
 
 #texto-revisor {
@@ -701,6 +822,34 @@ a:active {
   justify-content: center;
   font-weight: bold;
   color: var(--white);
+}
+
+.aspas-esquerda-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+}
+
+#aspas-esquerda {
+  z-index: -1;
+  color: var(--red-wine-primary);
+  transform: scale(3);
+  margin-left: 10px;
+  margin-top: 8px;
+}
+
+.aspas-direita-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10px;
+  margin-bottom: 8px;
+}
+
+#aspas-direita {
+  z-index: -1;
+  color: var(--red-wine-primary);
+  transform: scale(3);
 }
 
 /* Design da interface (PROJETOS): */
@@ -726,8 +875,8 @@ a:active {
   justify-content: center;
   align-items: center;
   position: relative;
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
   background-color: var(--black);
   border-width: 1px;
   border-style: solid;
@@ -765,8 +914,8 @@ a:active {
 }
 
 #divisor-categoria {
-  margin-top: 20px;
-  margin-bottom: -5px;
+  margin-top: 10px;
+  margin-bottom: -15px;
   width: 100%;
   display: flex;
   flex-direction: column;
