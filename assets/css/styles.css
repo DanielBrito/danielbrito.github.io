@@ -206,7 +206,7 @@ a:active {
 
 #nav-wrapper {
   width: 100%;
-  box-shadow: 0px 0px 20px var(--black), 0px 0px 20px var(--black);
+  box-shadow: 0px 0px 10px var(--black), 0px 0px 5px var(--black);
   background-color: var(--black);
   display: flex;
   justify-content: center;
@@ -445,7 +445,7 @@ a:active {
   }
 }
 
-#scroll {
+#pinacograma {
   position: absolute;
   margin-top: 420px;
 }
@@ -466,12 +466,6 @@ a:active {
 
 #inicio-nome:hover {
   transform: scale(0.96);
-}
-
-#inicio-pinacograma-background {
-  transform: scale(0.9);
-  position: absolute;
-  z-index: -1;
 }
 
 #inicio-row-pinacograma {
@@ -913,6 +907,10 @@ a:active {
   font-weight: bold;
   color: var(--white);
   text-shadow: 0 0 5px var(--black);
+}
+
+#letra-acrostico {
+  text-shadow: 0 0 3px var(--red-text-bright);
 }
 
 .aspas-esquerda-wrapper {
