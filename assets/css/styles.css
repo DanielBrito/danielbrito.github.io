@@ -110,7 +110,7 @@
   border-radius: 10px;
 }
 
-/* Efeito fade in: */
+/* Efeito fade in dos containeres: */
 
 main {
   animation: fadein 0.5s;
@@ -226,10 +226,10 @@ a:active {
   background-color: var(--black);
   padding-left: 20px;
   padding-top: 7px;
-  padding-bottom: 3px;
+  padding-bottom: 2px;
   max-width: 1350px;
   font-family: "Fira Mono", monospace;
-  margin-bottom: 5px;
+  margin-bottom: 6px;
 }
 
 .nav-item {
@@ -366,6 +366,11 @@ a:active {
   border-style: dashed;
   border-width: 1px 1px 1px 1px;
   border-color: var(--red-wine-primary);
+  transition: all 0.2s ease-in-out;
+}
+
+.footer-simbolo:hover {
+  transform: scale(1.1);
 }
 
 #creative-commons {
@@ -750,11 +755,6 @@ a:active {
   border-style: solid;
   border-color: var(--white);
   border-width: 1px;
-  transition: all 0.2s ease-in-out;
-}
-
-#sobre-img:hover {
-  transform: scale(1.01);
 }
 
 #sobre-titulo {
@@ -800,11 +800,6 @@ a:active {
   border-style: solid;
   border-color: var(--white);
   border-width: 1px;
-  transition: all 0.2s ease-in-out;
-}
-
-#livro-img:hover {
-  transform: scale(1.01);
 }
 
 #livro-coluna-descricao {
@@ -861,16 +856,45 @@ a:active {
   align-items: center;
 }
 
-.ponto {
-  width: 7px;
-  height: 7px;
-  margin-bottom: 5px;
-  background-color: var(--red-wine-primary);
-  box-shadow: 0px 0px 5px var(--black);
+#icone-revisao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 30px;
+  background-color: var(--black);
   border-radius: 50%;
+  transform: scale(1.1);
+  margin-top: 2px;
+  margin-bottom: 7px;
+  color: var(--red-wine-primary);
   border-style: solid;
-  border-color: var(--black);
   border-width: 1px;
+  border-color: var(--red-wine-primary);
+  box-shadow: 0 0 5px var(--black);
+  transition: all 0.2s ease-in-out;
+}
+
+#icone-revisao:hover {
+  transform: scale(1.2);
+}
+
+#seta-simples {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  width: 20px;
+  background-color: var(--black);
+  border-radius: 0 0 50% 50%;
+  transform: scale(1.1);
+  margin-top: 2px;
+  margin-bottom: 7px;
+  color: var(--red-wine-primary);
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--red-wine-primary);
+  box-shadow: 0 0 5px var(--black);
 }
 
 #revisao-container {
@@ -963,8 +987,8 @@ a:active {
 }
 
 #categorias {
-  width: 500px;
-  max-width: 500px;
+  width: 450px;
+  max-width: 450px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -996,6 +1020,7 @@ a:active {
 
 #icone-tecnologia,
 #icone-educacao,
+#icone-poesia,
 #icone-arte {
   transform: scale(2);
   transition: all 0.2s ease-in-out;
@@ -1004,6 +1029,7 @@ a:active {
 
 #icone-tecnologia:hover,
 #icone-educacao:hover,
+#icone-poesia:hover,
 #icone-arte:hover {
   transform: scale(2.3);
 }
@@ -1041,11 +1067,6 @@ a:active {
   border-style: solid;
   border-color: var(--white);
   border-width: 1px;
-  transition: all 0.2s ease-in-out;
-}
-
-#projeto-img:hover {
-  transform: scale(1.01);
 }
 
 #projeto-coluna-descricao {
@@ -1094,6 +1115,37 @@ a:active {
   text-shadow: 0 0 5px var(--black);
 }
 
+#descricao-fora-da-caixa-wrapper {
+  width: 100%;
+}
+
+.label-categoria {
+  position: absolute;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  background-color: var(--red-wine-primary);
+  clip-path: circle(100% at 0 0);
+  z-index: 10;
+  width: 50px;
+  height: 50px;
+  box-shadow: 5px 5px 5px var(--black);
+  margin-left: 1px;
+  margin-top: 1px;
+  border-radius: 5px 0 0 0;
+}
+
+#icone-label {
+  margin-right: 21px;
+  margin-bottom: 22px;
+  color: var(--white);
+  transition: all 0.2s ease-in-out;
+}
+
+#icone-label:hover {
+  transform: scale(1.2);
+}
+
 /* Design da interface (FOTOS): */
 
 #fotos-grid {
@@ -1114,7 +1166,7 @@ a:active {
 }
 
 #foto:hover {
-  transform: scale(1.05);
+  transform: scale(1.025);
 }
 
 /* Design da interface (VÍDEOS): */
@@ -1199,11 +1251,6 @@ a:active {
   border-style: solid;
   border-color: var(--white);
   border-width: 1px;
-  transition: all 0.2s ease-in-out;
-}
-
-#blog-img:hover {
-  transform: scale(1.01);
 }
 
 #blog-coluna-descricao {
@@ -1279,11 +1326,6 @@ a:active {
   border-style: solid;
   border-color: var(--white);
   border-width: 1px;
-  transition: all 0.2s ease-in-out;
-}
-
-#noticia-img:hover {
-  transform: scale(1.01);
 }
 
 #noticia-coluna-descricao {
@@ -1386,11 +1428,6 @@ a:active {
   border-style: solid;
   border-color: white;
   border-width: 1px;
-  transition: all 0.2s ease-in-out;
-}
-
-#contato-img:hover {
-  transform: scale(1.01);
 }
 
 #contato-coluna-texto {
