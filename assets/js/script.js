@@ -1,4 +1,4 @@
-/* Barra de status de leitura: */
+/* Reading status: */
 
 const container = document.getElementById("container");
 
@@ -31,3 +31,23 @@ function updateBar() {
 window.addEventListener("load", () => {
   document.addEventListener("scroll", updateBar);
 });
+
+/* Hiding navbar on scroll: */
+
+var prevScrollpos = window.pageYOffset;
+
+window.onscroll = function() {
+
+  var currentScrollPos = window.pageYOffset;
+
+  if (prevScrollpos > currentScrollPos) {
+
+    document.getElementById("nav-wrapper").style.top = "0";
+  } 
+  else {
+
+    document.getElementById("nav-wrapper").style.top = "-100px";
+  }
+
+  prevScrollpos = currentScrollPos;
+}
