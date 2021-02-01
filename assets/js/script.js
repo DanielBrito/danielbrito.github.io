@@ -41,13 +41,28 @@ window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
 
   if (prevScrollpos > currentScrollPos) {
-
     document.getElementById("nav-wrapper").style.top = "0";
   } 
   else {
-
     document.getElementById("nav-wrapper").style.top = "-100px";
   }
 
   prevScrollpos = currentScrollPos;
 }
+
+/* Back to top button: */
+
+var btn = $('#top-button');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 200) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '200');
+});
