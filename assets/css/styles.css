@@ -162,7 +162,6 @@ main {
   background-color: var(--red-wine-primary);
   width: 40px;
   height: 40px;
-  text-align: center;
   justify-content: center;
   align-items: center;
   border-radius: 10px;
@@ -175,12 +174,8 @@ main {
   z-index: 1000;
 }
 
-#top-button::after {
-  content: "\f077";
-  font-family: FontAwesome;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 20px;
+#top-icon {
+  transform: scale(2);
   color: var(--white);
   opacity: 0.7;
 }
@@ -201,8 +196,6 @@ main {
 
 @media only screen and (max-width: 920px) {
   #top-button {
-    width: 40px;
-    height: 40px;
     bottom: 15px;
     right: 15px;
   }
