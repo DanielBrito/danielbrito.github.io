@@ -991,11 +991,6 @@ a:active {
   border-color: var(--red-wine-primary);
   border-radius: 50%;
   box-shadow: 0px 0px 15px var(--black);
-  transition: all 0.2s ease-in-out;
-}
-
-.categoria:hover {
-  transform: scale(1.05);
 }
 
 .link-categoria {
