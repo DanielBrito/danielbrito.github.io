@@ -1121,6 +1121,7 @@ a:active {
   border-color: var(--red-wine-primary);
   border-radius: 50%;
   box-shadow: 0px 0px 15px var(--black);
+  transition: all 0.2s ease-in-out;
 }
 
 .link-categoria {
@@ -1131,21 +1132,13 @@ a:active {
 #icone-educacao,
 #icone-poesia,
 #icone-arte {
-  transform: scale(2);
-  transition: all 0.2s ease-in-out;
+  font-size: 30px;
   color: var(--red-wine-primary);
 }
 
-#icone-tecnologia:hover,
-#icone-educacao:hover,
-#icone-poesia:hover,
-#icone-arte:hover {
-  transform: scale(2.3);
-}
-
 .categoria:hover {
-  box-shadow: 0px 0px 3px var(--red-wine-primary);
   cursor: pointer;
+  transform: scale(1.1);
 }
 
 #divisor-categoria {
