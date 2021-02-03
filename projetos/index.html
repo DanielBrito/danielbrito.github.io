@@ -20,7 +20,8 @@
                 <i id="top-icon" class="fas fa-angle-up"></i>
             </span>
         </a>
-        <div class="sticky-top" id="nav-wrapper">
+
+        <header class="sticky-top" id="nav-wrapper">
             <nav class="navbar navbar-light navbar-expand-xl sticky-top" id="nav-bar">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="https://danielbrito.github.io">
@@ -45,34 +46,34 @@
                     </div>
                 </div>
             </nav>
-        </div>
-
-        <div id="categorias-wrapper">
-            <div id="categorias">
-                <a href="#tecnologia" class="link-categoria">
-                    <div id="categoria-tecnologia" class="categoria" title="Tecnologia">
-                        <i id="icone-tecnologia" class="fas fa-laptop-code"></i>
-                    </div>
-                </a>
-                <a href="#educacao" class="link-categoria">
-                    <div id="categoria-educacao" class="categoria" title="Educação">
-                        <i id="icone-educacao" class="fas fa-chalkboard-teacher"></i>
-                    </div>
-                </a> 
-                <a href="#poesia" class="link-categoria">
-                    <div id="categoria-poesia" class="categoria" title="Poesia">
-                        <i id="icone-poesia" class="fas fa-pen-nib"></i>
-                    </div>
-                </a>
-                <a href="#arte" class="link-categoria">
-                    <div id="categoria-arte" class="categoria" title="Artes visuais">
-                        <i id="icone-arte" class="fas fa-palette"></i>
-                    </div>
-                </a>               
-            </div>
-        </div>
+        </header>
 
         <main>
+            <div id="categorias-wrapper">
+                <div id="categorias">
+                    <a href="#tecnologia" class="link-categoria">
+                        <div id="categoria-tecnologia" class="categoria" title="Tecnologia">
+                            <i id="icone-tecnologia" class="fas fa-laptop-code"></i>
+                        </div>
+                    </a>
+                    <a href="#educacao" class="link-categoria">
+                        <div id="categoria-educacao" class="categoria" title="Educação">
+                            <i id="icone-educacao" class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                    </a> 
+                    <a href="#poesia" class="link-categoria">
+                        <div id="categoria-poesia" class="categoria" title="Poesia">
+                            <i id="icone-poesia" class="fas fa-pen-nib"></i>
+                        </div>
+                    </a>
+                    <a href="#arte" class="link-categoria">
+                        <div id="categoria-arte" class="categoria" title="Artes visuais">
+                            <i id="icone-arte" class="fas fa-palette"></i>
+                        </div>
+                    </a>               
+                </div>
+            </div>
+
             <section id="tecnologia">
                 <div class="container" id="projeto-container">
                     <div class="row justify-content-center align-items-center" id="fire-tasks">
@@ -87,7 +88,7 @@
                         <div class="col-md-6 col-xl-7" id="projeto-coluna-descricao">
                             <h1 class="text-center" id="projeto-titulo"><strong>FIRE TASKS</strong></h1>
                             <div>
-                                <p class="text-center" id="projeto-descricao"><em>Fire Tasks</em> é uma aplicação para gerenciamento de tarefas, que permite ao usuário realizar o cadastro e listagem das atividades a serem executadas, bem como editar, remover e ordenar com base na prioridade. Foi desenvolvida com <a href="/videos/#fire-tasks-playlist" id="link-interno" title="Playlist no YouTube">propósitos educativos</a>, por meio da utilização de ReactJS, Styled Components e Firestore.</p>
+                                <p class="text-center" id="projeto-descricao"><em>Fire Tasks</em> é uma aplicação para gerenciamento de tarefas, que permite ao usuário realizar o cadastro e listagem das atividades a serem executadas, bem como editar, remover e ordenar com base na prioridade. Foi desenvolvida com <a href="/videos/#fire-tasks-playlist" id="link-interno" title="Playlist no YouTube"><em>propósitos educativos</em></a>, por meio da utilização de ReactJS, Styled Components e Firestore.</p>
                                 <br>
                                 <a class="btn btn-danger btn-block btn-lg" role="button" href="https://github.com/DanielBrito/fire-tasks" target="_blank" id="botao" title="Repositório no GitHub"><i class="fas fa-fire"></i> ACESSAR</a>
                             </div>
@@ -108,7 +109,7 @@
                         <div class="col-md-6 col-xl-7" id="projeto-coluna-descricao">
                             <h1 class="text-center" id="projeto-titulo"><strong>HOME</strong></h1>
                             <div>
-                                <p class="text-center" id="projeto-descricao">Sempre que aprendo sobre novas tecnologias, procuro desenvolver algo criativo para colocar o conteúdo em prática. Assim, decidi produzir uma versão refatorada deste meu primeiro site, que construí utilizando apenas HTML na estruturação e Bootstrap na estilização. Na transição, realizei a tradução dos textos, e utilizei ferramentas como ReactJS e Material-UI para criação de uma interface mais interativa e dinâmica. O deploy foi realizado por meio do GitHub Pages.</p>
+                                <p class="text-center" id="projeto-descricao">Sempre que aprendo sobre novas tecnologias, procuro desenvolver algo criativo para colocar o conteúdo em prática. Assim, decidi produzir uma versão refatorada deste meu primeiro site, que construí utilizando apenas HTML na estruturação e Bootstrap na estilização. Durante a transição, realizei a tradução dos textos, e utilizei ferramentas como ReactJS e Material-UI para criação de uma interface mais interativa e dinâmica. O deploy foi realizado por meio do GitHub Pages.</p>
                                 <br>
                                 <a class="btn btn-danger btn-block btn-lg" role="button" href="https://danielbrito.github.io/home/" target="_blank" id="botao" title="Site"><i class="fas fa-globe"></i> ACESSAR</a>
                             </div>
@@ -129,7 +130,7 @@
                         <div class="col-md-6 col-xl-7" id="projeto-coluna-descricao">
                             <h1 class="text-center" id="projeto-titulo"><strong>HáLUGAR</strong></h1>
                             <div>
-                                <p class="text-center" id="projeto-descricao"><em>HáLugar</em> é voltado para estudantes que desejam compartilhar moradia, propondo possibilitar uma maior facilidade para que eles anunciem ou encontrem um lugar para morar. Por meio do aplicativo, eles poderão pesquisar quais as opções de moradia que lhes oferecem o melhor custo-benefício, ou seja, que possuem o preço de aluguel mais acessível, ou que são mais próximas do campus, do centro comercial, do ponto de ônibus e tudo mais que lhes for conveniente. Foi desenvolvido por meio da utilização de alguns serviços do Firebase, e também de algumas dependências de geolocalização e manipulação de imagens.</p>
+                                <p class="text-center" id="projeto-descricao"><em><a href="/videos/#halugar-screencast" id="link-interno" title="Screencast">HáLugar</a></em> é voltado para estudantes que desejam compartilhar moradia, propondo possibilitar uma maior facilidade para que eles anunciem ou encontrem um lugar para morar. Por meio do aplicativo, eles poderão pesquisar quais as opções de moradia que lhes oferecem o melhor custo-benefício, ou seja, que possuem o preço de aluguel mais acessível, ou que são mais próximas do campus, do centro comercial, do ponto de ônibus e tudo mais que lhes for conveniente. Foi desenvolvido por meio da utilização de alguns serviços do Firebase, e também de algumas dependências de geolocalização e manipulação de imagens.</p>
                                 <br>
                                 <a class="btn btn-danger btn-block btn-lg" role="button" href="https://play.google.com/store/apps/details?id=br.ufc.crateus.halugar" target="_blank" id="botao" title="Acessar Google Play"><i class="fab fa-google-play"></i> BAIXAR</a>
                             </div>
@@ -150,7 +151,7 @@
                         <div class="col-md-6 col-xl-7" id="projeto-coluna-descricao">
                             <h1 class="text-center" id="projeto-titulo"><strong>COMPIXELAR</strong></h1>
                             <div>
-                                <p class="text-center" id="projeto-descricao">No <em>Compixelar</em>, busco fazer a aplicação de conceitos de programação criativa no desenvolvimento de experimentações poético-visuais e na composição de animações multimídia, por meio dos recursos da linguagem Processing. O nome tem a intenção de trazer à tona algumas ideias que exprimem seu propósito, como <em>pixel</em>, que é o menor ponto que forma uma imagem digital, e <em>compilar</em>, que pode ser entendido tanto como sinônimo de reunir (diversas criações artísticas, neste caso) quanto de gerar um código-objeto que pode ser interpretado pelo computador.</p>
+                                <p class="text-center" id="projeto-descricao">No <em>Compixelar</em>, busco fazer a aplicação de conceitos de <a href="/videos/#compixelar-playlist" id="link-interno" title="Playlist no YouTube"><em>programação criativa</em></a> no desenvolvimento de experimentações poético-visuais e na composição de animações multimídia, por meio dos recursos da linguagem Processing. O nome tem a intenção de trazer à tona algumas ideias que exprimem seu propósito, como <em>pixel</em>, que é o menor ponto que forma uma imagem digital, e <em>compilar</em>, que pode ser entendido tanto como sinônimo de reunir (diversas criações artísticas, neste caso) quanto de gerar um código-objeto que pode ser interpretado pelo computador.</p>
                                 <br>
                                 <a class="btn btn-danger btn-block btn-lg" role="button" href="https://medium.com/compixelar" target="_blank" id="botao" title="Perfil no Medium"><i class="fas fa-mouse-pointer"></i> ACESSAR</a>
                             </div>
@@ -215,7 +216,7 @@
                         <div class="col-md-6 col-xl-7" id="projeto-coluna-descricao">
                             <h1 class="text-center" id="projeto-titulo"><strong>STURING</strong></h1>
                             <div>
-                                <p class="text-center" id="projeto-descricao">O <em>sTuring</em> foi proposto para ser uma célula de aprendizagem cooperativa na Universidade Federal do Ceará, onde estudo Ciência da Computação. Mas, infelizmente, não passou no processo seletivo. Baseado nisso, decidi criar este projeto alternativo de divulgação científica para compartilhar o conhecimento que venho adquirindo ao longo da minha trajetória acadêmica, mas de uma maneira acessível para o público em geral.</p>
+                                <p class="text-center" id="projeto-descricao">O <em>sTuring</em> foi proposto para ser uma célula de aprendizagem cooperativa na Universidade Federal do Ceará (UFC), onde estudo Ciência da Computação. Mas, infelizmente, não passou no processo seletivo. Baseado nisso, decidi criar este projeto alternativo de divulgação científica para compartilhar o conhecimento que venho adquirindo ao longo da minha trajetória acadêmica, mas de uma maneira acessível para o público em geral.</p>
                                 <br>
                                 <a class="btn btn-danger btn-block btn-lg" role="button" href="https://www.instagram.com/sturing.compsci/" target="_blank" id="botao" title="Página no Instagram"><i class="fas fa-atom"></i> ACESSAR</a>
                             </div>
@@ -236,7 +237,7 @@
                         <div class="col-md-6 col-xl-7" id="projeto-coluna-descricao">
                             <h1 class="text-center" id="projeto-titulo"><strong>CANAL</strong></h1>
                             <div>
-                                <p class="text-center" id="projeto-descricao">Idealizado para produção de tutoriais com objetivo de auxiliar os estudantes na disciplina de Fundamentos de Programação da Universidade Federal do Ceará, onde fui monitor bolsista no Programa de Iniciação à Docência. Atualmente, implemento pequenos projetos para mostrar a aplicação prática de conceitos importantes, realizo a análise e resolução de problemas de programação competitiva, e também abordo tópicos como programação criativa e desenvolvimento web.</p>
+                                <p class="text-center" id="projeto-descricao">Idealizado para produção de tutoriais com objetivo de auxiliar os estudantes na disciplina de <a href="/videos/#fup-playlist" id="link-interno" title="Playlist no YouTube"><em>fundamentos de programação</em></a> da Universidade Federal do Ceará (UFC), onde fui monitor bolsista no Programa de Iniciação à Docência. Atualmente, implemento pequenos projetos para mostrar a aplicação prática de conceitos importantes, realizo a análise e resolução de problemas de <a href="/videos/#cp-playlist" id="link-interno" title="Playlist no YouTube"><em>programação competitiva</em></a>, e também abordo tópicos como <a href="/videos/#compixelar-playlist" id="link-interno" title="Playlist no YouTube"><em>programação criativa</em></a> e desenvolvimento web.</p>
                                 <br>
                                 <a class="btn btn-danger btn-block btn-lg" role="button" href="https://www.youtube.com/channel/UC4y3uq1d7MKDYs1LbI44Vng" target="_blank" id="botao" title="Canal do Youtube"><i class="fab fa-youtube"></i> ACESSAR</a>
                             </div>
@@ -303,7 +304,7 @@
                         <div class="col-md-6 col-xl-7" id="projeto-coluna-descricao">
                             <h1 class="text-center" id="projeto-titulo"><strong>ALUMINIONS</strong></h1>
                             <div>
-                                <p class="text-center" id="projeto-descricao"><em>Aluminions</em> são pequenas criaturas formadas por lacres de alumínio, 13, que se desenvolveram e ganharam consciência após um Big Bang ocorrido na minha mente. Assim como nós, seres humanos, eles aprenderam a se comunicar e a expressar suas emoções. Vivem diversas situações e estão sempre em busca de respostas para suas questões existenciais.</p>
+                                <p class="text-center" id="projeto-descricao"><em><a href="/videos/#aluminions-timelapse" id="link-interno" title="Timelapse do processo criativo">Aluminions</em></a> são pequenas criaturas formadas por lacres de alumínio, 13, que se desenvolveram e ganharam consciência após um Big Bang ocorrido na minha mente. Assim como nós, seres humanos, eles aprenderam a se comunicar e a expressar suas emoções. Vivem diversas situações e estão sempre em busca de respostas para suas questões existenciais.</p>
                                 <br>
                                 <a class="btn btn-danger btn-block btn-lg" role="button" href="https://www.instagram.com/aluminions.13/" target="_blank" id="botao" title="Página no Instagram"><i class="fas fa-recycle"></i> ACESSAR</a>
                             </div>

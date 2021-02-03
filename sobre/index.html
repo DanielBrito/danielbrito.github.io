@@ -20,7 +20,8 @@
                 <i id="top-icon" class="fas fa-angle-up"></i>
             </span>
         </a>
-        <div class="sticky-top" id="nav-wrapper">
+
+        <header class="sticky-top" id="nav-wrapper">
             <nav class="navbar navbar-light navbar-expand-xl sticky-top" id="nav-bar">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="https://danielbrito.github.io">
@@ -45,7 +46,7 @@
                     </div>
                 </div>
             </nav>
-        </div>
+        </header>
 
         <main>
             <section>
@@ -70,7 +71,7 @@
 
                                     Aos 16 anos, consegui um emprego como jovem aprendiz no CAMP Pinheiros. Então, após o término do contrato, em decorrência de um bom serviço, conquistei um posto efetivo para atuar como assistente administrativo na CPFL Renováveis.<br/><br/>
 
-                                    Depois de estudar em diferentes escolas públicas, fui aceito na Faculdade de Tecnologia (FATEC) para cursar Análise e Desenvolvimento de Sistemas. Contudo, em busca de maiores desafios, cancelei minha matrícula e decidi me mudar para Crateús para estudar Ciência da Computação na Universidade Federal do Ceará (UFC), onde participei de alguns projetos nas áreas de desenvolvimento web e mobile, computação gráfica, <a id="link-interno" href="https://github.com/GEMP-UFC-Crateus" target="_blank" title="Perfil no GitHub">programação competitiva</a> e docência.<br/><br/>
+                                    Depois de estudar em diferentes escolas públicas, fui aceito na Faculdade de Tecnologia (FATEC) para cursar Análise e Desenvolvimento de Sistemas. Contudo, em busca de maiores desafios, cancelei minha matrícula e decidi me mudar para Crateús para estudar Ciência da Computação na Universidade Federal do Ceará (UFC), onde participei de alguns projetos nas áreas de desenvolvimento web e mobile, computação gráfica, <a id="link-interno" href="https://github.com/GEMP-UFC-Crateus" target="_blank" title="Perfil no GitHub"><em>programação competitiva</em></a> e docência.<br/><br/>
 
                                     Nos últimos tempos, tenho trabalhado como desenvolvedor de software para web e dispositivos móveis.<br/><br/>
                                     
@@ -173,13 +174,25 @@
     <script src="../assets/js/script.js"></script>
 
     <script>
+        var today = new Date();
+
         function convert() {
-            var today = new Date();
-            var diff = new Date(today.getFullYear(), today.getMonth() + 1, today.getDate()).getTime() - new Date(1993, 1, 4).getTime();
-            var diffDays = (diff / (1000 * 60 * 60 * 24));
+            var birthDate = new Date(1993, 0, 4);
+            var diff = today.getTime() - birthDate.getTime();
+            var diffDays = parseInt(diff / (24 * 60 * 60 * 1000));
+
             return diffDays;
         }
-        document.getElementById("dias").innerHTML = convert();
+
+        days = document.getElementById("dias");
+        days.innerHTML = convert();
+
+        if(today.getDate()<4 && today.getMonth()==0){
+            days.title = (today.getFullYear() - 1 - 1993) + " anos";
+        }
+        else{
+            days.title = (today.getFullYear() - 1993) + " anos";
+        }
     </script>
 
 </body>
