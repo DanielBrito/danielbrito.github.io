@@ -72,18 +72,21 @@
 /* Paleta de cores: */
 
 :root {
+  /* Contrast ratio = 21 (https://webaim.org/resources/contrastchecker): */
+  --container-background: rgba(0, 0, 0, 0.9); /* Background principal */
+  --white: #fff; /* Texto principal */
+
   --red-wine-primary: #9e0b0f;
   --red-wine-lighter: #993333;
   --red-text-bright: #c7060d;
   --button-hover: rgb(116, 2, 5);
-  --container-background: rgba(0, 0, 0, 0.9);
   --container-background-alpha: rgba(0, 0, 0, 0.8);
   --black: #000;
   --scrollbar-background: rgba(20, 20, 20, 0.7);
   --scrollbar-bar: #444;
-  --white: #fff;
   --footer-letter-shadow: rgba(0, 0, 0, 0.6);
 
+  /* Ícones dos contatos */
   --facebook-color: #4267b2;
   --instagram-color: #e1306c;
   --twitter-color: #1da1f2;
@@ -110,7 +113,7 @@
   border-radius: 10px;
 }
 
-/* Efeito fade in dos containeres: */
+/* Efeito 'fade-in' dos containeres: */
 
 main {
   animation: fadein 0.5s;
@@ -152,52 +155,6 @@ main {
   }
   to {
     opacity: 1;
-  }
-}
-
-/* Configuração do top button: */
-
-#top-button {
-  display: flex;
-  background-color: var(--red-wine-primary);
-  width: 40px;
-  height: 40px;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
-  opacity: 0;
-  visibility: hidden;
-  z-index: 1000;
-}
-
-#top-icon {
-  transform: scale(2);
-  color: var(--white);
-  opacity: 0.7;
-}
-
-#top-button:hover {
-  cursor: pointer;
-  background-color: var(--button-hover);
-}
-
-#top-button:active {
-  background-color: var(--red-wine-lighter);
-}
-
-#top-button.show {
-  opacity: 0.7;
-  visibility: visible;
-}
-
-@media only screen and (max-width: 920px) {
-  #top-button {
-    bottom: 15px;
-    right: 15px;
   }
 }
 
@@ -249,6 +206,52 @@ a:hover {
 a:active {
   color: var(--white) !important;
   text-decoration: none;
+}
+
+/* Configuração do top button: */
+
+#top-button {
+  display: flex;
+  background-color: var(--red-wine-primary);
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+
+#top-icon {
+  transform: scale(2);
+  color: var(--white);
+  opacity: 0.7;
+}
+
+#top-button:hover {
+  cursor: pointer;
+  background-color: var(--button-hover);
+}
+
+#top-button:active {
+  background-color: var(--red-wine-lighter);
+}
+
+#top-button.show {
+  opacity: 0.7;
+  visibility: visible;
+}
+
+@media only screen and (max-width: 920px) {
+  #top-button {
+    bottom: 15px;
+    right: 15px;
+  }
 }
 
 #nav-bar {
