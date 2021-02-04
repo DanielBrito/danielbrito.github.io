@@ -1214,7 +1214,7 @@ a:active {
 #projeto-descricao {
   font-family: "Fira Mono", monospace;
   color: var(--white);
-  margin-bottom: 0px;
+  margin-bottom: 30px;
   font-size: 14px;
   line-height: 20px;
   text-shadow: 0 0 5px var(--black);
@@ -1410,6 +1410,7 @@ a:active {
   font-family: "Fira Mono", monospace;
   font-size: 14px;
   text-shadow: 0 0 5px var(--black);
+  margin-bottom: 30px;
 }
 
 /* Design da interface (MÍDIA): */
@@ -1480,7 +1481,7 @@ a:active {
 #noticia-descricao {
   font-family: "Fira Mono", monospace;
   color: var(--white);
-  margin-bottom: 0px;
+  margin-bottom: 30px;
   font-size: 14px;
   line-height: 20px;
   text-align: center;
