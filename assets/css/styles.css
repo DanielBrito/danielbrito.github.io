@@ -84,7 +84,7 @@
   --black: #000;
   --scrollbar-background: rgba(20, 20, 20, 0.7);
   --scrollbar-bar: #444;
-  --footer-letter-shadow: rgba(0, 0, 0, 0.6);
+  --footer-letter-shadow: rgba(0, 0, 0, 0.8);
 
   /* Ícones dos contatos */
   --facebook-color: #4267b2;
@@ -389,12 +389,13 @@ a:active {
   justify-content: center;
   align-items: center;
   background: var(--black);
-  box-shadow: 0 4px 8px 3px var(--footer-letter-shadow),
-    0 6px 20px 3px var(--footer-letter-shadow);
+  box-shadow: 0 0 5px var(--footer-letter-shadow);
   height: 25px;
   width: 25px;
   border-radius: 50%;
   margin: 0 5px 0 5px;
+  padding-left: 1px;
+  padding-bottom: 1px;
   color: var(--red-wine-primary);
   font-weight: bold;
   border-style: solid;
@@ -406,14 +407,13 @@ a:active {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   background: var(--black);
-  box-shadow: 0 4px 8px 3px var(--footer-letter-shadow),
-    0 6px 20px 3px var(--footer-letter-shadow);
+  box-shadow: 0 0 5px var(--footer-letter-shadow);
   height: 20px;
   width: 20px;
   border-radius: 50%;
   margin: 0 15px 0 15px;
-  padding-bottom: 1px;
   padding-left: 1px;
   color: var(--red-wine-primary);
   font-weight: bold;
@@ -424,12 +424,17 @@ a:active {
 }
 
 .footer-simbolo:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
+  cursor: pointer;
 }
 
 #creative-commons {
   text-decoration: none;
   color: var(--red-wine-primary) !important;
+  padding-bottom: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #link-interno {
