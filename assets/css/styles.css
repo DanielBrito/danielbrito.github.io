@@ -366,8 +366,8 @@ a:active {
   margin-top: 20px;
   margin-bottom: 10px;
   max-width: 1050px;
-  border-radius: 5px;
-  box-shadow: 0px 0px 15px var(--black);
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px var(--black), 0px 0px 20px var(--black);
   border-style: solid;
   border-width: 1px;
   border-color: var(--red-wine-primary);
@@ -500,25 +500,25 @@ a:active {
 
 @media only screen and (max-width: 1200px) {
   #inicio-conteudo-container {
-    border-radius: 5px 5px 45% 45%;
+    border-radius: 10px 10px 45% 45%;
   }
 }
 
 @media only screen and (max-width: 1024px) {
   #inicio-conteudo-container {
-    border-radius: 5px 5px 45% 45%;
+    border-radius: 10px 10px 45% 45%;
   }
 }
 
 @media only screen and (max-width: 768px) {
   #inicio-conteudo-container {
-    border-radius: 5px 5px 40% 40%;
+    border-radius: 10px 10px 40% 40%;
   }
 }
 
 @media only screen and (max-width: 480px) {
   #inicio-conteudo-container {
-    border-radius: 5px 5px 30px 30px;
+    border-radius: 10px 10px 30px 30px;
   }
 }
 
