@@ -394,15 +394,14 @@ a:active {
   justify-content: center;
   align-items: center;
   background: var(--black);
-  box-shadow: 0 0 5px var(--footer-letter-shadow),
-    0 0 5px var(--footer-letter-shadow);
+  box-shadow: 0px 0px 5px var(--black), 0px 0px 5px var(--black);
   height: 24px;
   width: 24px;
   border-radius: 50%;
   margin: 0 5px;
   color: var(--red-wine-primary);
   font-weight: bold;
-  border-style: solid;
+  border-style: dashed;
   border-width: 1px 1px 1px 1px;
   border-color: var(--red-wine-primary);
 }
@@ -570,7 +569,7 @@ a:active {
   border-style: dashed;
   border-width: 1px;
   border-color: var(--red-wine-primary);
-  box-shadow: 0px 0px 5px var(--black);
+  box-shadow: 0px 0px 5px var(--black), 0px 0px 5px var(--black);
 }
 
 @media only screen and (max-width: 1199px) {
@@ -809,7 +808,7 @@ a:active {
   margin-top: 30px;
   background-color: var(--container-background-alpha);
   border-radius: 50% 50% 0 0;
-  border-style: dashed;
+  border-style: solid;
   border-width: 1px 1px 0 1px;
   border-color: var(--red-wine-primary);
   padding: 12px 10px 0px 10px;
@@ -1048,7 +1047,7 @@ a:active {
   padding: 20px;
   max-width: 700px;
   border-radius: 30px;
-  box-shadow: 0px 0px 7px var(--red-wine-primary);
+  box-shadow: 0px 0px 10px var(--black);
   border-style: dashed;
   border-width: 1px;
   border-color: var(--red-wine-primary);
