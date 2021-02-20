@@ -7,6 +7,7 @@ let bar = document.createElement("div");
 bar.style.height = "2px";
 bar.style.width = "0";
 bar.style.backgroundColor = "#9e0b0f";
+bar.style.boxShadow = "0px 0px 3px #c7060d";
 bar.style.position = "fixed";
 bar.style.top = "0px";
 bar.style.left = "0";
