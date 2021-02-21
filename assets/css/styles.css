@@ -1794,6 +1794,11 @@ a:active {
   align-items: center;
 }
 
+#modal-header-space {
+  margin-right: 20px;
+  height: auto;
+}
+
 #close-modal {
   padding: 0;
   margin: 0;
