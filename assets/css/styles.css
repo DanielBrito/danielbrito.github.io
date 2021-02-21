@@ -265,7 +265,7 @@ a:active {
 
 #nav-wrapper {
   width: 100%;
-  box-shadow: 0px 1px 5px var(--red-wine-primary);
+  box-shadow: 0px 0px 10px var(--black), 0px 0px 10px var(--black);
   background-color: var(--black);
   display: flex;
   justify-content: center;
@@ -372,7 +372,7 @@ a:active {
   margin-bottom: 10px;
   max-width: 1050px;
   border-radius: 10px;
-  box-shadow: 0px 0px 10px var(--red-wine-primary);
+  box-shadow: 0px 0px 10px var(--black), 0px 0px 10px var(--black);
   border-style: solid;
   border-width: 1px;
   border-color: var(--red-wine-primary);
@@ -492,7 +492,7 @@ a:active {
   margin-bottom: 10px;
   max-width: 1050px;
   border-radius: 10px 10px 50% 50%;
-  box-shadow: 0px 0px 7px var(--red-wine-primary);
+  box-shadow: 0px 0px 10px var(--black), 0px 0px 10px var(--black);
   border-style: solid;
   border-width: 1px;
   border-color: var(--red-wine-primary);
@@ -808,21 +808,21 @@ a:active {
   margin-top: 30px;
   background-color: var(--container-background-alpha);
   border-radius: 50% 50% 0 0;
-  border-style: solid;
+  border-style: dashed;
   border-width: 1px 1px 0 1px;
   border-color: var(--red-wine-primary);
   padding: 12px 10px 0px 10px;
   max-width: 300px;
   margin-bottom: 0px;
   z-index: -1;
-  box-shadow: 0px 0px 7px var(--red-wine-primary);
+  box-shadow: 0px 0px 10px var(--black), 0px 0px 10px var(--black);
 }
 
 #sobre-container {
   margin-bottom: 10px;
   max-width: 1050px;
   border-radius: 10px;
-  box-shadow: 0px 0px 7px var(--red-wine-primary);
+  box-shadow: 0px 0px 10px var(--black), 0px 0px 10px var(--black);
   border-style: solid;
   border-width: 1px;
   border-color: var(--red-wine-primary);
@@ -924,7 +924,7 @@ a:active {
   margin-bottom: 10px;
   max-width: 1050px;
   border-radius: 10px;
-  box-shadow: 0px 0px 7px var(--red-wine-primary);
+  box-shadow: 0px 0px 10px var(--black), 0px 0px 10px var(--black);
   border-style: solid;
   border-width: 1px;
   border-color: var(--red-wine-primary);
@@ -1047,7 +1047,7 @@ a:active {
   padding: 20px;
   max-width: 700px;
   border-radius: 30px;
-  box-shadow: 0px 0px 10px var(--black);
+  box-shadow: 0px 0px 10px var(--black), 0px 0px 10px var(--black);
   border-style: dashed;
   border-width: 1px;
   border-color: var(--red-wine-primary);
@@ -1115,7 +1115,7 @@ a:active {
   margin-bottom: 20px;
   max-width: 1050px;
   border-radius: 10px;
-  box-shadow: 0px 0px 7px var(--red-wine-primary);
+  box-shadow: 0px 0px 10px var(--black), 0px 0px 10px var(--black);
   border-style: solid;
   border-width: 1px;
   border-color: var(--red-wine-primary);
@@ -1285,7 +1285,7 @@ a:active {
   margin-bottom: 20px;
   max-width: 1050px;
   border-radius: 10px;
-  box-shadow: 0px 0px 7px var(--red-wine-primary);
+  box-shadow: 0px 0px 10px var(--black), 0px 0px 10px var(--black);
   border-style: solid;
   border-width: 1px;
   border-color: var(--red-wine-primary);
@@ -1322,7 +1322,7 @@ a:active {
   margin-bottom: 20px;
   max-width: 1050px;
   border-radius: 10px;
-  box-shadow: 0px 0px 7px var(--red-wine-primary);
+  box-shadow: 0px 0px 10px var(--black), 0px 0px 10px var(--black);
   border-style: solid;
   border-width: 1px;
   border-color: var(--red-wine-primary);
@@ -1386,7 +1386,7 @@ a:active {
   margin-bottom: 20px;
   max-width: 1050px;
   border-radius: 10px;
-  box-shadow: 0px 0px 7px var(--red-wine-primary);
+  box-shadow: 0px 0px 10px var(--black), 0px 0px 10px var(--black);
   border-style: solid;
   border-width: 1px;
   border-color: var(--red-wine-primary);
@@ -1460,7 +1460,7 @@ a:active {
   margin-bottom: 20px;
   max-width: 1050px;
   border-radius: 10px;
-  box-shadow: 0px 0px 7px var(--red-wine-primary);
+  box-shadow: 0px 0px 10px var(--black), 0px 0px 10px var(--black);
   border-style: solid;
   border-width: 1px;
   border-color: var(--red-wine-primary);
@@ -1581,7 +1581,7 @@ a:active {
   margin-bottom: 20px;
   max-width: 1050px;
   border-radius: 10px;
-  box-shadow: 0px 0px 7px var(--red-wine-primary);
+  box-shadow: 0px 0px 10px var(--black), 0px 0px 10px var(--black);
   border-style: solid;
   border-width: 1px;
   border-color: var(--red-wine-primary);
