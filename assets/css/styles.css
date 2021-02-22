@@ -1835,6 +1835,10 @@ a:active {
   font-weight: bold;
 }
 
+#icone-link {
+  color: var(--white);
+}
+
 #icone-lattes {
   color: var(--lattes-color);
 }
