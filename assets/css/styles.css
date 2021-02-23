@@ -817,9 +817,8 @@ a:active {
 
 #sobre-icone-historia {
   color: var(--white);
-  transform: scale(2);
+  transform: scale(1.8);
   padding-top: 18px;
-  padding-left: 1px;
 }
 
 #icone-sobre-wrapper:hover {
@@ -836,8 +835,8 @@ a:active {
 
 #sobre-icone-vida {
   color: var(--white);
-  transform: scale(2);
-  padding-top: 18px;
+  transform: scale(1.8);
+  padding-top: 19px;
 }
 
 #titulo-sobre {
