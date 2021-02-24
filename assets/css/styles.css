@@ -1685,6 +1685,7 @@ a:active {
   font-family: "Fira Mono", monospace;
   color: rgb(255, 255, 255);
   margin-top: 0px;
+  margin-bottom: 20px;
   font-size: 30px;
   text-shadow: 0 0 5px var(--black);
 }
