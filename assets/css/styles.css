@@ -804,8 +804,8 @@ a:active {
 }
 
 #icone-sobre-wrapper {
-  height: 50px;
-  width: 50px;
+  height: 55px;
+  width: 55px;
   border-radius: 50%;
   background-color: var(--red-wine-primary);
   margin-bottom: 10px;
@@ -817,27 +817,29 @@ a:active {
 
 #sobre-icone-historia {
   color: var(--white);
-  transform: scale(1.8);
-  padding-top: 18px;
-  padding-left: 1px;
+  transform: scale(2);
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 #icone-sobre-wrapper:hover {
-  transform: scale(1.1);
   box-shadow: 0px 0px 10px var(--red-wine-primary);
 }
 
 #sobre-icone-ser {
   color: var(--white);
-  transform: scale(1.8);
-  padding-top: 18px;
+  transform: scale(1.9) rotate(-45deg);
   padding-right: 2px;
+  padding-top: 2px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 #sobre-icone-vida {
   color: var(--white);
-  transform: scale(1.8);
-  padding-top: 19px;
+  transform: scale(2);
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 #titulo-sobre {
