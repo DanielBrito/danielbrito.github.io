@@ -837,7 +837,7 @@ a:active {
 
 #sobre-icone-vida {
   color: var(--white);
-  transform: scale(2);
+  transform: scale(2.1);
   margin-top: auto;
   margin-bottom: auto;
 }
