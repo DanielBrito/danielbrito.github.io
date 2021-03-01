@@ -687,7 +687,7 @@ a:active {
   text-align: center;
   justify-content: center;
   font-family: "Fredericka the Great", cursive;
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: var(--white);
   text-shadow: 0 0 10px var(--black);
   transition: all 0.2s ease-in-out;
