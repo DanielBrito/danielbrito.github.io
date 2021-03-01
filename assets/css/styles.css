@@ -672,7 +672,7 @@ a:active {
   text-align: center;
   justify-content: center;
   font-family: "Press Start 2P", cursive;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: var(--white);
   text-shadow: 0 0 10px var(--black);
   transition: all 0.2s ease-in-out;
@@ -717,6 +717,7 @@ a:active {
 #descricao-escritor:hover {
   text-shadow: 0 0 13px var(--red-text-bright), 0 0 13px var(--red-text-bright);
   cursor: pointer;
+  transform: scale(1.1);
 }
 
 @media only screen and (max-width: 1199px) {
@@ -1204,7 +1205,7 @@ a:active {
   border-color: var(--red-wine-primary);
   border-radius: 50%;
   box-shadow: 0 0 10px var(--black);
-  transition: all 0.2s ease-in-out;
+  transition: all 0.3s ease-in-out;
   color: var(--red-wine-primary);
 }
 
@@ -1224,7 +1225,6 @@ a:active {
   box-shadow: 0 0 10px var(--red-wine-primary);
   background-color: var(--red-wine-primary);
   color: var(--white) !important;
-  /* transition: all 0.2s ease-in-out; */
 }
 
 #divisor-categoria {
