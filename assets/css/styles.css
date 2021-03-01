@@ -740,19 +740,27 @@ a:active {
 
 @media only screen and (max-width: 768px) {
   #descricao-escritor,
-  #descricao-desenvolvedor,
   #descricao-artista {
     margin-bottom: 40px;
     margin-top: 40px;
+  }
+
+  #descricao-desenvolvedor {
+    margin-bottom: 40px;
+    margin-top: 48px;
   }
 }
 
 @media only screen and (max-width: 480px) {
   #descricao-escritor,
-  #descricao-desenvolvedor,
   #descricao-artista {
     margin-bottom: 40px;
     margin-top: 40px;
+  }
+
+  #descricao-desenvolvedor {
+    margin-bottom: 40px;
+    margin-top: 48px;
   }
 }
 
