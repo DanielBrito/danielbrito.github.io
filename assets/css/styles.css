@@ -761,7 +761,7 @@ a:active {
   position: absolute;
   z-index: 0;
   animation: pulse 1.5s infinite;
-  margin-top: 7px;
+  margin-top: 9px;
 }
 
 #icone-artista {
