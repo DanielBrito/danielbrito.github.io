@@ -355,13 +355,13 @@ a:active {
   border-radius: 10px;
   box-shadow: 0 0 5px var(--red-wine-primary), 0 0 10px var(--red-wine-primary);
   font-weight: bold;
-  transition: all 0.3s ease-in-out;
 }
 
 .nav-item a:link {
   color: var(--red-wine-primary) !important;
   text-decoration: none;
   font-weight: bold;
+  transition: all 0.3s ease-in-out;
 }
 
 .nav-item a:visited {
