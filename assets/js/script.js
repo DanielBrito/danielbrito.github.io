@@ -1,4 +1,4 @@
-/* Reading status: */
+/* Reading status bar (causing short delay while scrolling): */
 
 const container = document.getElementById("container");
 
@@ -36,33 +36,31 @@ window.addEventListener("load", () => {
 
 var prevScrollpos = window.pageYOffset;
 
-window.onscroll = function() {
-
+window.onscroll = function () {
   var currentScrollPos = window.pageYOffset;
 
   if (prevScrollpos > currentScrollPos) {
     document.getElementById("nav-wrapper").style.top = "0";
-  } 
-  else {
+  } else {
     document.getElementById("nav-wrapper").style.top = "-100px";
   }
 
   prevScrollpos = currentScrollPos;
-}
+};
 
 /* Back to top button: */
 
-var btn = $('#top-button');
+var btn = $("#top-button");
 
-$(window).scroll(function() {
+$(window).scroll(function () {
   if ($(window).scrollTop() > 200) {
-    btn.addClass('show');
+    btn.addClass("show");
   } else {
-    btn.removeClass('show');
+    btn.removeClass("show");
   }
 });
 
-btn.on('click', function(e) {
+btn.on("click", function (e) {
   e.preventDefault();
-  $('html, body').animate({scrollTop:0}, '200');
+  $("html, body").animate({ scrollTop: 0 }, "200");
 });
