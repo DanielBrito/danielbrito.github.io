@@ -1,12 +1,12 @@
-/* Reading status bar (causing short delay while scrolling): */
+/* Reading status bar: */
 
-const container = document.getElementById("container");
+const container = document.getElementById("reading-status-container");
 
 let bar = document.createElement("div");
 
 bar.style.height = "2px";
 bar.style.width = "0";
-bar.style.backgroundColor = "#9e0b0f";
+bar.style.backgroundColor = "#EA1017";
 bar.style.position = "fixed";
 bar.style.top = "0px";
 bar.style.left = "0";
@@ -50,7 +50,7 @@ window.onscroll = function () {
 
 /* Back to top button: */
 
-var btn = $("#top-button");
+var btn = $("#to-top-button");
 
 $(window).scroll(function () {
   if ($(window).scrollTop() > 200) {
@@ -64,3 +64,20 @@ btn.on("click", function (e) {
   e.preventDefault();
   $("html, body").animate({ scrollTop: 0 }, "200");
 });
+
+/* Calculate age: */
+
+var today = new Date();
+
+var birthDate = new Date(1993, 0, 4);
+var diff = today.getTime() - birthDate.getTime(); /* Miliseconds */
+var diffDays = parseInt(diff / (24 * 60 * 60 * 1000));
+
+days = document.getElementById("days");
+days.innerHTML = diffDays;
+
+if (today.getDate() < 4 && today.getMonth() == 0) {
+  days.title = today.getFullYear() - 1 - 1993 + " anos";
+} else {
+  days.title = today.getFullYear() - 1993 + " anos";
+}

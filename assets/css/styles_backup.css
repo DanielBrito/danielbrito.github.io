@@ -259,7 +259,7 @@ a:active {
 
 /* Configuração do top button: */
 
-#top-button {
+#to-top-button {
   display: flex;
   background-color: var(--red-wine-primary);
   width: 40px;
@@ -282,22 +282,22 @@ a:active {
   opacity: 0.7;
 }
 
-#top-button:hover {
+#to-top-button:hover {
   cursor: pointer;
   background-color: var(--button-hover);
 }
 
-#top-button:active {
+#to-top-button:active {
   background-color: var(--red-wine-lighter);
 }
 
-#top-button.show {
+#to-top-button.show {
   opacity: 0.7;
   visibility: visible;
 }
 
 @media only screen and (max-width: 920px) {
-  #top-button {
+  #to-top-button {
     bottom: 15px;
     right: 15px;
   }

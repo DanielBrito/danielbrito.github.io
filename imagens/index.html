@@ -3,20 +3,33 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Daniel Brito, site, arte, poesia, artista, poeta, art, poetry, artist, poet">
+    <meta name="keywords" content="Daniel Brito, desenvolvedor, artista, escritor">
     <meta name="author" content="Daniel Brito">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Imagens | Daniel Brito</title>
+
     <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/css/lightbox.min.css">
-    <link rel="stylesheet" href="../assets/css/styles.css">
-    <link rel="shortcut icon" type="image/png" href="../assets/img/geral/favicon.png" />
-    <link href="../assets/fontawesome/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/fonts/fontawesome/css/all.min.css">
+
+    <link rel="shortcut icon" type="image/png" href="../assets/images/global/favicon.png">
+
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/colors.css">
+    <link rel="stylesheet" href="../assets/css/custom-scrollbar.css">
+    <link rel="stylesheet" href="../assets/css/to-top-button.css">
+    <link rel="stylesheet" href="../assets/css/navigation-bar.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
+
+    <link rel="stylesheet" href="../assets/css/images.css">
+
+    <link rel="stylesheet" href="../assets/fonts/fonts.css">
 </head>
 
 <body>
-    <div id="container">
-        <a id="top-button" title="Ir para o topo">
+    <div id="reading-status-container">
+        <a id="to-top-button" title="Ir para o topo">
             <span>
                 <i id="top-icon" class="fas fa-angle-up"></i>
             </span>
@@ -25,10 +38,10 @@
         <header class="sticky-top" id="nav-wrapper">
             <nav class="navbar navbar-light navbar-expand-xl sticky-top" id="nav-bar">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="https://danielbrito.github.io">
-                        <img class="float-left" src="../assets/img/geral/daniel-brito-monograma.png"
+                    <div class="navbar-brand">
+                        <img class="float-left" src="../assets/images/global/daniel-brito-monograma.png"
                             id="daniel-brito-logo" alt="Daniel Brito logo">
-                    </a>
+                    </div>
                     <button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1">
                         <span class="sr-only" id="toggle-nav">Toggle navigation</span>
                         <span class="navbar-toggler-icon text-monospace" id="toggle-nav-icon"></span>
@@ -36,24 +49,24 @@
                     <div class="collapse navbar-collapse" id="navcol-1">
                         <ul class="nav navbar-nav ml-auto">
                             <li class="nav-item" role="presentation"><a class="nav-link"
-                                    href="https://danielbrito.github.io"><i class="fas fa-home"
+                                    href="https://danielbrito.github.io"><i class="fas fa-home icon-navbar"
                                         id="icone-navbar"></i>INÍCIO</a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link" href="/sobre"><i
-                                        class="fas fa-user" id="icone-navbar"></i>SOBRE</a></li>
+                                        class="fas fa-user icon-navbar"></i>SOBRE</a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link" href="/livros"><i
-                                        class="fas fa-book" id="icone-navbar"></i>LIVROS</a></li>
+                                        class="fas fa-book icon-navbar"></i>LIVROS</a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link" href="/projetos"><i
-                                        class="fas fa-lightbulb" id="icone-navbar"></i>PROJETOS</a></li>
+                                        class="fas fa-lightbulb icon-navbar"></i>PROJETOS</a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link active" href="/imagens"><i
-                                        class="fas fa-images" id="icone-navbar"></i>IMAGENS</a></li>
+                                        class="fas fa-images icon-navbar"></i>IMAGENS</a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link" href="/videos"><i
-                                        class="fas fa-video" id="icone-navbar""></i>VÍDEOS</a></li>
+                                        class="fas fa-video icon-navbar"></i>VÍDEOS</a></li>
                             <li class=" nav-item" role="presentation"><a class="nav-link" href="/blog"><i
-                                                class="fab fa-blogger" id="icone-navbar"></i>BLOG</a></li>
+                                        class="fab fa-blogger icon-navbar"></i>BLOG</a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link" href="/midia"><i
-                                        class="fas fa-newspaper" id="icone-navbar"></i>MÍDIA</a></li>
+                                        class="fas fa-newspaper icon-navbar"></i>MÍDIA</a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link" href="/contato"><i
-                                        class="fas fa-envelope" id="icone-navbar"></i>CONTATO</a></li>
+                                        class="fas fa-envelope icon-navbar"></i>CONTATO</a></li>
                         </ul>
                     </div>
                 </div>
@@ -61,209 +74,217 @@
         </header>
 
         <main>
-            <div class="container" id="fotos-container">
+            <div class="container images">
+                <h1 id="gallery-title">Galeria de imagens</h1>
                 <div class="row justify-content-center align-items-center">
-                    <div class="col" id="fotos-grid">
+                    <div class="col grid">
                         <div class="row photos">
-                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/img/fotos/img0.jpg"
+                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/images/photos/img0.jpg"
                                     data-lightbox="photos"
                                     title="Sarau Sobrenome Liberdade (Foto por Antonio Miotto)"><img class="img-fluid"
-                                        src="../assets/img/fotos/img0.jpg" id="foto" alt="Daniel Brito"></a></div>
-                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/img/fotos/img1.jpg"
+                                        src="../assets/images/photos/img0.jpg" alt="Daniel Brito"></a></div>
+                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/images/photos/img1.jpg"
                                     data-lightbox="photos" title="Action figure dos Aluminions"><img class="img-fluid"
-                                        src="../assets/img/fotos/img1.jpg" id="foto" alt="Aluminion"></a></div>
-                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/img/fotos/img2.jpg"
+                                        src="../assets/images/photos/img1.jpg" alt="Aluminion"></a></div>
+                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/images/photos/img2.jpg"
                                     data-lightbox="photos" title="Poeta convidado no Sarau Suburbano Concreto"><img
-                                        class="img-fluid" src="../assets/img/fotos/img2.jpg" id="foto"
+                                        class="img-fluid" src="../assets/images/photos/img2.jpg"
                                         alt="Daniel Brito Livros"></a>
                             </div>
-                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/img/fotos/img3.jpg"
+                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/images/photos/img3.jpg"
                                     data-lightbox="photos" title="Sarau da Cooperifa"><img class="img-fluid"
-                                        src="../assets/img/fotos/img3.jpg" id="foto"
-                                        alt="Daniel Brito Sarau Cooperifa"></a></div>
-                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/img/fotos/img4.jpg"
+                                        src="../assets/images/photos/img3.jpg" alt="Daniel Brito Sarau Cooperifa"></a>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/images/photos/img4.jpg"
                                     data-lightbox="photos" title="Documentário Grajaú em Foco"><img class="img-fluid"
-                                        src="../assets/img/fotos/img4.jpg" id="foto" alt="Grajaú em Foco DVD"></a></div>
-                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/img/fotos/img5.jpg"
+                                        src="../assets/images/photos/img4.jpg" alt="Grajaú em Foco DVD"></a>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/images/photos/img5.jpg"
                                     data-lightbox="photos" title="Poema do livro PROTESTIZANDO - Biênio Poético"><img
-                                        class="img-fluid" src="../assets/img/fotos/img5.jpg" id="foto"
+                                        class="img-fluid" src="../assets/images/photos/img5.jpg"
                                         alt="Daniel Brito Poema"></a></div>
-                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/img/fotos/img6.jpg"
+                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/images/photos/img6.jpg"
                                     data-lightbox="photos" title="Intervenção poética"><img class="img-fluid"
-                                        src="../assets/img/fotos/img6.jpg" id="foto"
-                                        alt="Daniel Brito Poesia Concreta"></a></div>
-                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/img/fotos/img7.jpg"
+                                        src="../assets/images/photos/img6.jpg" alt="Daniel Brito Poesia Concreta"></a>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/images/photos/img7.jpg"
                                     data-lightbox="photos" title="Sarau Sobrenome Liberdade (Foto por Alessa Melo)"><img
-                                        class="img-fluid" src="../assets/img/fotos/img7.jpg" id="foto"
-                                        alt="Daniel Brito Poesia Concreta"></a></div>
-                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/img/fotos/img8.jpg"
+                                        class="img-fluid" src="../assets/images/photos/img7.jpg"
+                                        alt="Daniel Brito Entendedores"></a></div>
+                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/images/photos/img8.jpg"
                                     data-lightbox="photos" title="Intervenção na 5ª Carreata Poética"><img
-                                        class="img-fluid" src="../assets/img/fotos/img8.jpg" id="foto"
+                                        class="img-fluid" src="../assets/images/photos/img8.jpg"
                                         alt="Daniel Brito Sarau"></a></div>
-                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/img/fotos/img9.jpg"
+                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/images/photos/img9.jpg"
                                     data-lightbox="photos" title="Poema do (fan)zine PROTESTIZANDO #5"><img
-                                        class="img-fluid" src="../assets/img/fotos/img9.jpg" id="foto"
+                                        class="img-fluid" src="../assets/images/photos/img9.jpg"
                                         alt=" Daniel Brito Poema"></a>
                             </div>
-                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/img/fotos/img10.jpg"
+                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/images/photos/img10.jpg"
                                     data-lightbox="photos" title="Desenvolvimento do aplicativo HáLugar"><img
-                                        class="img-fluid" src="../assets/img/fotos/img10.jpg" id="foto"
+                                        class="img-fluid" src="../assets/images/photos/img10.jpg"
                                         alt="Aplicativo HáLugar"></a>
                             </div>
-                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/img/fotos/img11.jpg"
+                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/images/photos/img11.jpg"
                                     data-lightbox="photos" title="Intervenção poética"><img class="img-fluid"
-                                        src="../assets/img/fotos/img11.jpg" id="foto"
-                                        alt="Daniel Brito Poesia Concreta"></a></div>
-                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/img/fotos/img12.jpg"
+                                        src="../assets/images/photos/img11.jpg" alt="Daniel Brito Poesia Concreta"></a>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/images/photos/img12.jpg"
                                     data-lightbox="photos"
                                     title="Poeta convidado no Sarau Sobrenome Liberdade (Foto por Alessa Melo)"><img
-                                        class="img-fluid" src="../assets/img/fotos/img12.jpg" id="foto"
+                                        class="img-fluid" src="../assets/images/photos/img12.jpg"
                                         alt="Daniel Brito Sarau"></a></div>
-                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/img/fotos/img13.jpg"
+                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/images/photos/img13.jpg"
                                     data-lightbox="photos" title="Poeta convidado no EnContrAção IV"><img
-                                        class="img-fluid" src="../assets/img/fotos/img13.jpg" id="foto"
+                                        class="img-fluid" src="../assets/images/photos/img13.jpg"
                                         alt="Daniel Brito Livros"></a>
                             </div>
-                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/img/fotos/img14.jpg"
+                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/images/photos/img14.jpg"
                                     data-lightbox="photos" title="Encontro com Augusto de Campos na Casa das Rosas"><img
-                                        class="img-fluid" src="../assets/img/fotos/img14.jpg" id="foto"
+                                        class="img-fluid" src="../assets/images/photos/img14.jpg"
                                         alt="Daniel Brito Augisto de Campos"></a></div>
-                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/img/fotos/img15.jpg"
+                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/images/photos/img15.jpg"
                                     data-lightbox="photos" title="Poema concreto Sublime.you"><img class="img-fluid"
-                                        src="../assets/img/fotos/img15.jpg" id="foto"
-                                        alt="Daniel Brito Poesia Concreta"></a></div>
-                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/img/fotos/img16.jpg"
+                                        src="../assets/images/photos/img15.jpg" alt="Daniel Brito Poesia Concreta"></a>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/images/photos/img16.jpg"
                                     data-lightbox="photos" title="Campeonato da Liga de Xadrez da UFC Crateús"><img
-                                        class="img-fluid" src="../assets/img/fotos/img16.jpg" id="foto"
+                                        class="img-fluid" src="../assets/images/photos/img16.jpg"
                                         alt="Daniel Brito Xadrez"></a>
                             </div>
-                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/img/fotos/img17.jpg"
+                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/images/photos/img17.jpg"
                                     data-lightbox="photos" title="Criação do projeto É ARTE?"><img class="img-fluid"
-                                        src="../assets/img/fotos/img17.jpg" id="foto" alt="Daniel Brito Arte"></a></div>
-                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/img/fotos/img18.jpg"
+                                        src="../assets/images/photos/img17.jpg" alt="Daniel Brito Arte"></a>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/images/photos/img18.jpg"
                                     data-lightbox="photos" title="Lançamento do A Ler Vazios na Casa das Rosas"><img
-                                        class="img-fluid" src="../assets/img/fotos/img18.jpg" id="foto"
+                                        class="img-fluid" src="../assets/images/photos/img18.jpg"
                                         alt="Daniel Brito Casa das Rosas"></a></div>
-                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/img/fotos/img19.gif"
+                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/images/photos/img19.gif"
                                     data-lightbox="photos" title="Programação criativa com Aluminions"><img
-                                        class="img-fluid" src="../assets/img/fotos/img19.gif" id="foto"
+                                        class="img-fluid" src="../assets/images/photos/img19.gif"
                                         alt="Aluminion Compixelar"></a>
                             </div>
-                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/img/fotos/img20.jpg"
+                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/images/photos/img20.jpg"
                                     data-lightbox="photos" title="Intervenção poética no Sarau Olhares Devassos"><img
-                                        class="img-fluid" src="../assets/img/fotos/img20.jpg" id="foto"
+                                        class="img-fluid" src="../assets/images/photos/img20.jpg"
                                         alt="Daniel Brito Poesia Concreta"></a></div>
-                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/img/fotos/img21.jpg"
+                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/images/photos/img21.jpg"
                                     data-lightbox="photos" title="Criação do projeto Fora da Caixa"><img
-                                        class="img-fluid" src="../assets/img/fotos/img21.jpg" id="foto"
+                                        class="img-fluid" src="../assets/images/photos/img21.jpg"
                                         alt="Fora da Caixa"></a></div>
-                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/img/fotos/img22.jpg"
+                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/images/photos/img22.jpg"
                                     data-lightbox="photos" title="Surfista de asfalto"><img class="img-fluid"
-                                        src="../assets/img/fotos/img22.jpg" id="foto" alt="Daniel Brito Skate"></a>
+                                        src="../assets/images/photos/img22.jpg" alt="Daniel Brito Skate"></a>
                             </div>
-                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/img/fotos/img23.jpg"
+                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/images/photos/img23.jpg"
                                     data-lightbox="photos" title="Piloto de BMX"><img class="img-fluid"
-                                        src="../assets/img/fotos/img23.jpg" id="foto" alt="Daniel Brito BMX"></a></div>
-                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/img/fotos/img24.jpg"
+                                        src="../assets/images/photos/img23.jpg" alt="Daniel Brito BMX"></a>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/images/photos/img24.jpg"
                                     data-lightbox="photos"
                                     title="Teorema da Poesia Visual (Foto por Daniel Alexandrino)"><img
-                                        class="img-fluid" src="../assets/img/fotos/img24.jpg" id="foto"
+                                        class="img-fluid" src="../assets/images/photos/img24.jpg"
                                         alt="Daniel Brito Sarau"></a></div>
-                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/img/fotos/img25.jpg"
+                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/images/photos/img25.jpg"
                                     data-lightbox="photos" title="Poema do livro A Ler Vazios"><img class="img-fluid"
-                                        src="../assets/img/fotos/img25.jpg" id="foto"
-                                        alt="Daniel Brito poesia concreta"></a></div>
-                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/img/fotos/img26.jpg"
+                                        src="../assets/images/photos/img25.jpg" alt="Daniel Brito poesia concreta"></a>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/images/photos/img26.jpg"
                                     data-lightbox="photos"
                                     title="Palestra sobre o movimento concretista na Gamarra"><img class="img-fluid"
-                                        src="../assets/img/fotos/img26.jpg" id="foto" alt="Daniel Brito palestra"></a>
+                                        src="../assets/images/photos/img26.jpg" alt="Daniel Brito palestra"></a>
                             </div>
-                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/img/fotos/img27.jpg"
+                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/images/photos/img27.jpg"
                                     data-lightbox="photos" title="Poema publicado na revista Poesia Sem Medo"><img
-                                        class="img-fluid" src="../assets/img/fotos/img27.jpg" id="foto"
+                                        class="img-fluid" src="../assets/images/photos/img27.jpg"
                                         alt="Daniel Brito poesia visual"></a></div>
-                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/img/fotos/img28.jpg"
+                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/images/photos/img28.jpg"
                                     data-lightbox="photos" title="Criação do projeto ANTIGR1F3"><img class="img-fluid"
-                                        src="../assets/img/fotos/img28.jpg" id="foto" alt="Camiseta Antigr1f3"></a>
+                                        src="../assets/images/photos/img28.jpg" alt="Camiseta Antigr1f3"></a>
                             </div>
-                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/img/fotos/img29.jpg"
+                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/images/photos/img29.jpg"
                                     data-lightbox="photos" title="Praticando sandboarding"><img class="img-fluid"
-                                        src="../assets/img/fotos/img29.jpg" id="foto"
-                                        alt="Daniel Brito Sandboarding"></a></div>
-                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/img/fotos/img30.jpg"
+                                        src="../assets/images/photos/img29.jpg" alt="Daniel Brito Sandboarding"></a>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/images/photos/img30.jpg"
                                     data-lightbox="photos" title="Primeira exposição dos Aluminions na UFC Crateús"><img
-                                        class="img-fluid" src="../assets/img/fotos/img30.jpg" id="foto"
+                                        class="img-fluid" src="../assets/images/photos/img30.jpg"
                                         alt="Exposição Aluminions"></a>
                             </div>
-                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/img/fotos/img31.jpg"
+                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/images/photos/img31.jpg"
                                     data-lightbox="photos" title="Sarau Sobrenome Liberdade (Foto por Alessa Melo)"><img
-                                        class="img-fluid" src="../assets/img/fotos/img31.jpg" id="foto"
+                                        class="img-fluid" src="../assets/images/photos/img31.jpg"
                                         alt="Daniel Brito Sarau"></a>
                             </div>
-                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/img/fotos/img32.jpg"
+                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/images/photos/img32.jpg"
                                     data-lightbox="photos" title="Intervenção poética com SOCRASTICKERS"><img
-                                        class="img-fluid" src="../assets/img/fotos/img32.jpg" id="foto"
+                                        class="img-fluid" src="../assets/images/photos/img32.jpg"
                                         alt="Daniel Brito Socrasticker"></a></div>
-                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/img/fotos/img33.jpg"
+                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/images/photos/img33.jpg"
                                     data-lightbox="photos"
                                     title="Cartaz de lançamento do A Ler Vazios na Casa das Rosas"><img
-                                        class="img-fluid" src="../assets/img/fotos/img33.jpg" id="foto"
+                                        class="img-fluid" src="../assets/images/photos/img33.jpg"
                                         alt="Daniel Brito - Lançamento A Ler Vazios"></a></div>
-                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/img/fotos/img34.jpg"
+                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/images/photos/img34.jpg"
                                     data-lightbox="photos" title="Sarau do Grajaú (Foto por Daniel Alexandrino)"><img
-                                        class="img-fluid" src="../assets/img/fotos/img34.jpg" id="foto"
+                                        class="img-fluid" src="../assets/images/photos/img34.jpg"
                                         alt="Daniel Brito Sarau"></a>
                             </div>
-                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/img/fotos/img35.jpg"
+                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/images/photos/img35.jpg"
                                     data-lightbox="photos" title="Intervenção artística dos Poetas do Tietê"><img
-                                        class="img-fluid" src="../assets/img/fotos/img35.jpg" id="foto"
+                                        class="img-fluid" src="../assets/images/photos/img35.jpg"
                                         alt="Daniel Brito Poesia Visual"></a></div>
-                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/img/fotos/img36.jpg"
+                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/images/photos/img36.jpg"
                                     data-lightbox="photos" title="Sarau Sobrenome Liberdade (Foto por Alessa Melo)"><img
-                                        class="img-fluid" src="../assets/img/fotos/img36.jpg" id="foto"
-                                        alt="Daniel Brito Sarau"></a>
+                                        class="img-fluid" src="../assets/images/photos/img36.jpg"
+                                        alt="Daniel Brito declamando"></a>
                             </div>
-                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/img/fotos/img37.jpg"
+                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/images/photos/img37.jpg"
                                     data-lightbox="photos" title="Artista convidado na Casa de Cultura de Crateús"><img
-                                        class="img-fluid" src="../assets/img/fotos/img37.jpg" id="foto"
+                                        class="img-fluid" src="../assets/images/photos/img37.jpg"
                                         alt="Daniel Brito Exposição"></a>
                             </div>
-                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/img/fotos/img38.jpg"
+                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/images/photos/img38.jpg"
                                     data-lightbox="photos" title="Sarau Sobrenome Liberdade (Foto por Alessa Melo)"><img
-                                        class="img-fluid" src="../assets/img/fotos/img38.jpg" id="foto"
-                                        alt="Daniel Brito Sarau"></a>
+                                        class="img-fluid" src="../assets/images/photos/img38.jpg"
+                                        alt="Daniel Brito com microfone"></a>
                             </div>
-                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/img/fotos/img39.jpg"
+                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/images/photos/img39.jpg"
                                     data-lightbox="photos" title="Intervenção com SOCRASTICKERS"><img class="img-fluid"
-                                        src="../assets/img/fotos/img39.jpg" id="foto" alt="Socrasticker"></a></div>
-                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/img/fotos/img40.jpg"
+                                        src="../assets/images/photos/img39.jpg" alt="Socrasticker"></a></div>
+                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/images/photos/img40.jpg"
                                     data-lightbox="photos" title="Campeão do Slam do 13"><img class="img-fluid"
-                                        src="../assets/img/fotos/img40.jpg" id="foto" alt="Daniel Brito Slam"></a></div>
-                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/img/fotos/img41.jpg"
-                                    data-lightbox="photos" title="Ilustração do poema LUVA"><img class="img-fluid"
-                                        src="../assets/img/fotos/img41.jpg" id="foto" alt="Poema Daniel Brito"></a>
+                                        src="../assets/images/photos/img40.jpg" alt="Daniel Brito Slam"></a>
                             </div>
-                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/img/fotos/img42.jpg"
+                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/images/photos/img41.jpg"
+                                    data-lightbox="photos" title="Ilustração do poema LUVA"><img class="img-fluid"
+                                        src="../assets/images/photos/img41.jpg" alt="Poema Daniel Brito"></a>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/images/photos/img42.jpg"
                                     data-lightbox="photos" title="Slam do 13 (Foto por João Marcos)"><img
-                                        class="img-fluid" src="../assets/img/fotos/img42.jpg" id="foto"
-                                        alt="Daniel Brito Slam"></a></div>
-                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/img/fotos/img43.jpg"
+                                        class="img-fluid" src="../assets/images/photos/img42.jpg"
+                                        alt="Daniel Brito no Slam do 13"></a></div>
+                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/images/photos/img43.jpg"
                                     data-lightbox="photos" title="Aluminions Go Veggie"><img class="img-fluid"
-                                        src="../assets/img/fotos/img43.jpg" id="foto" alt="Aluminions Veggie"></a></div>
-                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/img/fotos/img44.jpg"
+                                        src="../assets/images/photos/img43.jpg" alt="Aluminions Veggie"></a>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/images/photos/img44.jpg"
                                     data-lightbox="photos" title="Exposição no Centro Educacional Gamarra"><img
-                                        class="img-fluid" src="../assets/img/fotos/img44.jpg" id="foto"
+                                        class="img-fluid" src="../assets/images/photos/img44.jpg"
                                         alt="Daniel Brito Exposição"></a>
                             </div>
-                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/img/fotos/img45.jpg"
+                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/images/photos/img45.jpg"
                                     data-lightbox="photos" title="Estudos sobre compiladores"><img class="img-fluid"
-                                        src="../assets/img/fotos/img45.jpg" id="foto" alt="Daniel Brito Aula"></a></div>
-                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/img/fotos/img46.jpg"
+                                        src="../assets/images/photos/img45.jpg" alt="Daniel Brito Aula"></a>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/images/photos/img46.jpg"
                                     data-lightbox="photos" title="Criações do projeto ANTIGR1F3"><img class="img-fluid"
-                                        src="../assets/img/fotos/img46.jpg" id="foto" alt="Bottons ANTIGR1F3"></a></div>
-                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/img/fotos/img47.jpg"
+                                        src="../assets/images/photos/img46.jpg" alt="Bottons ANTIGR1F3"></a>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="../assets/images/photos/img47.jpg"
                                     data-lightbox="photos" title="Sarau Sobrenome Liberdade (Foto por Alessa Melo)"><img
-                                        class="img-fluid" src="../assets/img/fotos/img47.jpg" id="foto"
+                                        class="img-fluid" src="../assets/images/photos/img47.jpg"
                                         alt="Daniel Brito Exposição"></a>
                             </div>
                         </div>
@@ -273,16 +294,16 @@
         </main>
 
         <footer>
-            <div class="row no-gutters justify-content-center" id="footer-linha">
-                <div class="footer-letra"><span class="letra">D</span></div>
-                <div class="footer-letra"><span class="letra">N</span></div>
-                <div class="footer-letra"><span class="letra">L</span></div>
-                <div class="footer-simbolo"><span class="simbolo"><a id="creative-commons"
+            <div class="row no-gutters justify-content-center" id="row-footer">
+                <div class="footer-letter-wrapper"><span class="footer-letter">D</span></div>
+                <div class="footer-letter-wrapper"><span class="footer-letter">N</span></div>
+                <div class="footer-letter-wrapper"><span class="footer-letter">L</span></div>
+                <div class="footer-symbol-wrapper"><span class="footer-symbol"><a id="creative-commons"
                             href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"
                             rel="noopener noreferrer" title="Licença Creative Commons">ɔ</a></span></div>
-                <div class="footer-letra"><span class="letra">B</span></div>
-                <div class="footer-letra"><span class="letra">R</span></div>
-                <div class="footer-letra"><span class="letra">T</span></div>
+                <div class="footer-letter-wrapper"><span class="footer-letter">B</span></div>
+                <div class="footer-letter-wrapper"><span class="footer-letter">R</span></div>
+                <div class="footer-letter-wrapper"><span class="footer-letter">T</span></div>
             </div>
         </footer>
     </div>
@@ -290,7 +311,7 @@
     <script src="../assets/js/jquery.min.js"></script>
     <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="../assets/js/lightbox.min.js"></script>
-    <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/scripts.js"></script>
 
 </body>
 

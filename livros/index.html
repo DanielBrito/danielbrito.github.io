@@ -3,19 +3,32 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Daniel Brito, site, arte, poesia, artista, poeta, art, poetry, artist, poet">
+    <meta name="keywords" content="Daniel Brito, desenvolvedor, artista, escritor">
     <meta name="author" content="Daniel Brito">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Livros | Daniel Brito</title>
+
     <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../assets/css/styles.css">
-    <link rel="shortcut icon" type="image/png" href="../assets/img/geral/favicon.png" />
-    <link href="../assets/fontawesome/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/fonts/fontawesome/css/all.min.css">
+
+    <link rel="shortcut icon" type="image/png" href="../assets/images/global/favicon.png">
+
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/colors.css">
+    <link rel="stylesheet" href="../assets/css/custom-scrollbar.css">
+    <link rel="stylesheet" href="../assets/css/to-top-button.css">
+    <link rel="stylesheet" href="../assets/css/navigation-bar.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
+
+    <link rel="stylesheet" href="../assets/css/books.css">
+
+    <link rel="stylesheet" href="../assets/fonts/fonts.css">
 </head>
 
 <body>
-    <div id="container">
-        <a id="top-button" title="Ir para o topo">
+    <div id="reading-status-container">
+        <a id="to-top-button" title="Ir para o topo">
             <span>
                 <i id="top-icon" class="fas fa-angle-up"></i>
             </span>
@@ -24,10 +37,10 @@
         <header class="sticky-top" id="nav-wrapper">
             <nav class="navbar navbar-light navbar-expand-xl sticky-top" id="nav-bar">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="https://danielbrito.github.io">
-                        <img class="float-left" src="../assets/img/geral/daniel-brito-monograma.png"
+                    <div class="navbar-brand">
+                        <img class="float-left" src="../assets/images/global/daniel-brito-monograma.png"
                             id="daniel-brito-logo" alt="Daniel Brito logo">
-                    </a>
+                    </div>
                     <button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1">
                         <span class="sr-only" id="toggle-nav">Toggle navigation</span>
                         <span class="navbar-toggler-icon text-monospace" id="toggle-nav-icon"></span>
@@ -35,24 +48,24 @@
                     <div class="collapse navbar-collapse" id="navcol-1">
                         <ul class="nav navbar-nav ml-auto">
                             <li class="nav-item" role="presentation"><a class="nav-link"
-                                    href="https://danielbrito.github.io"><i class="fas fa-home"
+                                    href="https://danielbrito.github.io"><i class="fas fa-home icon-navbar"
                                         id="icone-navbar"></i>INÍCIO</a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link" href="/sobre"><i
-                                        class="fas fa-user" id="icone-navbar"></i>SOBRE</a></li>
+                                        class="fas fa-user icon-navbar"></i>SOBRE</a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link active" href="/livros"><i
-                                        class="fas fa-book" id="icone-navbar"></i>LIVROS</a></li>
+                                        class="fas fa-book icon-navbar"></i>LIVROS</a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link" href="/projetos"><i
-                                        class="fas fa-lightbulb" id="icone-navbar"></i>PROJETOS</a></li>
+                                        class="fas fa-lightbulb icon-navbar"></i>PROJETOS</a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link" href="/imagens"><i
-                                        class="fas fa-images" id="icone-navbar"></i>IMAGENS</a></li>
+                                        class="fas fa-images icon-navbar"></i>IMAGENS</a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link" href="/videos"><i
-                                        class="fas fa-video" id="icone-navbar""></i>VÍDEOS</a></li>
+                                        class="fas fa-video icon-navbar"></i>VÍDEOS</a></li>
                             <li class=" nav-item" role="presentation"><a class="nav-link" href="/blog"><i
-                                                class="fab fa-blogger" id="icone-navbar"></i>BLOG</a></li>
+                                        class="fab fa-blogger icon-navbar"></i>BLOG</a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link" href="/midia"><i
-                                        class="fas fa-newspaper" id="icone-navbar"></i>MÍDIA</a></li>
+                                        class="fas fa-newspaper icon-navbar"></i>MÍDIA</a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link" href="/contato"><i
-                                        class="fas fa-envelope" id="icone-navbar"></i>CONTATO</a></li>
+                                        class="fas fa-envelope icon-navbar"></i>CONTATO</a></li>
                         </ul>
                     </div>
                 </div>
@@ -61,16 +74,16 @@
 
         <main>
             <section>
-                <div class="container" id="livro-container">
+                <div class="container book">
                     <div class="row justify-content-center align-items-center" id="no-ritmo-de-algo">
-                        <div class="col-xl-5" id="livro-coluna-img">
-                            <img class="img-fluid" id="livro-img" src="../assets/img/livros/no-ritmo-de-algo.jpg"
+                        <div class="col-xl-5 column-image">
+                            <img class="img-fluid" src="../assets/images/books/no-ritmo-de-algo.jpg"
                                 alt="Daniel Brito - No Ritmo de Algo (Arte da capa por Biotwist)">
                         </div>
-                        <div class="col-xl-7" id="livro-coluna-descricao">
-                            <h1 class="text-center" id="livro-titulo"><strong>NO RITMO DE ALGO (20XX)</strong></h1>
+                        <div class="col-xl-7 column-description">
+                            <h1 class="book-title"><strong>NO RITMO DE ALGO (20XX)</strong></h1>
                             <div>
-                                <p class="text-center" id="livro-descricao">Como já dito em ocasião anterior, meus
+                                <p class="text-center book-text">Como já dito em ocasião anterior, meus
                                     poemas são arquivos extraídos do <em>coração.zip</em>. Assim, seguindo a escola de
                                     Paulo Leminski e Millôr Fernandes, <em>No Ritmo de Algo</em> será um diretório
                                     composto por versos com siso, abordando os mais variados assuntos que alteram nosso
@@ -83,7 +96,7 @@
                                     farão parte dele, e que utilizam metáforas sobre programação, matemática, tecnologia
                                     e afins.</p>
                             </div>
-                            <a class="btn btn-danger btn-block btn-lg" id="botao" role="button"
+                            <a class="btn btn-danger btn-block btn-lg custom-button" role="button"
                                 href="https://github.com/DanielBrito/no-ritmo-de-algo" target="_blank"
                                 title="Repositório no GitHub"><i class="fas fa-eye"></i> VER PRÉVIA</a>
                         </div>
@@ -92,16 +105,16 @@
             </section>
 
             <section>
-                <div class="container" id="livro-container">
+                <div class="container book">
                     <div class="row justify-content-center align-items-center" id="a-ler-vazios">
-                        <div class="col-xl-5" id="livro-coluna-img">
-                            <img class="img-fluid" id="livro-img" src="../assets/img/livros/a-ler-vazios-capa.jpg"
+                        <div class="col-xl-5 column-image">
+                            <img class="img-fluid" src="../assets/images/books/a-ler-vazios-capa.jpg"
                                 alt="Daniel Brito - A Ler Vazios">
                         </div>
-                        <div class="col-xl-7" id="livro-coluna-descricao">
-                            <h1 class="text-center" id="livro-titulo"><strong>A LER VAZIOS (2016)</strong></h1>
+                        <div class="col-xl-7 column-description">
+                            <h1 class="book-title"><strong>A LER VAZIOS (2016)</strong></h1>
                             <div>
-                                <p class="text-center" id="livro-descricao">Todo poema é visual. Mas, no meu caso, elevo
+                                <p class="text-center book-text">Todo poema é visual. Mas, no meu caso, elevo
                                     este conceito ao quadrado e ao cubo, com a poesia tendendo ao
                                     infinito.<br><br>Acontece que, um dia, descobri que todas as formas guardam internos
                                     segredos em suas estruturas e, com a ajuda da semiótica, consegui desvendar alguns
@@ -114,22 +127,22 @@
                                     para subverter esta ideia. Portanto, ative o seu coração, ligue os seus neurônios e
                                     boa viagem.</p>
                             </div>
-                            <a class="btn btn-danger btn-block btn-lg" id="botao" role="button" href="/contato"
+                            <a class="btn btn-danger btn-block btn-lg custom-button" role="button" href="/contato"
                                 title="Entrar em contato"><i class="fas fa-shopping-cart"></i>
                                 ADQUIRIR</a>
                         </div>
                     </div>
                 </div>
 
-                <div id="divisor">
-                    <i class="fas fa-comments" id="icone-revisao" title="Revisões"></i>
+                <div class="divider-wrapper">
+                    <i class="fas fa-comments revision-icon" title="Revisões"></i>
                 </div>
 
-                <div class="container" id="revisao-container">
-                    <div class="aspas-esquerda-wrapper">
-                        <i class="fas fa-quote-left" id="aspas-esquerda"></i>
+                <div class="container revision">
+                    <div class="quote-left-wrapper">
+                        <i class="fas fa-quote-left"></i>
                     </div>
-                    <span id="texto-revisor">
+                    <span class="reviewer-text">
                         <strong>D</strong> <em>iferente de tudo que se esperaria</em><br>
                         <strong>A</strong> <em>poética em "A Ler Vazios" faz sentir o coração das
                             máquinas</em><br>
@@ -149,103 +162,103 @@
                         <strong>O</strong> <em>uça e fale, sinta e revele, há poesia em todos os
                             mundos</em><br><br>
                     </span>
-                    <span id="nome-revisor">- Janaína Moitinho -</span>
-                    <div class="aspas-direita-wrapper">
-                        <i class="fas fa-quote-right" id="aspas-direita"></i>
+                    <span class="reviewer-name">- Janaína Moitinho -</span>
+                    <div class="quote-right-wrapper">
+                        <i class="fas fa-quote-right"></i>
                     </div>
                 </div>
 
-                <div id="divisor">
-                    <i class="fas fa-angle-down" id="seta-simples"></i>
+                <div class="divider-wrapper">
+                    <i class="fas fa-angle-down custom-arrow"></i>
                 </div>
 
-                <div class="container" id="revisao-container">
-                    <div class="aspas-esquerda-wrapper">
-                        <i class="fas fa-quote-left" id="aspas-esquerda"></i>
+                <div class="container revision">
+                    <div class="quote-left-wrapper">
+                        <i class="fas fa-quote-left"></i>
                     </div>
-                    <span id="texto-revisor">
+                    <span class="reviewer-text">
                         <em>"Com vinte e poucos anos, Daniel Brito, um diamante que se lapida ao dizer sim à poesia! Com
                             o livro se compromete, pela segunda vez na vida, a contento com o que ouso dizer: poesia
                             pós-neoconcreta. Hercúleo objetivo que nunca foi uma loucura. Sem prazos de leituras ou
                             cobranças infindáveis."</em><br><br>
                     </span>
-                    <span id="nome-revisor">- Antonio Miotto -</span>
-                    <div class="aspas-direita-wrapper">
-                        <i class="fas fa-quote-right" id="aspas-direita"></i>
+                    <span class="reviewer-name">- Antonio Miotto -</span>
+                    <div class="quote-right-wrapper">
+                        <i class="fas fa-quote-right"></i>
                     </div>
                 </div>
 
-                <div id="divisor">
-                    <i class="fas fa-angle-down" id="seta-simples"></i>
+                <div class="divider-wrapper">
+                    <i class="fas fa-angle-down custom-arrow"></i>
                 </div>
 
-                <div class="container" id="revisao-container">
-                    <div class="aspas-esquerda-wrapper">
-                        <i class="fas fa-quote-left" id="aspas-esquerda"></i>
+                <div class="container revision">
+                    <div class="quote-left-wrapper">
+                        <i class="fas fa-quote-left"></i>
                     </div>
-                    <span id="texto-revisor">
+                    <span class="reviewer-text">
                         <em>"Cada texto traz o modo de ser lido. Descobrir esse código será o principal desafio do
                             leitor que, mantendo sua liberdade, vai precisar de um bom repertório para essa
                             decodificação... O mérito fica para o autor que domina todas essas linguagens e conseguiu
                             que a próxima página reservasse sempre uma surpresa."</em><br><br>
                     </span>
-                    <span id="nome-revisor">- Léssio Lima Cardoso -</span>
-                    <div class="aspas-direita-wrapper">
-                        <i class="fas fa-quote-right" id="aspas-direita"></i>
+                    <span class="reviewer-name">- Léssio Lima Cardoso -</span>
+                    <div class="quote-right-wrapper">
+                        <i class="fas fa-quote-right"></i>
                     </div>
                 </div>
 
-                <div id="divisor">
-                    <i class="fas fa-angle-down" id="seta-simples"></i>
+                <div class="divider-wrapper">
+                    <i class="fas fa-angle-down custom-arrow"></i>
                 </div>
 
-                <div class="container" id="revisao-container">
-                    <div class="aspas-esquerda-wrapper">
-                        <i class="fas fa-quote-left" id="aspas-esquerda"></i>
+                <div class="container revision">
+                    <div class="quote-left-wrapper">
+                        <i class="fas fa-quote-left"></i>
                     </div>
-                    <span id="texto-revisor">
+                    <span class="reviewer-text">
                         <em>"Daniel Brito é um nome que surge na cena poética periférica, mas que já é cidadão do mundo,
                             tamanho o alcance da sua capacidade literária. E o mais incrível é que ele está bem aqui,
                             contemporâneo nosso, e veio para ficar."</em><br><br>
                     </span>
-                    <span id="nome-revisor">- Edilene Santos -</span>
-                    <div class="aspas-direita-wrapper">
-                        <i class="fas fa-quote-right" id="aspas-direita"></i>
+                    <span class="reviewer-name">- Edilene Santos -</span>
+                    <div class="quote-right-wrapper">
+                        <i class="fas fa-quote-right"></i>
                     </div>
                 </div>
 
-                <div id="divisor">
-                    <i class="fas fa-angle-down" id="seta-simples"></i>
+                <div class="divider-wrapper">
+                    <i class="fas fa-angle-down custom-arrow"></i>
                 </div>
 
-                <div class="container" id="revisao-container">
-                    <div class="aspas-esquerda-wrapper">
-                        <i class="fas fa-quote-left" id="aspas-esquerda"></i>
+                <div class="container revision">
+                    <div class="quote-left-wrapper">
+                        <i class="fas fa-quote-left"></i>
                     </div>
-                    <span id="texto-revisor">
+                    <span class="reviewer-text">
                         <em>"O poeta em questão se torna um arquiteto de pontes para que os leitores tenham acesso à
                             toda sua criatividade. E posso garantir aos futuros aventureiros e aventureiras: cada folha
                             é um cartão postal para os olhos de pessoas famintas por estética visual e conteúdo
                             linguístico."</em></em><br><br>
                     </span>
-                    <span id="nome-revisor">- Gilmar Ribeiro -</span>
-                    <div class="aspas-direita-wrapper">
-                        <i class="fas fa-quote-right" id="aspas-direita"></i>
+                    <span class="reviewer-name">- Gilmar Ribeiro -</span>
+                    <div class="quote-right-wrapper">
+                        <i class="fas fa-quote-right"></i>
                     </div>
                 </div>
             </section>
 
             <section>
-                <div class="container" id="livro-container">
+                <div class="container book">
                     <div class="row justify-content-center align-items-center" id="protestizando">
-                        <div class="col-xl-5" id="livro-coluna-img">
-                            <img class="img-fluid" id="livro-img" src="../assets/img/livros/protestizando-capa.jpg"
+                        <div class="col-xl-5 column-image">
+                            <img class="img-fluid" src="../assets/images/books/protestizando-capa.jpg"
                                 alt="Daniel Brito - Protestizando">
                         </div>
-                        <div class="col-xl-7" id="livro-coluna-descricao">
-                            <h1 class="text-center" id="livro-titulo"><strong>PROTESTIZANDO (2015)</strong></h1>
+                        <div class="col-xl-7 column-description">
+                            <h1 class="book-title"><strong>PROTESTIZANDO (2015)</strong></h1>
                             <div>
-                                <p class="text-center" id="livro-descricao">Como um apreciador da atitude
+                                <p class="text-center book-text">Como um apreciador da atitude
                                     faça-você-mesmo, da literatura e poesia marginal, da filosofia do copyleft e da
                                     licença poética, lancei meu primeiro livro de maneira independente, fugindo de
                                     qualquer forma de censura que ele pudesse vir a sofrer se fosse publicado por meios
@@ -258,45 +271,45 @@
                                     vivenciamos em nossa breve existência, e que eu não consegui somente guardá-las
                                     dentro do peito.</p>
                             </div>
-                            <a class="btn btn-danger btn-block btn-lg" id="botao" role="button" href="/contato"
+                            <a class="btn btn-danger btn-block btn-lg  custom-button" role="button" href="/contato"
                                 title="Entrar em contato"><i class="fas fa-shopping-cart"></i>
                                 ADQUIRIR</a>
                         </div>
                     </div>
                 </div>
 
-                <div id="divisor">
-                    <i class="fas fa-comments" id="icone-revisao" title="Revisões"></i>
+                <div class="divider-wrapper">
+                    <i class="fas fa-comments revision-icon" title="Revisões"></i>
                 </div>
 
-                <div class="container" id="revisao-container">
-                    <div class="aspas-esquerda-wrapper">
-                        <i class="fas fa-quote-left" id="aspas-esquerda"></i>
+                <div class="container revision">
+                    <div class="quote-left-wrapper">
+                        <i class="fas fa-quote-left"></i>
                     </div>
-                    <span id="texto-revisor">
+                    <span class="reviewer-text">
                         <em>"Para a maioria dos existencialistas, dois eram os modos privilegiados dos humanos aceitarem
                             e enfrentarem sua finitude: através das artes e da ação político-revolucionária. Nestas
                             formas excepcionais da atividade, eles seriam capazes de dar sentido à brevidade de suas
                             vidas."</em><br><br>
                     </span>
-                    <span id="nome-revisor">- Sophia -</span>
-                    <div class="aspas-direita-wrapper">
-                        <i class="fas fa-quote-right" id="aspas-direita"></i>
+                    <span class="reviewer-name">- Sophia -</span>
+                    <div class="quote-right-wrapper">
+                        <i class="fas fa-quote-right"></i>
                     </div>
                 </div>
             </section>
 
             <section>
-                <div class="container" id="livro-container">
+                <div class="container book">
                     <div class="row justify-content-center align-items-center" id="fanzines">
-                        <div class="col-xl-5" id="livro-coluna-img">
-                            <img class="img-fluid" id="livro-img" src="../assets/img/livros/zine_capa.jpg"
+                        <div class="col-xl-5 column-image">
+                            <img class="img-fluid" src="../assets/images/books/zine_capa.jpg"
                                 alt="Daniel Brito - Zines">
                         </div>
-                        <div class="col-xl-7" id="livro-coluna-descricao">
-                            <h1 class="text-center" id="livro-titulo"><strong>(FAN)ZINES</strong></h1>
+                        <div class="col-xl-7 column-description">
+                            <h1 class="book-title"><strong>(FAN)ZINES</strong></h1>
                             <div>
-                                <p class="text-center" id="livro-descricao">Desde a adolescência, sou um frequentador da
+                                <p class="text-center book-text">Desde a adolescência, sou um frequentador da
                                     cena cultural underground. Desse modo, comecei a ter contato com os diversos meios
                                     de divulgação independentes, como flyers, zines, CDs, fitas K7 e afins, onde boa
                                     parte do material é feito e divulgado pelas próprias pessoas nos eventos que elas
@@ -306,7 +319,7 @@
                                     palavras <em>PROTESTANDO</em> + <em>POETIZANDO</em>, visto que, na época em que o
                                     criei, em 2014, a temática abordada era de cunho mais subversivo.</p>
                             </div>
-                            <a class="btn btn-danger btn-block btn-lg" id="botao" role="button"
+                            <a class="btn btn-danger btn-block btn-lg custom-button" role="button"
                                 href="https://issuu.com/daniel.brito" target="_blank" title="Perfil no Issuu"><i
                                     class="fas fa-eye"></i> LER</a>
                         </div>
@@ -316,23 +329,23 @@
         </main>
 
         <footer>
-            <div class="row no-gutters justify-content-center" id="footer-linha">
-                <div class="footer-letra"><span class="letra">D</span></div>
-                <div class="footer-letra"><span class="letra">N</span></div>
-                <div class="footer-letra"><span class="letra">L</span></div>
-                <div class="footer-simbolo"><span class="simbolo"><a id="creative-commons"
+            <div class="row no-gutters justify-content-center" id="row-footer">
+                <div class="footer-letter-wrapper"><span class="footer-letter">D</span></div>
+                <div class="footer-letter-wrapper"><span class="footer-letter">N</span></div>
+                <div class="footer-letter-wrapper"><span class="footer-letter">L</span></div>
+                <div class="footer-symbol-wrapper"><span class="footer-symbol"><a id="creative-commons"
                             href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"
                             rel="noopener noreferrer" title="Licença Creative Commons">ɔ</a></span></div>
-                <div class="footer-letra"><span class="letra">B</span></div>
-                <div class="footer-letra"><span class="letra">R</span></div>
-                <div class="footer-letra"><span class="letra">T</span></div>
+                <div class="footer-letter-wrapper"><span class="footer-letter">B</span></div>
+                <div class="footer-letter-wrapper"><span class="footer-letter">R</span></div>
+                <div class="footer-letter-wrapper"><span class="footer-letter">T</span></div>
             </div>
         </footer>
     </div>
 
     <script src="../assets/js/jquery.min.js"></script>
     <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/scripts.js"></script>
 
 </body>
 
