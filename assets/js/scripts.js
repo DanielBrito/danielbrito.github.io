@@ -64,20 +64,3 @@ btn.on("click", function (e) {
   e.preventDefault();
   $("html, body").animate({ scrollTop: 0 }, "200");
 });
-
-/* Calculate age: */
-
-var today = new Date();
-
-var birthDate = new Date(1993, 0, 4);
-var diff = today.getTime() - birthDate.getTime(); /* Miliseconds */
-var diffDays = parseInt(diff / (24 * 60 * 60 * 1000));
-
-days = document.getElementById("days");
-days.innerHTML = diffDays;
-
-if (today.getDate() < 4 && today.getMonth() == 0) {
-  days.title = today.getFullYear() - 1 - 1993 + " anos";
-} else {
-  days.title = today.getFullYear() - 1993 + " anos";
-}
