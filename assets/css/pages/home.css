@@ -79,6 +79,7 @@
 #badge-name-img {
   transition: all 0.2s ease-in-out;
   transform: scale(0.9);
+  width: fit-content;
 }
 
 #inicio-nome:hover {
@@ -290,16 +291,13 @@
 @keyframes pulse {
   0% {
     transform: scale(4);
-    text-shadow: 0 0 1px var(--red-text-bright);
   }
 
   70% {
     transform: scale(5);
-    text-shadow: 0 0 1px var(--red-text-bright);
   }
 
   100% {
     transform: scale(4);
-    text-shadow: 0 0 1px var(--red-text-bright);
   }
 }

@@ -28,7 +28,7 @@ body {
       rgba(0, 0, 0, 0.7),
       rgba(0, 0, 0, 0.7)
     ),
-    url("../../images/global/background.png");
+    url("../../images/global/background.webp");
   width: 100%;
 
   font-size: 14px;
