@@ -1,11 +1,11 @@
 # :globe_with_meridians: danielbrito.github.io
 
-Este [site](https://danielbrito.github.io/) é o meu primeiro projeto pessoal de desenvolvimento web, construído com **HTML5** (semântico), **CSS3**, **Bootstrap 4**, e alguns scripts em **Vanilla JS**. 
+Este [site](https://danielbrito.github.io/) é o meu primeiro projeto de desenvolvimento web, construído com **HTML5** (semântico), **CSS3**, **Bootstrap 4**, e alguns scripts em **Vanilla JS**.
 
-Desde a sua idealização, tenho realizado diversas melhorias com base no conhecimento que venho adquirindo nos últimos tempos.
+Desde a sua idealização, tenho realizado diversas melhorias com base nos conhecimentos adquiridos por meio de [estudos](https://github.com/DanielBrito/self-learning) pessoais. Além disso, também utilizo ferramentas de diagnóstico como [WAVE](https://wave.webaim.org/) e [Google Lighthouse](https://developers.google.com/speed/pagespeed/insights/), a fim de melhorar a usabilidade e a performance.
 
 <br/>
 
 <div align="center">
-  <img src="https://i.imgur.com/HwkdO9Z.png" alt="Site preview">
+  <img src="./previa.png" alt="Site preview">
 </div>

@@ -62,28 +62,19 @@
   }
 }
 
-#pinacograma {
+#pinacogram {
   position: absolute;
   margin-top: 420px;
-}
-
-#inicio-coluna-img {
-  background-color: transparent;
-  width: 466px;
-  min-width: 112px;
-  justify-content: center;
-  display: flex;
 }
 
 #badge-pinacogram-img,
 #badge-name-img {
   transition: all 0.2s ease-in-out;
   transform: scale(0.9);
-  width: fit-content;
 }
 
-#inicio-nome:hover {
-  transform: scale(0.96);
+#badge-name-img:hover {
+  transform: scale(0.95);
 }
 
 #row-badge-pinacogram {
