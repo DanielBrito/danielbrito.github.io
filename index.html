@@ -3,19 +3,33 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Daniel Brito, arte, poesia, artista, poeta, art, poetry, artist, poet">
+    <meta name="keywords" content="Daniel Brito, desenvolvedor, artista, escritor">
     <meta name="author" content="Daniel Brito">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Daniel Brito</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="shortcut icon" type="image/png" href="assets/img/geral/favicon.png" />
-    <link href="../assets/fontawesome/css/all.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="shortcut icon" type="image/png" href="assets/images/global/favicon.png">
+
+    <link rel="stylesheet" href="assets/css/global/colors.min.css">
+    <link rel="stylesheet" href="assets/css/global/fonts.min.css">
+    <link rel="stylesheet" href="assets/css/global/main.min.css">
+    <link rel="stylesheet" href="assets/css/components/custom-scrollbar.min.css">
+    <link rel="stylesheet" href="assets/css/components/to-top-button.min.css">
+    <link rel="stylesheet" href="assets/css/components/navigation-bar.min.css">
+    <link rel="stylesheet" href="assets/css/components/footer.min.css">
+    <link rel="stylesheet" href="assets/css/pages/home.css">
 </head>
 
 <body>
-    <div id="container">
-        <a id="top-button" title="Ir para o topo">
+    <div id="reading-status-container">
+        <a id="to-top-button" title="Ir para o topo">
             <span>
                 <i id="top-icon" class="fas fa-angle-up"></i>
             </span>
@@ -24,10 +38,10 @@
         <header class="sticky-top" id="nav-wrapper">
             <nav class="navbar navbar-light navbar-expand-xl sticky-top" id="nav-bar">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="https://danielbrito.github.io">
-                        <img class="float-left" src="assets/img/geral/daniel-brito-monograma.png" id="daniel-brito-logo"
-                            alt="Daniel Brito logo">
-                    </a>
+                    <div class="navbar-brand">
+                        <img class="float-left" src="assets/images/global/daniel-brito-monograma.png"
+                            id="daniel-brito-logo" alt="Daniel Brito logo">
+                    </div>
                     <button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1">
                         <span class="sr-only" id="toggle-nav">Toggle navigation</span>
                         <span class="navbar-toggler-icon text-monospace" id="toggle-nav-icon"></span>
@@ -35,24 +49,24 @@
                     <div class="collapse navbar-collapse" id="navcol-1">
                         <ul class="nav navbar-nav ml-auto">
                             <li class="nav-item" role="presentation"><a class="nav-link active"
-                                    href="https://danielbrito.github.io"><i class="fas fa-home"
+                                    href="https://danielbrito.github.io"><i class="fas fa-home icon-navbar"
                                         id="icone-navbar"></i>INÍCIO</a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link" href="/sobre"><i
-                                        class="fas fa-user" id="icone-navbar"></i>SOBRE</a></li>
+                                        class="fas fa-user icon-navbar"></i>SOBRE</a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link" href="/livros"><i
-                                        class="fas fa-book" id="icone-navbar"></i>LIVROS</a></li>
+                                        class="fas fa-book icon-navbar"></i>LIVROS</a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link" href="/projetos"><i
-                                        class="fas fa-lightbulb" id="icone-navbar"></i>PROJETOS</a></li>
+                                        class="fas fa-lightbulb icon-navbar"></i>PROJETOS</a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link" href="/imagens"><i
-                                        class="fas fa-images" id="icone-navbar"></i>IMAGENS</a></li>
+                                        class="fas fa-images icon-navbar"></i>IMAGENS</a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link" href="/videos"><i
-                                        class="fas fa-video" id="icone-navbar""></i>VÍDEOS</a></li>
+                                        class="fas fa-video icon-navbar"></i>VÍDEOS</a></li>
                             <li class=" nav-item" role="presentation"><a class="nav-link" href="/blog"><i
-                                                class="fab fa-blogger" id="icone-navbar"></i>BLOG</a></li>
+                                        class="fab fa-blogger icon-navbar"></i>BLOG</a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link" href="/midia"><i
-                                        class="fas fa-newspaper" id="icone-navbar"></i>MÍDIA</a></li>
+                                        class="fas fa-newspaper icon-navbar"></i>MÍDIA</a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link" href="/contato"><i
-                                        class="fas fa-envelope" id="icone-navbar"></i>CONTATO</a></li>
+                                        class="fas fa-envelope icon-navbar"></i>CONTATO</a></li>
                         </ul>
                     </div>
                 </div>
@@ -60,23 +74,24 @@
         </header>
 
         <main>
-            <div class="container" id="inicio-conteudo-container">
+            <div class="container" id="badge">
                 <section>
-                    <div class="row justify-content-center align-items-center" id="inicio-row-pinacograma">
-                        <div class="col-xl-6" id="inicio-coluna-pinacograma">
+                    <div class="row justify-content-center align-items-center" id="row-badge-pinacogram">
+                        <div class="col-xl-6" id="column-badge-pinacogram">
                             <a href="#pinacograma">
-                                <img class="img-fluid" id="inicio-pinacograma" src="assets/img/inicio/pinacograma.gif"
-                                    alt="Daniel Brito pinacograma" title="Pinacograma">
+                                <img class="img-fluid" id="badge-pinacogram-img"
+                                    src="assets/images/home/pinacograma.webp" alt="Pinacograma Daniel Brito (rosto)">
                             </a>
                             <span id="pinacograma"></span>
                         </div>
                     </div>
 
-                    <div class="row justify-content-center align-items-center" id="inicio-row-nome">
-                        <div class="col-xl-6" id="inicio-coluna-pinacograma">
-                            <a href="/sobre" title="Sobre mim">
-                                <img class="img-fluid" id="inicio-nome" src="assets/img/inicio/nome-pinacograma.gif"
-                                    alt="Daniel Brito pinacograma">
+                    <div class="row justify-content-center align-items-center" id="row-badge-name">
+                        <div class="col-xl-6" id="column-badge-name">
+                            <a href="/sobre">
+                                <img class="img-fluid" id="badge-name-img"
+                                    src="assets/images/home/nome-pinacograma.webp" alt="Pinacograma Daniel Brito (nome)"
+                                    title="Sobre mim">
                             </a>
                         </div>
                     </div>
@@ -84,49 +99,57 @@
 
                 <section>
                     <div class="row justify-content-center align-items-center" id="row-profiles">
-                        <div class="col-xl-4" id="coluna-profile">
-                            <a href="/projetos/#tecnologia" class="link-inicio" id="perfil-desenvolvedor"
-                                title="Projetos tecnológicos">
-                                <i id="icone-desenvolvedor" class="fas fa-code"></i>
-                                <p id="descricao-desenvolvedor">Desenvolvedor</p>
+                        <div class="col-xl-4" id="column-developer-profile">
+                            <a href="/projetos/#tecnologia" id="developer-profile" title="Projetos tecnológicos">
+                                <i id="developer-icon" class="fas fa-code"></i>
+                                <h1 id="developer-title">Desenvolvedor</h1>
                             </a>
                         </div>
-                        <div class="col-xl-4" id="coluna-profile">
-                            <a href="/livros" class="link-inicio" id="perfil-escritor" title="Publicações">
-                                <i id="icone-escritor" class="fas fa-pen-nib"></i>
-                                <p id="descricao-escritor">Escritor</p>
+                        <div class="col-xl-4" id="column-writer-profile">
+                            <a href="/livros" id="writer-profile" title="Publicações">
+                                <i id="writer-icon" class="fas fa-pen-nib"></i>
+                                <h1 id="writer-title">Escritor</h1>
                             </a>
                         </div>
-                        <div class="col-xl-4" id="coluna-profile">
-                            <a href="/projetos/#arte" class="link-inicio" id="perfil-artista"
-                                title="Projetos artísticos">
-                                <i id="icone-artista" class="fas fa-palette"></i>
-                                <p id="descricao-artista">Artista Visual</p>
+                        <div class="col-xl-4" id="column-artist-profile">
+                            <a href="/projetos/#arte" id="artist-profile" title="Projetos artísticos">
+                                <i id="artist-icon" class="fas fa-palette"></i>
+                                <h1 id="artist-title">Artista Visual</h1>
                             </a>
                         </div>
                     </div>
                 </section>
             </div>
         </main>
+
+        <footer>
+            <div class="row no-gutters justify-content-center" id="row-footer">
+                <div class="footer-letter-wrapper"><span class="footer-letter">D</span></div>
+                <div class="footer-letter-wrapper"><span class="footer-letter">N</span></div>
+                <div class="footer-letter-wrapper"><span class="footer-letter">L</span></div>
+                <div class="footer-symbol-wrapper"><span class="footer-symbol"><a id="creative-commons"
+                            href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"
+                            rel="noopener noreferrer" title="Licença Creative Commons">ɔ</a></span></div>
+                <div class="footer-letter-wrapper"><span class="footer-letter">B</span></div>
+                <div class="footer-letter-wrapper"><span class="footer-letter">R</span></div>
+                <div class="footer-letter-wrapper"><span class="footer-letter">T</span></div>
+            </div>
+        </footer>
     </div>
 
-    <footer>
-        <div class="row no-gutters justify-content-center" id="footer-linha">
-            <div class="footer-letra"><span class="letra">D</span></div>
-            <div class="footer-letra"><span class="letra">N</span></div>
-            <div class="footer-letra"><span class="letra">L</span></div>
-            <div class="footer-simbolo"><span class="simbolo"><a id="creative-commons"
-                        href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"
-                        rel="noopener noreferrer" title="Licença Creative Commons">ɔ</a></span></div>
-            <div class="footer-letra"><span class="letra">B</span></div>
-            <div class="footer-letra"><span class="letra">R</span></div>
-            <div class="footer-letra"><span class="letra">T</span></div>
-        </div>
-    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/script.js"></script>
+    <script src="../assets/lightbox/lightbox-plus-jquery.min.js"></script>
+
+    <script src="assets/js/scripts.min.js"></script>
 
 </body>
 

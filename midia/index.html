@@ -3,19 +3,33 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Daniel Brito, site, arte, poesia, artista, poeta, art, poetry, artist, poet">
+    <meta name="keywords" content="Daniel Brito, desenvolvedor, artista, escritor">
     <meta name="author" content="Daniel Brito">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Mídia | Daniel Brito</title>
-    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../assets/css/styles.css">
-    <link rel="shortcut icon" type="image/png" href="../assets/img/geral/favicon.png" />
-    <link href="../assets/fontawesome/css/all.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="shortcut icon" type="image/png" href="../assets/images/global/favicon.png">
+
+    <link rel="stylesheet" href="../assets/css/global/main.min.css">
+    <link rel="stylesheet" href="../assets/css/global/colors.min.css">
+    <link rel="stylesheet" href="../assets/css/global/fonts.min.css">
+    <link rel="stylesheet" href="../assets/css/components/custom-scrollbar.min.css">
+    <link rel="stylesheet" href="../assets/css/components/to-top-button.min.css">
+    <link rel="stylesheet" href="../assets/css/components/navigation-bar.min.css">
+    <link rel="stylesheet" href="../assets/css/components/footer.min.css">
+    <link rel="stylesheet" href="../assets/css/pages/media.min.css">
 </head>
 
 <body>
-    <div id="container">
-        <a id="top-button" title="Ir para o topo">
+    <div id="reading-status-container">
+        <a id="to-top-button" title="Ir para o topo">
             <span>
                 <i id="top-icon" class="fas fa-angle-up"></i>
             </span>
@@ -24,10 +38,10 @@
         <header class="sticky-top" id="nav-wrapper">
             <nav class="navbar navbar-light navbar-expand-xl sticky-top" id="nav-bar">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="https://danielbrito.github.io">
-                        <img class="float-left" src="../assets/img/geral/daniel-brito-monograma.png"
+                    <div class="navbar-brand">
+                        <img class="float-left" src="../assets/images/global/daniel-brito-monograma.png"
                             id="daniel-brito-logo" alt="Daniel Brito logo">
-                    </a>
+                    </div>
                     <button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1">
                         <span class="sr-only" id="toggle-nav">Toggle navigation</span>
                         <span class="navbar-toggler-icon text-monospace" id="toggle-nav-icon"></span>
@@ -35,24 +49,24 @@
                     <div class="collapse navbar-collapse" id="navcol-1">
                         <ul class="nav navbar-nav ml-auto">
                             <li class="nav-item" role="presentation"><a class="nav-link"
-                                    href="https://danielbrito.github.io"><i class="fas fa-home"
+                                    href="https://danielbrito.github.io"><i class="fas fa-home icon-navbar"
                                         id="icone-navbar"></i>INÍCIO</a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link" href="/sobre"><i
-                                        class="fas fa-user" id="icone-navbar"></i>SOBRE</a></li>
+                                        class="fas fa-user icon-navbar"></i>SOBRE</a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link" href="/livros"><i
-                                        class="fas fa-book" id="icone-navbar"></i>LIVROS</a></li>
+                                        class="fas fa-book icon-navbar"></i>LIVROS</a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link" href="/projetos"><i
-                                        class="fas fa-lightbulb" id="icone-navbar"></i>PROJETOS</a></li>
+                                        class="fas fa-lightbulb icon-navbar"></i>PROJETOS</a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link" href="/imagens"><i
-                                        class="fas fa-images" id="icone-navbar"></i>IMAGENS</a></li>
+                                        class="fas fa-images icon-navbar"></i>IMAGENS</a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link" href="/videos"><i
-                                        class="fas fa-video" id="icone-navbar""></i>VÍDEOS</a></li>
+                                        class="fas fa-video icon-navbar"></i>VÍDEOS</a></li>
                             <li class=" nav-item" role="presentation"><a class="nav-link" href="/blog"><i
-                                                class="fab fa-blogger" id="icone-navbar"></i>BLOG</a></li>
+                                        class="fab fa-blogger icon-navbar"></i>BLOG</a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link active" href="/midia"><i
-                                        class="fas fa-newspaper" id="icone-navbar"></i>MÍDIA</a></li>
+                                        class="fas fa-newspaper icon-navbar"></i>MÍDIA</a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link" href="/contato"><i
-                                        class="fas fa-envelope" id="icone-navbar"></i>CONTATO</a></li>
+                                        class="fas fa-envelope icon-navbar"></i>CONTATO</a></li>
                         </ul>
                     </div>
                 </div>
@@ -60,65 +74,103 @@
         </header>
 
         <main>
-            <div class="container" id="midia-container">
+            <div class="container media">
                 <div class="row justify-content-center align-items-center">
-                    <div class="col-md-6 col-xl-5" id="noticia-coluna-img">
-                        <img class="img-fluid" id="noticia-img"
-                            src="../assets/img/midia/halugar_ufc_crateus_noticias_010320.jpg"
+                    <div class="col-md-6 col-xl-5 column-image">
+                        <img class="img-fluid" src="../assets/images/media/hackpi-01-10-21.webp"
+                            alt="Notícia - Alunos da UFC em Crateús vencem HackPI">
+                    </div>
+                    <div class="col-md-6 col-xl-7 column-description">
+                        <h1 class="title-media">HACKPI</h1>
+                        <div>
+                            <p class="text-center media-text">"A equipe Cactus - Data Solutions, formada integralmente
+                                por estudantes e egressos do Campus da UFC em Crateús, foi a vencedora do HackPI Ceará:
+                                Hackathon para a Primeira Infância Cearense na problemática de potencialização do uso e
+                                interpretação dos dados".</p>
+                        </div>
+                        <a class="btn btn-danger btn-block btn-lg custom-button" role="button"
+                            href="https://www.ufc.br/noticias/16182-equipes-formadas-por-estudantes-e-egressos-da-ufc-vencem-hackathon-para-a-primeira-infancia-cearense"
+                            target="_blank" title="Matéria completa"><i class="fas fa-eye"></i> LER
+                            MATÉRIA</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container media">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-md-6 col-xl-5 column-legend">
+                        <h1 class="title-media video">INTERAÇÃO DO STARTUFC</h1>
+                        <p class="media-text"><em>"Venha com a gente conhecer um pouco mais sobre a experiência que o
+                                Daniel teve em sua vida acadêmica, quais as decisões que ele tomou para se tornar um
+                                aluno diferenciado, e agora dono de vários projetos bacanas."</em></p>
+                    </div>
+                    <div class="col-md-6 col-xl-7 column-video">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/2THMn6L9oGg"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container media">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-md-6 col-xl-5 column-image">
+                        <img class="img-fluid" src="../assets/images/media/halugar_ufc_crateus_noticias_010320.webp"
                             alt="Daniel Brito - UFC - HáLugar">
                     </div>
-                    <div class="col-md-6 col-xl-7" id="noticia-coluna-descricao">
-                        <h1 class="titulo-midia">PORTAL DA UFC</h1>
+                    <div class="col-md-6 col-xl-7 column-description">
+                        <h1 class="title-media">HÁLUGAR NO PORTAL DA UFC</h1>
                         <div>
-                            <p class="text-center" id="noticia-descricao"><em>"O aplicativo <a href="/projetos/#halugar"
-                                        id="link-interno" title="Saiba mais"><em>HáLugar</em></a> já ganhou a atenção
+                            <p class="text-center media-text"><em>"O aplicativo <a href="/projetos/#halugar"
+                                        class="redirect-link" title="Saiba mais"><em>HáLugar</em></a> já ganhou a
+                                    atenção
                                     dos moradores da cidade. Em poucos dias lançado, já possuía anúncios cadastrados
                                     pelos estudantes. Para o professor da disciplina, que incentivou a publicação do
                                     software, a iniciativa irá estimular o desenvolvimento de mais ideias pelos
                                     discentes."</em></p>
                         </div>
-                        <a class="btn btn-danger btn-block btn-lg" role="button"
+                        <a class="btn btn-danger btn-block btn-lg custom-button" role="button"
                             href="http://crateus.ufc.br/cc/2020/03/01/estudante-de-ciencia-da-computacao-desenvolve-aplicativo-para-quem-deseja-compartilhar-moradia/"
-                            target="_blank" id="botao" title="Matéria completa"><i class="fas fa-eye"></i> LER
+                            target="_blank" title="Matéria completa"><i class="fas fa-eye"></i> LER
                             MATÉRIA</a>
                     </div>
                 </div>
             </div>
 
-            <div class="container" id="midia-container">
+            <div class="container media">
                 <div class="row justify-content-center align-items-center">
-                    <div class="col-md-6 col-xl-5" id="noticia-coluna-img">
-                        <img class="img-fluid" id="noticia-img"
-                            src="../assets/img/midia/halugar_portal_sertoes_240220.jpg"
+                    <div class="col-md-6 col-xl-5 column-image">
+                        <img class="img-fluid" src="../assets/images/media/halugar_portal_sertoes_240220.webp"
                             alt="Daniel Brito - Portal Sertões - HáLugar">
                     </div>
-                    <div class="col-md-6 col-xl-7" id="noticia-coluna-descricao">
-                        <h1 class="titulo-midia">PORTAL SERTÕES</h1>
+                    <div class="col-md-6 col-xl-7 column-description">
+                        <h1 class="title-media">HÁLUGAR NO PORTAL SERTÕES</h1>
                         <div>
-                            <p class="text-center" id="noticia-descricao"><em>"O <a href="/projetos/#halugar"
-                                        id="link-interno" title="Saiba mais"><em>HáLugar</em></a> foi desenvolvido pelo
+                            <p class="text-center media-text"><em>"O <a href="/projetos/#halugar" class="redirect-link"
+                                        title="Saiba mais"><em>HáLugar</em></a> foi desenvolvido pelo
                                     aluno Daniel Brito, do curso de Ciência da Computação da UFC - Campus Crateús,
                                     durante as disciplinas de Desenvolvimento de Software para Web e Desenvolvimento de
                                     Software para Dispositivos Móveis, ministradas pelo professor Francisco Anderson de
                                     Almada Gomes."</em></p>
                         </div>
-                        <a class="btn btn-danger btn-block btn-lg" role="button"
+                        <a class="btn btn-danger btn-block btn-lg custom-button" role="button"
                             href="https://www.portalsertoes.com/2020/02/estudante-da-ufc-de-crateus-desenvolve.html"
-                            target="_blank" id="botao" title="Matéria completa"><i class="fas fa-eye"></i> LER
+                            target="_blank" title="Matéria completa"><i class="fas fa-eye"></i> LER
                             MATÉRIA</a>
                     </div>
                 </div>
             </div>
 
-            <div class="container" id="midia-container">
+            <div class="container media">
                 <div class="row justify-content-center align-items-center">
-                    <div class="col-md-6 col-xl-5" id="noticia-coluna-legenda">
-                        <h1 class="titulo-midia-video">CURTA POESIAS</h1>
-                        <p class="text-center" id="noticia-legenda">Uma breve homenagem da Paola Silva em seu projeto
+                    <div class="col-md-6 col-xl-5 column-legend">
+                        <h1 class="title-media video">CURTA POESIAS</h1>
+                        <p class="media-text">Uma breve homenagem da Paola Silva em seu projeto
                             <em><strong>Curta Poesias</strong></em>.
                         </p>
                     </div>
-                    <div class="col-md-6 col-xl-7" id="noticia-coluna-video">
+                    <div class="col-md-6 col-xl-7 column-video">
                         <div class="embed-responsive embed-responsive-16by9">
                             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/LVshZDPiIy8"
                                 allowfullscreen></iframe>
@@ -127,15 +179,15 @@
                 </div>
             </div>
 
-            <div class="container" id="midia-container">
+            <div class="container media">
                 <div class="row justify-content-center align-items-center">
-                    <div class="col-md-6 col-xl-5" id="noticia-coluna-legenda">
-                        <h1 class="titulo-midia-video">ENTREVISTA TVT</h1>
-                        <p class="text-center" id="noticia-legenda"><em>“<strong>Art é Arte!</strong> mostra a
+                    <div class="col-md-6 col-xl-5 column-legend">
+                        <h1 class="title-media video">ENTREVISTA TVT</h1>
+                        <p class="media-text"><em>“<strong>Art é Arte!</strong> mostra a
                                 surpreendente harmonia dentro deste evento 'anárquico' e revela a voz de artistas da
                                 periferia.”</em></p>
                     </div>
-                    <div class="col-md-6 col-xl-7" id="noticia-coluna-video">
+                    <div class="col-md-6 col-xl-7 column-video">
                         <div class="embed-responsive embed-responsive-16by9">
                             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/wSN3jBGo5pQ"
                                 allowfullscreen></iframe>
@@ -144,15 +196,15 @@
                 </div>
             </div>
 
-            <div class="container" id="midia-container">
+            <div class="container media">
                 <div class="row justify-content-center align-items-center">
-                    <div class="col-md-6 col-xl-5" id="noticia-coluna-legenda">
-                        <h1 class="titulo-midia-video">ENTREVISTA TV GRAJAÚ</h1>
-                        <p class="text-center" id="noticia-legenda">Na minha primeira entrevista, concedida aos colegas
+                    <div class="col-md-6 col-xl-5 column-legend">
+                        <h1 class="title-media video">ENTREVISTA TV GRAJAÚ</h1>
+                        <p class="media-text">Na minha primeira entrevista, concedida aos colegas
                             da <em><strong>TV Grajaú</strong></em>, falei um pouco sobre mim, meus projetos e planos
                             futuros.</p>
                     </div>
-                    <div class="col-md-6 col-xl-7" id="noticia-coluna-video">
+                    <div class="col-md-6 col-xl-7 column-video">
                         <div class="embed-responsive embed-responsive-16by9">
                             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/T3VHeEjBwS0"
                                 allowfullscreen></iframe>
@@ -163,23 +215,33 @@
         </main>
 
         <footer>
-            <div class="row no-gutters justify-content-center" id="footer-linha">
-                <div class="footer-letra"><span class="letra">D</span></div>
-                <div class="footer-letra"><span class="letra">N</span></div>
-                <div class="footer-letra"><span class="letra">L</span></div>
-                <div class="footer-simbolo"><span class="simbolo"><a id="creative-commons"
+            <div class="row no-gutters justify-content-center" id="row-footer">
+                <div class="footer-letter-wrapper"><span class="footer-letter">D</span></div>
+                <div class="footer-letter-wrapper"><span class="footer-letter">N</span></div>
+                <div class="footer-letter-wrapper"><span class="footer-letter">L</span></div>
+                <div class="footer-symbol-wrapper"><span class="footer-symbol"><a id="creative-commons"
                             href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"
                             rel="noopener noreferrer" title="Licença Creative Commons">ɔ</a></span></div>
-                <div class="footer-letra"><span class="letra">B</span></div>
-                <div class="footer-letra"><span class="letra">R</span></div>
-                <div class="footer-letra"><span class="letra">T</span></div>
+                <div class="footer-letter-wrapper"><span class="footer-letter">B</span></div>
+                <div class="footer-letter-wrapper"><span class="footer-letter">R</span></div>
+                <div class="footer-letter-wrapper"><span class="footer-letter">T</span></div>
             </div>
         </footer>
     </div>
 
-    <script src="../assets/js/jquery.min.js"></script>
-    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="../assets/js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <script src="../assets/lightbox/lightbox-plus-jquery.min.js"></script>
+
+    <script src="../assets/js/scripts.min.js"></script>
 
 </body>
 

@@ -3,19 +3,33 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Daniel Brito, site, arte, poesia, artista, poeta, art, poetry, artist, poet">
+    <meta name="keywords" content="Daniel Brito, desenvolvedor, artista, escritor">
     <meta name="author" content="Daniel Brito">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Sobre | Daniel Brito</title>
-    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../assets/css/styles.css">
-    <link rel="shortcut icon" type="image/png" href="../assets/img/geral/favicon.png" />
-    <link href="../assets/fontawesome/css/all.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="shortcut icon" type="image/png" href="../assets/images/global/favicon.png">
+
+    <link rel="stylesheet" href="../assets/css/global/colors.min.css">
+    <link rel="stylesheet" href="../assets/css/global/main.min.css">
+    <link rel="stylesheet" href="../assets/css/global/fonts.min.css">
+    <link rel="stylesheet" href="../assets/css/components/custom-scrollbar.min.css">
+    <link rel="stylesheet" href="../assets/css/components/to-top-button.min.css">
+    <link rel="stylesheet" href="../assets/css/components/navigation-bar.min.css">
+    <link rel="stylesheet" href="../assets/css/components/footer.min.css">
+    <link rel="stylesheet" href="../assets/css/pages/about.min.css">
 </head>
 
 <body>
-    <div id="container">
-        <a id="top-button" title="Ir para o topo">
+    <div id="reading-status-container">
+        <a id="to-top-button" title="Ir para o topo">
             <span>
                 <i id="top-icon" class="fas fa-angle-up"></i>
             </span>
@@ -24,10 +38,10 @@
         <header class="sticky-top" id="nav-wrapper">
             <nav class="navbar navbar-light navbar-expand-xl sticky-top" id="nav-bar">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="https://danielbrito.github.io">
-                        <img class="float-left" src="../assets/img/geral/daniel-brito-monograma.png"
+                    <div class="navbar-brand">
+                        <img class="float-left" src="../assets/images/global/daniel-brito-monograma.png"
                             id="daniel-brito-logo" alt="Daniel Brito logo">
-                    </a>
+                    </div>
                     <button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1">
                         <span class="sr-only" id="toggle-nav">Toggle navigation</span>
                         <span class="navbar-toggler-icon text-monospace" id="toggle-nav-icon"></span>
@@ -35,24 +49,24 @@
                     <div class="collapse navbar-collapse" id="navcol-1">
                         <ul class="nav navbar-nav ml-auto">
                             <li class="nav-item" role="presentation"><a class="nav-link"
-                                    href="https://danielbrito.github.io"><i class="fas fa-home"
+                                    href="https://danielbrito.github.io"><i class="fas fa-home icon-navbar"
                                         id="icone-navbar"></i>INÍCIO</a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link active" href="/sobre"><i
-                                        class="fas fa-user" id="icone-navbar"></i>SOBRE</a></li>
+                                        class="fas fa-user icon-navbar"></i>SOBRE</a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link" href="/livros"><i
-                                        class="fas fa-book" id="icone-navbar"></i>LIVROS</a></li>
+                                        class="fas fa-book icon-navbar"></i>LIVROS</a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link" href="/projetos"><i
-                                        class="fas fa-lightbulb" id="icone-navbar"></i>PROJETOS</a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="/imagens/"><i
-                                        class="fas fa-images" id="icone-navbar"></i>IMAGENS</a></li>
+                                        class="fas fa-lightbulb icon-navbar"></i>PROJETOS</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="/imagens"><i
+                                        class="fas fa-images icon-navbar"></i>IMAGENS</a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link" href="/videos"><i
-                                        class="fas fa-video" id="icone-navbar""></i>VÍDEOS</a></li>
+                                        class="fas fa-video icon-navbar"></i>VÍDEOS</a></li>
                             <li class=" nav-item" role="presentation"><a class="nav-link" href="/blog"><i
-                                                class="fab fa-blogger" id="icone-navbar"></i>BLOG</a></li>
+                                        class="fab fa-blogger icon-navbar"></i>BLOG</a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link" href="/midia"><i
-                                        class="fas fa-newspaper" id="icone-navbar"></i>MÍDIA</a></li>
+                                        class="fas fa-newspaper icon-navbar"></i>MÍDIA</a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link" href="/contato"><i
-                                        class="fas fa-envelope" id="icone-navbar"></i>CONTATO</a></li>
+                                        class="fas fa-envelope icon-navbar"></i>CONTATO</a></li>
                         </ul>
                     </div>
                 </div>
@@ -61,32 +75,32 @@
 
         <main>
             <section>
-                <div id="titulo-sobre-wrapper">
-                    <div id="titulo-sobre">
-                        <div id="icone-sobre-wrapper" title="&quot;Minha breve história&quot;">
-                            <i id="sobre-icone-historia" class="fas fa-hourglass-half"></i>
+                <div class="title-about-wrapper">
+                    <div class="column-title-about">
+                        <div class="icon-about-circle" title="&quot;Minha breve história&quot;">
+                            <i id="icon-biography" class="fas fa-hourglass-half"></i>
                         </div>
-                        <h1 class="text-center" id="sobre-titulo"><strong>AUTOBIOGRAFIA</strong></h1>
+                        <h1 class="about-title"><strong>AUTOBIOGRAFIA</strong></h1>
                     </div>
                 </div>
 
-                <div class="container" id="sobre-container">
+                <div class="container about">
                     <div class="row justify-content-center align-items-center">
-                        <div class="col-xl-5" id="sobre-coluna-img">
-                            <img class="img-fluid" id="sobre-img" src="../assets/img/sobre/brito.gif"
-                                alt="Daniel Brito Tech Gif">
+                        <div class="col-xl-5 column-image">
+                            <img class="img-fluid" src="../assets/images/about/brito.webp" alt="Daniel Brito Tech">
                         </div>
-                        <div class="col-xl-7" id="sobre-coluna-descricao">
+                        <div class="col-xl-7 column-description">
                             <div>
-                                <p class="text-center" id="sobre-texto">
-                                    Nasci em São Paulo, há <span id="dias"></span> dias. Durante a maior parte da
+                                <p class="text-center about-text">
+                                    Nasci em São Paulo, há <span id="days"></span> dias. Durante a maior parte da
                                     minha vida, morei no distrito do Grajaú. Na minha infância, gostava de ler, assistir
-                                    desenhos animados, jogar futebol, videogame e criar coisas. Posteriormente, ganhei
+                                    desenhos animados, jogar futebol, videogame e criar coisas. Quando adolescente,
+                                    ganhei
                                     meu primeiro computador, o qual me deixou simplesmente fascinado.<br /><br />
 
-                                    Aos 16 anos, consegui um emprego como jovem aprendiz no CAMP Pinheiros. Então, após
-                                    o término do contrato, em decorrência de um bom serviço, conquistei um posto efetivo
-                                    para atuar como assistente administrativo na CPFL Renováveis.<br /><br />
+                                    Aos 16 anos, consegui meu primeiro emprego como jovem aprendiz. Então, após
+                                    o término do contrato, em decorrência de um bom serviço, fui efetivado
+                                    para atuar como assistente administrativo.<br /><br />
 
                                     Depois de estudar em diferentes escolas públicas, fui aprovado no vestibular da
                                     Faculdade
@@ -96,20 +110,21 @@
                                     nordeste,
                                     com o propósito de estudar Ciência da Computação na Universidade Federal do Ceará
                                     (UFC), onde
-                                    participei de alguns projetos nas áreas de desenvolvimento web e mobile, computação
-                                    gráfica, <a id="link-interno" href="https://github.com/GEMP-UFC-Crateus"
+                                    participei de projetos nas áreas de desenvolvimento web e mobile, computação
+                                    gráfica, <a class="redirect-link" href="https://github.com/GEMP-UFC-Crateus"
                                         target="_blank" title="Perfil do GEMP no GitHub"><em>programação
                                             competitiva</em></a> e
                                     docência.<br /><br />
 
-                                    Nos últimos tempos, tenho trabalhado como desenvolvedor de software para web e
-                                    dispositivos móveis.<br /><br />
+                                    Nos últimos tempos, tenho trabalhado como desenvolvedor de software, com foco em
+                                    usabilidade e desenvolvimento front-end de aplicações para
+                                    web e dispositivos móveis.<br /><br />
 
                                     Informações mais recentes e detalhadas sobre a minha trajetória profissional e
-                                    acadêmica podem ser encontradas no meu <em><a id="link-interno"
+                                    acadêmica podem ser encontradas no meu <em><a class="redirect-link"
                                             href="https://drive.google.com/file/d/1bOFjCfhoyabvcZ7LXf5T3EtY9h6umsaR/view"
                                             target="_blank" title="Arquivo PDF">currículo</a></em> e no meu perfil
-                                    na <em><a id="link-interno" href="http://lattes.cnpq.br/6587136026055239"
+                                    na <em><a class="redirect-link" href="http://lattes.cnpq.br/6587136026055239"
                                             target="_blank" title="Currículo na Plataforma Lattes">Plataforma
                                             Lattes</a></em>.
                                 </p>
@@ -120,71 +135,76 @@
             </section>
 
             <section>
-                <div id="titulo-sobre-wrapper">
-                    <div id="titulo-sobre">
-                        <div id="icone-sobre-wrapper" title="&quot;Quero ser tudo que sou capaz de me tornar&quot;">
-                            <i id="sobre-icone-ser" class="fas fa-rocket"></i>
+                <div class="title-about-wrapper">
+                    <div class="column-title-about">
+                        <div class="icon-about-circle" title="&quot;Quero ser tudo que sou capaz de me tornar&quot;">
+                            <i id="icon-projects" class="fas fa-rocket"></i>
                         </div>
-                        <h1 class="text-center" id="sobre-titulo"><strong>ADEMAIS</strong></h1>
+                        <h1 class="about-title"><strong>ADEMAIS</strong></h1>
                     </div>
                 </div>
 
-                <div class="container" id="sobre-container">
+                <div class="container about">
                     <div class="row justify-content-center align-items-center">
-                        <div class="col-xl-5" id="sobre-coluna-img">
-                            <img class="img-fluid" id="sobre-img"
-                                src="../assets/img/sobre/observar-absorver-alessa-melo-sobre.gif"
-                                alt="Daniel Brito Gif">
+                        <div class="col-xl-5 column-image">
+                            <img class="img-fluid" src="../assets/images/about/observar-absorver-alessa-melo-sobre.webp"
+                                alt="Daniel Brito poliglota">
                         </div>
-                        <div class="col-xl-7" id="sobre-coluna-descricao">
+                        <div class="col-xl-7 column-description">
                             <div>
-                                <p class="text-center" id="sobre-texto">
+                                <p class="text-center about-text">
+                                    Sou uma pessoa bastante pragmática, buscando sempre aplicar meus conhecimentos na
+                                    criação novos projetos, que englobam tanto o campo da Arte como
+                                    Tecnologia. Se possível, também com um viés de ativismo social.<br /><br />
+
                                     Realizo a divulgação científica de assuntos relacionados à Computação no <em><a
-                                            href="/projetos/#sturing" id="link-interno"
-                                            title="Saiba mais">sTuring</a></em>. Idealizei o projeto <em><a
-                                            href="/projetos/#compixelar" id="link-interno"
+                                            href="/projetos/#sturing" class="redirect-link"
+                                            title="Saiba mais">sTuring</a></em>.
+                                    Idealizei o projeto <em><a href="/projetos/#compixelar" class="redirect-link"
                                             title="Saiba mais">Compixelar</a></em>. Sou <a href="/livros/#fanzines"
-                                        id="link-interno" title="Saiba mais"><em>(Fan)zineiro</em></a>. Desenvolvi o
-                                    aplicativo <a href="/projetos/#halugar" id="link-interno"
+                                        class="redirect-link" title="Saiba mais"><em>(Fan)zineiro</em></a>. Desenvolvi o
+                                    aplicativo <a href="/projetos/#halugar" class="redirect-link"
                                         title="Saiba mais"><em>HáLugar</em></a>. Sou criador dos <a
-                                        href="/projetos/#aluminions" id="link-interno"
+                                        href="/projetos/#aluminions" class="redirect-link"
                                         title="Saiba mais"><em>Aluminions</em></a>. Sou pensador no <a
-                                        href="/projetos/#fora-da-caixa" id="link-interno" title="Saiba mais"><em>Fora da
+                                        href="/projetos/#fora-da-caixa" class="redirect-link"
+                                        title="Saiba mais"><em>Fora da
                                             Caixa</em></a>. Sou tailleur na <a href="/projetos/#antigrife"
-                                        id="link-interno" title="Saiba mais"><em>ANTIGR1F3</em></a>. Sou curador na <a
-                                        href="/projetos/#galeria-marginal" id="link-interno"
-                                        title="Saiba mais"><em>Galeria Marginal</em></a>. Sou programador aspirante a <a
-                                        href="/projetos/#canal" id="link-interno"
-                                        title="Saiba mais"><em>YouTuber</em></a>. Sou obreiro na <a
-                                        href="/projetos/#concretagens" id="link-interno" title="Saiba mais"><em>Coletiva
-                                            Concretagens</em></a>. Dissemino arte e filosofia através dos <a
-                                        href="/projetos/#socrastickers" id="link-interno"
+                                        class="redirect-link" title="Saiba mais"><em>ANTIGR1F3</em></a>. Sou curador na
+                                    <a href="/projetos/#galeria-marginal" class="redirect-link"
+                                        title="Saiba mais"><em>Galeria
+                                            Marginal</em></a>. Sou programador aspirante a <a href="/projetos/#canal"
+                                        class="redirect-link" title="Saiba mais"><em>YouTuber</em></a>. Sou obreiro na
+                                    <a href="/projetos/#concretagens" class="redirect-link"
+                                        title="Saiba mais"><em>Coletiva
+                                            Concretagens</em></a>.<br /><br />
+
+                                    Integrei o coletivo <a href="/projetos/#sarau-do-grajau" class="redirect-link"
+                                        title="Saiba mais"><em>Sarau do Grajaú</em></a>, que produziu o documentário <a
+                                        href="/videos/#grajau-em-foco" class="redirect-link"
+                                        title="Saiba mais"><em>Grajaú
+                                            em Foco</em></a>. Disseminava arte e filosofia através dos <a
+                                        href="/projetos/#socrastickers" class="redirect-link"
                                         title="Saiba mais"><em>Socrastickers</em></a>.<br /><br />
 
-                                    Integrei o coletivo <a href="/projetos/#sarau-do-grajau" id="link-interno"
-                                        title="Saiba mais"><em>Sarau do Grajaú</em></a>, que produziu o documentário <a
-                                        href="/videos/#grajau-em-foco" id="link-interno" title="Saiba mais"><em>Grajaú
-                                            em Foco</em></a>.<br /><br />
-
                                     De maneira independente, publiquei dois livros, o <em><a
-                                            href="/livros/#protestizando" id="link-interno"
-                                            title="Saiba mais">PROTESTIZANDO - Biênio Poético</a> (2015)</em>, que
+                                            href="/livros/#protestizando" class="redirect-link"
+                                            title="Saiba mais">PROTESTIZANDO
+                                            - Biênio Poético</a> (2015)</em>, que
                                     compila alguns dos meus primeiros escritos, e o <em><a href="/livros/#a-ler-vazios"
-                                            id="link-interno" title="Saiba mais">A Ler Vazios</a> (2016)</em>, que reúne
-                                    algumas das minhas experimentações poético-visuais. Além disso, também fui publicado
+                                            class="redirect-link" title="Saiba mais">A Ler Vazios</a> (2016)</em>, que
+                                    reúne
+                                    algumas das minhas experimentações poético-visuais.<br /><br />
+
+                                    Além disso, também fui publicado
                                     em diversas revistas e antologias com outros escritores marginais.<br /><br />
 
                                     Como artista visual e cientista nato, foco minha pesquisa no campo do <em><a
-                                            id="link-interno" href="https://github.com/DanielBrito/generative-design"
-                                            target="_blank" title="Repositório no GitHub">Design Generativo</a></em>,
+                                            class="redirect-link"
+                                            href="https://github.com/DanielBrito/generative-design" target="_blank"
+                                            title="Repositório no GitHub">Design Generativo</a></em>,
                                     uma área da computação voltada para a criação de algoritmos que geram
-                                    arte.<br /><br />
-
-                                    Apesar dos meus <em><a id="link-interno"
-                                            href="https://github.com/DanielBrito/self-learning" target="_blank"
-                                            title="Repositório no GitHub">estudos</a></em> atuais estarem mais voltados
-                                    para o front-end, estou seguindo os passos
-                                    para me tornar um desenvolvedor full-stack.
+                                    arte.
                                 </p>
                             </div>
                         </div>
@@ -193,26 +213,28 @@
             </section>
 
             <section>
-                <div id="titulo-sobre-wrapper">
-                    <div id="titulo-sobre">
-                        <div id="icone-sobre-wrapper" title="&quot;A vida, o universo e tudo mais&quot;">
-                            <i id="sobre-icone-vida" class="fas fa-heartbeat"></i>
+                <div class="title-about-wrapper">
+                    <div class="column-title-about">
+                        <div class="icon-about-circle" title="&quot;A vida, o universo e tudo mais&quot;">
+                            <i id="icon-life" class="fas fa-heartbeat"></i>
                         </div>
-                        <h1 class="text-center" id="sobre-titulo"><strong>CARPE DIEM</strong></h1>
+                        <h1 class="about-title"><strong>CARPE DIEM</strong></h1>
                     </div>
                 </div>
 
-                <div class="container" id="sobre-container">
+                <div class="container about">
                     <div class="row justify-content-center align-items-center">
-                        <div class="col-xl-5" id="sobre-coluna-img">
-                            <img class="img-fluid" id="sobre-img" src="../assets/img/sobre/insight.gif"
-                                alt="Daniel Brito Gif">
+                        <div class="col-xl-5 column-image">
+                            <img class="img-fluid" src="../assets/images/about/insight.webp"
+                                alt="Daniel Brito pensando">
                         </div>
-                        <div class="col-xl-7" id="sobre-coluna-descricao">
+                        <div class="col-xl-7 column-description">
                             <div>
-                                <p class="text-center" id="sobre-texto">
+                                <p class="text-center about-text">
                                     Logo após escapar da caverna da alegoria de Platão, John Keating me ensinou a
-                                    aproveitar o dia, a fim de tornar minha vida extraordinária. Pouco tempo depois,
+                                    aproveitar o dia, a fim de tornar minha vida extraordinária.<br /><br />
+
+                                    Pouco tempo depois,
                                     aprendi sobre o poder da metáfora, quando assistia aos
                                     ensinamentos do poeta Pablo Neruda a um humilde carteiro que trabalhava para
                                     ele.<br /><br />
@@ -220,30 +242,32 @@
                                     Através das ciências exatas, me fascino ao desvendar o cosmos. As ciências sociais
                                     me ajudam na compreensão da sociedade em que vivo e das diversas culturas que me
                                     cercam. Por meio da tecnologia, procuro estimular minha criatividade e desenvolver
-                                    <a href="https://github.com/DanielBrito?tab=projects" id="link-interno"
-                                        target="_blank" title="Board no GitHub"><em>soluções</em></a> que promovam o
+                                    <a href="https://github.com/DanielBrito?tab=projects" class="redirect-link"
+                                        target="_blank" title="Board no GitHub"><em>soluções</em></a> que promovam
                                     progresso pessoal e
                                     social.<br /><br />
 
                                     Andar de skate e BMX me fornece boas doses de adrenalina. Além disso, também recorro
-                                    à calistenia e <a href="https://lichess.org/@/danielbrito41" id="link-interno"
+                                    à calistenia e <a href="https://lichess.org/@/danielbrito41" class="redirect-link"
                                         target="_blank" title="Perfil no Lichess"><em>neuróbica</em></a>, com intuito de
                                     treinar o meu corpo e a minha mente.<br /><br />
 
                                     Carrego um interesse crescente pela <a
-                                        href="https://filmow.com/usuario/daniel_brito/" id="link-interno"
+                                        href="https://filmow.com/usuario/daniel_brito/" class="redirect-link"
                                         target="_blank" title="Perfil no Filmow"><em>Sétima Arte</em></a> e meu <a
-                                        href="https://open.spotify.com/user/xb93kruabsjskn5chjqo127ep" id="link-interno"
-                                        target="_blank" title="Perfil no Spotify"><em>gosto musical</em></a> abrange
+                                        href="https://open.spotify.com/user/xb93kruabsjskn5chjqo127ep"
+                                        class="redirect-link" target="_blank" title="Perfil no Spotify"><em>gosto
+                                            musical</em></a> abrange
                                     desde pianos afinados até guitarras distorcidas.<br /><br />
 
                                     Prezo pelo respeito em relação à existência de todos os seres sencientes, pela
                                     atitude faça-você-mesmo, bem como pelo autodidatismo, <a
-                                        href="https://duome.eu/DanBrito41" id="link-interno" target="_blank"
+                                        href="https://duome.eu/DanBrito41" class="redirect-link" target="_blank"
                                         title="Perfil no Duolingo"><em>poliglotismo</em></a> e <a href="/blog"
-                                        id="link-interno" title="Blog pessoal"><em>polimatia</em></a>.<br /><br />
+                                        class="redirect-link" title="Blog pessoal"><em>polimatia</em></a>.<br /><br />
 
-                                    A busca por conhecimento e a descoberta de outros mundos são meus maiores objetivos
+                                    A busca por conhecimento e a descoberta de outros univesos são meus maiores
+                                    objetivos
                                     existenciais.
                                 </p>
                             </div>
@@ -254,23 +278,19 @@
         </main>
 
         <footer>
-            <div class="row no-gutters justify-content-center" id="footer-linha">
-                <div class="footer-letra"><span class="letra">D</span></div>
-                <div class="footer-letra"><span class="letra">N</span></div>
-                <div class="footer-letra"><span class="letra">L</span></div>
-                <div class="footer-simbolo"><span class="simbolo"><a id="creative-commons"
+            <div class="row no-gutters justify-content-center" id="row-footer">
+                <div class="footer-letter-wrapper"><span class="footer-letter">D</span></div>
+                <div class="footer-letter-wrapper"><span class="footer-letter">N</span></div>
+                <div class="footer-letter-wrapper"><span class="footer-letter">L</span></div>
+                <div class="footer-symbol-wrapper"><span class="footer-symbol"><a id="creative-commons"
                             href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"
                             rel="noopener noreferrer" title="Licença Creative Commons">ɔ</a></span></div>
-                <div class="footer-letra"><span class="letra">B</span></div>
-                <div class="footer-letra"><span class="letra">R</span></div>
-                <div class="footer-letra"><span class="letra">T</span></div>
+                <div class="footer-letter-wrapper"><span class="footer-letter">B</span></div>
+                <div class="footer-letter-wrapper"><span class="footer-letter">R</span></div>
+                <div class="footer-letter-wrapper"><span class="footer-letter">T</span></div>
             </div>
         </footer>
     </div>
-
-    <script src="../assets/js/jquery.min.js"></script>
-    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="../assets/js/script.js"></script>
 
     <script>
         var today = new Date();
@@ -279,7 +299,7 @@
         var diff = today.getTime() - birthDate.getTime(); /* Miliseconds */
         var diffDays = parseInt(diff / (24 * 60 * 60 * 1000));
 
-        days = document.getElementById("dias");
+        days = document.getElementById("days");
         days.innerHTML = diffDays;
 
         if (today.getDate() < 4 && today.getMonth() == 0) {
@@ -289,6 +309,20 @@
             days.title = (today.getFullYear() - 1993) + " anos";
         }
     </script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <script src="../assets/lightbox/lightbox-plus-jquery.min.js"></script>
+
+    <script src="../assets/js/scripts.min.js"></script>
 
 </body>
 

@@ -3,19 +3,33 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Daniel Brito, site, arte, poesia, artista, poeta, art, poetry, artist, poet">
+    <meta name="keywords" content="Daniel Brito, desenvolvedor, artista, escritor">
     <meta name="author" content="Daniel Brito">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Vídeos | Daniel Brito</title>
-    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../assets/css/styles.css">
-    <link rel="shortcut icon" type="image/png" href="../assets/img/geral/favicon.png" />
-    <link href="../assets/fontawesome/css/all.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="shortcut icon" type="image/png" href="../assets/images/global/favicon.png">
+
+    <link rel="stylesheet" href="../assets/css/global/main.min.css">
+    <link rel="stylesheet" href="../assets/css/global/colors.min.css">
+    <link rel="stylesheet" href="../assets/css/global/fonts.min.css">
+    <link rel="stylesheet" href="../assets/css/components/custom-scrollbar.min.css">
+    <link rel="stylesheet" href="../assets/css/components/to-top-button.min.css">
+    <link rel="stylesheet" href="../assets/css/components/navigation-bar.min.css">
+    <link rel="stylesheet" href="../assets/css/components/footer.min.css">
+    <link rel="stylesheet" href="../assets/css/pages/videos.min.css">
 </head>
 
 <body>
-    <div id="container">
-        <a id="top-button" title="Ir para o topo">
+    <div id="reading-status-container">
+        <a id="to-top-button" title="Ir para o topo">
             <span>
                 <i id="top-icon" class="fas fa-angle-up"></i>
             </span>
@@ -24,10 +38,10 @@
         <header class="sticky-top" id="nav-wrapper">
             <nav class="navbar navbar-light navbar-expand-xl sticky-top" id="nav-bar">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="https://danielbrito.github.io">
-                        <img class="float-left" src="../assets/img/geral/daniel-brito-monograma.png"
+                    <div class="navbar-brand">
+                        <img class="float-left" src="../assets/images/global/daniel-brito-monograma.png"
                             id="daniel-brito-logo" alt="Daniel Brito logo">
-                    </a>
+                    </div>
                     <button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1">
                         <span class="sr-only" id="toggle-nav">Toggle navigation</span>
                         <span class="navbar-toggler-icon text-monospace" id="toggle-nav-icon"></span>
@@ -35,24 +49,24 @@
                     <div class="collapse navbar-collapse" id="navcol-1">
                         <ul class="nav navbar-nav ml-auto">
                             <li class="nav-item" role="presentation"><a class="nav-link"
-                                    href="https://danielbrito.github.io"><i class="fas fa-home"
+                                    href="https://danielbrito.github.io"><i class="fas fa-home icon-navbar"
                                         id="icone-navbar"></i>INÍCIO</a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link" href="/sobre"><i
-                                        class="fas fa-user" id="icone-navbar"></i>SOBRE</a></li>
+                                        class="fas fa-user icon-navbar"></i>SOBRE</a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link" href="/livros"><i
-                                        class="fas fa-book" id="icone-navbar"></i>LIVROS</a></li>
+                                        class="fas fa-book icon-navbar"></i>LIVROS</a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link" href="/projetos"><i
-                                        class="fas fa-lightbulb" id="icone-navbar"></i>PROJETOS</a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="/imagens/"><i
-                                        class="fas fa-images" id="icone-navbar"></i>IMAGENS</a></li>
+                                        class="fas fa-lightbulb icon-navbar"></i>PROJETOS</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="/imagens"><i
+                                        class="fas fa-images icon-navbar"></i>IMAGENS</a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link active" href="/videos"><i
-                                        class="fas fa-video" id="icone-navbar""></i>VÍDEOS</a></li>
+                                        class="fas fa-video icon-navbar"></i>VÍDEOS</a></li>
                             <li class=" nav-item" role="presentation"><a class="nav-link" href="/blog"><i
-                                                class="fab fa-blogger" id="icone-navbar"></i>BLOG</a></li>
+                                        class="fab fa-blogger icon-navbar"></i>BLOG</a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link" href="/midia"><i
-                                        class="fas fa-newspaper" id="icone-navbar"></i>MÍDIA</a></li>
+                                        class="fas fa-newspaper icon-navbar"></i>MÍDIA</a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link" href="/contato"><i
-                                        class="fas fa-envelope" id="icone-navbar"></i>CONTATO</a></li>
+                                        class="fas fa-envelope icon-navbar"></i>CONTATO</a></li>
                         </ul>
                     </div>
                 </div>
@@ -60,17 +74,17 @@
         </header>
 
         <main>
-            <div class="container" id="video-container">
+            <div class="container video">
                 <div class="row justify-content-center align-items-center" id="apresentacao-vieira">
-                    <div class="col-md-6 col-xl-5" id="video-coluna-descricao">
-                        <h1 class="titulo-video">MINHA HISTÓRIA COM O CONCRETISMO</h1>
-                        <p class="text-center" id="video-descricao">Esta breve apresentação foi fruto de um convite para
+                    <div class="col-md-6 col-xl-5 column-description">
+                        <h1 class="video-title">MINHA HISTÓRIA COM O CONCRETISMO</h1>
+                        <p class="text-center video-text">Esta breve apresentação foi fruto de um convite para
                             que eu discorresse sobre a minha história com o movimento concretista, para uma turma da
                             disciplina
                             de Língua
                             Portuguesa da E.E. José Vieira de Moraes.</p>
                     </div>
-                    <div class="col-md-6 col-xl-7" id="coluna-video">
+                    <div class="col-md-6 col-xl-7 column-video">
                         <div class="embed-responsive embed-responsive-16by9">
                             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/wCXEZY4tqZY"
                                 allowfullscreen></iframe>
@@ -79,17 +93,18 @@
                 </div>
             </div>
 
-            <div class="container" id="video-container">
+            <div class="container video">
                 <div class="row justify-content-center align-items-center" id="defesa-tcc">
-                    <div class="col-md-6 col-xl-5" id="video-coluna-descricao">
-                        <h1 class="titulo-video">DEFESA DE TCC</h1>
-                        <p class="text-center" id="video-descricao">Defesa do <em><strong><a
-                                        href="/projetos/#monografia" id="link-interno"
-                                        title="Saiba mais">trabalho</a></strong></em> intitulado: <em>Geração procedural
+                    <div class="col-md-6 col-xl-5 column-description">
+                        <h1 class="video-title">DEFESA DE TCC</h1>
+                        <p class="text-center video-text">Defesa do <em><strong><a href="/projetos/#monografia"
+                                        class="redirect-link" title="Saiba mais">trabalho</a></strong></em> intitulado:
+                            <em>Geração procedural
                                 de modelos arquiteturais com geometria arredondada utilizando Selection Expressions
-                                (SELEX)</em>.</p>
+                                (SELEX)</em>.
+                        </p>
                     </div>
-                    <div class="col-md-6 col-xl-7" id="coluna-video">
+                    <div class="col-md-6 col-xl-7 column-video">
                         <div class="embed-responsive embed-responsive-16by9">
                             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/oTeyrTvo4-s"
                                 allowfullscreen></iframe>
@@ -98,15 +113,16 @@
                 </div>
             </div>
 
-            <div class="container" id="video-container">
+            <div class="container video">
                 <div class="row justify-content-center align-items-center" id="fire-tasks-playlist">
-                    <div class="col-md-6 col-xl-5" id="video-coluna-descricao">
-                        <h1 class="titulo-video">WORKSHOP FIT</h1>
-                        <p class="text-center" id="video-descricao"><em><strong><a href="/projetos/#fire-tasks"
-                                        id="link-interno" title="Saiba mais">Fire Tasks</a></strong></em> é um incrível
+                    <div class="col-md-6 col-xl-5 column-description">
+                        <h1 class="video-title">WORKSHOP FIT</h1>
+                        <p class="text-center video-text"><em><strong><a href="/projetos/#fire-tasks"
+                                        class="redirect-link" title="Saiba mais">Fire Tasks</a></strong></em> é um
+                            incrível
                             gerenciador de tarefas construído com ReactJS, Styled Components e Firestore.</p>
                     </div>
-                    <div class="col-md-6 col-xl-7" id="coluna-video">
+                    <div class="col-md-6 col-xl-7 column-video">
                         <div class="embed-responsive embed-responsive-16by9">
                             <iframe class="embed-responsive-item"
                                 src="https://www.youtube.com/embed/videoseries?list=PLckh4uyjCOmhoNX55YHSDAlVW6cRjkwT_"
@@ -116,15 +132,16 @@
                 </div>
             </div>
 
-            <div class="container" id="video-container">
+            <div class="container video">
                 <div class="row justify-content-center align-items-center" id="compixelar-playlist">
-                    <div class="col-md-6 col-xl-5" id="video-coluna-descricao">
-                        <h1 class="titulo-video">EXPERIMENTOS</h1>
-                        <p class="text-center" id="video-descricao"><em><strong><a href="/projetos/#compixelar"
-                                        id="link-interno" title="Saiba mais">Compixelando</a></strong></em> arte através
+                    <div class="col-md-6 col-xl-5 column-description">
+                        <h1 class="video-title">EXPERIMENTOS</h1>
+                        <p class="text-center video-text"><em><strong><a href="/projetos/#compixelar"
+                                        class="redirect-link" title="Saiba mais">Compixelando</a></strong></em> arte
+                            através
                             da programação criativa.</p>
                     </div>
-                    <div class="col-md-6 col-xl-7" id="coluna-video">
+                    <div class="col-md-6 col-xl-7 column-video">
                         <div class="embed-responsive embed-responsive-16by9">
                             <iframe class="embed-responsive-item"
                                 src="https://www.youtube.com/embed/videoseries?list=PLckh4uyjCOmgV4vtHXVed1X4N04-ah0Ev"
@@ -134,15 +151,15 @@
                 </div>
             </div>
 
-            <div class="container" id="video-container">
+            <div class="container video">
                 <div class="row justify-content-center align-items-center" id="halugar-screencast">
-                    <div class="col-md-6 col-xl-5" id="video-coluna-descricao">
-                        <h1 class="titulo-video">SCREENCAST HáLUGAR</h1>
-                        <p class="text-center" id="video-descricao"><em><strong><a id="link-interno"
-                                        href="/projetos/#halugar" title="Saiba mais">HáLugar</a></strong></em> é um
+                    <div class="col-md-6 col-xl-5 column-description">
+                        <h1 class="video-title">SCREENCAST HáLUGAR</h1>
+                        <p class="text-center video-text"><em><strong><a class="redirect-link" href="/projetos/#halugar"
+                                        title="Saiba mais">HáLugar</a></strong></em> é um
                             aplicativo voltado para estudantes que desejam compartilhar moradia.</p>
                     </div>
-                    <div class="col-md-6 col-xl-7" id="coluna-video">
+                    <div class="col-md-6 col-xl-7 column-video">
                         <div class="embed-responsive embed-responsive-16by9">
                             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/9wHZYrn7aEE"
                                 allowfullscreen></iframe>
@@ -151,16 +168,16 @@
                 </div>
             </div>
 
-            <div class="container" id="video-container">
+            <div class="container video">
                 <div class="row justify-content-center align-items-center">
-                    <div class="col-md-6 col-xl-5" id="video-coluna-descricao">
-                        <h1 class="titulo-video">HáLUGAR PARA VOCÊ</h1>
-                        <p class="text-center" id="video-descricao">Longe de ser um trabalho profissional, esta animação
-                            do <em><strong><a id="link-interno" href="/projetos/#halugar"
+                    <div class="col-md-6 col-xl-5 column-description">
+                        <h1 class="video-title">HáLUGAR PARA VOCÊ</h1>
+                        <p class="text-center video-text">Longe de ser um trabalho profissional, esta animação
+                            do <em><strong><a class="redirect-link" href="/projetos/#halugar"
                                         title="Saiba mais">HáLugar</a></strong></em> foi criada para colocar em prática
                             algumas técnicas de modelagem e animação 3D com Blender.</p>
                     </div>
-                    <div class="col-md-6 col-xl-7" id="coluna-video">
+                    <div class="col-md-6 col-xl-7 column-video">
                         <div class="embed-responsive embed-responsive-16by9">
                             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/M_IkGl3AcqE"
                                 allowfullscreen></iframe>
@@ -169,17 +186,17 @@
                 </div>
             </div>
 
-            <div class="container" id="video-container">
+            <div class="container video">
                 <div class="row justify-content-center align-items-center" id="cp-playlist">
-                    <div class="col-md-6 col-xl-5" id="video-coluna-descricao">
-                        <h1 class="titulo-video">PROGRAMAÇÃO COMPETITIVA</h1>
-                        <p class="text-center" id="video-descricao">Evoluindo por meio da análise e resolução de
-                            <em><strong><a id="link-interno"
+                    <div class="col-md-6 col-xl-5 column-description">
+                        <h1 class="video-title">PROGRAMAÇÃO COMPETITIVA</h1>
+                        <p class="text-center video-text">Evoluindo por meio da análise e resolução de
+                            <em><strong><a class="redirect-link"
                                         href="https://github.com/DanielBrito/competitive-programming" target="_blank"
                                         title="Repositório no GitHub">desafios</a></strong></em> de programação.
                         </p>
                     </div>
-                    <div class="col-md-6 col-xl-7" id="coluna-video">
+                    <div class="col-md-6 col-xl-7 column-video">
                         <div class="embed-responsive embed-responsive-16by9">
                             <iframe class="embed-responsive-item"
                                 src="https://www.youtube.com/embed/playlist?list=PLckh4uyjCOmjvKSfrDDJ6oh1lIF3qJ3hM"
@@ -189,16 +206,16 @@
                 </div>
             </div>
 
-            <div class="container" id="video-container">
+            <div class="container video">
                 <div class="row justify-content-center align-items-center" id="fup-playlist">
-                    <div class="col-md-6 col-xl-5" id="video-coluna-descricao">
-                        <h1 class="titulo-video">PRIMEIROS PASSOS</h1>
-                        <p class="text-center" id="video-descricao">Aplicando <em><strong><a id="link-interno"
+                    <div class="col-md-6 col-xl-5 column-description">
+                        <h1 class="video-title">PRIMEIROS PASSOS</h1>
+                        <p class="text-center video-text">Aplicando <em><strong><a class="redirect-link"
                                         href="https://github.com/DanielBrito/videos-youtube" target="_blank"
                                         title="Repositório no GitHub">fundamentos de programação</a></strong></em> em
                             cenários práticos.</p>
                     </div>
-                    <div class="col-md-6 col-xl-7" id="coluna-video">
+                    <div class="col-md-6 col-xl-7 column-video">
                         <div class="embed-responsive embed-responsive-16by9">
                             <iframe class="embed-responsive-item"
                                 src="https://www.youtube.com/embed/playlist?list=PLckh4uyjCOmgfzGEdPT_UZ14DxKlymoxX"
@@ -208,15 +225,15 @@
                 </div>
             </div>
 
-            <div class="container" id="video-container">
+            <div class="container video">
                 <div class="row justify-content-center align-items-center" id="aluminions-timelapse">
-                    <div class="col-md-6 col-xl-5" id="video-coluna-descricao">
-                        <h1 class="titulo-video">TIMELAPSE</h1>
-                        <p class="text-center" id="video-descricao">Para as pessoas interessadas no processo de criação
-                            dos <em><strong><a id="link-interno" href="/projetos/#aluminions"
+                    <div class="col-md-6 col-xl-5 column-description">
+                        <h1 class="video-title">TIMELAPSE</h1>
+                        <p class="text-center video-text">Para as pessoas interessadas no processo de criação
+                            dos <em><strong><a class="redirect-link" href="/projetos/#aluminions"
                                         title="Saiba mais">Aluminions</a></strong></em>.</p>
                     </div>
-                    <div class="col-md-6 col-xl-7" id="coluna-video">
+                    <div class="col-md-6 col-xl-7 column-video">
                         <div class="embed-responsive embed-responsive-16by9">
                             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/QniP7mjY9Rs"
                                 allowfullscreen></iframe>
@@ -225,16 +242,16 @@
                 </div>
             </div>
 
-            <div class="container" id="video-container">
+            <div class="container video">
                 <div class="row justify-content-center align-items-center">
-                    <div class="col-md-6 col-xl-5" id="video-coluna-descricao">
-                        <h1 class="titulo-video">STOP MOTION</h1>
-                        <p class="text-center" id="video-descricao">Esta breve animação dos <em><strong><a
-                                        id="link-interno" href="/projetos/#aluminions"
-                                        title="Saiba mais">Aluminions</a></strong></em> foi criada utilizando a técnica
+                    <div class="col-md-6 col-xl-5 column-description">
+                        <h1 class="video-title">STOP MOTION</h1>
+                        <p class="text-center video-text">Esta breve animação dos <em><strong><a class="redirect-link"
+                                        href="/projetos/#aluminions" title="Saiba mais">Aluminions</a></strong></em> foi
+                            criada utilizando a técnica
                             de stop motion.</p>
                     </div>
-                    <div class="col-md-6 col-xl-7" id="coluna-video">
+                    <div class="col-md-6 col-xl-7 column-video">
                         <div class="embed-responsive embed-responsive-16by9">
                             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/qRmpaXgMros"
                                 allowfullscreen></iframe>
@@ -243,15 +260,15 @@
                 </div>
             </div>
 
-            <div class="container" id="video-container">
+            <div class="container video">
                 <div class="row justify-content-center align-items-center">
-                    <div class="col-md-6 col-xl-5" id="video-coluna-descricao">
-                        <h1 class="titulo-video">ALUMINIONS 3D</h1>
-                        <p class="text-center" id="video-descricao">A modelagem dos <em><strong><a id="link-interno"
+                    <div class="col-md-6 col-xl-5 column-description">
+                        <h1 class="video-title">ALUMINIONS 3D</h1>
+                        <p class="text-center video-text">A modelagem dos <em><strong><a class="redirect-link"
                                         href="/projetos/#aluminions" title="Saiba mais">Aluminions</a></strong></em> é o
                             início do processo no qual pretendo criar um jogo.</p>
                     </div>
-                    <div class="col-md-6 col-xl-7" id="coluna-video">
+                    <div class="col-md-6 col-xl-7 column-video">
                         <div class="embed-responsive embed-responsive-16by9">
                             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ICX667nOIOA"
                                 allowfullscreen></iframe>
@@ -261,16 +278,16 @@
             </div>
 
 
-            <div class="container" id="video-container">
+            <div class="container video">
                 <div class="row justify-content-center align-items-center" id="grajau-em-foco">
-                    <div class="col-md-6 col-xl-5" id="video-coluna-descricao">
-                        <h1 class="titulo-video">GRAJAÚ EM FOCO</h1>
-                        <p class="text-center" id="video-descricao">Produzido pelo coletivo <em><strong><a
-                                        id="link-interno" href="/projetos/#sarau-do-grajau" title="Saiba mais">Sarau do
+                    <div class="col-md-6 col-xl-5 column-description">
+                        <h1 class="video-title">GRAJAÚ EM FOCO</h1>
+                        <p class="text-center video-text">Produzido pelo coletivo <em><strong><a class="redirect-link"
+                                        href="/projetos/#sarau-do-grajau" title="Saiba mais">Sarau do
                                         Grajaú</a></strong></em>, este documentário faz um recorte sensível da chamada
                             cena poética da periferia.</p>
                     </div>
-                    <div class="col-md-6 col-xl-7" id="coluna-video">
+                    <div class="col-md-6 col-xl-7 column-video">
                         <div class="embed-responsive embed-responsive-16by9">
                             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/R80bigCpxMA"
                                 allowfullscreen></iframe>
@@ -281,23 +298,33 @@
         </main>
 
         <footer>
-            <div class="row no-gutters justify-content-center" id="footer-linha">
-                <div class="footer-letra"><span class="letra">D</span></div>
-                <div class="footer-letra"><span class="letra">N</span></div>
-                <div class="footer-letra"><span class="letra">L</span></div>
-                <div class="footer-simbolo"><span class="simbolo"><a id="creative-commons"
+            <div class="row no-gutters justify-content-center" id="row-footer">
+                <div class="footer-letter-wrapper"><span class="footer-letter">D</span></div>
+                <div class="footer-letter-wrapper"><span class="footer-letter">N</span></div>
+                <div class="footer-letter-wrapper"><span class="footer-letter">L</span></div>
+                <div class="footer-symbol-wrapper"><span class="footer-symbol"><a id="creative-commons"
                             href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"
                             rel="noopener noreferrer" title="Licença Creative Commons">ɔ</a></span></div>
-                <div class="footer-letra"><span class="letra">B</span></div>
-                <div class="footer-letra"><span class="letra">R</span></div>
-                <div class="footer-letra"><span class="letra">T</span></div>
+                <div class="footer-letter-wrapper"><span class="footer-letter">B</span></div>
+                <div class="footer-letter-wrapper"><span class="footer-letter">R</span></div>
+                <div class="footer-letter-wrapper"><span class="footer-letter">T</span></div>
             </div>
         </footer>
     </div>
 
-    <script src="../assets/js/jquery.min.js"></script>
-    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="../assets/js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <script src="../assets/lightbox/lightbox-plus-jquery.min.js"></script>
+
+    <script src="../assets/js/scripts.min.js"></script>
 
 </body>
 
