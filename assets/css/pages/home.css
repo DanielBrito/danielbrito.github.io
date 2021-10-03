@@ -189,7 +189,7 @@
 #writer-title:hover {
   text-shadow: 0 0 13px var(--red-text-bright), 0 0 13px var(--red-text-bright);
   cursor: pointer;
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 @media only screen and (max-width: 1199px) {
@@ -267,6 +267,12 @@
   animation: pulse 1.5s infinite;
   margin-top: 3px;
   margin-bottom: 0px;
+}
+
+#developer-icon,
+#artist-icon,
+#writer-icon {
+  text-shadow: 0 0 1px var(--red-text-bright);
 }
 
 #developer-profile,
