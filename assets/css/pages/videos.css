@@ -30,7 +30,7 @@
 .video-text {
   font-family: "Fira Mono", monospace;
   color: var(--white);
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   font-size: 14px;
   line-height: 20px;
   text-shadow: 0 0 5px var(--black);
