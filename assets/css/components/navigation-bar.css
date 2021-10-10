@@ -4,6 +4,7 @@
 
 #nav-wrapper {
   width: 100%;
+  background-color: var(--black);
   box-shadow: 0px 0px 10px var(--black), 0px 0px 10px var(--black);
   display: flex;
   justify-content: center;
