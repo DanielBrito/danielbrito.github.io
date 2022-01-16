@@ -129,6 +129,7 @@
   font-size: 25px;
   text-shadow: 0 0 5px var(--black);
   text-align: center;
+  margin-bottom: 16px;
 }
 
 .project-text {

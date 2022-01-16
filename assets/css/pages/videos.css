@@ -17,6 +17,7 @@
   color: var(--white);
   font-weight: bold;
   text-shadow: 0 0 5px var(--black);
+  margin-bottom: 16px;
 }
 
 .column-description {
