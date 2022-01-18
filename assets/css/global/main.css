@@ -137,3 +137,19 @@ a:active {
   border-color: var(--red-wine-primary);
   box-shadow: 0 0 5px var(--red-wine-primary), 0 0 5px var(--red-wine-primary);
 }
+
+/* SKIP TO MAIN CONTENT: */
+
+.skip-to-content {
+  background-color: var(--red-wine-primary);
+  padding: 15px 20px;
+  z-index: 9999;
+  position: absolute;
+  left: 30px;
+  transform: translateY(-120%);
+  transition: transform 325ms ease-in;
+}
+
+.skip-to-content:focus {
+  transform: translateY(26%);
+}
