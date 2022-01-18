@@ -145,7 +145,7 @@ a:active {
   padding: 15px 20px;
   z-index: 9999;
   position: absolute;
-  left: 30px;
+  left: 25px;
   transform: translateY(-120%);
   transition: transform 325ms ease-in;
 }
