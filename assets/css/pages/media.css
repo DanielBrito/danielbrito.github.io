@@ -42,9 +42,7 @@
 }
 
 .title-news {
-  font-size: 23px;
-  font-family: "Fira Mono", monospace;
-  color: var(--white);
+  font-size: 1.43rem;
   font-weight: bold;
   text-shadow: 0 0 5px var(--black);
   text-align: center;
@@ -56,10 +54,8 @@
 }
 
 .news-text {
-  font-family: "Fira Mono", monospace;
-  color: var(--white);
   margin-bottom: 20px;
-  font-size: 14px;
+  font-size: 0.87rem;
   line-height: 20px;
   text-align: center;
   border-radius: 10px;
@@ -85,7 +81,7 @@
 }
 
 .soundcloud-player-container {
-  font-size: 10px;
+  font-size: 0.625rem;
   color: #cccccc;
   line-break: anywhere;
   word-break: normal;

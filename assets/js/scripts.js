@@ -32,11 +32,28 @@ window.addEventListener("load", () => {
   document.addEventListener("scroll", updateBar);
 });
 
-/* Hiding navbar on scroll: */
+/* Handling visibility of the navbar and to top button on scroll: */
 
 var prevScrollpos = window.pageYOffset;
 
+var toTopButton = document.getElementById("to-top-button");
+
+toTopButton.addEventListener("click", scrollToTop);
+
+function scrollToTop() {
+  // For Safari:
+  document.body.scrollTop = 0;
+
+  // For Chrome, Firefox, IE and Opera:
+  document.documentElement.scrollTop = 0;
+}
+
 window.onscroll = function () {
+  handleToTopButton();
+  handleHideNavbar();
+};
+
+function handleHideNavbar() {
   var currentScrollPos = window.pageYOffset;
 
   if (prevScrollpos > currentScrollPos) {
@@ -46,20 +63,9 @@ window.onscroll = function () {
   }
 
   prevScrollpos = currentScrollPos;
-};
-
-/* Back to top button: */
-
-var toTopButton = document.getElementById("to-top-button");
-
-toTopButton.addEventListener("click", scrollToTop);
-
-function scrollToTop() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-window.onscroll = function () {
+function handleToTopButton() {
   if (
     document.body.scrollTop > 200 ||
     document.documentElement.scrollTop > 200
@@ -68,4 +74,4 @@ window.onscroll = function () {
   } else {
     toTopButton.classList.remove("show");
   }
-};
+}

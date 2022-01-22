@@ -39,21 +39,17 @@
 }
 
 .contact-title {
-  font-family: "Fira Mono", monospace;
-  color: var(--white);
   margin-top: 0px;
   margin-bottom: 16px;
-  font-size: 30px;
+  font-size: 1.87rem;
   text-shadow: 0 0 5px var(--black);
   text-align: center;
 }
 
 .contact-text {
-  font-family: "Fira Mono", monospace;
-  color: var(--white);
   margin-bottom: 0px;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 0.87rem;
+  line-height: 1.25rem;
   text-align: center;
 }
 
@@ -111,7 +107,7 @@
   border-color: var(--red-wine-primary);
   border-width: 1px;
   border-style: solid;
-  font-size: 14px;
+  font-size: 0.87rem;
   padding: 0.7rem;
   border-radius: 5px 5px 0 0;
   display: flex;
@@ -131,13 +127,11 @@
 }
 
 .modal-title {
-  font-family: "Fira Mono", monospace;
-  color: var(--white);
   font-weight: bold;
   margin-left: auto;
   margin-right: auto;
   text-shadow: 0 0 5px var(--black);
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 .modal-body {
@@ -164,16 +158,16 @@
 }
 
 #profiles-list span a {
-  font-family: "Fira Mono", monospace;
   margin-left: 7px;
   font-style: italic;
 }
 
 .item-profile {
   display: flex;
-  line-height: 17px;
+  line-height: 1.07rem;
   margin-top: 4px;
   margin-bottom: 13px;
+  font-size: 0.87rem;
 }
 
 .profiles-divider {

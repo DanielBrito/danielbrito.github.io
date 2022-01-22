@@ -24,14 +24,14 @@
 
 #icon-biography {
   color: var(--white);
-  transform: scale(2);
+  transform: scale(1.7);
   margin-top: auto;
   margin-bottom: auto;
 }
 
 #icon-projects {
   color: var(--white);
-  transform: scale(1.9) rotate(-45deg);
+  transform: scale(1.6) rotate(-45deg);
   padding-right: 2px;
   padding-top: 2px;
   margin-top: auto;
@@ -40,7 +40,7 @@
 
 #icon-life {
   color: var(--white);
-  transform: scale(2.1);
+  transform: scale(1.8);
   margin-top: auto;
   margin-bottom: auto;
 }
@@ -63,9 +63,7 @@
 }
 
 .about-title {
-  font-family: "Fira Mono", monospace;
-  color: var(--white);
-  font-size: 25px;
+  font-size: 1.56rem;
   text-shadow: 0 0 5px var(--black);
   text-align: center;
 }
@@ -111,10 +109,8 @@
 }
 
 .about-text {
-  font-family: "Fira Mono", monospace;
-  color: var(--white);
   margin-bottom: 0px;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 0.87rem;
+  line-height: 1.25rem;
   text-shadow: 0 0 5px var(--black);
 }

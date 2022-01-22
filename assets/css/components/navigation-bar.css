@@ -26,13 +26,12 @@
   padding-top: 7px;
   padding-bottom: 8px;
   max-width: 1350px;
-  font-family: "Fira Mono", monospace;
   font-weight: bold;
 }
 
 .nav-item {
   padding: 10px 6px 10px 6px;
-  font-size: 15px;
+  font-size: 0.94rem;
   font-weight: bold;
 }
 
@@ -101,6 +100,6 @@
 }
 
 #navcol-1 {
-  font-size: 16px;
+  font-size: 1rem;
   text-align: center;
 }

@@ -40,18 +40,14 @@
 }
 
 .blog-section-title {
-  font-family: "Fira Mono", monospace;
-  color: var(--white);
-  font-size: 30px;
+  font-size: 1.87rem;
   text-shadow: 0 0 5px var(--black);
   text-align: center;
   margin-bottom: 16px;
 }
 
 .blog-section-text {
-  color: var(--white);
-  font-family: "Fira Mono", monospace;
-  font-size: 14px;
+  font-size: 0.87rem;
   text-shadow: 0 0 5px var(--black);
   margin-bottom: 30px;
   text-align: center;
