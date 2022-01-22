@@ -50,17 +50,22 @@ window.onscroll = function () {
 
 /* Back to top button: */
 
-var btn = $("#to-top-button");
+var toTopButton = document.getElementById("to-top-button");
 
-$(window).scroll(function () {
-  if ($(window).scrollTop() > 200) {
-    btn.addClass("show");
+toTopButton.addEventListener("click", scrollToTop);
+
+function scrollToTop() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+window.onscroll = function () {
+  if (
+    document.body.scrollTop > 200 ||
+    document.documentElement.scrollTop > 200
+  ) {
+    toTopButton.classList.add("show");
   } else {
-    btn.removeClass("show");
+    toTopButton.classList.remove("show");
   }
-});
-
-btn.on("click", function (e) {
-  e.preventDefault();
-  $("html, body").animate({ scrollTop: 0 }, "200");
-});
+};

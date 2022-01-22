@@ -3,9 +3,10 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Daniel Brito, desenvolvedor, artista, escritor">
+    <meta name="keywords" content="Daniel Brito, desenvolvedor, artista, escritor, programação, arte, poesia">
     <meta name="author" content="Daniel Brito">
-    <meta name="description" content="Site pessoal de Daniel Brito, com informações pessoais e projetos desenvolvidos.">
+    <meta name="description"
+        content="Site pessoal de Daniel Brito, com informações pessoais, livros publicados e projetos desenvolvidos.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Livros | Daniel Brito</title>
@@ -18,24 +19,23 @@
 
     <link rel="shortcut icon" type="image/png" href="../assets/images/global/favicon.png">
 
-    <link rel="stylesheet" href="../assets/css/global/main.min.css">
-    <link rel="stylesheet" href="../assets/css/global/colors.min.css">
-    <link rel="stylesheet" href="../assets/css/global/fonts.min.css">
-    <link rel="stylesheet" href="../assets/css/components/custom-scrollbar.min.css">
-    <link rel="stylesheet" href="../assets/css/components/to-top-button.min.css">
-    <link rel="stylesheet" href="../assets/css/components/navigation-bar.min.css">
-    <link rel="stylesheet" href="../assets/css/components/footer.min.css">
-    <link rel="stylesheet" href="../assets/css/pages/books.min.css">
+    <link rel="stylesheet" href="../assets/css/global/main.css">
+    <link rel="stylesheet" href="../assets/css/global/colors.css">
+    <link rel="stylesheet" href="../assets/css/global/fonts.css">
+    <link rel="stylesheet" href="../assets/css/components/custom-scrollbar.css">
+    <link rel="stylesheet" href="../assets/css/components/to-top-button.css">
+    <link rel="stylesheet" href="../assets/css/components/navigation-bar.css">
+    <link rel="stylesheet" href="../assets/css/components/footer.css">
+    <link rel="stylesheet" href="../assets/css/pages/books.css">
 </head>
 
 <body>
-    <a class="skip-to-content" href="#main-content">Ir para o conteúdo principal</a>
+    <a class="skip-to-content" href="#main-content" aria-label="Ir para o conteúdo principal">Ir para o conteúdo
+        principal</a>
+
     <div id="reading-status-container">
-        <a id="to-top-button" title="Ir para o topo">
-            <span>
-                <i id="top-icon" class="fas fa-angle-up"></i>
-            </span>
-        </a>
+        <button id="to-top-button" title="Ir para o topo" aria-hidden="true"><i id="top-icon"
+                class="fas fa-angle-up"></i></button>
 
         <header class="sticky-top" id="nav-wrapper">
             <nav class="navbar navbar-light navbar-expand-xl sticky-top" id="nav-bar">
@@ -53,23 +53,31 @@
                     <div class="collapse navbar-collapse" id="navcol-1">
                         <ul class="nav navbar-nav ml-auto">
                             <li class="nav-item" role="presentation"><a class="nav-link"
-                                    href="https://danielbrito.github.io"><i class="fas fa-home icon-navbar"
-                                        id="icone-navbar"></i>INÍCIO</a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="/sobre"><i
-                                        class="fas fa-user icon-navbar"></i>SOBRE</a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link active" href="/livros"><i
-                                        class="fas fa-book icon-navbar"></i>LIVROS</a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="/projetos"><i
+                                    href="https://danielbrito.github.io" aria-label="Ir para página inicial"><i
+                                        class="fas fa-home icon-navbar"></i>INÍCIO</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="/sobre"
+                                    aria-label="Ir para página Sobre"><i class="fas fa-user icon-navbar"></i>SOBRE</a>
+                            </li>
+                            <li class="nav-item" role="presentation"><a class="nav-link active" href="/livros"
+                                    aria-label="Ir para página Livros"><i class="fas fa-book icon-navbar"></i>LIVROS</a>
+                            </li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="/projetos"
+                                    aria-label="Ir para página Projetos"><i
                                         class="fas fa-lightbulb icon-navbar"></i>PROJETOS</a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="/imagens"><i
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="/imagens"
+                                    aria-label="Ir para página Imagens"><i
                                         class="fas fa-images icon-navbar"></i>IMAGENS</a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="/videos"><i
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="/videos"
+                                    aria-label="Ir para página Vídeos"><i
                                         class="fas fa-video icon-navbar"></i>VÍDEOS</a></li>
-                            <li class=" nav-item" role="presentation"><a class="nav-link" href="/blog"><i
-                                        class="fab fa-blogger icon-navbar"></i>BLOG</a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="/midia"><i
+                            <li class=" nav-item" role="presentation"><a class="nav-link" href="/blog"
+                                    aria-label="Ir para página Blog"><i class="fab fa-blogger icon-navbar"></i>BLOG</a>
+                            </li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="/midia"
+                                    aria-label="Ir para página Mídia"><i
                                         class="fas fa-newspaper icon-navbar"></i>MÍDIA</a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="/contato"><i
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="/contato"
+                                    aria-label="Ir para página Contato"><i
                                         class="fas fa-envelope icon-navbar"></i>CONTATO</a></li>
                         </ul>
                     </div>
@@ -104,7 +112,8 @@
                             </div>
                             <a class="btn btn-danger btn-block btn-lg custom-button" role="button"
                                 href="https://github.com/DanielBrito/no-ritmo-de-algo" target="_blank"
-                                title="Repositório no GitHub"><i class="fas fa-eye"></i> VER PRÉVIA</a>
+                                title="Repositório no GitHub" aria-label="Ver prévia no GitHub"><i
+                                    class="fas fa-eye"></i> VER PRÉVIA</a>
                         </div>
                     </div>
                 </div>
@@ -135,18 +144,19 @@
                                     boa viagem.</p>
                             </div>
                             <a class="btn btn-danger btn-block btn-lg custom-button" role="button" href="/contato"
-                                title="Entrar em contato"><i class="fas fa-shopping-cart"></i>
+                                title="Entrar em contato" aria-label="Acessar página de contato para comprar"><i
+                                    class="fas fa-shopping-cart"></i>
                                 ADQUIRIR</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="divider-wrapper">
-                    <i class="fas fa-comments revision-icon" title="Revisões"></i>
+                    <i class="fas fa-comments revision-icon" title="Revisões" aria-label="Revisões"></i>
                 </div>
 
                 <div class="container revision">
-                    <div class="quote-left-wrapper">
+                    <div class="quote-left-wrapper" aria-hidden="true">
                         <i class="fas fa-quote-left"></i>
                     </div>
                     <span class="reviewer-text">
@@ -170,17 +180,17 @@
                             mundos</em><br><br>
                     </span>
                     <span class="reviewer-name">- Janaína Moitinho -</span>
-                    <div class="quote-right-wrapper">
+                    <div class="quote-right-wrapper" aria-hidden="true">
                         <i class="fas fa-quote-right"></i>
                     </div>
                 </div>
 
-                <div class="divider-wrapper">
+                <div class="divider-wrapper" aria-hidden="true">
                     <i class="fas fa-angle-down custom-arrow"></i>
                 </div>
 
                 <div class="container revision">
-                    <div class="quote-left-wrapper">
+                    <div class="quote-left-wrapper" aria-hidden="true">
                         <i class="fas fa-quote-left"></i>
                     </div>
                     <span class="reviewer-text">
@@ -190,17 +200,17 @@
                             cobranças infindáveis."</em><br><br>
                     </span>
                     <span class="reviewer-name">- Antonio Miotto -</span>
-                    <div class="quote-right-wrapper">
+                    <div class="quote-right-wrapper" aria-hidden="true">
                         <i class="fas fa-quote-right"></i>
                     </div>
                 </div>
 
-                <div class="divider-wrapper">
+                <div class="divider-wrapper" aria-hidden="true">
                     <i class="fas fa-angle-down custom-arrow"></i>
                 </div>
 
                 <div class="container revision">
-                    <div class="quote-left-wrapper">
+                    <div class="quote-left-wrapper" aria-hidden="true">
                         <i class="fas fa-quote-left"></i>
                     </div>
                     <span class="reviewer-text">
@@ -210,17 +220,17 @@
                             que a próxima página reservasse sempre uma surpresa."</em><br><br>
                     </span>
                     <span class="reviewer-name">- Léssio Lima Cardoso -</span>
-                    <div class="quote-right-wrapper">
+                    <div class="quote-right-wrapper" aria-hidden="true">
                         <i class="fas fa-quote-right"></i>
                     </div>
                 </div>
 
-                <div class="divider-wrapper">
+                <div class="divider-wrapper" aria-hidden="true">
                     <i class="fas fa-angle-down custom-arrow"></i>
                 </div>
 
                 <div class="container revision">
-                    <div class="quote-left-wrapper">
+                    <div class="quote-left-wrapper" aria-hidden="true">
                         <i class="fas fa-quote-left"></i>
                     </div>
                     <span class="reviewer-text">
@@ -229,17 +239,17 @@
                             contemporâneo nosso, e veio para ficar."</em><br><br>
                     </span>
                     <span class="reviewer-name">- Edilene Santos -</span>
-                    <div class="quote-right-wrapper">
+                    <div class="quote-right-wrapper" aria-hidden="true">
                         <i class="fas fa-quote-right"></i>
                     </div>
                 </div>
 
-                <div class="divider-wrapper">
+                <div class="divider-wrapper" aria-hidden="true">
                     <i class="fas fa-angle-down custom-arrow"></i>
                 </div>
 
                 <div class="container revision">
-                    <div class="quote-left-wrapper">
+                    <div class="quote-left-wrapper" aria-hidden="true">
                         <i class="fas fa-quote-left"></i>
                     </div>
                     <span class="reviewer-text">
@@ -249,7 +259,7 @@
                             linguístico."</em></em><br><br>
                     </span>
                     <span class="reviewer-name">- Gilmar Ribeiro -</span>
-                    <div class="quote-right-wrapper">
+                    <div class="quote-right-wrapper" aria-hidden="true">
                         <i class="fas fa-quote-right"></i>
                     </div>
                 </div>
@@ -280,18 +290,19 @@
                                     dentro do peito.</p>
                             </div>
                             <a class="btn btn-danger btn-block btn-lg  custom-button" role="button" href="/contato"
-                                title="Entrar em contato"><i class="fas fa-shopping-cart"></i>
+                                title="Entrar em contato" aria-label="Acessar página de contato para comprar"><i
+                                    class="fas fa-shopping-cart"></i>
                                 ADQUIRIR</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="divider-wrapper">
-                    <i class="fas fa-comments revision-icon" title="Revisões"></i>
+                    <i class="fas fa-comments revision-icon" title="Revisões" aria-label="Revisões"></i>
                 </div>
 
                 <div class="container revision">
-                    <div class="quote-left-wrapper">
+                    <div class="quote-left-wrapper" aria-hidden="true">
                         <i class="fas fa-quote-left"></i>
                     </div>
                     <span class="reviewer-text">
@@ -301,7 +312,7 @@
                             vidas."</em><br><br>
                     </span>
                     <span class="reviewer-name">- Sophia -</span>
-                    <div class="quote-right-wrapper">
+                    <div class="quote-right-wrapper" aria-hidden="true">
                         <i class="fas fa-quote-right"></i>
                     </div>
                 </div>
@@ -329,8 +340,8 @@
                                     criei, em 2014, a temática abordada era de cunho mais subversivo.</p>
                             </div>
                             <a class="btn btn-danger btn-block btn-lg custom-button" role="button"
-                                href="https://issuu.com/daniel.brito" target="_blank" title="Perfil no Issuu"><i
-                                    class="fas fa-eye"></i> LER</a>
+                                href="https://issuu.com/daniel.brito" target="_blank" title="Perfil no Issuu"
+                                aria-label="Acessar perfil no Issuu para leitura"><i class="fas fa-eye"></i> LER</a>
                         </div>
                     </div>
                 </div>
@@ -344,7 +355,8 @@
                 <div class="footer-letter-wrapper"><span class="footer-letter">L</span></div>
                 <div class="footer-symbol-wrapper"><span class="footer-symbol"><a id="creative-commons"
                             href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"
-                            rel="noopener noreferrer" title="Licença Creative Commons">ɔ</a></span></div>
+                            rel="noopener noreferrer" title="Licença Creative Commons"
+                            aria-label="Acessar licença Creative Commons">ɔ</a></span></div>
                 <div class="footer-letter-wrapper"><span class="footer-letter">B</span></div>
                 <div class="footer-letter-wrapper"><span class="footer-letter">R</span></div>
                 <div class="footer-letter-wrapper"><span class="footer-letter">T</span></div>
@@ -362,9 +374,7 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 
-    <script src="../assets/lightbox/lightbox-plus-jquery.min.js"></script>
-
-    <script src="../assets/js/scripts.min.js"></script>
+    <script src="../assets/js/scripts.js"></script>
 
 </body>
 

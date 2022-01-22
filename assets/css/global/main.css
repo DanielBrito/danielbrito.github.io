@@ -142,6 +142,7 @@ a:active {
 
 .skip-to-content {
   background-color: var(--red-wine-primary);
+  border-radius: 5px;
   padding: 15px 20px;
   z-index: 9999;
   position: absolute;

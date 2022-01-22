@@ -1,14 +1,17 @@
 #to-top-button {
-  display: flex;
-  background-color: var(--red-wine-primary);
   width: 40px;
   height: 40px;
+  display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 10px;
   position: fixed;
   bottom: 20px;
   right: 20px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: var(--red-wine-primary);
+  border-radius: 10px;
   transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
   opacity: 0;
   visibility: hidden;

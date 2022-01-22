@@ -3,9 +3,10 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Daniel Brito, desenvolvedor, artista, escritor">
+    <meta name="keywords" content="Daniel Brito, desenvolvedor, artista, escritor, programação, arte, poesia">
     <meta name="author" content="Daniel Brito">
-    <meta name="description" content="Site pessoal de Daniel Brito, com informações pessoais e projetos desenvolvidos.">
+    <meta name="description"
+        content="Site pessoal de Daniel Brito, com informações pessoais, livros publicados e projetos desenvolvidos.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Projetos | Daniel Brito</title>
@@ -18,24 +19,23 @@
 
     <link rel="shortcut icon" type="image/png" href="../assets/images/global/favicon.png">
 
-    <link rel="stylesheet" href="../assets/css/global/main.min.css">
-    <link rel="stylesheet" href="../assets/css/global/colors.min.css">
-    <link rel="stylesheet" href="../assets/css/global/fonts.min.css">
-    <link rel="stylesheet" href="../assets/css/components/custom-scrollbar.min.css">
-    <link rel="stylesheet" href="../assets/css/components/to-top-button.min.css">
-    <link rel="stylesheet" href="../assets/css/components/navigation-bar.min.css">
-    <link rel="stylesheet" href="../assets/css/components/footer.min.css">
-    <link rel="stylesheet" href="../assets/css/pages/projects.min.css">
+    <link rel="stylesheet" href="../assets/css/global/main.css">
+    <link rel="stylesheet" href="../assets/css/global/colors.css">
+    <link rel="stylesheet" href="../assets/css/global/fonts.css">
+    <link rel="stylesheet" href="../assets/css/components/custom-scrollbar.css">
+    <link rel="stylesheet" href="../assets/css/components/to-top-button.css">
+    <link rel="stylesheet" href="../assets/css/components/navigation-bar.css">
+    <link rel="stylesheet" href="../assets/css/components/footer.css">
+    <link rel="stylesheet" href="../assets/css/pages/projects.css">
 </head>
 
 <body>
-    <a class="skip-to-content" href="#main-content">Ir para o conteúdo principal</a>
+    <a class="skip-to-content" href="#main-content" aria-label="Ir para o conteúdo principal">Ir para o conteúdo
+        principal</a>
+
     <div id="reading-status-container">
-        <a id="to-top-button" title="Ir para o topo">
-            <span>
-                <i id="top-icon" class="fas fa-angle-up"></i>
-            </span>
-        </a>
+        <button id="to-top-button" title="Ir para o topo" aria-hidden="true"><i id="top-icon"
+                class="fas fa-angle-up"></i></button>
 
         <header class="sticky-top" id="nav-wrapper">
             <nav class="navbar navbar-light navbar-expand-xl sticky-top" id="nav-bar">
@@ -53,23 +53,31 @@
                     <div class="collapse navbar-collapse" id="navcol-1">
                         <ul class="nav navbar-nav ml-auto">
                             <li class="nav-item" role="presentation"><a class="nav-link"
-                                    href="https://danielbrito.github.io"><i class="fas fa-home icon-navbar"
-                                        id="icone-navbar"></i>INÍCIO</a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="/sobre"><i
-                                        class="fas fa-user icon-navbar"></i>SOBRE</a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="/livros"><i
-                                        class="fas fa-book icon-navbar"></i>LIVROS</a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link active" href="/projetos"><i
+                                    href="https://danielbrito.github.io" aria-label="Ir para página inicial"><i
+                                        class="fas fa-home icon-navbar"></i>INÍCIO</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="/sobre"
+                                    aria-label="Ir para página Sobre"><i class="fas fa-user icon-navbar"></i>SOBRE</a>
+                            </li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="/livros"
+                                    aria-label="Ir para página Livros"><i class="fas fa-book icon-navbar"></i>LIVROS</a>
+                            </li>
+                            <li class="nav-item" role="presentation"><a class="nav-link active" href="/projetos"
+                                    aria-label="Ir para página Projetos"><i
                                         class="fas fa-lightbulb icon-navbar"></i>PROJETOS</a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="/imagens"><i
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="/imagens"
+                                    aria-label="Ir para página Imagens"><i
                                         class="fas fa-images icon-navbar"></i>IMAGENS</a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="/videos"><i
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="/videos"
+                                    aria-label="Ir para página Vídeos"><i
                                         class="fas fa-video icon-navbar"></i>VÍDEOS</a></li>
-                            <li class=" nav-item" role="presentation"><a class="nav-link" href="/blog"><i
-                                        class="fab fa-blogger icon-navbar"></i>BLOG</a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="/midia"><i
+                            <li class=" nav-item" role="presentation"><a class="nav-link" href="/blog"
+                                    aria-label="Ir para página Blog"><i class="fab fa-blogger icon-navbar"></i>BLOG</a>
+                            </li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="/midia"
+                                    aria-label="Ir para página Mídia"><i
                                         class="fas fa-newspaper icon-navbar"></i>MÍDIA</a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="/contato"><i
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="/contato"
+                                    aria-label="Ir para página Contato"><i
                                         class="fas fa-envelope icon-navbar"></i>CONTATO</a></li>
                         </ul>
                     </div>
@@ -80,31 +88,31 @@
         <main id="main-content">
             <div id="category-buttons-wrapper">
                 <div id="categories">
-                    <a href="#tecnologia" class="category-link">
-                        <div class="category-circle" title="Tecnologia">
+                    <a href="#tecnologia" class="category-link" aria-label="Rolar para projetos tecnológicos">
+                        <div class="category-circle" title="Tecnologia" aria-hidden="true">
                             <i class="fas fa-laptop-code icon"></i>
                         </div>
-                        <span class="category-name">Tecnologia</span>
+                        <span class="category-name" aria-hidden="true">Tecnologia</span>
                     </a>
-                    <a href="#educacao" class="category-link">
-                        <div class="category-circle" title="Educação">
+                    <a href="#educacao" class="category-link" aria-label="Rolar para projetos educacionais">
+                        <div class="category-circle" title="Educação" aria-hidden="true">
                             <i class="fas fa-chalkboard-teacher icon"></i>
                         </div>
-                        <span class="category-name">Educação</span>
+                        <span class="category-name" aria-hidden="true">Educação</span>
 
                     </a>
-                    <a href="#poesia" class="category-link">
-                        <div class="category-circle" title="Poesia">
+                    <a href="#poesia" class="category-link" aria-label="Rolar para projetos poéticos">
+                        <div class="category-circle" title="Poesia" aria-hidden="true">
                             <i class="fas fa-pen-nib icon"></i>
                         </div>
-                        <span class="category-name">Poesia</span>
+                        <span class="category-name" aria-hidden="true">Poesia</span>
 
                     </a>
-                    <a href="#arte" class="category-link">
-                        <div class="category-circle" title="Artes Visuais">
+                    <a href="#arte" class="category-link" aria-label="Rolar para projetos artísticos">
+                        <div class="category-circle" title="Artes Visuais" aria-hidden="true">
                             <i class="fas fa-palette icon"></i>
                         </div>
-                        <span class="category-name">Artes visuais</span>
+                        <span class="category-name" aria-hidden="true">Artes visuais</span>
                     </a>
                 </div>
             </div>
@@ -113,7 +121,7 @@
                 <div class="container project">
                     <div class="row justify-content-center align-items-center" id="monografia">
                         <div class="col-md-6 col-xl-5 column-image">
-                            <div class="label-wrapper">
+                            <div class="label-wrapper" aria-hidden="true">
                                 <div class="label-category" title="Computação Gráfica">
                                     <i class="fas fa-code icon-label"></i>
                                 </div>
@@ -139,7 +147,8 @@
                             </div>
                             <a class="btn btn-danger btn-block btn-lg custom-button" role="button"
                                 href="https://github.com/DanielBrito/monografia" target="_blank"
-                                title="Repositório no GitHub"><i class="fas fa-building"></i> ACESSAR</a>
+                                title="Repositório no GitHub" aria-label="Acessar repositório no GitHub"><i
+                                    class="fas fa-building"></i> ACESSAR</a>
                         </div>
                     </div>
                 </div>
@@ -147,7 +156,7 @@
                 <div class="container project">
                     <div class="row justify-content-center align-items-center" id="restack-api">
                         <div class="col-md-6 col-xl-5 column-image">
-                            <div class="label-wrapper">
+                            <div class="label-wrapper" aria-hidden="true">
                                 <div class="label-category" title="Desenvolvimento Web">
                                     <i class="fas fa-code icon-label"></i>
                                 </div>
@@ -170,7 +179,8 @@
                             </div>
                             <a class="btn btn-danger btn-block btn-lg custom-button" role="button"
                                 href="https://github.com/DanielBrito/restack-api" target="_blank"
-                                title="Repositório no GitHub"><i class="fas fa-server"></i> ACESSAR</a>
+                                title="Repositório no GitHub" aria-label="Acessar repositório no GitHub"><i
+                                    class="fas fa-server"></i> ACESSAR</a>
                         </div>
                     </div>
                 </div>
@@ -178,7 +188,7 @@
                 <div class="container project">
                     <div class="row justify-content-center align-items-center" id="fire-tasks">
                         <div class="col-md-6 col-xl-5 column-image">
-                            <div class="label-wrapper">
+                            <div class="label-wrapper" aria-hidden="true">
                                 <div class="label-category" title="Desenvolvimento Web">
                                     <i class="fas fa-code icon-label"></i>
                                 </div>
@@ -201,7 +211,8 @@
                             </div>
                             <a class="btn btn-danger btn-block btn-lg custom-button" role="button"
                                 href="https://github.com/DanielBrito/fire-tasks" target="_blank"
-                                title="Repositório no GitHub"><i class="fas fa-fire"></i> ACESSAR</a>
+                                title="Repositório no GitHub" aria-label="Acessar repositório no GitHub"><i
+                                    class="fas fa-fire"></i> ACESSAR</a>
                         </div>
                     </div>
                 </div>
@@ -209,7 +220,7 @@
                 <div class="container project">
                     <div class="row justify-content-center align-items-center" id="home">
                         <div class="col-md-6 col-xl-5 column-image">
-                            <div class="label-wrapper">
+                            <div class="label-wrapper" aria-hidden="true">
                                 <div class="label-category" title="Desenvolvimento Web">
                                     <i class="fas fa-code icon-label"></i>
                                 </div>
@@ -231,7 +242,7 @@
                             </div>
                             <a class="btn btn-danger btn-block btn-lg custom-button" role="button"
                                 href="https://danielbrito.github.io/home/" target="_blank" title="Site"><i
-                                    class="fas fa-globe"></i> ACESSAR</a>
+                                    class="fas fa-globe" aria-label="Acessar site"></i> ACESSAR</a>
                         </div>
                     </div>
                 </div>
@@ -239,7 +250,7 @@
                 <div class="container project">
                     <div class="row justify-content-center align-items-center" id="halugar">
                         <div class="col-md-6 col-xl-5 column-image">
-                            <div class="label-wrapper">
+                            <div class="label-wrapper" aria-hidden="true">
                                 <div class="label-category" title="Desenvolvimento Mobile">
                                     <i class="fas fa-code icon-label"></i>
                                 </div>
@@ -265,7 +276,8 @@
                             </div>
                             <a class="btn btn-danger btn-block btn-lg custom-button" role="button"
                                 href="https://play.google.com/store/apps/details?id=br.ufc.crateus.halugar"
-                                target="_blank" title="Google Play"><i class="fab fa-google-play"></i>
+                                target="_blank" title="Google Play" aria-label="Acessar aplicativo na Google Play"><i
+                                    class="fab fa-google-play"></i>
                                 BAIXAR</a>
                         </div>
                     </div>
@@ -274,7 +286,7 @@
                 <div class="container project">
                     <div class="row justify-content-center align-items-center" id="compixelar">
                         <div class="col-md-6 col-xl-5 column-image">
-                            <div class="label-wrapper">
+                            <div class="label-wrapper" aria-hidden="true">
                                 <div class="label-category" title="Programação Criativa">
                                     <i class="fas fa-code icon-label"></i>
                                 </div>
@@ -300,7 +312,7 @@
                             </div>
                             <a class="btn btn-danger btn-block btn-lg custom-button" role="button"
                                 href="https://medium.com/compixelar" target="_blank" title="Perfil no Medium"><i
-                                    class="fas fa-mouse-pointer"></i> ACESSAR</a>
+                                    class="fas fa-mouse-pointer" aria-label="Acessar perfil no Medium"></i> ACESSAR</a>
                         </div>
                     </div>
                 </div>
@@ -338,7 +350,7 @@
                 <div class="container project">
                     <div class="row justify-content-center align-items-center" id="celerebro">
                         <div class="col-md-6 col-xl-5 column-image">
-                            <div class="label-wrapper">
+                            <div class="label-wrapper" aria-hidden="true">
                                 <div class="label-category" title="Desenvolvimento Desktop">
                                     <i class="fas fa-code icon-label"></i>
                                 </div>
@@ -361,7 +373,8 @@
                             </div>
                             <a class="btn btn-danger btn-block btn-lg custom-button" role="button"
                                 href="https://github.com/DanielBrito/celerebro" target="_blank"
-                                title="Repositório no GitHub"><i class="fas fa-brain"></i> ACESSAR</a>
+                                title="Repositório no GitHub" aria-label="Acessar repositório no GitHub"><i
+                                    class="fas fa-brain"></i> ACESSAR</a>
                         </div>
                     </div>
                 </div>
@@ -371,7 +384,7 @@
                 <div class="container project">
                     <div class="row justify-content-center align-items-center" id="sturing">
                         <div class="col-md-6 col-xl-5 column-image">
-                            <div class="label-wrapper">
+                            <div class="label-wrapper" aria-hidden="true">
                                 <div class="label-category" title="Divulgação Científica">
                                     <i class="fas fa-graduation-cap icon-label"></i>
                                 </div>
@@ -393,7 +406,8 @@
                             </div>
                             <a class="btn btn-danger btn-block btn-lg custom-button" role="button"
                                 href="https://www.instagram.com/sturing.compsci/" target="_blank"
-                                title="Página no Instagram"><i class="fas fa-info-circle"></i> ACESSAR</a>
+                                title="Página no Instagram" aria-label="Acessar página no Instagram"><i
+                                    class="fas fa-info-circle"></i> ACESSAR</a>
                         </div>
                     </div>
                 </div>
@@ -401,7 +415,7 @@
                 <div class="container project">
                     <div class="row justify-content-center align-items-center" id="canal">
                         <div class="col-md-6 col-xl-5 column-image">
-                            <div class="label-wrapper">
+                            <div class="label-wrapper" aria-hidden="true">
                                 <div class="label-category" title="Tutoriais">
                                     <i class="fas fa-graduation-cap icon-label"></i>
                                 </div>
@@ -429,7 +443,8 @@
                             </div>
                             <a class="btn btn-danger btn-block btn-lg custom-button" role="button"
                                 href="https://www.youtube.com/channel/UC4y3uq1d7MKDYs1LbI44Vng" target="_blank"
-                                title="Canal no Youtube"><i class="fab fa-youtube"></i> ACESSAR</a>
+                                title="Canal no Youtube" aria-label="Acessar canal no YouTube"><i
+                                    class="fab fa-youtube"></i> ACESSAR</a>
                         </div>
                     </div>
                 </div>
@@ -439,7 +454,7 @@
                 <div class="container project">
                     <div class="row justify-content-center align-items-center" id="concretagens">
                         <div class="col-md-6 col-xl-5 column-image">
-                            <div class="label-wrapper">
+                            <div class="label-wrapper" aria-hidden="true">
                                 <div class="label-category" title="Poesia Concreta">
                                     <i class="fas fa-pen-fancy icon-label"></i>
                                 </div>
@@ -460,7 +475,8 @@
                             </div>
                             <a class="btn btn-danger btn-block btn-lg custom-button" role="button"
                                 href="https://daniel-brito.blogspot.com/p/concretagens_11.html" target="_blank"
-                                title="Página no Blog"><i class="fas fa-cubes"></i> ACESSAR</a>
+                                title="Página no Blog" aria-label="Acessar página no Blog"><i class="fas fa-cubes"></i>
+                                ACESSAR</a>
                         </div>
                     </div>
                 </div>
@@ -468,7 +484,7 @@
                 <div class="container project">
                     <div class="row justify-content-center align-items-center" id="sarau-do-grajau">
                         <div class="col-md-6 col-xl-5 column-image">
-                            <div class="label-wrapper">
+                            <div class="label-wrapper" aria-hidden="true">
                                 <div class="label-category" title="Artivismo">
                                     <i class="fas fa-pen-fancy icon-label"></i>
                                 </div>
@@ -488,7 +504,8 @@
                             </div>
                             <a class="btn btn-danger btn-block btn-lg custom-button" role="button"
                                 href="https://www.facebook.com/Sarau-do-Graja%C3%BA-191479077716775/" target="_blank"
-                                title="Página no Facebook"><i class="fas fa-microphone-alt"></i> ACESSAR</a>
+                                title="Página no Facebook" aria-label="Acessar página no Facebook"><i
+                                    class="fas fa-microphone-alt"></i> ACESSAR</a>
                         </div>
                     </div>
                 </div>
@@ -498,7 +515,7 @@
                 <div class="container project">
                     <div class="row justify-content-center align-items-center" id="aluminions">
                         <div class="col-md-6 col-xl-5 column-image">
-                            <div class="label-wrapper">
+                            <div class="label-wrapper" aria-hidden="true">
                                 <div class="label-category" title="Artes Visuais">
                                     <i class="fas fa-paint-brush icon-label"></i>
                                 </div>
@@ -521,7 +538,8 @@
                             </div>
                             <a class="btn btn-danger btn-block btn-lg custom-button" role="button"
                                 href="https://www.instagram.com/aluminions.13/" target="_blank"
-                                title="Página no Instagram"><i class="fas fa-robot"></i> ACESSAR</a>
+                                title="Página no Instagram"><i class="fas fa-robot"
+                                    aria-label="Acessar página no Instagram"></i> ACESSAR</a>
                         </div>
                     </div>
                 </div>
@@ -529,7 +547,7 @@
                 <div class="container project">
                     <div class="row justify-content-center align-items-center" id="fora-da-caixa">
                         <div class="col-md-6 col-xl-5 column-image">
-                            <div class="label-wrapper">
+                            <div class="label-wrapper" aria-hidden="true">
                                 <div class="label-category" title="Arte Visuais">
                                     <i class="fas fa-paint-brush icon-label"></i>
                                 </div>
@@ -547,7 +565,8 @@
                             </div>
                             <a class="btn btn-danger btn-block btn-lg custom-button" role="button"
                                 href="https://br.pinterest.com/danielbrito41/fora-da-caixa/" target="_blank"
-                                title="Álbum no Pinterest"><i class="fab fa-dropbox"></i> ACESSAR</a>
+                                title="Álbum no Pinterest" aria-label="Acessar álbum no Pinterest"><i
+                                    class="fab fa-dropbox"></i> ACESSAR</a>
                         </div>
                     </div>
                 </div>
@@ -555,7 +574,7 @@
                 <div class="container project">
                     <div class="row justify-content-center align-items-center" id="galeria-marginal">
                         <div class="col-md-6 col-xl-5 column-image">
-                            <div class="label-wrapper">
+                            <div class="label-wrapper" aria-hidden="true">
                                 <div class="label-category" title="Artes Visuais">
                                     <i class="fas fa-paint-brush icon-label"></i>
                                 </div>
@@ -575,7 +594,8 @@
                             </div>
                             <a class="btn btn-danger btn-block btn-lg custom-button" role="button"
                                 href="https://daniel-brito.blogspot.com/p/galeria-marginal_11.html" target="_blank"
-                                title="Página no Blog"><i class="fas fa-palette"></i> ACESSAR</a>
+                                title="Página no Blog" aria-label="Acessar página no Blog"><i
+                                    class="fas fa-palette"></i> ACESSAR</a>
                         </div>
                     </div>
                 </div>
@@ -583,7 +603,7 @@
                 <div class="container project">
                     <div class="row justify-content-center align-items-center" id="antigrife">
                         <div class="col-md-6 col-xl-5 column-image">
-                            <div class="label-wrapper">
+                            <div class="label-wrapper" aria-hidden="true">
                                 <div class="label-category" title="Artes Visuais">
                                     <i class="fas fa-paint-brush icon-label"></i>
                                 </div>
@@ -605,7 +625,8 @@
                             </div>
                             <a class="btn btn-danger btn-block btn-lg custom-button" role="button"
                                 href="https://br.pinterest.com/danielbrito41/antigr1f3/" target="_blank"
-                                title="Álbum no Pinterest"><i class="fas fa-tshirt"></i> ACESSAR</a>
+                                title="Álbum no Pinterest" aria-label="Acessar álbum no Pinterest"><i
+                                    class="fas fa-tshirt"></i> ACESSAR</a>
                         </div>
                     </div>
                 </div>
@@ -613,7 +634,7 @@
                 <div class="container project">
                     <div class="row justify-content-center align-items-center" id="socrastickers">
                         <div class="col-md-6 col-xl-5 column-image">
-                            <div class="label-wrapper">
+                            <div class="label-wrapper" aria-hidden="true">
                                 <div class="label-category" title="Artivismo">
                                     <i class="fas fa-paint-brush icon-label"></i>
                                 </div>
@@ -637,7 +658,8 @@
                             </div>
                             <a class="btn btn-danger btn-block btn-lg custom-button" role="button"
                                 href="https://br.pinterest.com/danielbrito41/socrastickers/" target="_blank"
-                                title="Álbum no Pinterest"><i class="fas fa-question-circle"></i> ACESSAR</a>
+                                title="Álbum no Pinterest" aria-label="Acessar álbum no Pinterest"><i
+                                    class="fas fa-question-circle"></i> ACESSAR</a>
                         </div>
                     </div>
                 </div>
@@ -651,7 +673,8 @@
                 <div class="footer-letter-wrapper"><span class="footer-letter">L</span></div>
                 <div class="footer-symbol-wrapper"><span class="footer-symbol"><a id="creative-commons"
                             href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"
-                            rel="noopener noreferrer" title="Licença Creative Commons">ɔ</a></span></div>
+                            rel="noopener noreferrer" title="Licença Creative Commons"
+                            aria-label="Acessar licença Creative Commons">ɔ</a></span></div>
                 <div class="footer-letter-wrapper"><span class="footer-letter">B</span></div>
                 <div class="footer-letter-wrapper"><span class="footer-letter">R</span></div>
                 <div class="footer-letter-wrapper"><span class="footer-letter">T</span></div>
@@ -669,9 +692,7 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 
-    <script src="../assets/lightbox/lightbox-plus-jquery.min.js"></script>
-
-    <script src="../assets/js/scripts.min.js"></script>
+    <script src="../assets/js/scripts.js"></script>
 
 </body>
 

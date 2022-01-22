@@ -3,9 +3,10 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Daniel Brito, desenvolvedor, artista, escritor">
+    <meta name="keywords" content="Daniel Brito, desenvolvedor, artista, escritor, programação, arte, poesia">
     <meta name="author" content="Daniel Brito">
-    <meta name="description" content="Site pessoal de Daniel Brito, com informações pessoais e projetos desenvolvidos.">
+    <meta name="description"
+        content="Site pessoal de Daniel Brito, com informações pessoais, livros publicados e projetos desenvolvidos.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Mídia | Daniel Brito</title>
@@ -18,24 +19,23 @@
 
     <link rel="shortcut icon" type="image/png" href="../assets/images/global/favicon.png">
 
-    <link rel="stylesheet" href="../assets/css/global/main.min.css">
-    <link rel="stylesheet" href="../assets/css/global/colors.min.css">
-    <link rel="stylesheet" href="../assets/css/global/fonts.min.css">
-    <link rel="stylesheet" href="../assets/css/components/custom-scrollbar.min.css">
-    <link rel="stylesheet" href="../assets/css/components/to-top-button.min.css">
-    <link rel="stylesheet" href="../assets/css/components/navigation-bar.min.css">
-    <link rel="stylesheet" href="../assets/css/components/footer.min.css">
-    <link rel="stylesheet" href="../assets/css/pages/media.min.css">
+    <link rel="stylesheet" href="../assets/css/global/main.css">
+    <link rel="stylesheet" href="../assets/css/global/colors.css">
+    <link rel="stylesheet" href="../assets/css/global/fonts.css">
+    <link rel="stylesheet" href="../assets/css/components/custom-scrollbar.css">
+    <link rel="stylesheet" href="../assets/css/components/to-top-button.css">
+    <link rel="stylesheet" href="../assets/css/components/navigation-bar.css">
+    <link rel="stylesheet" href="../assets/css/components/footer.css">
+    <link rel="stylesheet" href="../assets/css/pages/media.css">
 </head>
 
 <body>
-    <a class="skip-to-content" href="#main-content">Ir para o conteúdo principal</a>
+    <a class="skip-to-content" href="#main-content" aria-label="Ir para o conteúdo principal">Ir para o conteúdo
+        principal</a>
+
     <div id="reading-status-container">
-        <a id="to-top-button" title="Ir para o topo">
-            <span>
-                <i id="top-icon" class="fas fa-angle-up"></i>
-            </span>
-        </a>
+        <button id="to-top-button" title="Ir para o topo" aria-hidden="true"><i id="top-icon"
+                class="fas fa-angle-up"></i></button>
 
         <header class="sticky-top" id="nav-wrapper">
             <nav class="navbar navbar-light navbar-expand-xl sticky-top" id="nav-bar">
@@ -53,23 +53,31 @@
                     <div class="collapse navbar-collapse" id="navcol-1">
                         <ul class="nav navbar-nav ml-auto">
                             <li class="nav-item" role="presentation"><a class="nav-link"
-                                    href="https://danielbrito.github.io"><i class="fas fa-home icon-navbar"
-                                        id="icone-navbar"></i>INÍCIO</a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="/sobre"><i
-                                        class="fas fa-user icon-navbar"></i>SOBRE</a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="/livros"><i
-                                        class="fas fa-book icon-navbar"></i>LIVROS</a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="/projetos"><i
+                                    href="https://danielbrito.github.io" aria-label="Ir para página inicial"><i
+                                        class="fas fa-home icon-navbar"></i>INÍCIO</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="/sobre"
+                                    aria-label="Ir para página Sobre"><i class="fas fa-user icon-navbar"></i>SOBRE</a>
+                            </li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="/livros"
+                                    aria-label="Ir para página Livros"><i class="fas fa-book icon-navbar"></i>LIVROS</a>
+                            </li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="/projetos"
+                                    aria-label="Ir para página Projetos"><i
                                         class="fas fa-lightbulb icon-navbar"></i>PROJETOS</a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="/imagens"><i
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="/imagens"
+                                    aria-label="Ir para página Imagens"><i
                                         class="fas fa-images icon-navbar"></i>IMAGENS</a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="/videos"><i
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="/videos"
+                                    aria-label="Ir para página Vídeos"><i
                                         class="fas fa-video icon-navbar"></i>VÍDEOS</a></li>
-                            <li class=" nav-item" role="presentation"><a class="nav-link" href="/blog"><i
-                                        class="fab fa-blogger icon-navbar"></i>BLOG</a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link active" href="/midia"><i
+                            <li class=" nav-item" role="presentation"><a class="nav-link" href="/blog"
+                                    aria-label="Ir para página Blog"><i class="fab fa-blogger icon-navbar"></i>BLOG</a>
+                            </li>
+                            <li class="nav-item" role="presentation"><a class="nav-link active" href="/midia"
+                                    aria-label="Ir para página Mídia"><i
                                         class="fas fa-newspaper icon-navbar"></i>MÍDIA</a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="/contato"><i
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="/contato"
+                                    aria-label="Ir para página Contato"><i
                                         class="fas fa-envelope icon-navbar"></i>CONTATO</a></li>
                         </ul>
                     </div>
@@ -108,14 +116,13 @@
                         <div class="embed-responsive embed-responsive-16by9">
                             <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay"
                                 src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1138428502&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-                            <div
-                                style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+                            <div class="soundcloud-player-container">
                                 <a href="https://soundcloud.com/rduniversitariafm" title="Rádio Universitária FM"
-                                    target="_blank" style="color: #cccccc; text-decoration: none;">Rádio Universitária
+                                    target="_blank" class="soundcloud-player-link">Rádio Universitária
                                     FM</a> · <a
                                     href="https://soundcloud.com/rduniversitariafm/revista-ufc-informa-17-08102021"
                                     title="Revista UFC Informa #17 (08.10.2021)" target="_blank"
-                                    style="color: #cccccc; text-decoration: none;">Revista UFC Informa #17
+                                    class="soundcloud-player-link">Revista UFC Informa #17
                                     (08.10.2021)</a>
                             </div>
                         </div>
@@ -142,7 +149,8 @@
                         </div>
                         <a class="btn btn-danger btn-block btn-lg custom-button" role="button"
                             href="https://www.ufc.br/noticias/16182-equipes-formadas-por-estudantes-e-egressos-da-ufc-vencem-hackathon-para-a-primeira-infancia-cearense"
-                            target="_blank" title="Matéria completa"><i class="fas fa-eye"></i> LER
+                            target="_blank" title="Matéria completa"
+                            aria-label="Ler matéria completa no Portal da UFC"><i class="fas fa-eye"></i> LER
                             MATÉRIA</a>
                     </div>
                 </div>
@@ -185,7 +193,8 @@
                         </div>
                         <a class="btn btn-danger btn-block btn-lg custom-button" role="button"
                             href="http://crateus.ufc.br/cc/2020/03/01/estudante-de-ciencia-da-computacao-desenvolve-aplicativo-para-quem-deseja-compartilhar-moradia/"
-                            target="_blank" title="Matéria completa"><i class="fas fa-eye"></i> LER
+                            target="_blank" title="Matéria completa"
+                            aria-label="Ler matéria completa no Portal da UFC"><i class="fas fa-eye"></i> LER
                             MATÉRIA</a>
                     </div>
                 </div>
@@ -210,7 +219,8 @@
                         </div>
                         <a class="btn btn-danger btn-block btn-lg custom-button" role="button"
                             href="https://www.portalsertoes.com/2020/02/estudante-da-ufc-de-crateus-desenvolve.html"
-                            target="_blank" title="Matéria completa"><i class="fas fa-eye"></i> LER
+                            target="_blank" title="Matéria completa"
+                            aria-label="Ler matéria completa no Portal Sertões"><i class="fas fa-eye"></i> LER
                             MATÉRIA</a>
                     </div>
                 </div>
@@ -275,7 +285,8 @@
                 <div class="footer-letter-wrapper"><span class="footer-letter">L</span></div>
                 <div class="footer-symbol-wrapper"><span class="footer-symbol"><a id="creative-commons"
                             href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"
-                            rel="noopener noreferrer" title="Licença Creative Commons">ɔ</a></span></div>
+                            rel="noopener noreferrer" title="Licença Creative Commons"
+                            aria-label="Acessar licença Creative Commons">ɔ</a></span></div>
                 <div class="footer-letter-wrapper"><span class="footer-letter">B</span></div>
                 <div class="footer-letter-wrapper"><span class="footer-letter">R</span></div>
                 <div class="footer-letter-wrapper"><span class="footer-letter">T</span></div>
@@ -293,9 +304,7 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 
-    <script src="../assets/lightbox/lightbox-plus-jquery.min.js"></script>
-
-    <script src="../assets/js/scripts.min.js"></script>
+    <script src="../assets/js/scripts.js"></script>
 
 </body>
 

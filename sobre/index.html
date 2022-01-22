@@ -3,9 +3,10 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Daniel Brito, desenvolvedor, artista, escritor">
+    <meta name="keywords" content="Daniel Brito, desenvolvedor, artista, escritor, programação, arte, poesia">
     <meta name="author" content="Daniel Brito">
-    <meta name="description" content="Site pessoal de Daniel Brito, com informações pessoais e projetos desenvolvidos.">
+    <meta name="description"
+        content="Site pessoal de Daniel Brito, com informações pessoais, livros publicados e projetos desenvolvidos.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Sobre | Daniel Brito</title>
@@ -18,24 +19,23 @@
 
     <link rel="shortcut icon" type="image/png" href="../assets/images/global/favicon.png">
 
-    <link rel="stylesheet" href="../assets/css/global/colors.min.css">
-    <link rel="stylesheet" href="../assets/css/global/main.min.css">
-    <link rel="stylesheet" href="../assets/css/global/fonts.min.css">
-    <link rel="stylesheet" href="../assets/css/components/custom-scrollbar.min.css">
-    <link rel="stylesheet" href="../assets/css/components/to-top-button.min.css">
-    <link rel="stylesheet" href="../assets/css/components/navigation-bar.min.css">
-    <link rel="stylesheet" href="../assets/css/components/footer.min.css">
-    <link rel="stylesheet" href="../assets/css/pages/about.min.css">
+    <link rel="stylesheet" href="../assets/css/global/colors.css">
+    <link rel="stylesheet" href="../assets/css/global/main.css">
+    <link rel="stylesheet" href="../assets/css/global/fonts.css">
+    <link rel="stylesheet" href="../assets/css/components/custom-scrollbar.css">
+    <link rel="stylesheet" href="../assets/css/components/to-top-button.css">
+    <link rel="stylesheet" href="../assets/css/components/navigation-bar.css">
+    <link rel="stylesheet" href="../assets/css/components/footer.css">
+    <link rel="stylesheet" href="../assets/css/pages/about.css">
 </head>
 
 <body>
-    <a class="skip-to-content" href="#main-content">Ir para o conteúdo principal</a>
+    <a class="skip-to-content" href="#main-content" aria-label="Ir para o conteúdo principal">Ir para o conteúdo
+        principal</a>
+
     <div id="reading-status-container">
-        <a id="to-top-button" title="Ir para o topo">
-            <span>
-                <i id="top-icon" class="fas fa-angle-up"></i>
-            </span>
-        </a>
+        <button id="to-top-button" title="Ir para o topo" aria-hidden="true"><i id="top-icon"
+                class="fas fa-angle-up"></i></button>
 
         <header class="sticky-top" id="nav-wrapper">
             <nav class="navbar navbar-light navbar-expand-xl sticky-top" id="nav-bar">
@@ -53,23 +53,31 @@
                     <div class="collapse navbar-collapse" id="navcol-1">
                         <ul class="nav navbar-nav ml-auto">
                             <li class="nav-item" role="presentation"><a class="nav-link"
-                                    href="https://danielbrito.github.io"><i class="fas fa-home icon-navbar"
-                                        id="icone-navbar"></i>INÍCIO</a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link active" href="/sobre"><i
-                                        class="fas fa-user icon-navbar"></i>SOBRE</a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="/livros"><i
-                                        class="fas fa-book icon-navbar"></i>LIVROS</a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="/projetos"><i
+                                    href="https://danielbrito.github.io" aria-label="Ir para página inicial"><i
+                                        class="fas fa-home icon-navbar"></i>INÍCIO</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link active" href="/sobre"
+                                    aria-label="Ir para página Sobre"><i class="fas fa-user icon-navbar"></i>SOBRE</a>
+                            </li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="/livros"
+                                    aria-label="Ir para página Livros"><i class="fas fa-book icon-navbar"></i>LIVROS</a>
+                            </li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="/projetos"
+                                    aria-label="Ir para página Projetos"><i
                                         class="fas fa-lightbulb icon-navbar"></i>PROJETOS</a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="/imagens"><i
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="/imagens"
+                                    aria-label="Ir para página Imagens"><i
                                         class="fas fa-images icon-navbar"></i>IMAGENS</a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="/videos"><i
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="/videos"
+                                    aria-label="Ir para página Vídeos"><i
                                         class="fas fa-video icon-navbar"></i>VÍDEOS</a></li>
-                            <li class=" nav-item" role="presentation"><a class="nav-link" href="/blog"><i
-                                        class="fab fa-blogger icon-navbar"></i>BLOG</a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="/midia"><i
+                            <li class=" nav-item" role="presentation"><a class="nav-link" href="/blog"
+                                    aria-label="Ir para página Blog"><i class="fab fa-blogger icon-navbar"></i>BLOG</a>
+                            </li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="/midia"
+                                    aria-label="Ir para página Mídia"><i
                                         class="fas fa-newspaper icon-navbar"></i>MÍDIA</a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="/contato"><i
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="/contato"
+                                    aria-label="Ir para página Contato"><i
                                         class="fas fa-envelope icon-navbar"></i>CONTATO</a></li>
                         </ul>
                     </div>
@@ -81,7 +89,7 @@
             <section>
                 <div class="title-about-wrapper">
                     <div class="column-title-about">
-                        <div class="icon-about-circle" title="&quot;Minha breve história&quot;">
+                        <div class="icon-about-circle" title="&quot;Minha breve história&quot;" aria-hidden="true">
                             <i id="icon-biography" class="fas fa-hourglass-half"></i>
                         </div>
                         <h1 class="about-title"><strong>AUTOBIOGRAFIA</strong></h1>
@@ -118,7 +126,8 @@
                                     (UFC), onde
                                     participei de projetos nas áreas de desenvolvimento web e mobile, computação
                                     gráfica, <a class="redirect-link" href="https://github.com/GEMP-UFC-Crateus"
-                                        target="_blank" title="Perfil do GEMP no GitHub"><em>programação
+                                        target="_blank" title="Perfil do GEMP no GitHub"
+                                        aria-label="Programação competitiva no GEMP"><em>programação
                                             competitiva</em></a> e
                                     docência.<br /><br />
 
@@ -129,7 +138,8 @@
                                     Informações mais recentes e detalhadas sobre a minha trajetória profissional e
                                     acadêmica podem ser encontradas no meu <em><a class="redirect-link"
                                             href="https://drive.google.com/file/d/1bOFjCfhoyabvcZ7LXf5T3EtY9h6umsaR/view"
-                                            target="_blank" title="Arquivo PDF">currículo</a></em> e no meu perfil
+                                            target="_blank" title="Arquivo PDF"
+                                            aria-label="Currículo em PDF">currículo</a></em> e no meu perfil
                                     na <em><a class="redirect-link" href="http://lattes.cnpq.br/6587136026055239"
                                             target="_blank" title="Currículo na Plataforma Lattes">Plataforma
                                             Lattes</a></em>.
@@ -143,7 +153,8 @@
             <section>
                 <div class="title-about-wrapper">
                     <div class="column-title-about">
-                        <div class="icon-about-circle" title="&quot;Quero ser tudo que sou capaz de me tornar&quot;">
+                        <div class="icon-about-circle" title="&quot;Quero ser tudo que sou capaz de me tornar&quot;"
+                            aria-hidden="true">
                             <i id="icon-projects" class="fas fa-rocket"></i>
                         </div>
                         <h1 class="about-title"><strong>ADEMAIS</strong></h1>
@@ -224,7 +235,8 @@
             <section>
                 <div class="title-about-wrapper">
                     <div class="column-title-about">
-                        <div class="icon-about-circle" title="&quot;A vida, o universo e tudo mais&quot;">
+                        <div class="icon-about-circle" title="&quot;A vida, o universo e tudo mais&quot;"
+                            aria-hidden="true">
                             <i id="icon-life" class="fas fa-heartbeat"></i>
                         </div>
                         <h1 class="about-title"><strong>CARPE DIEM</strong></h1>
@@ -256,14 +268,17 @@
 
                                     Andar de skate e BMX me fornece boas doses de adrenalina. Além disso, também recorro
                                     à calistenia e <a href="https://lichess.org/@/danielbrito41" class="redirect-link"
-                                        target="_blank" title="Perfil no Lichess"><em>neuróbica</em></a>, com intuito de
+                                        target="_blank" title="Perfil no Lichess"
+                                        aria-label="Neuróbica no Lichess"><em>neuróbica</em></a>, com intuito de
                                     treinar o meu corpo e a minha mente.<br /><br />
 
                                     Carrego um interesse crescente pela <a
                                         href="https://filmow.com/usuario/daniel_brito/" class="redirect-link"
-                                        target="_blank" title="Perfil no Filmow"><em>Sétima Arte</em></a> e meu <a
+                                        target="_blank" title="Perfil no Filmow"
+                                        aria-label="Sétima Arte no Filmow"><em>Sétima Arte</em></a> e meu <a
                                         href="https://open.spotify.com/user/xb93kruabsjskn5chjqo127ep"
-                                        class="redirect-link" target="_blank" title="Perfil no Spotify"><em>gosto
+                                        class="redirect-link" target="_blank" title="Perfil no Spotify"
+                                        aria-label="Gosto musical no Spotify"><em>gosto
                                             musical</em></a> abrange
                                     desde pianos afinados até guitarras distorcidas.<br /><br />
 
@@ -272,8 +287,10 @@
                                         href="https://github.com/DanielBrito/self-learning" class="redirect-link"
                                         target="_blank" title="Repositório no GitHub"><em>autodidatismo</em></a>, <a
                                         href="https://duome.eu/DanBrito41" class="redirect-link" target="_blank"
-                                        title="Perfil no Duolingo"><em>poliglotismo</em></a> e <a href="/blog"
-                                        class="redirect-link" title="Blog pessoal"><em>polimatia</em></a>.<br /><br />
+                                        title="Perfil no Duolingo"
+                                        aria-label="Poliglotismo no Duolingo"><em>poliglotismo</em></a> e <a
+                                        href="/blog" class="redirect-link"
+                                        title="Blog pessoal"><em>polimatia</em></a>.<br /><br />
 
                                     A busca por conhecimento e a descoberta de outros universos são meus maiores
                                     objetivos
@@ -293,7 +310,8 @@
                 <div class="footer-letter-wrapper"><span class="footer-letter">L</span></div>
                 <div class="footer-symbol-wrapper"><span class="footer-symbol"><a id="creative-commons"
                             href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"
-                            rel="noopener noreferrer" title="Licença Creative Commons">ɔ</a></span></div>
+                            rel="noopener noreferrer" title="Licença Creative Commons"
+                            aria-label="Acessar licença Creative Commons">ɔ</a></span></div>
                 <div class="footer-letter-wrapper"><span class="footer-letter">B</span></div>
                 <div class="footer-letter-wrapper"><span class="footer-letter">R</span></div>
                 <div class="footer-letter-wrapper"><span class="footer-letter">T</span></div>
@@ -305,7 +323,7 @@
         var today = new Date();
 
         var birthDate = new Date(1993, 0, 4);
-        var diff = today.getTime() - birthDate.getTime(); /* Miliseconds */
+        var diff = today.getTime() - birthDate.getTime();
         var diffDays = parseInt(diff / (24 * 60 * 60 * 1000));
 
         days = document.getElementById("days");
@@ -329,9 +347,7 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 
-    <script src="../assets/lightbox/lightbox-plus-jquery.min.js"></script>
-
-    <script src="../assets/js/scripts.min.js"></script>
+    <script src="../assets/js/scripts.js"></script>
 
 </body>
 
