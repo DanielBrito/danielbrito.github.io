@@ -133,6 +133,7 @@ a:active {
   margin-right: auto;
   border-color: var(--red-wine-primary);
   transition: all 0.3s ease-in-out;
+  margin-top: 25px;
 }
 
 .custom-button:hover {
@@ -159,4 +160,8 @@ a:active {
 .skip-to-content:focus {
   transform: translateY(26%);
   opacity: 1;
+}
+
+.skip-to-content:hover {
+  text-decoration: none;
 }

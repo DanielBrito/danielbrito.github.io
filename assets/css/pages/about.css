@@ -70,7 +70,7 @@
 
 .container.about {
   margin-bottom: 10px;
-  max-width: 1050px;
+  max-width: 1200px;
   border-radius: 10px;
   box-shadow: 0px 0px 10px var(--black), 0px 0px 10px var(--black);
   border-style: solid;
@@ -102,15 +102,12 @@
   justify-content: center;
   margin-top: 0px;
   border-radius: 10px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-right: 30px;
-  padding-left: 30px;
+  padding: 30px;
 }
 
 .about-text {
-  margin-bottom: 0px;
   font-size: 0.87rem;
-  line-height: 1.25rem;
+  line-height: 1.4rem;
   text-shadow: 0 0 5px var(--black);
+  margin-bottom: 0;
 }

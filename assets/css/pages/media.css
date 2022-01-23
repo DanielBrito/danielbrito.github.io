@@ -1,7 +1,7 @@
 .container.news {
   margin-top: 30px;
   margin-bottom: 20px;
-  max-width: 1050px;
+  max-width: 1200px;
   border-radius: 10px;
   box-shadow: 0px 0px 10px var(--black), 0px 0px 10px var(--black);
   border-style: solid;
@@ -12,12 +12,9 @@
 
 .column-image {
   background-color: transparent;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding: 15px;
   width: 466px;
   min-width: 112px;
-  padding-right: 15px;
-  padding-left: 15px;
 }
 
 .img-fluid {
@@ -35,10 +32,7 @@
   justify-content: center;
   margin-top: 0px;
   border-radius: 10px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-right: 30px;
-  padding-left: 30px;
+  padding: 30px;
 }
 
 .title-news {
@@ -54,9 +48,8 @@
 }
 
 .news-text {
-  margin-bottom: 20px;
   font-size: 0.87rem;
-  line-height: 20px;
+  line-height: 1.4rem;
   text-align: center;
   border-radius: 10px;
 }
@@ -68,16 +61,12 @@
   justify-content: center;
   text-align: center;
   border-radius: 10px;
+  padding: 0 30px;
 }
 
 .column-video {
   background-color: transparent;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  width: 466px;
-  min-width: 112px;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding: 15px;
 }
 
 .soundcloud-player-container {

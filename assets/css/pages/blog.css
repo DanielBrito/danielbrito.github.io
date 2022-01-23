@@ -1,7 +1,7 @@
 .container.blog-section {
   margin-top: 30px;
   margin-bottom: 20px;
-  max-width: 1050px;
+  max-width: 1200px;
   border-radius: 10px;
   box-shadow: 0px 0px 10px var(--black), 0px 0px 10px var(--black);
   border-style: solid;
@@ -12,10 +12,12 @@
 
 .column-image {
   background-color: transparent;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding: 15px;
   width: 466px;
   min-width: 112px;
+  position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 .img-fluid {
@@ -49,6 +51,6 @@
 .blog-section-text {
   font-size: 0.87rem;
   text-shadow: 0 0 5px var(--black);
-  margin-bottom: 30px;
   text-align: center;
+  line-height: 1.4rem;
 }
