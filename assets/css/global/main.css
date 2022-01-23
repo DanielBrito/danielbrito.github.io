@@ -151,10 +151,12 @@ a:active {
   z-index: 9999;
   position: absolute;
   left: 25px;
+  opacity: 0;
   transform: translateY(-120%);
   transition: transform 325ms ease-in;
 }
 
 .skip-to-content:focus {
   transform: translateY(26%);
+  opacity: 1;
 }
