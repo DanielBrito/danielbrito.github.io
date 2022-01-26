@@ -52,7 +52,7 @@
 .container.project {
   margin-top: 30px;
   margin-bottom: 20px;
-  max-width: 1200px;
+  max-width: 1050px;
   border-radius: 10px;
   box-shadow: 0 0 5px var(--black), 0 0 10px var(--black);
   border-style: solid;
@@ -132,7 +132,7 @@
 
 .project-text {
   font-size: 0.87rem;
-  line-height: 1.4rem;
+  line-height: 1.3rem;
   text-shadow: 0 0 5px var(--black);
 }
 

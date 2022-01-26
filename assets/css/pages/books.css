@@ -1,7 +1,7 @@
 .container.book {
   margin-top: 30px;
   margin-bottom: 10px;
-  max-width: 1200px;
+  max-width: 1050px;
   border-radius: 10px;
   box-shadow: 0px 0px 10px var(--black), 0px 0px 10px var(--black);
   border-style: solid;
@@ -51,7 +51,7 @@
 .book-text {
   color: var(--white);
   font-size: 0.87rem;
-  line-height: 1.4rem;
+  line-height: 1.3rem;
   text-shadow: 0 0 5px var(--black);
 }
 
@@ -126,7 +126,7 @@
 .reviewer-text {
   color: var(--white);
   font-size: 0.87rem;
-  line-height: 1.4rem;
+  line-height: 1.3rem;
   text-align: center;
   text-shadow: 0 0 5px var(--black);
 }
