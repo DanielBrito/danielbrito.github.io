@@ -1,71 +1,9 @@
-.container.contact {
-  margin-top: 30px;
-  margin-bottom: 20px;
-  max-width: 1050px;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px var(--black), 0px 0px 10px var(--black);
-  border-style: solid;
-  border-width: 1px;
-  border-color: var(--red-wine-primary);
-  background-color: var(--container-background-alpha);
-}
-
-.column-image {
-  background-color: transparent;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  width: 466px;
-  min-width: 112px;
-  padding-right: 15px;
-  padding-left: 15px;
-}
-
-.img-fluid {
-  border-radius: 7px;
-  border-style: solid;
-  border-color: var(--white);
-  border-width: 1px;
-}
-
-.column-description {
-  background-color: transparent;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border-radius: 10px;
-  margin-top: 0px;
-  padding: 30px;
-}
-
-.contact-title {
-  margin-top: 0px;
-  margin-bottom: 16px;
-  font-size: 1.87rem;
-  text-shadow: 0 0 5px var(--black);
-  text-align: center;
-}
-
-.contact-text {
-  margin-bottom: 0px;
-  font-size: 0.87rem;
-  line-height: 1.3rem;
-  text-align: center;
-}
-
 .fas.fa-envelope.message {
   color: var(--envelope-color);
 }
 
 .fab.fa-telegram-plane {
   color: var(--telegram-color);
-}
-
-#email,
-#telegram {
-  text-decoration: none;
-  border-bottom: 1px dotted var(--red-wine-primary);
-  font-weight: bold;
 }
 
 .fab.fa-facebook-square {
@@ -97,51 +35,56 @@
 }
 
 #modal-profiles {
-  box-shadow: 0px 0px 10px var(--black), 0px 0px 10px var(--black) !important;
-  padding-right: 0px;
+  padding-right: 0;
+
+  box-shadow: 0 0 10px var(--black), 0 0 10px var(--black) !important;
   background-color: var(--container-background-alpha);
 }
 
 .modal-header {
-  background-color: var(--red-wine-primary);
-  border-color: var(--red-wine-primary);
-  border-width: 1px;
-  border-style: solid;
-  font-size: 0.87rem;
-  padding: 0.7rem;
-  border-radius: 5px 5px 0 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  padding: 0.7rem;
+
+  background-color: var(--red-wine-primary);
+  border: 1px solid var(--red-wine-primary);
+  border-radius: 5px 5px 0 0;
+
+  font-size: 0.87rem;
 }
 
 #modal-header-space {
-  margin-right: 20px;
   height: auto;
+
+  margin-right: 20px;
 }
 
 #close-modal {
   padding: 0;
   margin: 0;
+
   color: var(--white);
 }
 
 .modal-title {
+  margin: auto;
+
   font-weight: bold;
-  margin-left: auto;
-  margin-right: auto;
   text-shadow: 0 0 5px var(--black);
   font-size: 1.25rem;
 }
 
 .modal-body {
+  padding-bottom: 0;
+
   border-color: var(--red-wine-primary);
   border-width: 1px;
-  border-style: dashed;
-  text-align: center;
-  padding-bottom: 0px;
   border-style: none dashed dashed dashed;
   border-radius: 0 0 10px 10px;
+
+  text-align: center;
 }
 
 #modal-content {
@@ -154,6 +97,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   padding-bottom: 10px;
 }
 
@@ -164,9 +108,10 @@
 
 .item-profile {
   display: flex;
+
+  margin: 4px auto 13px auto;
+
   line-height: 1.07rem;
-  margin-top: 4px;
-  margin-bottom: 13px;
   font-size: 0.87rem;
 }
 
