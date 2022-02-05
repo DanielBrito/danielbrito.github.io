@@ -170,9 +170,48 @@ a:hover {
   margin: var(--top-bottom-default-margin) auto;
 
   border-radius: 10px;
-  box-shadow: 0px 0px 10px var(--black), 0px 0px 10px var(--black);
+  box-shadow: 0 0 10px var(--black), 0 0 10px var(--black);
   border-style: solid;
   border-width: 1px;
   border-color: var(--red-wine-primary);
   background-color: var(--container-background-alpha);
+}
+
+.column-image {
+  justify-content: center;
+  display: flex;
+
+  padding: 15px;
+}
+
+.illustration {
+  border-radius: 7px;
+  border-style: solid;
+  border-color: var(--white);
+  border-width: 1px;
+}
+
+.column-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0 30px;
+
+  border-radius: 10px;
+}
+
+.description-text {
+  margin-bottom: 0;
+
+  font-size: 0.87rem;
+  line-height: 1.3rem;
+  text-shadow: 0 0 5px var(--black);
+}
+
+@media only screen and (max-width: 1200px) {
+  .column-description {
+    padding: 30px;
+  }
 }
