@@ -1,7 +1,7 @@
 #badge {
   max-width: var(--max-width-container);
 
-  margin: 30px auto 10px auto;
+  margin: var(--top-bottom-default-margin) auto;
 
   border-radius: var(--default-border-radius) var(--default-border-radius) 50%
     50%;
