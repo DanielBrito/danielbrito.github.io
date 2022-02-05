@@ -1,5 +1,5 @@
 :root {
-  /* Color Palette: */
+  /* Main Color Palette: */
   --container-background: rgba(0, 0, 0, 0.85);
   --white: #fff;
   --red-wine-primary: #ea1017;
@@ -43,7 +43,9 @@
   --myanimelist-color: #2a35da;
   --skoob-color: #757eff;
 
-  /* Layout and Style: */
+  /* TODO: REMOVER E RENOMEAR PARA COLORS: */
+
+  /* Layout and Style:*/
   --max-width-container: 1050px;
   --default-border-radius: 10px;
   --top-bottom-default-margin: 30px;
