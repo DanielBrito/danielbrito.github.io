@@ -42,4 +42,8 @@
   --spotify-color: #43d448;
   --myanimelist-color: #2a35da;
   --skoob-color: #757eff;
+
+  /* Layout and Style: */
+  --max-width-container: 1050px;
+  --default-border-radius: 10px;
 }
