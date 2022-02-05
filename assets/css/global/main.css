@@ -161,6 +161,8 @@ a:hover {
 
 /* Pages: */
 .section-title {
+  margin-bottom: 20px;
+
   font-size: 1.56rem;
 }
 
@@ -178,8 +180,8 @@ a:hover {
 }
 
 .column-image {
-  justify-content: center;
   display: flex;
+  justify-content: center;
 
   padding: 15px;
 }
@@ -198,8 +200,6 @@ a:hover {
   justify-content: center;
 
   padding: 0 30px;
-
-  border-radius: 10px;
 }
 
 .description-text {

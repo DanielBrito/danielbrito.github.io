@@ -67,3 +67,9 @@
 #icon-life {
   transform: scale(1.8);
 }
+
+.section-title.about-title {
+  margin-bottom: 10px;
+
+  font-size: 1.56rem;
+}
