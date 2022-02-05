@@ -43,10 +43,13 @@
   --myanimelist-color: #2a35da;
   --skoob-color: #757eff;
 
+  /* Soundcloud Player: */
+  --soundcloud-default: #cccccc;
+
   /* TODO: REMOVER E RENOMEAR PARA COLORS: */
 
   /* Layout and Style:*/
   --max-width-container: 1050px;
   --default-border-radius: 10px;
-  --top-bottom-default-margin: 30px;
+  --top-bottom-default-margin: 25px;
 }

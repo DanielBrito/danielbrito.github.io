@@ -160,12 +160,6 @@ a:hover {
 }
 
 /* Pages: */
-.section-title {
-  margin-bottom: 20px;
-
-  font-size: 1.56rem;
-}
-
 .section-container {
   max-width: var(--max-width-container);
 
@@ -177,6 +171,14 @@ a:hover {
   border-width: 1px;
   border-color: var(--red-wine-primary);
   background-color: var(--container-background-alpha);
+}
+
+.section-title {
+  margin-bottom: 20px;
+
+  font-size: 1.56rem;
+  text-align: center;
+  font-weight: bold;
 }
 
 .column-image {
@@ -207,7 +209,10 @@ a:hover {
 
   font-size: 0.87rem;
   line-height: 1.3rem;
-  text-shadow: 0 0 5px var(--black);
+}
+
+.column-video {
+  padding: 15px;
 }
 
 @media only screen and (max-width: 1200px) {
