@@ -1,9 +1,13 @@
-/* PAGE STRUCTURE: */
+/* Page Structure: */
 
-html,
-body {
+html {
   margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+
   scroll-behavior: smooth;
+
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */
   -khtml-user-select: none; /* Konqueror HTML */
@@ -15,21 +19,26 @@ body {
 main {
   padding-left: 5px;
   padding-right: 5px;
+
+  animation: fadein 0.5s;
+  -moz-animation: fadein 0.5s; /* Firefox */
+  -webkit-animation: fadein 0.5s; /* Safari and Chrome */
+  -o-animation: fadein 0.5s; /* Opera */
 }
 
 body {
-  background-color: var(--black);
+  width: 100%;
+
   background-size: auto;
   background-repeat: repeat;
   background-position: top;
   background-attachment: fixed;
   background-image: linear-gradient(
       180deg,
-      rgba(0, 0, 0, 0.7),
-      rgba(0, 0, 0, 0.7)
+      var(--background-layer),
+      var(--background-layer)
     ),
     url("../../images/global/background.webp");
-  width: 100%;
 
   color: var(--white);
   font-size: 1rem;
@@ -40,14 +49,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* PAGE TRANSITION: */
-
-main {
-  animation: fadein 0.5s;
-  -moz-animation: fadein 0.5s; /* Firefox */
-  -webkit-animation: fadein 0.5s; /* Safari and Chrome */
-  -o-animation: fadein 0.5s; /* Opera */
-}
+/* Page Transition: */
 
 @keyframes fadein {
   from {
@@ -88,31 +90,20 @@ main {
   }
 }
 
-/* LINK: */
+/* Links: */
 
-a:link {
-  color: var(--white) !important;
-  text-decoration: none;
-}
-
-a:visited {
-  color: var(--white) !important;
-  text-decoration: none;
-}
-
+a,
 a:hover {
-  color: var(--white) !important;
-  text-decoration: underline;
-}
-
-a:active {
-  color: var(--white) !important;
   text-decoration: none;
+  color: var(--white);
 }
 
 .redirect-link {
+  color: var(--white) !important;
+  text-decoration: none;
   border-bottom: 1px dotted var(--red-wine-primary);
   font-weight: bold;
+
   transition: all 0.3s ease-in-out;
 }
 
@@ -121,19 +112,21 @@ a:active {
   text-decoration: none;
 }
 
-/* BUTTON: */
+/* Button: */
 
 .custom-button {
-  max-height: 50px;
+  height: 45px;
   max-width: 200px;
+
+  margin: 25px auto 0 auto;
+
   background-color: var(--red-wine-primary);
   border-radius: 10px;
-  margin-left: auto;
-  font-size: 1.125rem;
-  margin-right: auto;
   border-color: var(--red-wine-primary);
+
+  font-size: 1.125rem;
+
   transition: all 0.3s ease-in-out;
-  margin-top: 25px;
 }
 
 .custom-button:hover {
@@ -142,17 +135,21 @@ a:active {
   box-shadow: 0 0 5px var(--red-wine-primary), 0 0 5px var(--red-wine-primary);
 }
 
-/* SKIP TO MAIN CONTENT: */
+/* Skip to Main Content: */
 
 .skip-to-content {
-  background-color: var(--red-wine-primary);
-  font-size: 0.875rem;
-  border-radius: 5px;
   padding: 15px 20px;
-  z-index: 9999;
+
   position: absolute;
+  z-index: 9999;
   left: 25px;
+
+  background-color: var(--red-wine-primary);
+  border-radius: 5px;
   opacity: 0;
+
+  font-size: 0.875rem;
+
   transform: translateY(-120%);
   transition: transform 325ms ease-in;
 }
@@ -160,8 +157,4 @@ a:active {
 .skip-to-content:focus {
   transform: translateY(26%);
   opacity: 1;
-}
-
-.skip-to-content:hover {
-  text-decoration: none;
 }

@@ -4,99 +4,77 @@
 
 #nav-wrapper {
   width: 100%;
-  background-color: var(--black);
-  box-shadow: 0px 0px 10px var(--black), 0px 0px 10px var(--black);
+
   display: flex;
   justify-content: center;
+
+  background-color: var(--black);
+  box-shadow: 0 0 10px var(--black), 0 0 10px var(--black);
   border-style: solid;
-  border-width: 0px 0px 1px 0px;
+  border-width: 0 0 1px 0;
   border-color: var(--red-wine-primary);
+
   transition: top 0.3s;
 }
 
 .icon-navbar {
-  margin-right: 5px;
-  margin-left: 0px;
-  margin-top: 5px;
+  margin: 5px 5px 0 0;
 }
 
 .navbar.navbar-light.navbar-expand-xl.sticky-top {
-  background-color: var(--black);
-  padding-left: 20px;
-  padding-top: 7px;
-  padding-bottom: 8px;
   max-width: 1350px;
+
+  padding: 8px 20px;
+
+  background-color: var(--black);
+
   font-weight: bold;
 }
 
 .nav-item {
-  padding: 10px 6px 10px 6px;
+  padding: 10px 6px;
+
   font-size: 0.94rem;
   font-weight: bold;
 }
 
 .nav-item a {
-  color: var(--white) !important;
-  font-weight: bold;
   border-radius: 10px;
-}
 
-.nav-item a:hover {
-  text-decoration: none;
-  color: var(--white) !important;
-  background-color: var(--red-wine-primary) !important;
-  border-radius: 10px;
-  box-shadow: 0 0 5px var(--red-wine-primary), 0 0 10px var(--red-wine-primary);
-  font-weight: bold;
-}
-
-.nav-item a:link {
   color: var(--red-wine-primary) !important;
   text-decoration: none;
-  font-weight: bold;
+
   transition: all 0.3s ease-in-out;
 }
 
-.nav-item a:visited {
-  color: var(--red-wine-primary) !important;
-  text-decoration: none;
-  font-weight: bold;
-}
-
 .nav-item a.active {
-  color: var(--white) !important;
-  background-color: var(--red-wine-primary) !important;
-  border-radius: 10px;
+  background-color: var(--red-wine-primary);
   box-shadow: 0 0 5px var(--red-wine-primary), 0 0 10px var(--red-wine-primary);
-  font-weight: normal;
-  font-weight: bold;
+
+  color: var(--white) !important;
 }
 
 .nav-item a:hover {
+  background-color: var(--red-wine-primary);
+  box-shadow: 0 0 5px var(--red-wine-primary), 0 0 10px var(--red-wine-primary);
+
   color: var(--white) !important;
-  font-weight: bold;
 }
 
 #daniel-brito-logo {
   width: auto;
   height: 55px;
+
   margin-bottom: -2px;
 }
 
-#toggle-nav {
-  margin: 0px;
-  height: 1px;
-  width: 1px;
-}
-
 #toggle-nav-icon {
-  background-color: var(--red-wine-primary);
   width: 50px;
   height: 50px;
-  margin-left: -12px;
-  margin-right: -12px;
-  margin-top: -5px;
-  margin-bottom: -7px;
+
+  margin: -6px -12px;
+
+  background-color: var(--red-wine-primary);
 }
 
 #navcol-1 {

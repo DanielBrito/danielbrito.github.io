@@ -128,7 +128,7 @@
   position: absolute;
   z-index: 0;
   animation: pulse 1.5s infinite;
-  margin-top: 9px;
+  margin-top: 3px;
 }
 
 #artist-icon {

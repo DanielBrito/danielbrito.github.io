@@ -1,8 +1,7 @@
 :root {
-  /* COLOR PALETTE: */
+  /* Color Palette: */
   --container-background: rgba(0, 0, 0, 0.85);
   --white: #fff;
-
   --red-wine-primary: #ea1017;
   --red-wine-dark: #c5161c;
   --red-wine-dark-quote: #c5161c66;
@@ -10,12 +9,12 @@
   --red-text-bright: #ea1017;
   --button-hover: #bb0e13;
   --container-background-alpha: rgba(0, 0, 0, 0.6);
+  --background-layer: rgba(0, 0, 0, 0.7);
   --black: #000;
-  --scrollbar-background: rgba(20, 20, 20, 0.7);
+  --scrollbar-background: rgb(0, 0, 0, 0.95);
   --scrollbar-bar: #444;
-  --footer-letter-shadow: rgba(0, 0, 0, 0.8);
 
-  /* CONTACT PAGE ICONS: */
+  /* Contact Page Icons Color: */
   --facebook-color: #4267b2;
   --instagram-color: #e1306c;
   --twitter-color: #1da1f2;
@@ -26,7 +25,7 @@
   --envelope-color: #ffff00;
   --telegram-color: #0088cc;
 
-  /* OTHER PROFILES ICONS: */
+  /* Other Profiles Icons Color: */
   --lattes-color: #2e40c3;
   --cv-color: rgb(182, 182, 182);
   --freecodecamp-color: #008708;
