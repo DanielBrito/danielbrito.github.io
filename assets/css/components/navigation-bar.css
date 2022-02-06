@@ -39,7 +39,7 @@
 }
 
 .nav-item a {
-  border-radius: var(--default-border-radius);
+  border-radius: 10px;
 
   color: var(--red-wine-primary) !important;
   text-decoration: none;

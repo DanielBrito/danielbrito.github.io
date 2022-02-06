@@ -35,6 +35,8 @@
 }
 
 #modal-profiles {
+  z-index: 9999;
+
   padding-right: 0;
 
   box-shadow: 0 0 10px var(--black), 0 0 10px var(--black) !important;

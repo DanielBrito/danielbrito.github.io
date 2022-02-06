@@ -7,17 +7,13 @@
 
 .col.grid {
   padding: 5px 15px;
-
-  border-radius: 10px;
 }
 
 .gallery-image {
   margin: 10px auto;
 
-  border-radius: 10px !important;
-  border-style: solid;
-  border-color: var(--white);
-  border-width: 1px;
+  border: 1px solid var(--white);
+  border-radius: 7px !important;
 
   transition: all 0.2s ease-in-out;
 }

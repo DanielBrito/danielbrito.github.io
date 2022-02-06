@@ -161,22 +161,20 @@ a:hover {
 
 /* Pages: */
 .section-container {
-  max-width: var(--max-width-container);
+  max-width: 1050px;
 
-  margin: var(--top-bottom-default-margin) auto;
+  margin: 25px auto;
 
-  border-radius: 10px;
   box-shadow: 0 0 10px var(--black), 0 0 10px var(--black);
-  border-style: solid;
-  border-width: 1px;
-  border-color: var(--red-wine-primary);
+  border: 1px solid var(--red-wine-primary);
+  border-radius: 10px;
   background-color: var(--container-background-alpha);
 }
 
 .section-title {
   margin-bottom: 20px;
 
-  font-size: 1.56rem;
+  font-size: 1.7rem;
   text-align: center;
   font-weight: bold;
 }
@@ -189,10 +187,8 @@ a:hover {
 }
 
 .illustration {
+  border: 1px solid var(--white);
   border-radius: 7px;
-  border-style: solid;
-  border-color: var(--white);
-  border-width: 1px;
 }
 
 .column-description {

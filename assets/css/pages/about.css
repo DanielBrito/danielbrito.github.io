@@ -16,7 +16,7 @@
   align-items: center;
   justify-content: center;
 
-  margin: 30px auto -30px auto;
+  margin: 30px auto -25px auto;
   padding: 12px 10px 0 10px;
 
   background-color: var(--container-background-alpha);
@@ -28,7 +28,7 @@
 
 .header-title-container.furthermore,
 .header-title-container.carpe-diem {
-  margin-top: 0;
+  margin-top: 5px;
 }
 
 .icon-about-circle {

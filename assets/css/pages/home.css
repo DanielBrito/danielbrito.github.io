@@ -1,10 +1,9 @@
 #badge {
-  max-width: var(--max-width-container);
+  max-width: 1050px;
 
-  margin: var(--top-bottom-default-margin) auto;
+  margin: 25px auto;
 
-  border-radius: var(--default-border-radius) var(--default-border-radius) 50%
-    50%;
+  border-radius: 10px 10px 50% 50%;
   box-shadow: 0 0 10px var(--black), 0 0 10 var(--black);
   border-style: solid;
   border-width: 1px;
@@ -141,8 +140,7 @@
 
 @media only screen and (max-width: 1200px) {
   #badge {
-    border-radius: var(--default-border-radius) var(--default-border-radius) 45%
-      45%;
+    border-radius: 10px 10px 45% 45%;
   }
 
   #row-profiles {
@@ -158,8 +156,7 @@
 
 @media only screen and (max-width: 1024px) {
   #badge {
-    border-radius: var(--default-border-radius) var(--default-border-radius) 40%
-      40%;
+    border-radius: 10px 10px 40% 40%;
   }
 
   .column-profile {
@@ -169,8 +166,7 @@
 
 @media only screen and (max-width: 768px) {
   #badge {
-    border-radius: var(--default-border-radius) var(--default-border-radius) 35%
-      35%;
+    border-radius: 10px 10px 35% 35%;
   }
 
   .column-profile {
@@ -180,8 +176,7 @@
 
 @media only screen and (max-width: 480px) {
   #badge {
-    border-radius: var(--default-border-radius) var(--default-border-radius)
-      40px 40px;
+    border-radius: 10px 10px 40px 40px;
   }
 
   .column-profile {

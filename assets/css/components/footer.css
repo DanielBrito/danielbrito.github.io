@@ -24,10 +24,8 @@
 
   background-color: var(--container-background);
   box-shadow: 0 0 5px var(--black), 0 0 5px var(--black);
+  border: 1px dashed var(--red-wine-primary);
   border-radius: 50%;
-  border-style: dashed;
-  border-width: 1px;
-  border-color: var(--red-wine-primary);
 
   color: var(--red-wine-primary);
   font-weight: bold;
@@ -41,10 +39,8 @@
 
   background-color: var(--container-background);
   box-shadow: 0 0 5px var(--black), 0 0 5px var(--black);
+  border: 1px dashed var(--red-wine-primary);
   border-radius: 50%;
-  border-style: dashed;
-  border-width: 1px;
-  border-color: var(--red-wine-primary);
 
   color: var(--red-wine-primary);
   font-size: 0.94rem;

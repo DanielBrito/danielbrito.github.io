@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
 
-  margin-top: 30px;
+  margin-top: 25px;
 }
 
 #categories {
@@ -26,14 +26,13 @@
   position: relative;
 
   background-color: var(--container-background-alpha);
-  border-width: 1px;
-  border-style: dashed;
-  border-color: var(--red-wine-primary);
+  border: 1px dashed var(--red-wine-primary);
   border-radius: 50%;
   box-shadow: 0 0 10px var(--black);
-  transition: all 0.3s ease-in-out;
 
   color: var(--red-wine-primary);
+
+  transition: all 0.3s ease-in-out;
 }
 
 .category-circle:hover {
@@ -67,11 +66,9 @@
   justify-content: flex-end;
   z-index: 10;
 
-  margin-left: 1px;
-  margin-top: 1px;
+  margin: 1px 0 0 1px;
 
   background-color: var(--red-wine-primary);
-
   border-radius: 5px 0 0 0;
   clip-path: circle(100% at 0 0);
 }
@@ -79,15 +76,13 @@
 .label-icon {
   margin-right: 21px;
   margin-bottom: 22px;
+
   color: var(--white);
   font-size: 0.9rem;
+
   transition: all 0.2s ease-in-out;
 }
 
 .label-icon:hover {
   transform: scale(1.1);
-}
-
-#descricao-fora-da-caixa-wrapper {
-  width: 100%;
 }
