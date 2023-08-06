@@ -193,3 +193,7 @@
 #icon-lichess {
   color: var(--white);
 }
+
+#icon-strava {
+  color: var(--strava-color);
+}
