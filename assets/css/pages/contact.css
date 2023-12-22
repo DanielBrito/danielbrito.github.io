@@ -142,8 +142,8 @@
   color: var(--hackerrank-color);
 }
 
-#icon-uri {
-  color: var(--uri--color);
+#icon-leetcode {
+  color: var(--leetcode-color);
 }
 
 #icon-stackoverflow {
