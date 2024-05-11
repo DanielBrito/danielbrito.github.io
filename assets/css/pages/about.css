@@ -1,3 +1,9 @@
+.section-title.about-title {
+  margin-bottom: 10px;
+
+  font-size: 1.56rem;
+}
+
 .title-about-wrapper {
   width: 100%;
 
@@ -26,7 +32,7 @@
   border-color: var(--red-wine-primary);
 }
 
-.header-title-container.furthermore,
+.header-title-container.facets,
 .header-title-container.carpe-diem {
   margin-top: 5px;
 }
@@ -54,22 +60,14 @@
   color: var(--white);
 }
 
-#icon-biography {
+#icon-briefly {
   transform: scale(1.7);
 }
 
-#icon-projects {
-  padding: 2px 2px 0 0;
-
-  transform: scale(1.6) rotate(-45deg);
+#icon-facets {
+  transform: scale(1.7);
 }
 
-#icon-life {
+#icon-carpe-diem {
   transform: scale(1.8);
-}
-
-.section-title.about-title {
-  margin-bottom: 10px;
-
-  font-size: 1.56rem;
 }
