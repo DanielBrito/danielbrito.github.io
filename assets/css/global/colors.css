@@ -21,7 +21,6 @@
   --linkedin-color: #2867b2;
   --github-color: #555;
   --youtube-color: #ff0000;
-  --allmylinks-color: #eb701f;
   --envelope-color: #ffff00;
   --telegram-color: #0088cc;
 
@@ -41,7 +40,4 @@
   --myanimelist-color: #2a35da;
   --skoob-color: #757eff;
   --strava-color: #fc4c02;
-
-  /* Soundcloud Player: */
-  --soundcloud-default: #cccccc;
 }
