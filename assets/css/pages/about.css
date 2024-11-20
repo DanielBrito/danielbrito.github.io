@@ -71,3 +71,77 @@
 #icon-carpe-diem {
   transform: scale(1.8);
 }
+
+#modal-feedbacks {
+  z-index: 9999;
+
+  padding-right: 0;
+
+  box-shadow: 0 0 10px var(--black), 0 0 10px var(--black) !important;
+  background-color: var(--container-background-alpha);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0.7rem;
+
+  background-color: var(--red-wine-primary);
+  border: 1px solid var(--red-wine-primary);
+  border-radius: 5px 5px 0 0;
+
+  font-size: 0.87rem;
+}
+
+#modal-header-space {
+  height: auto;
+
+  margin-right: 20px;
+}
+
+#close-modal {
+  padding: 0;
+  margin: 0;
+
+  color: var(--white);
+}
+
+.modal-title {
+  margin: auto;
+
+  font-weight: bold;
+  text-shadow: 0 0 5px var(--black);
+  font-size: 1rem;
+}
+
+.modal-body {
+  padding-bottom: 0.63rem;
+
+  border-color: var(--red-wine-primary);
+  border-width: 1px;
+  border-style: none dashed dashed dashed;
+  border-radius: 0 0 10px 10px;
+
+  text-align: center;
+}
+
+#modal-content {
+  border-radius: 10px;
+  background-color: var(--container-background);
+}
+
+.feedback-item {
+  display: flex;
+
+  margin: 4px auto 13px auto;
+
+  font-size: 0.87rem;
+  line-height: 1.3rem;
+}
+
+.feedbacks-divider {
+  color: var(--red-wine-primary);
+  font-weight: bold;
+}

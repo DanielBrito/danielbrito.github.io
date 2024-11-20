@@ -1,365 +1,763 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="keywords" content="Daniel Brito, desenvolvedor, artista, escritor, programação, arte, poesia">
-    <meta name="author" content="Daniel Brito">
-    <meta name="description"
-        content="Site pessoal de Daniel Brito, com informações pessoais, livros publicados e projetos desenvolvidos.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="keywords"
+      content="Daniel Brito, desenvolvedor, artista, escritor, programação, arte, poesia"
+    />
+    <meta name="author" content="Daniel Brito" />
+    <meta
+      name="description"
+      content="Site pessoal de Daniel Brito, com informações pessoais, livros publicados e projetos desenvolvidos."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Sobre | Daniel Brito</title>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
-        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-    <link rel="shortcut icon" type="image/png" href="../assets/images/global/favicon.png">
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="../assets/images/global/favicon.png"
+    />
 
-    <link rel="stylesheet" href="../assets/css/global/colors.css">
-    <link rel="stylesheet" href="../assets/css/global/fonts.css">
-    <link rel="stylesheet" href="../assets/css/global/main.css">
-    <link rel="stylesheet" href="../assets/css/components/custom-scrollbar.css">
-    <link rel="stylesheet" href="../assets/css/components/to-top-button.css">
-    <link rel="stylesheet" href="../assets/css/components/navigation-bar.css">
-    <link rel="stylesheet" href="../assets/css/components/footer.css">
-    <link rel="stylesheet" href="../assets/css/pages/about.css">
-</head>
+    <link rel="stylesheet" href="../assets/css/global/colors.css" />
+    <link rel="stylesheet" href="../assets/css/global/fonts.css" />
+    <link rel="stylesheet" href="../assets/css/global/main.css" />
+    <link
+      rel="stylesheet"
+      href="../assets/css/components/custom-scrollbar.css"
+    />
+    <link rel="stylesheet" href="../assets/css/components/to-top-button.css" />
+    <link rel="stylesheet" href="../assets/css/components/navigation-bar.css" />
+    <link rel="stylesheet" href="../assets/css/components/footer.css" />
+    <link rel="stylesheet" href="../assets/css/pages/about.css" />
+  </head>
 
-<body>
-    <a class="skip-to-content" href="#conteudo-principal" aria-label="Ir para o conteúdo principal">Ir para o conteúdo
-        principal</a>
+  <body>
+    <a
+      class="skip-to-content"
+      href="#conteudo-principal"
+      aria-label="Ir para o conteúdo principal"
+      >Ir para o conteúdo principal</a
+    >
 
     <div id="reading-status-container">
-        <a id="to-top-button" title="Ir para o topo" aria-hidden="true">
-            <span><i id="top-icon" class="fas fa-angle-up"></i></span>
-        </a>
+      <a id="to-top-button" title="Ir para o topo" aria-hidden="true">
+        <span><i id="top-icon" class="fas fa-angle-up"></i></span>
+      </a>
 
-        <header class="sticky-top" id="nav-wrapper">
-            <nav class="navbar navbar-light navbar-expand-xl sticky-top" id="nav-bar">
-                <div class="container-fluid">
-                    <div class="navbar-brand">
-                        <a href="https://danielbrito.github.io" aria-label="Daniel Brito" role="link">
-                            <img class="float-left" src="../assets/images/global/daniel-brito-monograma.webp"
-                                width="500" height="144" id="daniel-brito-logo" alt="Logo Daniel Brito.">
-                        </a>
-                    </div>
-                    <button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1">
-                        <span class="sr-only" id="toggle-nav">Toggle navigation</span>
-                        <span class="navbar-toggler-icon text-monospace" id="toggle-nav-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navcol-1">
-                        <ul class="nav navbar-nav ml-auto">
-                            <li class="nav-item" role="presentation"><a class="nav-link"
-                                    href="https://danielbrito.github.io" aria-label="Ir para página inicial"><i
-                                        class="fas fa-home icon-navbar"></i>INÍCIO</a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link active" href="/sobre"
-                                    aria-label="Ir para página Sobre"><i class="fas fa-user icon-navbar"></i>SOBRE</a>
-                            </li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="/livros"
-                                    aria-label="Ir para página Livros"><i class="fas fa-book icon-navbar"></i>LIVROS</a>
-                            </li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="/projetos"
-                                    aria-label="Ir para página Projetos"><i
-                                        class="fas fa-lightbulb icon-navbar"></i>PROJETOS</a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="/imagens"
-                                    aria-label="Ir para página Imagens"><i
-                                        class="fas fa-images icon-navbar"></i>IMAGENS</a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="/videos"
-                                    aria-label="Ir para página Vídeos"><i
-                                        class="fas fa-video icon-navbar"></i>VÍDEOS</a></li>
-                            <li class=" nav-item" role="presentation"><a class="nav-link" href="/blog"
-                                    aria-label="Ir para página Blog"><i class="fab fa-blogger icon-navbar"></i>BLOG</a>
-                            </li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="/midia"
-                                    aria-label="Ir para página Mídia"><i
-                                        class="fas fa-newspaper icon-navbar"></i>MÍDIA</a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="/contato"
-                                    aria-label="Ir para página Contato"><i
-                                        class="fas fa-envelope icon-navbar"></i>CONTATO</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </header>
-
-        <main id="conteudo-principal">
-            <section>
-                <div class="title-about-wrapper">
-                    <div class="header-title-container briefly">
-                        <div class="icon-about-circle" title="&quot;Minha breve história&quot;" aria-hidden="true">
-                            <i id="icon-briefly" class="fas fa-hourglass-half icon-about"></i>
-                        </div>
-                        <h1 class="section-title about-title">BREVEMENTE</h1>
-                    </div>
-                </div>
-
-                <div class="container section-container">
-                    <div class="row justify-content-center align-items-center">
-                        <div class="col-xl-5 column-image">
-                            <img class="img-fluid illustration" src="../assets/images/about/brevemente.webp"
-                                alt="Terminal do Ubuntu mostrando o nome Daniel Brito verticalmente à esquerda, onde as letras IT estão como sua representação binária; e uma pixel arte do rosto de Daniel à direita."
-                                width="400" height="564">
-                        </div>
-                        <div class="col-xl-7 column-description">
-                            <div>
-                                <p class="text-center description-text">
-                                    Nasci em São Paulo, há <span id="days"></span> dias. Durante a maior parte da
-                                    minha vida, morei no distrito do Grajaú. Na minha infância, gostava de ler, assistir
-                                    desenhos animados, jogar futebol, videogame e criar coisas. Quando adolescente,
-                                    ganhei
-                                    meu primeiro computador, o qual me deixou simplesmente fascinado.<br /><br />
-
-                                    Aos 16 anos, consegui um emprego como jovem aprendiz. Então, após
-                                    o término do contrato, em decorrência de um bom serviço, fui efetivado
-                                    para atuar como assistente administrativo.<br /><br />
-
-                                    Depois de estudar em diferentes escolas públicas, fui aprovado no vestibular da
-                                    Faculdade
-                                    de
-                                    Tecnologia (FATEC) para cursar Análise e Desenvolvimento de Sistemas. Contudo, em
-                                    busca de maiores desafios, cancelei minha matrícula e decidi me mudar para o
-                                    nordeste,
-                                    com o propósito de estudar Ciência da Computação na Universidade Federal do Ceará
-                                    (UFC), onde
-                                    participei de projetos nas áreas de desenvolvimento web e mobile, computação
-                                    gráfica, <a class="redirect-link" href="https://github.com/GEMP-UFC-Crateus"
-                                        target="_blank" title="Perfil do GEMP no GitHub"
-                                        aria-label="Programação competitiva no GEMP"><em>programação
-                                            competitiva</em></a> e
-                                    docência.<br /><br />
-
-                                    Nos últimos tempos, tenho trabalhado como engenheiro de software, possuindo um maior
-                                    interesse por tópicos relacionados à arquitetura de aplicações para web e
-                                    dispositivos móveis.<br /><br />
-
-                                    Informações mais recentes e detalhadas sobre a minha trajetória profissional e
-                                    acadêmica podem ser encontradas no meu <em><a class="redirect-link"
-                                            href="https://drive.google.com/file/d/1bOFjCfhoyabvcZ7LXf5T3EtY9h6umsaR/view"
-                                            target="_blank" title="Arquivo PDF"
-                                            aria-label="Currículo em PDF">currículo</a></em> e no meu perfil
-                                    na <em><a class="redirect-link" href="http://lattes.cnpq.br/6587136026055239"
-                                            target="_blank" title="Currículo na Plataforma Lattes">Plataforma
-                                            Lattes</a></em>.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section>
-                <div class="title-about-wrapper">
-                    <div class="header-title-container facets">
-                        <div class="icon-about-circle" title="&quot;Quero ser tudo que sou capaz de me tornar&quot;"
-                            aria-hidden="true">
-                            <i id="icon-facets" class="fas fa-cube icon-about"></i>
-                        </div>
-                        <h1 class="section-title about-title">FACETAS</h1>
-                    </div>
-                </div>
-
-                <div class="container section-container">
-                    <div class="row justify-content-center align-items-center">
-                        <div class="col-xl-5 column-image">
-                            <img class="img-fluid illustration" src="../assets/images/about/facetas.webp"
-                                alt="Carta de baralho customizada como um D de copas; internamente, possui uma imagem de perfil do Daniel Brito espelhada verticalmente sobre um fundo cúbico vermelho."
-                                width="400" height="564">
-                        </div>
-                        <div class="col-xl-7 column-description">
-                            <div>
-                                <p class="text-center description-text">
-                                    Busco sempre aplicar conhecimentos
-                                    adquiridos
-                                    na criação de novos <a href="/projetos" class="redirect-link"
-                                        title="Saiba mais"><em>projetos e experimentos</em></a>, que englobam tanto o
-                                    campo da Arte como
-                                    da
-                                    Tecnologia. Se possível, também com um viés ativista.<br /><br />
-
-                                    Idealizei os projetos <em><a href="/projetos/#sturing" class="redirect-link"
-                                            title="Saiba mais">sTuring</a></em> e <em><a href="/projetos/#compixelar"
-                                            class="redirect-link" title="Saiba mais">Compixelar</a></em>, voltados para
-                                    a divulgação científica de assuntos relacionados à Computação. Sou <a
-                                        href="/livros/#fanzines" class="redirect-link"
-                                        title="Saiba mais"><em>(Fan)zineiro</em></a>. Desenvolvi o
-                                    aplicativo <a href="/projetos/#halugar" class="redirect-link"
-                                        title="Saiba mais"><em>HáLugar</em></a>. Sou criador dos <a
-                                        href="/projetos/#aluminions" class="redirect-link"
-                                        title="Saiba mais"><em>Aluminions</em></a>. Sou pensador no <a
-                                        href="/projetos/#fora-da-caixa" class="redirect-link"
-                                        title="Saiba mais"><em>Fora da
-                                            Caixa</em></a>. Sou tailleur na <a href="/projetos/#antigrife"
-                                        class="redirect-link" title="Saiba mais"><em>ANTIGR1F3</em></a>. Sou curador na
-                                    <a href="/projetos/#galeria-marginal" class="redirect-link"
-                                        title="Saiba mais"><em>Galeria
-                                            Marginal</em></a>. Sou programador aspirante a <a href="/projetos/#canal"
-                                        class="redirect-link" title="Saiba mais"><em>YouTuber</em></a>. Sou obreiro na
-                                    <a href="/projetos/#concretagens" class="redirect-link"
-                                        title="Saiba mais"><em>Coletiva
-                                            Concretagens</em></a>.<br /><br />
-
-                                    Integrei o coletivo <a href="/projetos/#sarau-do-grajau" class="redirect-link"
-                                        title="Saiba mais"><em>Sarau do Grajaú</em></a>, que produziu o documentário <a
-                                        href="/videos/#grajau-em-foco" class="redirect-link"
-                                        title="Saiba mais"><em>Grajaú
-                                            em Foco</em></a>. Difundia arte e filosofia através dos <a
-                                        href="/projetos/#socrastickers" class="redirect-link"
-                                        title="Saiba mais"><em>Socrastickers</em></a>.<br /><br />
-
-                                    De forma independente, publiquei os livros <em><a
-                                            href="/livros/#protestizando" class="redirect-link"
-                                            title="Saiba mais">PROTESTIZANDO
-                                            - Biênio Poético</a> (2015)</em>, que
-                                    compila alguns dos meus primeiros escritos, e <em><a href="/livros/#a-ler-vazios"
-                                            class="redirect-link" title="Saiba mais">A Ler Vazios</a> (2016)</em>, que
-                                    reúne
-                                    algumas das minhas experimentações poético-visuais.
-                                    Ambos disponíveis no <a href="/projetos/#poemix"
-                                            class="redirect-link" title="Saiba mais">Poemix</a>.
-                                    <br /><br />
-
-                                    Além disso, também fui publicado
-                                    em diversas revistas e antologias com outras pessoas escritoras da cena
-                                    marginal.<br /><br />
-
-                                    Como artista visual e cientista nato, me interesso pelo campo do <em><a
-                                            class="redirect-link"
-                                            href="https://github.com/DanielBrito/generative-design" target="_blank"
-                                            title="Repositório no GitHub">Design Generativo</a></em>,
-                                    uma área da computação voltada para a criação de algoritmos que geram
-                                    arte.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section>
-                <div class="title-about-wrapper">
-                    <div class="header-title-container carpe-diem">
-                        <div class="icon-about-circle" title="&quot;A vida, o universo e tudo mais&quot;"
-                            aria-hidden="true">
-                            <i id="icon-carpe-diem" class="fas fa-heartbeat icon-about"></i>
-                        </div>
-                        <h1 class="section-title about-title">CARPE DIEM</h1>
-                    </div>
-                </div>
-
-                <div class="container section-container">
-                    <div class="row justify-content-center align-items-center">
-                        <div class="col-xl-5 column-image">
-                            <img class="img-fluid illustration" src="../assets/images/about/carpe-diem.webp"
-                                alt="Ilustração de Daniel Brito pensativo, observando algo no horizonte com o queixo apoiado em suas mãos; acima de sua cabeça, existe uma lâmpada acesa e alguns ícones, como um skate, um tabuleiro de xadrez, alguns livros, e diversas outras atividades de seu interesse."
-                                width="400" height="564">
-                        </div>
-                        <div class="col-xl-7 column-description">
-                            <div>
-                                <p class="text-center description-text">
-                                    Logo após escapar da caverna da alegoria de Platão, John Keating me ensinou a
-                                    aproveitar o dia, a fim de tornar minha vida extraordinária. Pouco tempo depois,
-                                    aprendi sobre o poder da metáfora, quando assistia aos
-                                    ensinamentos do poeta Pablo Neruda a um humilde carteiro que trabalhava para
-                                    ele.<br /><br />
-
-                                    Através das ciências exatas, me fascino ao desvendar o cosmos. As ciências sociais
-                                    me ajudam na compreensão da sociedade em que vivo e das diversas culturas que me
-                                    cercam. Por meio da tecnologia, procuro estimular minha criatividade e desenvolver
-                                    soluções que promovam progresso pessoal e social.<br /><br />
-
-                                    Praticar <a href="https://www.strava.com/athletes/96925816" class="redirect-link"
-                                        target="_blank" title="Perfil no Strava"
-                                        aria-label="Atividades físicas no Strava"><em>esportes</em></a> como corrida,
-                                    MTB, SK8 e BMX me fornece boas
-                                    doses de adrenalina. Além disso, também
-                                    recorro
-                                    à calistenia, musculação e <a href="https://lichess.org/@/danielbrito41" class="redirect-link"
-                                        target="_blank" title="Perfil no Lichess"
-                                        aria-label="Neuróbica no Lichess"><em>neuróbica</em></a>, com intuito de
-                                    fortalecer o meu corpo e a minha mente.<br /><br />
-
-                                    Carrego um interesse crescente pela <a
-                                        href="https://filmow.com/usuario/daniel_brito/" class="redirect-link"
-                                        target="_blank" title="Perfil no Filmow"
-                                        aria-label="Sétima Arte no Filmow"><em>Sétima Arte</em></a> e meu <a
-                                        href="https://open.spotify.com/user/xb93kruabsjskn5chjqo127ep"
-                                        class="redirect-link" target="_blank" title="Perfil no Spotify"
-                                        aria-label="Gosto musical no Spotify"><em>gosto
-                                            musical</em></a> abrange
-                                    desde pianos afinados até guitarras distorcidas.<br /><br />
-
-                                    Prezo pelo respeito em relação à existência de todos os seres sencientes, bem como
-                                    pela
-                                    atitude faça-você-mesmo, <a href="https://github.com/DanielBrito/self-learning"
-                                        class="redirect-link" target="_blank"
-                                        title="Repositório no GitHub"><em>autodidatismo</em></a>, <a
-                                        href="https://www.duolingo.com/profile/danielhbrito" class="redirect-link"
-                                        target="_blank" title="Perfil no Duolingo"
-                                        aria-label="Poliglotismo no Duolingo"><em>poliglotismo</em></a> e <a
-                                        href="/blog" class="redirect-link"
-                                        title="Blog pessoal"><em>polimatia</em></a>.<br /><br />
-
-                                    A busca por conhecimento e a descoberta de outros universos são meus maiores
-                                    objetivos
-                                    existenciais.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <footer>
-            <div class="row no-gutters justify-content-center" id="row-footer">
-                <div class="footer-letter-wrapper"><span class="footer-letter">D</span></div>
-                <div class="footer-letter-wrapper"><span class="footer-letter">N</span></div>
-                <div class="footer-letter-wrapper"><span class="footer-letter">L</span></div>
-                <div class="footer-symbol-wrapper"><span class="footer-symbol"><a id="creative-commons"
-                            href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"
-                            rel="noopener noreferrer" title="Licença Creative Commons"
-                            aria-label="Acessar licença Creative Commons">ɔ</a></span></div>
-                <div class="footer-letter-wrapper"><span class="footer-letter">B</span></div>
-                <div class="footer-letter-wrapper"><span class="footer-letter">R</span></div>
-                <div class="footer-letter-wrapper"><span class="footer-letter">T</span></div>
+      <header class="sticky-top" id="nav-wrapper">
+        <nav
+          class="navbar navbar-light navbar-expand-xl sticky-top"
+          id="nav-bar"
+        >
+          <div class="container-fluid">
+            <div class="navbar-brand">
+              <a
+                href="https://danielbrito.github.io"
+                aria-label="Daniel Brito"
+                role="link"
+              >
+                <img
+                  class="float-left"
+                  src="../assets/images/global/daniel-brito-monograma.webp"
+                  width="500"
+                  height="144"
+                  id="daniel-brito-logo"
+                  alt="Logo Daniel Brito."
+                />
+              </a>
             </div>
-        </footer>
+            <button
+              class="navbar-toggler"
+              data-toggle="collapse"
+              data-target="#navcol-1"
+            >
+              <span class="sr-only" id="toggle-nav">Toggle navigation</span>
+              <span
+                class="navbar-toggler-icon text-monospace"
+                id="toggle-nav-icon"
+              ></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+              <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item" role="presentation">
+                  <a
+                    class="nav-link"
+                    href="https://danielbrito.github.io"
+                    aria-label="Ir para página inicial"
+                    ><i class="fas fa-home icon-navbar"></i>INÍCIO</a
+                  >
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a
+                    class="nav-link active"
+                    href="/sobre"
+                    aria-label="Ir para página Sobre"
+                    ><i class="fas fa-user icon-navbar"></i>SOBRE</a
+                  >
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a
+                    class="nav-link"
+                    href="/livros"
+                    aria-label="Ir para página Livros"
+                    ><i class="fas fa-book icon-navbar"></i>LIVROS</a
+                  >
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a
+                    class="nav-link"
+                    href="/projetos"
+                    aria-label="Ir para página Projetos"
+                    ><i class="fas fa-lightbulb icon-navbar"></i>PROJETOS</a
+                  >
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a
+                    class="nav-link"
+                    href="/imagens"
+                    aria-label="Ir para página Imagens"
+                    ><i class="fas fa-images icon-navbar"></i>IMAGENS</a
+                  >
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a
+                    class="nav-link"
+                    href="/videos"
+                    aria-label="Ir para página Vídeos"
+                    ><i class="fas fa-video icon-navbar"></i>VÍDEOS</a
+                  >
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a
+                    class="nav-link"
+                    href="/blog"
+                    aria-label="Ir para página Blog"
+                    ><i class="fab fa-blogger icon-navbar"></i>BLOG</a
+                  >
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a
+                    class="nav-link"
+                    href="/midia"
+                    aria-label="Ir para página Mídia"
+                    ><i class="fas fa-newspaper icon-navbar"></i>MÍDIA</a
+                  >
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a
+                    class="nav-link"
+                    href="/contato"
+                    aria-label="Ir para página Contato"
+                    ><i class="fas fa-envelope icon-navbar"></i>CONTATO</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <main id="conteudo-principal">
+        <section>
+          <div class="title-about-wrapper">
+            <div class="header-title-container briefly">
+              <div
+                class="icon-about-circle"
+                title='"Minha breve história"'
+                aria-hidden="true"
+              >
+                <i
+                  id="icon-briefly"
+                  class="fas fa-hourglass-half icon-about"
+                ></i>
+              </div>
+              <h1 class="section-title about-title">BREVEMENTE</h1>
+            </div>
+          </div>
+
+          <div class="container section-container">
+            <div class="row justify-content-center align-items-center">
+              <div class="col-xl-5 column-image">
+                <img
+                  class="img-fluid illustration"
+                  src="../assets/images/about/brevemente.webp"
+                  alt="Terminal do Ubuntu mostrando o nome Daniel Brito verticalmente à esquerda, onde as letras IT estão como sua representação binária; e uma pixel arte do rosto de Daniel à direita."
+                  width="400"
+                  height="564"
+                />
+              </div>
+              <div class="col-xl-7 column-description">
+                <div>
+                  <p class="text-center description-text">
+                    Nasci em São Paulo, há <span id="days"></span> dias. Durante
+                    a maior parte da minha vida, morei no distrito do Grajaú. Na
+                    minha infância, gostava de ler, assistir desenhos animados,
+                    jogar futebol, videogame e criar coisas. Quando adolescente,
+                    ganhei meu primeiro computador, o qual me deixou
+                    simplesmente fascinado.<br /><br />
+
+                    Aos 16 anos, consegui um emprego como jovem aprendiz. Então,
+                    após o término do contrato, em decorrência de um bom
+                    serviço, fui efetivado para atuar como assistente
+                    administrativo.<br /><br />
+
+                    Depois de estudar em diferentes escolas públicas, fui
+                    aprovado no vestibular da Faculdade de Tecnologia (FATEC)
+                    para cursar Análise e Desenvolvimento de Sistemas. Contudo,
+                    em busca de outros desafios, cancelei minha matrícula e
+                    decidi me mudar para o nordeste com o propósito de estudar
+                    Ciência da Computação na Universidade Federal do Ceará
+                    (UFC), onde participei de projetos nas áreas de
+                    desenvolvimento web e mobile, computação gráfica,
+                    <a
+                      class="redirect-link"
+                      href="https://github.com/GEMP-UFC-Crateus"
+                      target="_blank"
+                      title="Perfil do GEMP no GitHub"
+                      aria-label="Programação competitiva no GEMP"
+                      ><em>programação competitiva</em></a
+                    >
+                    e docência.<br /><br />
+
+                    Nos últimos tempos, tenho trabalhado como engenheiro de
+                    software, construindo aplicações para web e dispositivos
+                    móveis.<br /><br />
+
+                    Informações mais recentes e detalhadas sobre a minha
+                    trajetória profissional e acadêmica podem ser encontradas no
+                    meu
+                    <em
+                      ><a
+                        class="redirect-link"
+                        href="https://drive.google.com/file/d/1bOFjCfhoyabvcZ7LXf5T3EtY9h6umsaR/view"
+                        target="_blank"
+                        title="Arquivo PDF"
+                        aria-label="Currículo em PDF"
+                        >currículo</a
+                      ></em
+                    >, no meu perfil na
+                    <em
+                      ><a
+                        class="redirect-link"
+                        href="http://lattes.cnpq.br/6587136026055239"
+                        target="_blank"
+                        title="Currículo na Plataforma Lattes"
+                        >Plataforma Lattes</a
+                      ></em
+                    >, bem como em alguns
+                    <em
+                      ><a
+                        class="redirect-link"
+                        href="#"
+                        data-toggle="modal"
+                        data-target="#modal-feedbacks"
+                        title="Ver feedbacks profissionais"
+                        aria-label="Ver feedbacks profissionais"
+                        >feedbacks</a
+                      ></em
+                    >
+                    recebidos.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="title-about-wrapper">
+            <div class="header-title-container facets">
+              <div
+                class="icon-about-circle"
+                title='"Quero ser tudo que sou capaz de me tornar"'
+                aria-hidden="true"
+              >
+                <i id="icon-facets" class="fas fa-cube icon-about"></i>
+              </div>
+              <h1 class="section-title about-title">FACETAS</h1>
+            </div>
+          </div>
+
+          <div class="container section-container">
+            <div class="row justify-content-center align-items-center">
+              <div class="col-xl-5 column-image">
+                <img
+                  class="img-fluid illustration"
+                  src="../assets/images/about/facetas.webp"
+                  alt="Carta de baralho customizada como um D de copas; internamente, possui uma imagem de perfil do Daniel Brito espelhada verticalmente sobre um fundo cúbico vermelho."
+                  width="400"
+                  height="564"
+                />
+              </div>
+              <div class="col-xl-7 column-description">
+                <div>
+                  <p class="text-center description-text">
+                    Busco sempre aplicar conhecimentos adquiridos na criação de
+                    novos
+                    <a href="/projetos" class="redirect-link" title="Saiba mais"
+                      ><em>projetos e experimentos</em></a
+                    >, que englobam tanto o campo da Arte como da Tecnologia. Se
+                    possível, também com um viés ativista.<br /><br />
+
+                    Idealizei os projetos
+                    <em
+                      ><a
+                        href="/projetos/#sturing"
+                        class="redirect-link"
+                        title="Saiba mais"
+                        >sTuring</a
+                      ></em
+                    >
+                    e
+                    <em
+                      ><a
+                        href="/projetos/#compixelar"
+                        class="redirect-link"
+                        title="Saiba mais"
+                        >Compixelar</a
+                      ></em
+                    >, voltados para a divulgação científica de assuntos
+                    relacionados à Computação. Sou
+                    <a
+                      href="/livros/#fanzines"
+                      class="redirect-link"
+                      title="Saiba mais"
+                      ><em>(Fan)zineiro</em></a
+                    >. Desenvolvi o aplicativo
+                    <a
+                      href="/projetos/#halugar"
+                      class="redirect-link"
+                      title="Saiba mais"
+                      ><em>HáLugar</em></a
+                    >. Sou criador dos
+                    <a
+                      href="/projetos/#aluminions"
+                      class="redirect-link"
+                      title="Saiba mais"
+                      ><em>Aluminions</em></a
+                    >. Sou pensador no
+                    <a
+                      href="/projetos/#fora-da-caixa"
+                      class="redirect-link"
+                      title="Saiba mais"
+                      ><em>Fora da Caixa</em></a
+                    >. Sou tailleur na
+                    <a
+                      href="/projetos/#antigrife"
+                      class="redirect-link"
+                      title="Saiba mais"
+                      ><em>ANTIGR1F3</em></a
+                    >. Sou curador na
+                    <a
+                      href="/projetos/#galeria-marginal"
+                      class="redirect-link"
+                      title="Saiba mais"
+                      ><em>Galeria Marginal</em></a
+                    >. Sou programador aspirante a
+                    <a
+                      href="/projetos/#canal"
+                      class="redirect-link"
+                      title="Saiba mais"
+                      ><em>YouTuber</em></a
+                    >. Sou obreiro na
+                    <a
+                      href="/projetos/#concretagens"
+                      class="redirect-link"
+                      title="Saiba mais"
+                      ><em>Coletiva Concretagens</em></a
+                    >.<br /><br />
+
+                    Integrei o coletivo
+                    <a
+                      href="/projetos/#sarau-do-grajau"
+                      class="redirect-link"
+                      title="Saiba mais"
+                      ><em>Sarau do Grajaú</em></a
+                    >, que produziu o documentário
+                    <a
+                      href="/videos/#grajau-em-foco"
+                      class="redirect-link"
+                      title="Saiba mais"
+                      ><em>Grajaú em Foco</em></a
+                    >. Difundia arte e filosofia através dos
+                    <a
+                      href="/projetos/#socrastickers"
+                      class="redirect-link"
+                      title="Saiba mais"
+                      ><em>Socrastickers</em></a
+                    >.<br /><br />
+
+                    De forma independente, publiquei os livros
+                    <em
+                      ><a
+                        href="/livros/#protestizando"
+                        class="redirect-link"
+                        title="Saiba mais"
+                        >PROTESTIZANDO - Biênio Poético</a
+                      >
+                      (2015)</em
+                    >, que compila alguns dos meus primeiros escritos, e
+                    <em
+                      ><a
+                        href="/livros/#a-ler-vazios"
+                        class="redirect-link"
+                        title="Saiba mais"
+                        >A Ler Vazios</a
+                      >
+                      (2016)</em
+                    >, que reúne algumas das minhas experimentações
+                    poético-visuais. Ambos disponíveis no
+                    <a
+                      href="/projetos/#poemix"
+                      class="redirect-link"
+                      title="Saiba mais"
+                      >Poemix</a
+                    >. <br /><br />
+
+                    Além disso, também fui publicado em diversas revistas e
+                    antologias com outras pessoas escritoras da cena
+                    marginal.<br /><br />
+
+                    Como artista visual e cientista nato, me interesso pelo
+                    campo do
+                    <em
+                      ><a
+                        class="redirect-link"
+                        href="https://github.com/DanielBrito/generative-design"
+                        target="_blank"
+                        title="Repositório no GitHub"
+                        >Design Generativo</a
+                      ></em
+                    >, uma área da computação voltada para a criação de
+                    algoritmos que geram arte.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="title-about-wrapper">
+            <div class="header-title-container carpe-diem">
+              <div
+                class="icon-about-circle"
+                title='"A vida, o universo e tudo mais"'
+                aria-hidden="true"
+              >
+                <i id="icon-carpe-diem" class="fas fa-heartbeat icon-about"></i>
+              </div>
+              <h1 class="section-title about-title">CARPE DIEM</h1>
+            </div>
+          </div>
+
+          <div class="container section-container">
+            <div class="row justify-content-center align-items-center">
+              <div class="col-xl-5 column-image">
+                <img
+                  class="img-fluid illustration"
+                  src="../assets/images/about/carpe-diem.webp"
+                  alt="Ilustração de Daniel Brito pensativo, observando algo no horizonte com o queixo apoiado em suas mãos; acima de sua cabeça, existe uma lâmpada acesa e alguns ícones, como um skate, um tabuleiro de xadrez, alguns livros, e diversas outras atividades de seu interesse."
+                  width="400"
+                  height="564"
+                />
+              </div>
+              <div class="col-xl-7 column-description">
+                <div>
+                  <p class="text-center description-text">
+                    Logo após escapar da caverna da alegoria de Platão, John
+                    Keating me ensinou a aproveitar o dia, a fim de tornar minha
+                    vida extraordinária. Pouco tempo depois, aprendi sobre o
+                    poder da metáfora, quando assistia aos ensinamentos do poeta
+                    Pablo Neruda a um humilde carteiro que trabalhava para
+                    ele.<br /><br />
+
+                    Através das ciências exatas, me fascino ao desvendar o
+                    cosmos. As ciências sociais me ajudam na compreensão da
+                    sociedade em que vivo e das diversas culturas que me cercam.
+                    Por meio da tecnologia, procuro estimular minha criatividade
+                    e desenvolver soluções que promovam progresso pessoal e
+                    social.<br /><br />
+
+                    Praticar
+                    <a
+                      href="https://www.strava.com/athletes/96925816"
+                      class="redirect-link"
+                      target="_blank"
+                      title="Perfil no Strava"
+                      aria-label="Atividades físicas no Strava"
+                      ><em>esportes</em></a
+                    >
+                    como corrida, MTB, SK8 e BMX me fornece boas doses de
+                    adrenalina. Além disso, também recorro à calistenia,
+                    musculação e
+                    <a
+                      href="https://lichess.org/@/danielbrito41"
+                      class="redirect-link"
+                      target="_blank"
+                      title="Perfil no Lichess"
+                      aria-label="Neuróbica no Lichess"
+                      ><em>neuróbica</em></a
+                    >, com intuito de fortalecer o meu corpo e a minha mente.<br /><br />
+
+                    Carrego um interesse crescente pela
+                    <a
+                      href="https://filmow.com/usuario/daniel_brito/"
+                      class="redirect-link"
+                      target="_blank"
+                      title="Perfil no Filmow"
+                      aria-label="Sétima Arte no Filmow"
+                      ><em>Sétima Arte</em></a
+                    >
+                    e meu
+                    <a
+                      href="https://open.spotify.com/user/xb93kruabsjskn5chjqo127ep"
+                      class="redirect-link"
+                      target="_blank"
+                      title="Perfil no Spotify"
+                      aria-label="Gosto musical no Spotify"
+                      ><em>gosto musical</em></a
+                    >
+                    abrange desde pianos afinados até guitarras distorcidas.<br /><br />
+
+                    Prezo pelo respeito em relação à existência de todos os
+                    seres sencientes, bem como pela atitude faça-você-mesmo,
+                    <a
+                      href="https://github.com/DanielBrito/self-learning"
+                      class="redirect-link"
+                      target="_blank"
+                      title="Repositório no GitHub"
+                      ><em>autodidatismo</em></a
+                    >,
+                    <a
+                      href="https://www.duolingo.com/profile/danielhbrito"
+                      class="redirect-link"
+                      target="_blank"
+                      title="Perfil no Duolingo"
+                      aria-label="Poliglotismo no Duolingo"
+                      ><em>poliglotismo</em></a
+                    >
+                    e
+                    <a href="/blog" class="redirect-link" title="Blog pessoal"
+                      ><em>polimatia</em></a
+                    >.<br /><br />
+
+                    A busca por conhecimento e a descoberta de outros universos
+                    são meus maiores objetivos existenciais.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div
+          class="modal fade bd-example-modal-md"
+          id="modal-feedbacks"
+          tabindex="-1"
+          role="dialog"
+        >
+          <div class="modal-dialog modal-md">
+            <div class="modal-content" id="modal-content">
+              <div class="modal-header">
+                <div class="modal-title" aria-hidden="true">
+                  <span id="modal-header-space"></span>Feedbacks
+                </div>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Fechar modal"
+                  id="close-modal"
+                  title="Fechar"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+
+              <div class="modal-body" id="professional-feedbacks">
+                <p class="feedback-item">
+                  <i
+                    >&ldquo;Daniel tem se mostrado muito engajado em projetos e
+                    desafios. Em pouco tempo, demonstra adaptação aos valores da
+                    empresa com bom trabalho em equipe e rápido aprendizado.
+                    Vale destacar sua comunicação e domínio na resolução de
+                    problemas.&rdquo;</i
+                  >
+                </p>
+
+                <span class="feedbacks-divider" aria-hidden="true">* * *</span>
+
+                <p class="feedback-item">
+                  <i
+                    >&ldquo;Daniel é um profissional com muito potencial. Ele se
+                    destacou pelo comprometimento em aprender a nova stack
+                    tecnológica e o negócio do projeto, sempre com entusiasmo em
+                    ajudar a equipe. Ele tem o reconhecimento do cliente por seu
+                    rápido aprendizado, bem como por entregas pontuais e de
+                    qualidade.&rdquo;</i
+                  >
+                </p>
+
+                <span class="feedbacks-divider" aria-hidden="true">* * *</span>
+
+                <p class="feedback-item">
+                  <i
+                    >&ldquo;Daniel sempre identifica os erros como uma
+                    oportunidade de aprendizado por meio da melhoria contínua.
+                    Ele se mostrou muito proativo em aprender novas tecnologias
+                    e participar de novos desafios. Ele sempre tenta puxar o
+                    time para cima e trabalha em atividades complexas.&rdquo;</i
+                  >
+                </p>
+
+                <span class="feedbacks-divider" aria-hidden="true">* * *</span>
+
+                <p class="feedback-item">
+                  <i
+                    >&ldquo;Daniel é um profissional extremamente comprometido e
+                    responsável com suas entregas. Fica evidente que ele sempre
+                    se preocupa em contribuir com o time, sendo muito proativo e
+                    demonstrando boa performance. Sinto ele sempre com muita
+                    força de vontade em aprender cada vez mais, não tendo medo
+                    de assumir desafios. Pelo contrário, ele sempre busca
+                    assumir novas responsabilidades, desafios e crescer. Nos
+                    últimos meses tivemos muita evolução durante a fase de
+                    entrega do MVP, na qual ele participou de forma ativa e vem
+                    acompanhando e evoluindo muito bem com o time.&rdquo;</i
+                  >
+                </p>
+
+                <span class="feedbacks-divider" aria-hidden="true">* * *</span>
+
+                <p class="feedback-item">
+                  <i
+                    >&ldquo;Daniel é proativo, sempre tomando a iniciativa para
+                    fazer as coisas. Ele também é altamente participativo,
+                    interagindo com os membros da equipe para garantir que todos
+                    estejam na mesma página. Também é um profissional
+                    incrivelmente organizado, o que o ajuda a ficar em dia com
+                    seu trabalho e cumprir prazos. Além disso, ele é altamente
+                    colaborativo, trabalhando lado a lado com seus colegas para
+                    garantir que todos estejam em direção aos mesmos objetivos.
+                    Daniel é uma pessoa muito importante tanto na resolução dos
+                    tickets de sustentação, quanto no processo de teste, e suas
+                    contribuições são muito apreciadas pela equipe.&rdquo;</i
+                  >
+                </p>
+
+                <span class="feedbacks-divider" aria-hidden="true">* * *</span>
+
+                <p class="feedback-item">
+                  <i
+                    >&ldquo;Ter o Daniel no time tem sido uma experiência muito
+                    gratificante. Ele tem demonstrado um nível de
+                    responsabilidade e proatividade que vai além do esperado
+                    para sua função atual. Contribui de forma consistente para
+                    os objetivos da equipe, assumindo responsabilidades críticas
+                    e garantindo que as entregas sejam feitas com qualidade. Sua
+                    presença fortalece o time, elevando o padrão de
+                    accountability e colaboração, e sua evolução é um reflexo
+                    claro do seu comprometimento e crescimento
+                    profissional.&rdquo;</i
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        <div class="row no-gutters justify-content-center" id="row-footer">
+          <div class="footer-letter-wrapper">
+            <span class="footer-letter">D</span>
+          </div>
+          <div class="footer-letter-wrapper">
+            <span class="footer-letter">N</span>
+          </div>
+          <div class="footer-letter-wrapper">
+            <span class="footer-letter">L</span>
+          </div>
+          <div class="footer-symbol-wrapper">
+            <span class="footer-symbol"
+              ><a
+                id="creative-commons"
+                href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Licença Creative Commons"
+                aria-label="Acessar licença Creative Commons"
+                >ɔ</a
+              ></span
+            >
+          </div>
+          <div class="footer-letter-wrapper">
+            <span class="footer-letter">B</span>
+          </div>
+          <div class="footer-letter-wrapper">
+            <span class="footer-letter">R</span>
+          </div>
+          <div class="footer-letter-wrapper">
+            <span class="footer-letter">T</span>
+          </div>
+        </div>
+      </footer>
     </div>
 
     <script>
-        var today = new Date();
+      var today = new Date();
 
-        var birthDate = new Date(1993, 0, 4);
-        var diff = today.getTime() - birthDate.getTime();
-        var diffDays = parseInt(diff / (24 * 60 * 60 * 1000));
+      var birthDate = new Date(1993, 0, 4);
+      var diff = today.getTime() - birthDate.getTime();
+      var diffDays = parseInt(diff / (24 * 60 * 60 * 1000));
 
-        days = document.getElementById("days");
-        days.innerHTML = diffDays;
+      days = document.getElementById("days");
+      days.innerHTML = diffDays;
 
-        if (today.getDate() < 4 && today.getMonth() == 0) {
-            days.title = (today.getFullYear() - 1 - 1993) + " anos";
-        }
-        else {
-            days.title = (today.getFullYear() - 1993) + " anos";
-        }
+      if (today.getDate() < 4 && today.getMonth() == 0) {
+        days.title = today.getFullYear() - 1 - 1993 + " anos";
+      } else {
+        days.title = today.getFullYear() - 1993 + " anos";
+      }
     </script>
 
-    <script defer src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+    <script
+      defer
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
 
     <script defer src="../assets/js/scripts.js"></script>
-
-</body>
-
+  </body>
 </html>

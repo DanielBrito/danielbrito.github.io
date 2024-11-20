@@ -1,171 +1,322 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="keywords" content="Daniel Brito, desenvolvedor, artista, escritor, programação, arte, poesia">
-    <meta name="author" content="Daniel Brito">
-    <meta name="description"
-        content="Site pessoal de Daniel Brito, com informações pessoais, livros publicados e projetos desenvolvidos.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="keywords"
+      content="Daniel Brito, desenvolvedor, artista, escritor, programação, arte, poesia"
+    />
+    <meta name="author" content="Daniel Brito" />
+    <meta
+      name="description"
+      content="Site pessoal de Daniel Brito, com informações pessoais, livros publicados e projetos desenvolvidos."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Daniel Brito</title>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
-        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-    <link rel="shortcut icon" type="image/png" href="assets/images/global/favicon.png">
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="assets/images/global/favicon.png"
+    />
 
-    <link rel="stylesheet" href="assets/css/global/colors.css">
-    <link rel="stylesheet" href="assets/css/global/fonts.css">
-    <link rel="stylesheet" href="assets/css/global/main.css">
-    <link rel="stylesheet" href="assets/css/components/custom-scrollbar.css">
-    <link rel="stylesheet" href="assets/css/components/to-top-button.css">
-    <link rel="stylesheet" href="assets/css/components/navigation-bar.css">
-    <link rel="stylesheet" href="assets/css/components/footer.css">
-    <link rel="stylesheet" href="assets/css/pages/home.css">
-</head>
+    <link rel="stylesheet" href="assets/css/global/colors.css" />
+    <link rel="stylesheet" href="assets/css/global/fonts.css" />
+    <link rel="stylesheet" href="assets/css/global/main.css" />
+    <link rel="stylesheet" href="assets/css/components/custom-scrollbar.css" />
+    <link rel="stylesheet" href="assets/css/components/to-top-button.css" />
+    <link rel="stylesheet" href="assets/css/components/navigation-bar.css" />
+    <link rel="stylesheet" href="assets/css/components/footer.css" />
+    <link rel="stylesheet" href="assets/css/pages/home.css" />
+  </head>
 
-<body>
-    <a class="skip-to-content" href="#conteudo-principal" aria-label="Ir para o conteúdo principal">Ir para o conteúdo
-        principal</a>
+  <body>
+    <a
+      class="skip-to-content"
+      href="#conteudo-principal"
+      aria-label="Ir para o conteúdo principal"
+      >Ir para o conteúdo principal</a
+    >
 
     <div id="reading-status-container">
-        <a id="to-top-button" title="Ir para o topo" aria-hidden="true">
-            <span><i id="top-icon" class="fas fa-angle-up"></i></span>
-        </a>
+      <a id="to-top-button" title="Ir para o topo" aria-hidden="true">
+        <span><i id="top-icon" class="fas fa-angle-up"></i></span>
+      </a>
 
-        <header class="sticky-top" id="nav-wrapper">
-            <nav class="navbar navbar-light navbar-expand-xl sticky-top" id="nav-bar">
-                <div class="container-fluid">
-                    <div class="navbar-brand">
-                        <a href="https://danielbrito.github.io" aria-label="Daniel Brito" role="link">
-                            <img class="float-left" src="assets/images/global/daniel-brito-monograma.webp" width="500"
-                                height="144" id="daniel-brito-logo" alt="Logo Daniel Brito.">
-                        </a>
-                    </div>
-                    <button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1">
-                        <span class="sr-only" id="toggle-nav">Toggle navigation</span>
-                        <span class="navbar-toggler-icon text-monospace" id="toggle-nav-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navcol-1">
-                        <ul class="nav navbar-nav ml-auto">
-                            <li class="nav-item" role="presentation"><a class="nav-link active"
-                                    href="https://danielbrito.github.io" aria-label="Ir para página inicial"><i
-                                        class="fas fa-home icon-navbar"></i>INÍCIO</a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="/sobre"
-                                    aria-label="Ir para página Sobre"><i class="fas fa-user icon-navbar"></i>SOBRE</a>
-                            </li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="/livros"
-                                    aria-label="Ir para página Livros"><i class="fas fa-book icon-navbar"></i>LIVROS</a>
-                            </li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="/projetos"
-                                    aria-label="Ir para página Projetos"><i
-                                        class="fas fa-lightbulb icon-navbar"></i>PROJETOS</a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="/imagens"
-                                    aria-label="Ir para página Imagens"><i
-                                        class="fas fa-images icon-navbar"></i>IMAGENS</a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="/videos"
-                                    aria-label="Ir para página Vídeos"><i
-                                        class="fas fa-video icon-navbar"></i>VÍDEOS</a></li>
-                            <li class=" nav-item" role="presentation"><a class="nav-link" href="/blog"
-                                    aria-label="Ir para página Blog"><i class="fab fa-blogger icon-navbar"></i>BLOG</a>
-                            </li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="/midia"
-                                    aria-label="Ir para página Mídia"><i
-                                        class="fas fa-newspaper icon-navbar"></i>MÍDIA</a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="/contato"
-                                    aria-label="Ir para página Contato"><i
-                                        class="fas fa-envelope icon-navbar"></i>CONTATO</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </header>
-
-        <main id="conteudo-principal">
-            <div class="container" id="badge">
-                <section>
-                    <div class="row justify-content-center align-items-center" id="row-badge-pinacogram">
-                        <div class="col-xl-6 column-badge">
-                            <a href="/sobre" aria-label="Ir para página Sobre">
-                                <img class="img-fluid badge-img" width="365" height="560"
-                                    src="assets/images/home/pinacograma.webp" alt="Pinacograma do Daniel Brito (rosto)."
-                                    title="Sobre mim">
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="row justify-content-center align-items-center" id="row-badge-name">
-                        <div class="col-xl-6 column-badge">
-                            <a href="/sobre" aria-label="Ir para página Sobre">
-                                <img class="img-fluid badge-img" width="590" height="547"
-                                    src="assets/images/home/nome-pinacograma.webp"
-                                    alt="Pinacograma do Daniel Brito (nome)." title="Sobre mim">
-                            </a>
-                        </div>
-                    </div>
-                </section>
-
-                <section>
-                    <div class="row justify-content-center align-items-center" id="row-profiles">
-                        <div class="col-xl-4 column-profile">
-                            <a href="/projetos/#tecnologia" id="developer-profile" class="anchor-profile"
-                                title="Projetos tecnológicos" aria-label="Ir para página de projetos tecnológicos">
-                                <i id="developer-icon" class="fas fa-code profile-icon"></i>
-                                <span id="developer-title" class="profile-title">Desenvolvedor</span>
-                            </a>
-                        </div>
-                        <div class="col-xl-4 column-profile">
-                            <a href="/livros" id="writer-profile" class="anchor-profile" title="Publicações"
-                                aria-label="Ir para página de publicações">
-                                <i id="writer-icon" class="fas fa-pen-nib profile-icon"></i>
-                                <span id="writer-title" class="profile-title">Escritor</span>
-                            </a>
-                        </div>
-                        <div class="col-xl-4 column-profile">
-                            <a href="/projetos/#arte" id="artist-profile" class="anchor-profile"
-                                title="Projetos artísticos" aria-label="Ir para página de projetos artísticos">
-                                <i id="artist-icon" class="fas fa-palette profile-icon"></i>
-                                <span id="artist-title" class="profile-title">Artista Visual</span>
-                            </a>
-                        </div>
-                    </div>
-                </section>
+      <header class="sticky-top" id="nav-wrapper">
+        <nav
+          class="navbar navbar-light navbar-expand-xl sticky-top"
+          id="nav-bar"
+        >
+          <div class="container-fluid">
+            <div class="navbar-brand">
+              <a
+                href="https://danielbrito.github.io"
+                aria-label="Daniel Brito"
+                role="link"
+              >
+                <img
+                  class="float-left"
+                  src="assets/images/global/daniel-brito-monograma.webp"
+                  width="500"
+                  height="144"
+                  id="daniel-brito-logo"
+                  alt="Logo Daniel Brito."
+                />
+              </a>
             </div>
-        </main>
-
-        <footer>
-            <div class="row no-gutters justify-content-center" id="row-footer">
-                <div class="footer-letter-wrapper"><span class="footer-letter">D</span></div>
-                <div class="footer-letter-wrapper"><span class="footer-letter">N</span></div>
-                <div class="footer-letter-wrapper"><span class="footer-letter">L</span></div>
-                <div class="footer-symbol-wrapper"><span class="footer-symbol"><a id="creative-commons"
-                            href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"
-                            rel="noopener noreferrer" title="Licença Creative Commons"
-                            aria-label="Acessar licença Creative Commons">ɔ</a></span></div>
-                <div class="footer-letter-wrapper"><span class="footer-letter">B</span></div>
-                <div class="footer-letter-wrapper"><span class="footer-letter">R</span></div>
-                <div class="footer-letter-wrapper"><span class="footer-letter">T</span></div>
+            <button
+              class="navbar-toggler"
+              data-toggle="collapse"
+              data-target="#navcol-1"
+            >
+              <span class="sr-only" id="toggle-nav">Toggle navigation</span>
+              <span
+                class="navbar-toggler-icon text-monospace"
+                id="toggle-nav-icon"
+              ></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+              <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item" role="presentation">
+                  <a
+                    class="nav-link active"
+                    href="https://danielbrito.github.io"
+                    aria-label="Ir para página inicial"
+                    ><i class="fas fa-home icon-navbar"></i>INÍCIO</a
+                  >
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a
+                    class="nav-link"
+                    href="/sobre"
+                    aria-label="Ir para página Sobre"
+                    ><i class="fas fa-user icon-navbar"></i>SOBRE</a
+                  >
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a
+                    class="nav-link"
+                    href="/livros"
+                    aria-label="Ir para página Livros"
+                    ><i class="fas fa-book icon-navbar"></i>LIVROS</a
+                  >
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a
+                    class="nav-link"
+                    href="/projetos"
+                    aria-label="Ir para página Projetos"
+                    ><i class="fas fa-lightbulb icon-navbar"></i>PROJETOS</a
+                  >
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a
+                    class="nav-link"
+                    href="/imagens"
+                    aria-label="Ir para página Imagens"
+                    ><i class="fas fa-images icon-navbar"></i>IMAGENS</a
+                  >
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a
+                    class="nav-link"
+                    href="/videos"
+                    aria-label="Ir para página Vídeos"
+                    ><i class="fas fa-video icon-navbar"></i>VÍDEOS</a
+                  >
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a
+                    class="nav-link"
+                    href="/blog"
+                    aria-label="Ir para página Blog"
+                    ><i class="fab fa-blogger icon-navbar"></i>BLOG</a
+                  >
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a
+                    class="nav-link"
+                    href="/midia"
+                    aria-label="Ir para página Mídia"
+                    ><i class="fas fa-newspaper icon-navbar"></i>MÍDIA</a
+                  >
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a
+                    class="nav-link"
+                    href="/contato"
+                    aria-label="Ir para página Contato"
+                    ><i class="fas fa-envelope icon-navbar"></i>CONTATO</a
+                  >
+                </li>
+              </ul>
             </div>
-        </footer>
+          </div>
+        </nav>
+      </header>
+
+      <main id="conteudo-principal">
+        <div class="container" id="badge">
+          <section>
+            <div
+              class="row justify-content-center align-items-center"
+              id="row-badge-pinacogram"
+            >
+              <div class="col-xl-6 column-badge">
+                <a href="/sobre" aria-label="Ir para página Sobre">
+                  <img
+                    class="img-fluid badge-img"
+                    width="365"
+                    height="560"
+                    src="assets/images/home/pinacograma.webp"
+                    alt="Pinacograma do Daniel Brito (rosto)."
+                    title="Sobre mim"
+                  />
+                </a>
+              </div>
+            </div>
+
+            <div
+              class="row justify-content-center align-items-center"
+              id="row-badge-name"
+            >
+              <div class="col-xl-6 column-badge">
+                <a href="/sobre" aria-label="Ir para página Sobre">
+                  <img
+                    class="img-fluid badge-img"
+                    width="590"
+                    height="547"
+                    src="assets/images/home/nome-pinacograma.webp"
+                    alt="Pinacograma do Daniel Brito (nome)."
+                    title="Sobre mim"
+                  />
+                </a>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <div
+              class="row justify-content-center align-items-center"
+              id="row-profiles"
+            >
+              <div class="col-xl-4 column-profile">
+                <a
+                  href="/projetos/#tecnologia"
+                  id="developer-profile"
+                  class="anchor-profile"
+                  title="Projetos tecnológicos"
+                  aria-label="Ir para página de projetos tecnológicos"
+                >
+                  <i id="developer-icon" class="fas fa-code profile-icon"></i>
+                  <span id="developer-title" class="profile-title"
+                    >Desenvolvedor</span
+                  >
+                </a>
+              </div>
+              <div class="col-xl-4 column-profile">
+                <a
+                  href="/livros"
+                  id="writer-profile"
+                  class="anchor-profile"
+                  title="Publicações"
+                  aria-label="Ir para página de publicações"
+                >
+                  <i id="writer-icon" class="fas fa-pen-nib profile-icon"></i>
+                  <span id="writer-title" class="profile-title">Escritor</span>
+                </a>
+              </div>
+              <div class="col-xl-4 column-profile">
+                <a
+                  href="/projetos/#arte"
+                  id="artist-profile"
+                  class="anchor-profile"
+                  title="Projetos artísticos"
+                  aria-label="Ir para página de projetos artísticos"
+                >
+                  <i id="artist-icon" class="fas fa-palette profile-icon"></i>
+                  <span id="artist-title" class="profile-title"
+                    >Artista Visual</span
+                  >
+                </a>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+
+      <footer>
+        <div class="row no-gutters justify-content-center" id="row-footer">
+          <div class="footer-letter-wrapper">
+            <span class="footer-letter">D</span>
+          </div>
+          <div class="footer-letter-wrapper">
+            <span class="footer-letter">N</span>
+          </div>
+          <div class="footer-letter-wrapper">
+            <span class="footer-letter">L</span>
+          </div>
+          <div class="footer-symbol-wrapper">
+            <span class="footer-symbol"
+              ><a
+                id="creative-commons"
+                href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Licença Creative Commons"
+                aria-label="Acessar licença Creative Commons"
+                >ɔ</a
+              ></span
+            >
+          </div>
+          <div class="footer-letter-wrapper">
+            <span class="footer-letter">B</span>
+          </div>
+          <div class="footer-letter-wrapper">
+            <span class="footer-letter">R</span>
+          </div>
+          <div class="footer-letter-wrapper">
+            <span class="footer-letter">T</span>
+          </div>
+        </div>
+      </footer>
     </div>
 
-    <script defer src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+    <script
+      defer
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
 
     <script defer src="assets/js/scripts.js"></script>
-
-</body>
-
+  </body>
 </html>

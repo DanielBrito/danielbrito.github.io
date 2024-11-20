@@ -1,291 +1,535 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="keywords" content="Daniel Brito, desenvolvedor, artista, escritor, programação, arte, poesia">
-    <meta name="author" content="Daniel Brito">
-    <meta name="description"
-        content="Site pessoal de Daniel Brito, com informações pessoais, livros publicados e projetos desenvolvidos.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="keywords"
+      content="Daniel Brito, desenvolvedor, artista, escritor, programação, arte, poesia"
+    />
+    <meta name="author" content="Daniel Brito" />
+    <meta
+      name="description"
+      content="Site pessoal de Daniel Brito, com informações pessoais, livros publicados e projetos desenvolvidos."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Blog | Daniel Brito</title>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
-        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-    <link rel="shortcut icon" type="image/png" href="../assets/images/global/favicon.png">
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="../assets/images/global/favicon.png"
+    />
 
-    <link rel="stylesheet" href="../assets/css/global/colors.css">
-    <link rel="stylesheet" href="../assets/css/global/fonts.css">
-    <link rel="stylesheet" href="../assets/css/global/main.css">
-    <link rel="stylesheet" href="../assets/css/components/custom-scrollbar.css">
-    <link rel="stylesheet" href="../assets/css/components/to-top-button.css">
-    <link rel="stylesheet" href="../assets/css/components/navigation-bar.css">
-    <link rel="stylesheet" href="../assets/css/components/footer.css">
-</head>
+    <link rel="stylesheet" href="../assets/css/global/colors.css" />
+    <link rel="stylesheet" href="../assets/css/global/fonts.css" />
+    <link rel="stylesheet" href="../assets/css/global/main.css" />
+    <link
+      rel="stylesheet"
+      href="../assets/css/components/custom-scrollbar.css"
+    />
+    <link rel="stylesheet" href="../assets/css/components/to-top-button.css" />
+    <link rel="stylesheet" href="../assets/css/components/navigation-bar.css" />
+    <link rel="stylesheet" href="../assets/css/components/footer.css" />
+  </head>
 
-<body>
-    <a class="skip-to-content" href="#conteudo-principal" aria-label="Ir para o conteúdo principal">Ir para o conteúdo
-        principal</a>
+  <body>
+    <a
+      class="skip-to-content"
+      href="#conteudo-principal"
+      aria-label="Ir para o conteúdo principal"
+      >Ir para o conteúdo principal</a
+    >
 
     <div id="reading-status-container">
-        <a id="to-top-button" title="Ir para o topo" aria-hidden="true">
-            <span><i id="top-icon" class="fas fa-angle-up"></i></span>
-        </a>
+      <a id="to-top-button" title="Ir para o topo" aria-hidden="true">
+        <span><i id="top-icon" class="fas fa-angle-up"></i></span>
+      </a>
 
-        <header class="sticky-top" id="nav-wrapper">
-            <nav class="navbar navbar-light navbar-expand-xl sticky-top" id="nav-bar">
-                <div class="container-fluid">
-                    <div class="navbar-brand">
-                        <a href="https://danielbrito.github.io" aria-label="Daniel Brito" role="link">
-                            <img class="float-left" src="../assets/images/global/daniel-brito-monograma.webp"
-                                width="500" height="144" id="daniel-brito-logo" alt="Logo Daniel Brito.">
-                        </a>
-                    </div>
-                    <button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1">
-                        <span class="sr-only" id="toggle-nav">Toggle navigation</span>
-                        <span class="navbar-toggler-icon text-monospace" id="toggle-nav-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navcol-1">
-                        <ul class="nav navbar-nav ml-auto">
-                            <li class="nav-item" role="presentation"><a class="nav-link"
-                                    href="https://danielbrito.github.io" aria-label="Ir para página inicial"><i
-                                        class="fas fa-home icon-navbar"></i>INÍCIO</a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="/sobre"
-                                    aria-label="Ir para página Sobre"><i class="fas fa-user icon-navbar"></i>SOBRE</a>
-                            </li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="/livros"
-                                    aria-label="Ir para página Livros"><i class="fas fa-book icon-navbar"></i>LIVROS</a>
-                            </li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="/projetos"
-                                    aria-label="Ir para página Projetos"><i
-                                        class="fas fa-lightbulb icon-navbar"></i>PROJETOS</a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="/imagens"
-                                    aria-label="Ir para página Imagens"><i
-                                        class="fas fa-images icon-navbar"></i>IMAGENS</a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="/videos"
-                                    aria-label="Ir para página Vídeos"><i
-                                        class="fas fa-video icon-navbar"></i>VÍDEOS</a></li>
-                            <li class=" nav-item" role="presentation"><a class="nav-link active" href="/blog"
-                                    aria-label="Ir para página Blog"><i class="fab fa-blogger icon-navbar"></i>BLOG</a>
-                            </li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="/midia"
-                                    aria-label="Ir para página Mídia"><i
-                                        class="fas fa-newspaper icon-navbar"></i>MÍDIA</a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="/contato"
-                                    aria-label="Ir para página Contato"><i
-                                        class="fas fa-envelope icon-navbar"></i>CONTATO</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </header>
-
-        <main id="conteudo-principal">
-            <div class="container section-container">
-                <div class="row justify-content-center align-items-center">
-                    <div class="col-xl-5 column-image">
-                        <img class="img-fluid illustration" width="521" height="521"
-                            src="../assets/images/blog/polymatus_logo.webp"
-                            alt="Logo e arte do Blog, representadas por algumas obras de Leonardo da Vinci ao fundo, em tom alaranjado, com um ambigrama de Polymatus e o nome Daniel Brito no meio.">
-                    </div>
-                    <div class="col-xl-7 column-description">
-                        <h1 class="section-title">POLYMATUS</h1>
-                        <div>
-                            <p class="text-center description-text">Onde falo sobre tudo e afins...</p>
-                        </div>
-                        <a class="btn btn-danger btn-block btn-lg custom-button" role="button"
-                            href="https://daniel-brito.blogspot.com.br/" target="_blank" title="Saiba mais"
-                            aria-label="Acessar blog pessoal"><i class="fab fa-blogger-b"></i> ACESSAR</a>
-                    </div>
-                </div>
+      <header class="sticky-top" id="nav-wrapper">
+        <nav
+          class="navbar navbar-light navbar-expand-xl sticky-top"
+          id="nav-bar"
+        >
+          <div class="container-fluid">
+            <div class="navbar-brand">
+              <a
+                href="https://danielbrito.github.io"
+                aria-label="Daniel Brito"
+                role="link"
+              >
+                <img
+                  class="float-left"
+                  src="../assets/images/global/daniel-brito-monograma.webp"
+                  width="500"
+                  height="144"
+                  id="daniel-brito-logo"
+                  alt="Logo Daniel Brito."
+                />
+              </a>
             </div>
-
-            <div class="container section-container">
-                <div class="row justify-content-center align-items-center">
-                    <div class="col-xl-5 column-image">
-                        <img class="img-fluid illustration" width="521" height="521"
-                            src="../assets/images/blog/poemas-autorais.webp"
-                            alt="Arte da seção de Poemas Autorais, representada pela logo do Copyleft com duas canetas se cruzando abaixo.">
-                    </div>
-                    <div class="col-xl-7 column-description">
-                        <h1 class="section-title">POEMAS AUTORAIS</h1>
-                        <div>
-                            <p class="text-center description-text"><em><a class="redirect-link"
-                                        href="https://www.pensador.com/colecao/danielbrito41/" target="_blank"
-                                        title="Coleção no Pensador">Versos livres</a></em>, concretismos, haicais,
-                                sonetos...</p>
-                        </div>
-                        <a class="btn btn-danger btn-block btn-lg custom-button" role="button"
-                            href="https://daniel-brito.blogspot.com/p/poemas-autorais_11.html" target="_blank"
-                            title="Saiba mais" aria-label="Acessar página de Poemas Autorais"><i
-                                class="fas fa-pen-fancy"></i> ACESSAR</a>
-                    </div>
-                </div>
+            <button
+              class="navbar-toggler"
+              data-toggle="collapse"
+              data-target="#navcol-1"
+            >
+              <span class="sr-only" id="toggle-nav">Toggle navigation</span>
+              <span
+                class="navbar-toggler-icon text-monospace"
+                id="toggle-nav-icon"
+              ></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+              <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item" role="presentation">
+                  <a
+                    class="nav-link"
+                    href="https://danielbrito.github.io"
+                    aria-label="Ir para página inicial"
+                    ><i class="fas fa-home icon-navbar"></i>INÍCIO</a
+                  >
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a
+                    class="nav-link"
+                    href="/sobre"
+                    aria-label="Ir para página Sobre"
+                    ><i class="fas fa-user icon-navbar"></i>SOBRE</a
+                  >
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a
+                    class="nav-link"
+                    href="/livros"
+                    aria-label="Ir para página Livros"
+                    ><i class="fas fa-book icon-navbar"></i>LIVROS</a
+                  >
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a
+                    class="nav-link"
+                    href="/projetos"
+                    aria-label="Ir para página Projetos"
+                    ><i class="fas fa-lightbulb icon-navbar"></i>PROJETOS</a
+                  >
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a
+                    class="nav-link"
+                    href="/imagens"
+                    aria-label="Ir para página Imagens"
+                    ><i class="fas fa-images icon-navbar"></i>IMAGENS</a
+                  >
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a
+                    class="nav-link"
+                    href="/videos"
+                    aria-label="Ir para página Vídeos"
+                    ><i class="fas fa-video icon-navbar"></i>VÍDEOS</a
+                  >
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a
+                    class="nav-link active"
+                    href="/blog"
+                    aria-label="Ir para página Blog"
+                    ><i class="fab fa-blogger icon-navbar"></i>BLOG</a
+                  >
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a
+                    class="nav-link"
+                    href="/midia"
+                    aria-label="Ir para página Mídia"
+                    ><i class="fas fa-newspaper icon-navbar"></i>MÍDIA</a
+                  >
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a
+                    class="nav-link"
+                    href="/contato"
+                    aria-label="Ir para página Contato"
+                    ><i class="fas fa-envelope icon-navbar"></i>CONTATO</a
+                  >
+                </li>
+              </ul>
             </div>
+          </div>
+        </nav>
+      </header>
 
-            <div class="container section-container">
-                <div class="row justify-content-center align-items-center">
-                    <div class="col-xl-5 column-image">
-                        <img class="img-fluid illustration" width="521" height="521"
-                            src="../assets/images/blog/artigos-noticias.webp"
-                            alt="Arte da seção de Artigos e Notícias, representada por um tablet contendo diversas logos de canais de comunicação.">
-                    </div>
-                    <div class="col-xl-7 column-description">
-                        <h1 class="section-title">ARTIGOS E NOTÍCIAS</h1>
-                        <div>
-                            <p class="text-center description-text">O que se passa no mundo...</p>
-                        </div>
-                        <a class="btn btn-danger btn-block btn-lg custom-button" role="button"
-                            href="https://daniel-brito.blogspot.com/p/noticias_11.html" target="_blank"
-                            title="Saiba mais" aria-label="Acessar página de Artigos e Notícias"><i
-                                class="far fa-newspaper"></i> ACESSAR</a>
-                    </div>
-                </div>
+      <main id="conteudo-principal">
+        <div class="container section-container">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-xl-5 column-image">
+              <img
+                class="img-fluid illustration"
+                width="521"
+                height="521"
+                src="../assets/images/blog/polymatus_logo.webp"
+                alt="Logo e arte do Blog, representadas por algumas obras de Leonardo da Vinci ao fundo, em tom alaranjado, com um ambigrama de Polymatus e o nome Daniel Brito no meio."
+              />
             </div>
+            <div class="col-xl-7 column-description">
+              <h1 class="section-title">POLYMATUS</h1>
+              <div>
+                <p class="text-center description-text">
+                  Onde falo sobre tudo e afins...
+                </p>
+              </div>
+              <a
+                class="btn btn-danger btn-block btn-lg custom-button"
+                role="button"
+                href="https://daniel-brito.blogspot.com.br/"
+                target="_blank"
+                title="Saiba mais"
+                aria-label="Acessar blog pessoal"
+                ><i class="fab fa-blogger-b"></i> ACESSAR</a
+              >
+            </div>
+          </div>
+        </div>
 
-            <div class="container section-container">
-                <div class="row justify-content-center align-items-center">
-                    <div class="col-xl-5 column-image">
-                        <img class="img-fluid illustration" width="521" height="521"
-                            src="../assets/images/blog/biblioteca.webp"
-                            alt="Arte da seção de Leituras, representada por uma foto com duas estantes de livros.">
-                    </div>
-                    <div class="col-xl-7 column-description">
-                        <h1 class="section-title">LEITURAS</h1>
-                        <div>
-                            <p class="text-center description-text">Resenhas, excertos, <em><a class="redirect-link"
-                                        href="https://www.skoob.com.br/usuario/1021319-dan" target="_blank"
-                                        title="Perfil no Skoob">recomendações</a></em>...</p>
-                        </div>
-                        <a class="btn btn-danger btn-block btn-lg custom-button" role="button"
-                            href="https://daniel-brito.blogspot.com/p/biblioteca-marginal_11.html" target="_blank"
-                            title="Saiba mais" aria-label="Acessar página de Leituras"><i
-                                class="fas fa-book-reader"></i> ACESSAR</a>
-                    </div>
-                </div>
+        <div class="container section-container">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-xl-5 column-image">
+              <img
+                class="img-fluid illustration"
+                width="521"
+                height="521"
+                src="../assets/images/blog/poemas-autorais.webp"
+                alt="Arte da seção de Poemas Autorais, representada pela logo do Copyleft com duas canetas se cruzando abaixo."
+              />
             </div>
+            <div class="col-xl-7 column-description">
+              <h1 class="section-title">POEMAS AUTORAIS</h1>
+              <div>
+                <p class="text-center description-text">
+                  <em
+                    ><a
+                      class="redirect-link"
+                      href="https://www.pensador.com/colecao/danielbrito41/"
+                      target="_blank"
+                      title="Coleção no Pensador"
+                      >Versos livres</a
+                    ></em
+                  >, concretismos, haicais, sonetos...
+                </p>
+              </div>
+              <a
+                class="btn btn-danger btn-block btn-lg custom-button"
+                role="button"
+                href="https://daniel-brito.blogspot.com/p/poemas-autorais_11.html"
+                target="_blank"
+                title="Saiba mais"
+                aria-label="Acessar página de Poemas Autorais"
+                ><i class="fas fa-pen-fancy"></i> ACESSAR</a
+              >
+            </div>
+          </div>
+        </div>
 
-            <div class="container section-container">
-                <div class="row justify-content-center align-items-center">
-                    <div class="col-xl-5 column-image">
-                        <img class="img-fluid illustration" width="521" height="521"
-                            src="../assets/images/blog/reflexoes.webp"
-                            alt="Arte da seção de Reflexões, representada por uma imagem de Sócrates, Platão, Aristóteles e Daniel Brito, todos num contexto de discurso, com os indicadores apontados para cima.">
-                    </div>
-                    <div class="col-xl-7 column-description">
-                        <h1 class="section-title">REFLEXÕES</h1>
-                        <div>
-                            <p class="text-center description-text">A vida não examinada não vale a pena ser
-                                vivida...</p>
-                        </div>
-                        <a class="btn btn-danger btn-block btn-lg custom-button" role="button"
-                            href="https://daniel-brito.blogspot.com/p/reflexoes_11.html" target="_blank"
-                            title="Saiba mais" aria-label="Acessar página de Reflexões"><i
-                                class="fas fa-question-circle"></i> ACESSAR</a>
-                    </div>
-                </div>
+        <div class="container section-container">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-xl-5 column-image">
+              <img
+                class="img-fluid illustration"
+                width="521"
+                height="521"
+                src="../assets/images/blog/artigos-noticias.webp"
+                alt="Arte da seção de Artigos e Notícias, representada por um tablet contendo diversas logos de canais de comunicação."
+              />
             </div>
+            <div class="col-xl-7 column-description">
+              <h1 class="section-title">ARTIGOS E NOTÍCIAS</h1>
+              <div>
+                <p class="text-center description-text">
+                  O que se passa no mundo...
+                </p>
+              </div>
+              <a
+                class="btn btn-danger btn-block btn-lg custom-button"
+                role="button"
+                href="https://daniel-brito.blogspot.com/p/noticias_11.html"
+                target="_blank"
+                title="Saiba mais"
+                aria-label="Acessar página de Artigos e Notícias"
+                ><i class="far fa-newspaper"></i> ACESSAR</a
+              >
+            </div>
+          </div>
+        </div>
 
-            <div class="container section-container">
-                <div class="row justify-content-center align-items-center">
-                    <div class="col-xl-5 column-image">
-                        <img class="img-fluid illustration" width="521" height="521"
-                            src="../assets/images/blog/pesquisas.webp"
-                            alt="Arte da seção de Pesquisas, representada por uma lupa focando no desenho de um cérebro, formado por circuitos e marcas de tinta.">
-                    </div>
-                    <div class="col-xl-7 column-description">
-                        <h1 class="section-title">PESQUISAS</h1>
-                        <div>
-                            <p class="text-center description-text">Algo sobre tudo, tudo sobre algo...</p>
-                        </div>
-                        <a class="btn btn-danger btn-block btn-lg custom-button" role="button"
-                            href="https://daniel-brito.blogspot.com/p/pesquisas.html" target="_blank" title="Saiba mais"
-                            aria-label="Acessar página de Pesquisas"><i class="fas fa-search"></i> ACESSAR</a>
-                    </div>
-                </div>
+        <div class="container section-container">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-xl-5 column-image">
+              <img
+                class="img-fluid illustration"
+                width="521"
+                height="521"
+                src="../assets/images/blog/biblioteca.webp"
+                alt="Arte da seção de Leituras, representada por uma foto com duas estantes de livros."
+              />
             </div>
+            <div class="col-xl-7 column-description">
+              <h1 class="section-title">LEITURAS</h1>
+              <div>
+                <p class="text-center description-text">
+                  Resenhas, excertos,
+                  <em
+                    ><a
+                      class="redirect-link"
+                      href="https://www.skoob.com.br/usuario/1021319-dan"
+                      target="_blank"
+                      title="Perfil no Skoob"
+                      >recomendações</a
+                    ></em
+                  >...
+                </p>
+              </div>
+              <a
+                class="btn btn-danger btn-block btn-lg custom-button"
+                role="button"
+                href="https://daniel-brito.blogspot.com/p/biblioteca-marginal_11.html"
+                target="_blank"
+                title="Saiba mais"
+                aria-label="Acessar página de Leituras"
+                ><i class="fas fa-book-reader"></i> ACESSAR</a
+              >
+            </div>
+          </div>
+        </div>
 
-            <div class="container section-container">
-                <div class="row justify-content-center align-items-center">
-                    <div class="col-xl-5 column-image" alt="Artistas favoritos">
-                        <img class="img-fluid illustration" width="521" height="521"
-                            src="../assets/images/blog/audio-visual.webp"
-                            alt="Arte da seção Audiovisual, representada por algumas imagens e fotos, como de Chopin, Slayer, Death Note, Sabotage, Sociedade dos Poetas Mortos, ACxDC, Cidade de Deus e Dubstep.">
-                    </div>
-                    <div class="col-xl-7 column-description">
-                        <h1 class="section-title">AUDIO&amp;VISUAL</h1>
-                        <div>
-                            <p class="text-center description-text"><em><a class="redirect-link"
-                                        href="https://open.spotify.com/user/xb93kruabsjskn5chjqo127ep" target="_blank"
-                                        title="Perfil no Spotify">Músicas</a></em>, documentários, curtas, <em><a
-                                        class="redirect-link" href="https://filmow.com/usuario/daniel_brito/"
-                                        target="_blank" title="Perfil no Filmow">filmes</a></em>, <em><a
-                                        class="redirect-link" href="https://myanimelist.net/profile/danielbrito41"
-                                        target="_blank" title="Perfil no MyAnimeList">animes</a></em>...</p>
-                        </div>
-                        <a class="btn btn-danger btn-block btn-lg custom-button" role="button"
-                            href="https://daniel-brito.blogspot.com/p/audio_11.html" target="_blank" title="Saiba mais"
-                            aria-label="Acessar página de conteúdo Audiovisual"><i class="fas fa-film"></i> ACESSAR</a>
-                    </div>
-                </div>
+        <div class="container section-container">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-xl-5 column-image">
+              <img
+                class="img-fluid illustration"
+                width="521"
+                height="521"
+                src="../assets/images/blog/reflexoes.webp"
+                alt="Arte da seção de Reflexões, representada por uma imagem de Sócrates, Platão, Aristóteles e Daniel Brito, todos num contexto de discurso, com os indicadores apontados para cima."
+              />
             </div>
+            <div class="col-xl-7 column-description">
+              <h1 class="section-title">REFLEXÕES</h1>
+              <div>
+                <p class="text-center description-text">
+                  A vida não examinada não vale a pena ser vivida...
+                </p>
+              </div>
+              <a
+                class="btn btn-danger btn-block btn-lg custom-button"
+                role="button"
+                href="https://daniel-brito.blogspot.com/p/reflexoes_11.html"
+                target="_blank"
+                title="Saiba mais"
+                aria-label="Acessar página de Reflexões"
+                ><i class="fas fa-question-circle"></i> ACESSAR</a
+              >
+            </div>
+          </div>
+        </div>
 
-            <div class="container section-container">
-                <div class="row justify-content-center align-items-center">
-                    <div class="col-xl-5 column-image">
-                        <img class="img-fluid illustration" width="521" height="521"
-                            src="../assets/images/blog/agenda.webp"
-                            alt="Arte da seção de Eventos, representada por uma colagem com diversos cartazes de eventos.">
-                    </div>
-                    <div class="col-xl-7 column-description">
-                        <h1 class="section-title">EVENTOS</h1>
-                        <div>
-                            <p class="text-center description-text"><em><a class="redirect-link"
-                                        href="https://daniel-brito.blogspot.com/p/saraus-e-slams.html" target="_blank"
-                                        title="Saraus e slams presenciados">Saraus</a></em>, exposições, palestras,
-                                workshops...</p>
-                        </div>
-                        <a class="btn btn-danger btn-block btn-lg custom-button" role="button"
-                            href="https://daniel-brito.blogspot.com/p/agenda.html" target="_blank" title="Saiba mais"
-                            aria-label="Acessar página de Eventos"><i class="far fa-calendar-check"></i> ACESSAR</a>
-                    </div>
-                </div>
+        <div class="container section-container">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-xl-5 column-image">
+              <img
+                class="img-fluid illustration"
+                width="521"
+                height="521"
+                src="../assets/images/blog/pesquisas.webp"
+                alt="Arte da seção de Pesquisas, representada por uma lupa focando no desenho de um cérebro, formado por circuitos e marcas de tinta."
+              />
             </div>
-        </main>
+            <div class="col-xl-7 column-description">
+              <h1 class="section-title">PESQUISAS</h1>
+              <div>
+                <p class="text-center description-text">
+                  Algo sobre tudo, tudo sobre algo...
+                </p>
+              </div>
+              <a
+                class="btn btn-danger btn-block btn-lg custom-button"
+                role="button"
+                href="https://daniel-brito.blogspot.com/p/pesquisas.html"
+                target="_blank"
+                title="Saiba mais"
+                aria-label="Acessar página de Pesquisas"
+                ><i class="fas fa-search"></i> ACESSAR</a
+              >
+            </div>
+          </div>
+        </div>
 
-        <footer>
-            <div class="row no-gutters justify-content-center" id="row-footer">
-                <div class="footer-letter-wrapper"><span class="footer-letter">D</span></div>
-                <div class="footer-letter-wrapper"><span class="footer-letter">N</span></div>
-                <div class="footer-letter-wrapper"><span class="footer-letter">L</span></div>
-                <div class="footer-symbol-wrapper"><span class="footer-symbol"><a id="creative-commons"
-                            href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"
-                            rel="noopener noreferrer" title="Licença Creative Commons"
-                            aria-label="Acessar licença Creative Commons">ɔ</a></span></div>
-                <div class="footer-letter-wrapper"><span class="footer-letter">B</span></div>
-                <div class="footer-letter-wrapper"><span class="footer-letter">R</span></div>
-                <div class="footer-letter-wrapper"><span class="footer-letter">T</span></div>
+        <div class="container section-container">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-xl-5 column-image" alt="Artistas favoritos">
+              <img
+                class="img-fluid illustration"
+                width="521"
+                height="521"
+                src="../assets/images/blog/audio-visual.webp"
+                alt="Arte da seção Audiovisual, representada por algumas imagens e fotos, como de Chopin, Slayer, Death Note, Sabotage, Sociedade dos Poetas Mortos, ACxDC, Cidade de Deus e Dubstep."
+              />
             </div>
-        </footer>
+            <div class="col-xl-7 column-description">
+              <h1 class="section-title">AUDIO&amp;VISUAL</h1>
+              <div>
+                <p class="text-center description-text">
+                  <em
+                    ><a
+                      class="redirect-link"
+                      href="https://open.spotify.com/user/xb93kruabsjskn5chjqo127ep"
+                      target="_blank"
+                      title="Perfil no Spotify"
+                      >Músicas</a
+                    ></em
+                  >, documentários, curtas,
+                  <em
+                    ><a
+                      class="redirect-link"
+                      href="https://filmow.com/usuario/daniel_brito/"
+                      target="_blank"
+                      title="Perfil no Filmow"
+                      >filmes</a
+                    ></em
+                  >,
+                  <em
+                    ><a
+                      class="redirect-link"
+                      href="https://myanimelist.net/profile/danielbrito41"
+                      target="_blank"
+                      title="Perfil no MyAnimeList"
+                      >animes</a
+                    ></em
+                  >...
+                </p>
+              </div>
+              <a
+                class="btn btn-danger btn-block btn-lg custom-button"
+                role="button"
+                href="https://daniel-brito.blogspot.com/p/audio_11.html"
+                target="_blank"
+                title="Saiba mais"
+                aria-label="Acessar página de conteúdo Audiovisual"
+                ><i class="fas fa-film"></i> ACESSAR</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="container section-container">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-xl-5 column-image">
+              <img
+                class="img-fluid illustration"
+                width="521"
+                height="521"
+                src="../assets/images/blog/agenda.webp"
+                alt="Arte da seção de Eventos, representada por uma colagem com diversos cartazes de eventos."
+              />
+            </div>
+            <div class="col-xl-7 column-description">
+              <h1 class="section-title">EVENTOS</h1>
+              <div>
+                <p class="text-center description-text">
+                  <em
+                    ><a
+                      class="redirect-link"
+                      href="https://daniel-brito.blogspot.com/p/saraus-e-slams.html"
+                      target="_blank"
+                      title="Saraus e slams presenciados"
+                      >Saraus</a
+                    ></em
+                  >, exposições, palestras, workshops...
+                </p>
+              </div>
+              <a
+                class="btn btn-danger btn-block btn-lg custom-button"
+                role="button"
+                href="https://daniel-brito.blogspot.com/p/agenda.html"
+                target="_blank"
+                title="Saiba mais"
+                aria-label="Acessar página de Eventos"
+                ><i class="far fa-calendar-check"></i> ACESSAR</a
+              >
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        <div class="row no-gutters justify-content-center" id="row-footer">
+          <div class="footer-letter-wrapper">
+            <span class="footer-letter">D</span>
+          </div>
+          <div class="footer-letter-wrapper">
+            <span class="footer-letter">N</span>
+          </div>
+          <div class="footer-letter-wrapper">
+            <span class="footer-letter">L</span>
+          </div>
+          <div class="footer-symbol-wrapper">
+            <span class="footer-symbol"
+              ><a
+                id="creative-commons"
+                href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Licença Creative Commons"
+                aria-label="Acessar licença Creative Commons"
+                >ɔ</a
+              ></span
+            >
+          </div>
+          <div class="footer-letter-wrapper">
+            <span class="footer-letter">B</span>
+          </div>
+          <div class="footer-letter-wrapper">
+            <span class="footer-letter">R</span>
+          </div>
+          <div class="footer-letter-wrapper">
+            <span class="footer-letter">T</span>
+          </div>
+        </div>
+      </footer>
     </div>
 
-    <script defer src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+    <script
+      defer
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
 
     <script defer src="../assets/js/scripts.js"></script>
-
-</body>
-
+  </body>
 </html>

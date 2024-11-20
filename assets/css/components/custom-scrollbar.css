@@ -25,7 +25,8 @@
     border-radius: 7px;
   }
 
-  #modal-profiles {
+  #modal-profiles,
+  #modal-feedbacks {
     padding-right: 0;
   }
 }
