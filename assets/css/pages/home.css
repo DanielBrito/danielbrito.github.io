@@ -73,6 +73,40 @@
   font-size: 1.1rem;
   color: var(--white);
   text-shadow: 0 0 10px var(--black);
+  transform: scaleX(0.9);
+
+  transition: all 0.2s ease-in-out;
+}
+
+#athlete-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 999;
+
+  margin: 30px auto;
+
+  font-family: "Faster One", cursive;
+  font-size: 2.3rem;
+  color: var(--white);
+  text-shadow: 0 0 10px var(--black);
+  transform: scaleX(0.95);
+
+  transition: all 0.2s ease-in-out;
+}
+
+#writer-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 999;
+
+  margin: 30px auto;
+
+  font-family: "Cedarville Cursive", cursive;
+  font-size: 2.33rem;
+  color: var(--white);
+  text-shadow: 0 0 10px var(--black);
 
   transition: all 0.2s ease-in-out;
 }
@@ -93,28 +127,8 @@
   transition: all 0.2s ease-in-out;
 }
 
-#writer-title {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  z-index: 999;
-
-  margin: 30px auto;
-
-  font-family: "Cedarville Cursive", cursive;
-  font-size: 2.35rem;
-  color: var(--white);
-  text-shadow: 0 0 10px var(--black);
-
-  transition: all 0.2s ease-in-out;
-}
-
 .profile-title:hover {
   text-shadow: 0 0 10px var(--red-text-bright), 0 0 13px var(--red-text-bright) !important;
-
-  cursor: pointer;
-
-  transform: scale(1.05);
 }
 
 .profile-icon {
@@ -126,7 +140,7 @@
   color: var(--red-wine-primary);
   text-shadow: 0 0 1px var(--red-text-bright);
 
-  animation: pulse 1.5s infinite;
+  animation: pulse 2s infinite;
 }
 
 .anchor-profile {
@@ -186,14 +200,14 @@
 
 @keyframes pulse {
   0% {
-    transform: scale(4);
+    transform: scale(3);
   }
 
   70% {
-    transform: scale(5);
+    transform: scale(4);
   }
 
   100% {
-    transform: scale(4);
+    transform: scale(3);
   }
 }

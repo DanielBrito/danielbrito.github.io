@@ -217,3 +217,7 @@ a:hover {
     padding: 30px;
   }
 }
+
+.modal-header-icon {
+  margin-right: 10px;
+}

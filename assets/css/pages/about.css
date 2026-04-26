@@ -145,3 +145,18 @@
   color: var(--red-wine-primary);
   font-weight: bold;
 }
+
+.personal-record-item {
+  display: block;
+
+  margin: 4px auto 10px auto;
+
+  font-size: 0.87rem;
+}
+
+#running-personal-records {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
